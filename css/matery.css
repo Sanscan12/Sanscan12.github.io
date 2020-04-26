@@ -2015,7 +2015,7 @@ footer .copy-right {
     /* fix the problem of hidden failure */
     margin-top: 0.4em;
     /* bg color = bg color under block */
-    background: white;
+    /*background: white;*/
 }
 
 /*二级菜单*/
