@@ -34,7 +34,7 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: transparent;
     margin: 0;
     color: #34495e;
 }
@@ -250,7 +250,7 @@ mark {
 }
 /* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */
 .bg-color {
-    background-image: linear-gradient(to right, #8e8cdc 0%, #D3B7D8 100%);
+    background-image: linear-gradient(to right, rgba(142,140, 220, 0.7), rgba(215,180, 215, 0.7));
 }
 
 .text-color {
