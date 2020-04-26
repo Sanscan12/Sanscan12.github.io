@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="css, 柏竹博客">
+    <meta name="keywords" content="CSS API笔记, 柏竹博客">
     <meta name="description" content="小白码农">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>css | 柏竹博客</title>
+    <title>CSS API笔记 | 柏竹博客</title>
     <link rel="icon" type="image/png" href="/Sanscan12.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Sanscan12.github.io/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">css</h1>
+                    <h1 class="description center-align post-title">CSS API笔记</h1>
                 </div>
             </div>
         </div>
@@ -477,21 +477,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-24
+                    2020-04-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9.4k
+                    8.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    34 分
+                    33 分
                 </div>
                 
 
@@ -506,25 +506,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="CSS初识"><a href="#CSS初识" class="headerlink" title="CSS初识"></a>CSS初识</h2><p>css样式表或层叠样式表（级联样式表），用与设置HTML页面的文本内容（字体，大小，对齐样式）、图片外形等外观。<br>CSS以HTML为基础，提供了丰富的功能，如字体、颜色、背景的控制及整体排版等，而且还可以针对不同的浏览器设置不同的样式。</p>
-<h2 id="css样式表"><a href="#css样式表" class="headerlink" title="css样式表"></a>css样式表</h2><h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><p>位置在head头部标签中，并且用style标签定义属性，基本语法格式：</p>
-<pre><code>&lt;head&gt;
-    &lt;style type=&quot;text/CSS&quot;&gt;
-            选择器 {属性1:属性值1; 属性2:属性值2; 属性3:属性值3;}
-    &lt;/style&gt;
-&lt;/head&gt;</code></pre><p>选择器：选择标签加属性。</p>
+                <h1 id="CSS初识"><a href="#CSS初识" class="headerlink" title="CSS初识"></a>CSS初识</h1><p>css样式表或层叠样式表（级联样式表），用与设置HTML页面的文本内容（字体，大小，对齐样式）、图片外形等外观。<br>CSS以HTML为基础，提供了丰富的功能，如字体、颜色、背景的控制及整体排版等，而且还可以针对不同的浏览器设置不同的样式。</p>
+<h1 id="css样式表"><a href="#css样式表" class="headerlink" title="css样式表"></a>css样式表</h1><h2 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h2><p>位置在head头部标签中，并且用style标签定义属性，基本语法格式：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">&lt;head>
+    &lt;style type="text/CSS">
+            选择器 </span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    &lt;/style>
+&lt;/head></code></pre>
+<p>选择器：选择标签加属性。</p>
 <hr>
-<h3 id="行内式（内联样式表）"><a href="#行内式（内联样式表）" class="headerlink" title="行内式（内联样式表）"></a>行内式（内联样式表）</h3><p>内联样式，又称行内样式、行间样式、内嵌样式。是通过标签的style属性来设置元素的样式，基本语法格式：</p>
-<pre><code>&lt;标签名 style=&quot;属性1:属性值1; 属性2:属性值2; 属性3:属性值3;&quot;&gt; 内容 &lt;/标签名&gt;</code></pre><p>语法中style是标签的属性。属性和值的书写规范与CSS样式规则相同，行内式只对其所在的标签及嵌套在其中的子标签起作用。</p>
+<h2 id="行内式（内联样式表）"><a href="#行内式（内联样式表）" class="headerlink" title="行内式（内联样式表）"></a>行内式（内联样式表）</h2><p>内联样式，又称行内样式、行间样式、内嵌样式。是通过标签的style属性来设置元素的样式，基本语法格式：</p>
+<pre class=" language-css"><code class="language-css">&lt;标签名 style=<span class="token string">"属性1:属性值1; 属性2:属性值2; 属性3:属性值3;"</span>> 内容 &lt;/标签名></code></pre>
+<p>语法中style是标签的属性。属性和值的书写规范与CSS样式规则相同，行内式只对其所在的标签及嵌套在其中的子标签起作用。</p>
 <hr>
-<h3 id="外部样式表（外链式）"><a href="#外部样式表（外链式）" class="headerlink" title="外部样式表（外链式）"></a>外部样式表（外链式）</h3><p>链入式是将所有的样式放在一个或多个以CSS为扩展名的文件中，通过link标签将文件链接，基本语法格式如下：</p>
+<h2 id="外部样式表（外链式）"><a href="#外部样式表（外链式）" class="headerlink" title="外部样式表（外链式）"></a>外部样式表（外链式）</h2><p>链入式是将所有的样式放在一个或多个以CSS为扩展名的文件中，通过link标签将文件链接，基本语法格式如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>CSS文件的路径<span class="token punctuation">"</span></span>  <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span></code></pre>
 <p><strong>link 必要属性</strong></p>
 <p><font color =8BE9FD>link</font> 是个单标签，link标签需要放在head头部标签中，并且必须指定link标签的三个属性：<br><font color =8BE9FD>href</font>：URL地址，可以是相对路径或绝对路径。<br><font color =8BE9FD>type</font>t：所链接文档的类型，在这里需要指定为“text/CSS”，表示链接的外部文件为CSS样式表。<br><font color =8BE9FD>rel</font>：当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件。</p>
-<h3 id="CSS样式规则"><a href="#CSS样式规则" class="headerlink" title="CSS样式规则"></a>CSS样式规则</h3><p>选择器{属性:属性值 ; 属性2:属性值2 ; ···}<br>CSS样式规则中:<br>1.选择器用于指定CSS样式作用的HTML对象，花括号内是对该对象设置的具体样式。<br>2.属性和属性值以“键值对”的形式出现。<br>3.属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等。<br>4.属性和属性值之间用英文“:”连接。<br>5.多个“键值对”之间用英文“;”进行区分。<br>可以用段落和表格的对齐的演示。</p>
-<h3 id="样式表总结"><a href="#样式表总结" class="headerlink" title="样式表总结"></a>样式表总结</h3><table>
+<h2 id="CSS样式规则"><a href="#CSS样式规则" class="headerlink" title="CSS样式规则"></a>CSS样式规则</h2><p>选择器{属性:属性值 ; 属性2:属性值2 ; ···}<br>CSS样式规则中:<br>1.选择器用于指定CSS样式作用的HTML对象，花括号内是对该对象设置的具体样式。<br>2.属性和属性值以“键值对”的形式出现。<br>3.属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等。<br>4.属性和属性值之间用英文“:”连接。<br>5.多个“键值对”之间用英文“;”进行区分。<br>可以用段落和表格的对齐的演示。</p>
+<h2 id="样式表总结"><a href="#样式表总结" class="headerlink" title="样式表总结"></a>样式表总结</h2><table>
 <thead>
 <tr>
 <th>样式表</th>
@@ -556,12 +558,12 @@
 <td>控制整个站点（多）</td>
 </tr>
 </tbody></table>
-<h2 id="基础选择器"><a href="#基础选择器" class="headerlink" title="基础选择器"></a>基础选择器</h2><h3 id="标签选择器（元素选择器）"><a href="#标签选择器（元素选择器）" class="headerlink" title="标签选择器（元素选择器）"></a>标签选择器（元素选择器）</h3><p>标签选择器可对标签或元素指定的对象作用。<br>按标签名称和元素名分类，语法格式如下：</p>
+<h1 id="基础选择器"><a href="#基础选择器" class="headerlink" title="基础选择器"></a>基础选择器</h1><h2 id="标签选择器（元素选择器）"><a href="#标签选择器（元素选择器）" class="headerlink" title="标签选择器（元素选择器）"></a>标签选择器（元素选择器）</h2><p>标签选择器可对标签或元素指定的对象作用。<br>按标签名称和元素名分类，语法格式如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">标签名 | 元素名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> ···<span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
 <hr>
-<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p>类选择器可对指定的对象起作用。<br>用“.”做前缀进行标识，后面紧跟类名，在style标签中，基本语法格式如下：</p>
+<h2 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h2><p>类选择器可对指定的对象起作用。<br>用“.”做前缀进行标识，后面紧跟类名，在style标签中，基本语法格式如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">.类名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
@@ -574,7 +576,7 @@
 <li>不要纯数字、中文等命名， 尽量使用英文字母来表示。</li>
 </ol>
 <hr>
-<h3 id="多类名选择器"><a href="#多类名选择器" class="headerlink" title="多类名选择器"></a>多类名选择器</h3><p>多类名选择器可给标签指定多个类名，从而达到更多选择的目的。<br><strong>注意：</strong></p>
+<h2 id="多类名选择器"><a href="#多类名选择器" class="headerlink" title="多类名选择器"></a>多类名选择器</h2><p>多类名选择器可给标签指定多个类名，从而达到更多选择的目的。<br><strong>注意：</strong></p>
 <ol>
 <li>样式显示效果跟HTML元素中的类名先后顺序没有关系,受CSS样式书写的上下顺序有关。</li>
 <li>各个类名中间用空格隔开。</li>
@@ -582,7 +584,7 @@
 <p>多类名选择器的使用，前提先定义了类：<em>（类名之间用空格隔开）</em></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>类名1 类名2 ···<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
 <hr>
-<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p>id选择器只对一个对象起作用。<br>用“#”做前缀进行标识，后面紧跟id名，id选择器只能对一个标签使用。<em>（可多个食用，建议不要多个使用）</em><br>基本语法格式如下： <em>（语法结构基本和类选择器相同。）</em></p>
+<h2 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h2><p>id选择器只对一个对象起作用。<br>用“#”做前缀进行标识，后面紧跟id名，id选择器只能对一个标签使用。<em>（可多个食用，建议不要多个使用）</em><br>基本语法格式如下： <em>（语法结构基本和类选择器相同。）</em></p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector"><span class="token id">#id</span>名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
@@ -590,11 +592,11 @@
 <p><strong>id选择器和类选择器区别</strong></p>
 <p><strong><em>id选择器和类选择器最大的不同在于 使用次数上。</em></strong></p>
 <hr>
-<h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h3><p>通配符选择器用“ * ”号表示，是所有选择器中作用范围最广的，能匹配页面中所有的元素。<em>（ 星号代表所有的意思）</em><br>基本语法格式如下：</p>
+<h2 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器"></a>通配符选择器</h2><p>通配符选择器用“ * ”号表示，是所有选择器中作用范围最广的，能匹配页面中所有的元素。<em>（ 星号代表所有的意思）</em><br>基本语法格式如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">*</span><span class="token punctuation">{</span> 属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> ···<span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="选择器总结"><a href="#选择器总结" class="headerlink" title="选择器总结"></a>选择器总结</h3><table>
+<h2 id="选择器总结"><a href="#选择器总结" class="headerlink" title="选择器总结"></a>选择器总结</h2><table>
 <thead>
 <tr>
 <th>选择器</th>
@@ -628,7 +630,7 @@
 <td>范围最广</td>
 </tr>
 </tbody></table>
-<h2 id="CSS字体样式属性"><a href="#CSS字体样式属性" class="headerlink" title="CSS字体样式属性"></a>CSS字体样式属性</h2><h3 id="font-size（字号大小）"><a href="#font-size（字号大小）" class="headerlink" title="font-size（字号大小）"></a>font-size（字号大小）</h3><p>font-size属性用于设置字号大小。<br>属性值设置相对长度单位，也设置绝对长度单位，详细：</p>
+<h1 id="CSS字体样式属性"><a href="#CSS字体样式属性" class="headerlink" title="CSS字体样式属性"></a>CSS字体样式属性</h1><h2 id="字号大小-font-size"><a href="#字号大小-font-size" class="headerlink" title="字号大小 (font-size)"></a>字号大小 (font-size)</h2><p>font-size属性用于设置字号大小。<br>属性值设置相对长度单位，也设置绝对长度单位，详细：</p>
 <table>
 <thead>
 <tr>
@@ -670,7 +672,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="font-family-（字体类型）"><a href="#font-family-（字体类型）" class="headerlink" title="font-family （字体类型）"></a>font-family （字体类型）</h3><p>font-family属性用于设置字体。<br>可同时指定多个字体，中间以逗号隔开，如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体。</p>
+<h2 id="字体类型-font-family"><a href="#字体类型-font-family" class="headerlink" title="字体类型 (font-family)"></a>字体类型 (font-family)</h2><p>font-family属性用于设置字体。<br>可同时指定多个字体，中间以逗号隔开，如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体。</p>
 <p><strong>常用技巧：</strong></p>
 <ol>
 <li>现在网页中普遍使用14px+。</li>
@@ -681,7 +683,7 @@
 <li>尽量使用系统默认字体，保证在任何用户的浏览器中都能正确显示。</li>
 </ol>
 <hr>
-<h4 id="CSS-Unicode（字体编码）"><a href="#CSS-Unicode（字体编码）" class="headerlink" title="CSS Unicode（字体编码）"></a>CSS Unicode（字体编码）</h4><p>在 CSS 中设置字体名称，直接写中文是可以的。但是在文件编码（GB2312、UTF-8 等）不匹配时会产生乱码的错误。xp 系统不支持类似微软雅黑的中文。<em>(尽量只使用宋体和微软雅黑中文字体)</em><br><strong>提高兼容性的解决方案：</strong></p>
+<h2 id="字体编码-CSS-Unicode"><a href="#字体编码-CSS-Unicode" class="headerlink" title="字体编码 (CSS Unicode)"></a>字体编码 (CSS Unicode)</h2><p>在 CSS 中设置字体名称，直接写中文是可以的。但是在文件编码（GB2312、UTF-8 等）不匹配时会产生乱码的错误。xp 系统不支持类似微软雅黑的中文。<em>(尽量只使用宋体和微软雅黑中文字体)</em><br><strong>提高兼容性的解决方案：</strong></p>
 <ol>
 <li>用英文来替代字体名称</li>
 <li>直接使用 Unicode 编码来写字体名称可以避免这些错误</li>
@@ -746,7 +748,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="font-weight（字体粗细）"><a href="#font-weight（字体粗细）" class="headerlink" title="font-weight（字体粗细）"></a>font-weight（字体粗细）</h3><p>font-weight属性用于设置字体粗细。<br>字体加粗除了用 b(粗体)和 strong(语气更强的强调)标签之外，也用CSS来实现，但是CSS 是没有语义的。<em>（尽量用数值代表细粗）</em><br>font-weight的属性值：</p>
+<h2 id="字体粗细-font-weight"><a href="#字体粗细-font-weight" class="headerlink" title="字体粗细 (font-weight)"></a>字体粗细 (font-weight)</h2><p>font-weight属性用于设置字体粗细。<br>字体加粗除了用 b(粗体)和 strong(语气更强的强调)标签之外，也用CSS来实现，但是CSS 是没有语义的。<em>（尽量用数值代表细粗）</em><br>font-weight的属性值：</p>
 <table>
 <thead>
 <tr>
@@ -776,7 +778,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="font-style（倾斜字体）"><a href="#font-style（倾斜字体）" class="headerlink" title="font-style（倾斜字体）"></a>font-style（倾斜字体）</h3><p>font-style属性用倾斜字体。<br>字体倾斜除了用 i(倾斜)和 em(强调)标签之外可用CSS 来实现，但是CSS 是没有语义的。</p>
+<h2 id="倾斜字体-font-style"><a href="#倾斜字体-font-style" class="headerlink" title="倾斜字体 (font-style)"></a>倾斜字体 (font-style)</h2><p>font-style属性用倾斜字体。<br>字体倾斜除了用 i(倾斜)和 em(强调)标签之外可用CSS 来实现，但是CSS 是没有语义的。</p>
 <table>
 <thead>
 <tr>
@@ -798,7 +800,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="font-字体连写样式-（重点）"><a href="#font-字体连写样式-（重点）" class="headerlink" title="font 字体连写样式 （重点）"></a>font 字体连写样式 （重点）</h3><p>font属性用于对字体样式进行综合设置。<br>基本语法格式如下：</p>
+<h2 id="字体连写样式-font"><a href="#字体连写样式-font" class="headerlink" title="字体连写样式  (font)"></a>字体连写样式  (font)</h2><p>font属性用于对字体样式进行综合设置。<br>基本语法格式如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">选择器</span><span class="token punctuation">{</span><span class="token property">font</span><span class="token punctuation">:</span> <span class="token function">font-style</span><span class="token punctuation">(</span>倾斜字体<span class="token punctuation">)</span>  <span class="token function">font-weight</span><span class="token punctuation">(</span>字体粗细<span class="token punctuation">)</span>  <span class="token function">font-size</span><span class="token punctuation">(</span>字体大小<span class="token punctuation">)</span>/<span class="token function">line-height</span><span class="token punctuation">(</span>字体行高<span class="token punctuation">)</span>  <span class="token function">font-family</span><span class="token punctuation">(</span>字体类型<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
@@ -812,7 +814,7 @@
 <li>使用font属性时，必须按上面语法格式中的顺序书写，不能更换顺序，各个属性以空格隔开。</li>
 <li>不需要设置的属性可以省略属性值（取默认值），但必须保留font-size(字体大小)和font-family(字体类型)属性，否则font属性将不起作用。</li>
 </ol>
-<h2 id="CSS外观样式属性"><a href="#CSS外观样式属性" class="headerlink" title="CSS外观样式属性"></a>CSS外观样式属性</h2><h3 id="color（文本颜色）"><a href="#color（文本颜色）" class="headerlink" title="color（文本颜色）"></a>color（文本颜色）</h3><p>color属性用于定义文本的颜色。</p>
+<h1 id="CSS外观样式属性"><a href="#CSS外观样式属性" class="headerlink" title="CSS外观样式属性"></a>CSS外观样式属性</h1><h2 id="文本颜色-color"><a href="#文本颜色-color" class="headerlink" title="文本颜色 (color)"></a>文本颜色 (color)</h2><p>color属性用于定义文本的颜色。</p>
 <table>
 <thead>
 <tr>
@@ -835,7 +837,7 @@
 </tbody></table>
 <p><em>注意:如果使用RGB代码的百分比颜色值，取值为0时也不能省略百分号，必须写为0%。</em></p>
 <hr>
-<h3 id="line-height-（行间距）"><a href="#line-height-（行间距）" class="headerlink" title="line-height （行间距）"></a>line-height （行间距）</h3><p>ine-height属性用于设置字符的高距。<br>行与行之间的距离，一般称为行高。<br>字体顶与最顶行的距离=(设置值 - 字体)/2（单位：px）<br>line-height常用的属性值单位有三种：</p>
+<h2 id="行间距-line-height"><a href="#行间距-line-height" class="headerlink" title="行间距 (line-height)"></a>行间距 (line-height)</h2><p>ine-height属性用于设置字符的高距。<br>行与行之间的距离，一般称为行高。<br>字体顶与最顶行的距离=(设置值 - 字体)/2（单位：px）<br>line-height常用的属性值单位有三种：</p>
 <table>
 <thead>
 <tr>
@@ -857,7 +859,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="letter-spacing（水平间距）"><a href="#letter-spacing（水平间距）" class="headerlink" title="letter-spacing（水平间距）"></a>letter-spacing（水平间距）</h3><p>letter-spacing属性用于设置字符的水平间距。<br>字符与字符之间的距离，一般称为水平间距</p>
+<h2 id="水平间距-letter-spacing"><a href="#水平间距-letter-spacing" class="headerlink" title="水平间距 (letter-spacing)"></a>水平间距 (letter-spacing)</h2><p>letter-spacing属性用于设置字符的水平间距。<br>字符与字符之间的距离，一般称为水平间距</p>
 <table>
 <thead>
 <tr>
@@ -879,7 +881,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="text-align（水平对齐方式）"><a href="#text-align（水平对齐方式）" class="headerlink" title="text-align（水平对齐方式）"></a>text-align（水平对齐方式）</h3><p>text-align属性用于设置指定字体水平对齐方式。<br>是让盒子里面的内容水平居中，而不是让盒子居中对齐</p>
+<h2 id="水平对齐方式-text-align"><a href="#水平对齐方式-text-align" class="headerlink" title="水平对齐方式 (text-align)"></a>水平对齐方式 (text-align)</h2><p>text-align属性用于设置指定字体水平对齐方式。<br>是让盒子里面的内容水平居中，而不是让盒子居中对齐</p>
 <table>
 <thead>
 <tr>
@@ -901,7 +903,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="text-indent（首行缩进）"><a href="#text-indent（首行缩进）" class="headerlink" title="text-indent（首行缩进）"></a>text-indent（首行缩进）</h3><p>text-indent属性用于设置首行文本的缩进。</p>
+<h2 id="首行缩进-text-indent"><a href="#首行缩进-text-indent" class="headerlink" title="首行缩进 (text-indent)"></a>首行缩进 (text-indent)</h2><p>text-indent属性用于设置首行文本的缩进。</p>
 <table>
 <thead>
 <tr>
@@ -924,7 +926,7 @@
 </tbody></table>
 <p><em>一般情况汉字的段落， 2em 就是两个汉字的宽度</em></p>
 <hr>
-<h3 id="text-decoration（文本装饰）"><a href="#text-decoration（文本装饰）" class="headerlink" title="text-decoration（文本装饰）"></a>text-decoration（文本装饰）</h3><p>text-decoration属性用于给链接修改装饰效果。</p>
+<h2 id="文本装饰-text-decoration"><a href="#文本装饰-text-decoration" class="headerlink" title="文本装饰 (text-decoration)"></a>文本装饰 (text-decoration)</h2><p>text-decoration属性用于给链接修改装饰效果。</p>
 <table>
 <thead>
 <tr>
@@ -949,14 +951,14 @@
 <td>贯穿文本的一条线（删除线）</td>
 </tr>
 </tbody></table>
-<h2 id="开发者工具（chrome）"><a href="#开发者工具（chrome）" class="headerlink" title="开发者工具（chrome）"></a>开发者工具（chrome）</h2><p>此工具是我们的必备工具，以后代码出了问题，首先第一反应就是：<br>“按F12”或者是 “shift+ctrl+i”   打开 开发者工具。</p>
+<h1 id="开发者工具（chrome）"><a href="#开发者工具（chrome）" class="headerlink" title="开发者工具（chrome）"></a>开发者工具（chrome）</h1><p>此工具是我们的必备工具，以后代码出了问题，首先第一反应就是：<br>“按F12”或者是 “shift+ctrl+i”   打开 开发者工具。</p>
 <p><strong>小技巧：</strong></p>
 <ol>
 <li>ctrl+滚轮 可以 放大开发者工具代码大小。</li>
 <li>左边是HTML元素结构   右边是CSS样式。</li>
 <li>右边CSS样式可以改动数值和颜色查看更改后效果。</li>
 </ol>
-<h2 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h2><h3 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h3><p>交集选择器可指定标签添加样式。<br>交集选择器由两个选择器构成，第一个为标签选择器，第二个为class选择器，两个选择器之间不能有空格<br>基本语法格式：</p>
+<h1 id="CSS复合选择器"><a href="#CSS复合选择器" class="headerlink" title="CSS复合选择器"></a>CSS复合选择器</h1><h2 id="交集选择器"><a href="#交集选择器" class="headerlink" title="交集选择器"></a>交集选择器</h2><p>交集选择器可指定标签添加样式。<br>交集选择器由两个选择器构成，第一个为标签选择器，第二个为class选择器，两个选择器之间不能有空格<br>基本语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector">h3<span class="token class">.class</span> </span><span class="token punctuation">{</span>属性<span class="token punctuation">:</span>属性值<span class="token punctuation">;</span> ····<span class="token punctuation">}</span></code></pre>
 <p><strong>记忆技巧：</strong><br>交集选择器 是并且的意思。  即…又…的意思</p>
 <pre class=" language-html"><code class="language-html">比如： p.one   选择的是： 类名为 .one 的段落标签。  
@@ -965,12 +967,12 @@
     p.class{color:red; font-size:20px}
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stley</span><span class="token punctuation">></span></span></code></pre>
 <hr>
-<h3 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h3><p>并集选择器可叠加各种选择器和标签等，添加样式。<br>各个选择器通过逗号连接而成的，任何形式的选择器（包括标签选择器、class类选择器id选择器等），都可以作为并集选择器的一部分。<br>基本语法格式：</p>
+<h2 id="并集选择器"><a href="#并集选择器" class="headerlink" title="并集选择器"></a>并集选择器</h2><p>并集选择器可叠加各种选择器和标签等，添加样式。<br>各个选择器通过逗号连接而成的，任何形式的选择器（包括标签选择器、class类选择器id选择器等），都可以作为并集选择器的一部分。<br>基本语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.class</span> , h3 </span><span class="token punctuation">{</span>属性<span class="token punctuation">:</span>属性值<span class="token punctuation">;</span> ····<span class="token punctuation">}</span></code></pre>
 <p><strong>记忆技巧：</strong><br>并集选择器选择器和选择器的意思，只要逗号隔开的，所有选择器都会执行后面样式。</p>
 <p>比如  .one, p , #test {color: #F00;}  表示   .one 和 p  和 #test 这三个选择器都会执行颜色为红色。  通常用于集体声明。</p>
 <hr>
-<h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p>后代选择器又称<strong>包含选择器</strong>，用来选择元素或元素组的后代。<br><strong>写法：外层标签写在前面，内层标签写在后面，中间用空格分隔</strong>。<em>当标签发生嵌套时，内层标签就成为外层标签的后代。</em><br>基本语法格式：</p>
+<h2 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h2><p>后代选择器又称<strong>包含选择器</strong>，用来选择元素或元素组的后代。<br><strong>写法：外层标签写在前面，内层标签写在后面，中间用空格分隔</strong>。<em>当标签发生嵌套时，内层标签就成为外层标签的后代。</em><br>基本语法格式：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">类名选择器 标记选择器</span><span class="token punctuation">{</span>属性<span class="token number">1</span>，属性值<span class="token number">1</span>；属性<span class="token number">2</span>，属性值<span class="token number">2</span>,···<span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
@@ -980,7 +982,7 @@
     <span class="token selector">div p</span><span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token number">20</span>px<span class="token punctuation">}</span>
 &lt;/stley>></code></pre>
 <hr>
-<h3 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h3><p>子代选择器又称<strong>子元素选择器</strong>，只能选择作为某元素子元素的元素。<br>写法：父级标签写在前面，子级标签写在后面，中间跟一个 &gt; 进行连接。 <em>注意，符号左右两侧各保留一个空格。</em><br>基本语法：</p>
+<h2 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h2><p>子代选择器又称<strong>子元素选择器</strong>，只能选择作为某元素子元素的元素。<br>写法：父级标签写在前面，子级标签写在后面，中间跟一个 &gt; 进行连接。 <em>注意，符号左右两侧各保留一个空格。</em><br>基本语法：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">类别选择器 > 标记选择器</span><span class="token punctuation">{</span>属性<span class="token number">1</span>，属性值<span class="token number">1</span>；属性<span class="token number">2</span>，属性值<span class="token number">2</span>,···<span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code></pre>
@@ -990,11 +992,11 @@
      <span class="token selector">div > p</span><span class="token punctuation">{</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span><span class="token number">20</span>px<span class="token punctuation">}</span>
 &lt;/style></code></pre>
 <hr>
-<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><p>伪类选择器用于向某些选择器添加特殊的效果。<br>用“:”做前缀进行标识，后面紧跟伪类名，在style标签中，基本语法格式如下：</p>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>伪类选择器用于向某些选择器添加特殊的效果。<br>用“:”做前缀进行标识，后面紧跟伪类名，在style标签中，基本语法格式如下：</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector">&lt;style>
     :伪类选择器</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> ··· <span class="token punctuation">}</span>
 &lt;/style></code></pre>
-<h4 id="链接伪类选择器"><a href="#链接伪类选择器" class="headerlink" title="链接伪类选择器"></a>链接伪类选择器</h4><table>
+<h3 id="链接伪类选择器"><a href="#链接伪类选择器" class="headerlink" title="链接伪类选择器"></a>链接伪类选择器</h3><table>
 <thead>
 <tr>
 <th>选择器</th>
@@ -1027,7 +1029,7 @@
 <span class="token selector">a<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">/* :hover 是鼠标经过时*/</span>
     <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/*  鼠标经过的时候，由原来的灰色变成了红色 */</span>
 <span class="token punctuation">}</span></code></pre>
-<h3 id="快捷方式"><a href="#快捷方式" class="headerlink" title="快捷方式"></a>快捷方式</h3><ol>
+<h2 id="快捷方式"><a href="#快捷方式" class="headerlink" title="快捷方式"></a>快捷方式</h2><ol>
 <li><p>生成标签 直接输入标签名 按tab键即可   比如  div   然后tab 键， 就可以生成 <div></div></p>
 </li>
 <li><p>如果想要生成多个相同标签  加上 * 就可以了 比如   div*3  就可以快速生成3个div</p>
@@ -1039,7 +1041,7 @@
 <li><p>如果生成带有类名或者id名字的，  直接写  .demo  或者  #two   tab 键就可以了</p>
 </li>
 </ol>
-<h2 id="display（标签显示模式）"><a href="#display（标签显示模式）" class="headerlink" title="display（标签显示模式）"></a>display（标签显示模式）</h2><h3 id="block-level（块级元素）"><a href="#block-level（块级元素）" class="headerlink" title="block-level（块级元素）"></a>block-level（块级元素）</h3><p>块元素通常都会独自占据一整行或多整行。<br>块级元素可以设置宽度、高度、对齐等··属性，常用于网页布局和网页结构的搭建。</p>
+<h1 id="display（标签显示模式）"><a href="#display（标签显示模式）" class="headerlink" title="display（标签显示模式）"></a>display（标签显示模式）</h1><h2 id="block-level（块级元素）"><a href="#block-level（块级元素）" class="headerlink" title="block-level（块级元素）"></a>block-level（块级元素）</h2><p>块元素通常都会独自占据一整行或多整行。<br>块级元素可以设置宽度、高度、对齐等··属性，常用于网页布局和网页结构的搭建。</p>
 <p>常见的块元素有<code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;div&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code>等，其中<code>&lt;div&gt;</code>标签是最典型的块元素。</p>
 <p> <strong>块级元素的特点：</strong></p>
 <ol>
@@ -1049,7 +1051,7 @@
 <li>可以容纳内联元素和其他块元素。</li>
 </ol>
 <hr>
-<h3 id="inline-level（行内元素）"><a href="#inline-level（行内元素）" class="headerlink" title="inline-level（行内元素）"></a>inline-level（行内元素）</h3><p>行内元素又称内联元素，单纯字体空间。<br>自身的字体大小和图像尺寸来支撑结构，<strong>一般不可以设置宽度、高度、对齐等属性，常用于控制页面中文本的样式。</strong></p>
+<h2 id="inline-level（行内元素）"><a href="#inline-level（行内元素）" class="headerlink" title="inline-level（行内元素）"></a>inline-level（行内元素）</h2><p>行内元素又称内联元素，单纯字体空间。<br>自身的字体大小和图像尺寸来支撑结构，<strong>一般不可以设置宽度、高度、对齐等属性，常用于控制页面中文本的样式。</strong></p>
 <p>常见的行内元素有<code>&lt;a&gt;</code>、<code>&lt;strong&gt;</code>、<code>&lt;b&gt;</code>、<code>&lt;em&gt;</code>、<code>&lt;i&gt;</code>、<code>&lt;del&gt;</code>、<code>&lt;s&gt;</code>、<code>&lt;ins&gt;</code>、<code>&lt;u&gt;</code>、<code>&lt;span&gt;</code>等，其中<code>&lt;span&gt;</code>标签最典型的行内元素。</p>
 <p><strong>行内元素的特点：</strong></p>
 <ol>
@@ -1059,14 +1061,14 @@
 <li>注意：只有文字才能组成段落 因此 p  里面不能放块级元素。链接里面不能再放链接。*</li>
 </ol>
 <hr>
-<h3 id="inline-block（行内块元素）"><a href="#inline-block（行内块元素）" class="headerlink" title="inline-block（行内块元素）"></a>inline-block（行内块元素）</h3><p><strong>行内块元素的特点：</strong></p>
+<h2 id="inline-block（行内块元素）"><a href="#inline-block（行内块元素）" class="headerlink" title="inline-block（行内块元素）"></a>inline-block（行内块元素）</h2><p><strong>行内块元素的特点：</strong></p>
 <ol>
 <li>和相邻行内元素（行内块）在一行上,但是之间会有空白缝隙。</li>
 <li>默认宽度就是它本身内容的宽度。</li>
 <li>高度，行高、外边距以及内边距都可以控制。</li>
 </ol>
-<h3 id="display（显示模式转换）"><a href="#display（显示模式转换）" class="headerlink" title="display（显示模式转换）"></a>display（显示模式转换）</h3><p>块级元素 转 行内元素：display : inline;<br>行内元素 转 块级元素：display : block;<br>块、行内元素 转 行内块元素： display : inline-block;</p>
-<h3 id="标签显示总结"><a href="#标签显示总结" class="headerlink" title="标签显示总结"></a>标签显示总结</h3><table>
+<h2 id="display（显示模式转换）"><a href="#display（显示模式转换）" class="headerlink" title="display（显示模式转换）"></a>display（显示模式转换）</h2><p>块级元素 转 行内元素：display : inline;<br>行内元素 转 块级元素：display : block;<br>块、行内元素 转 行内块元素： display : inline-block;</p>
+<h2 id="标签显示总结"><a href="#标签显示总结" class="headerlink" title="标签显示总结"></a>标签显示总结</h2><table>
 <thead>
 <tr>
 <th>元素</th>
@@ -1086,11 +1088,11 @@
 <td>和相邻行内元素（行内块）在一行上,但是之间会有空白缝隙。<br/>默认宽度就是它本身内容的宽度。<br/>高度，行高、外边距以及内边距都可以控制。</td>
 </tr>
 </tbody></table>
-<h2 id="CSS书写规范"><a href="#CSS书写规范" class="headerlink" title="CSS书写规范"></a>CSS书写规范</h2><h3 id="空格规范"><a href="#空格规范" class="headerlink" title="空格规范"></a>空格规范</h3><p>【强制】 选择器 与 { 之间必须包含空格。</p>
+<h1 id="CSS书写规范"><a href="#CSS书写规范" class="headerlink" title="CSS书写规范"></a>CSS书写规范</h1><h2 id="空格规范"><a href="#空格规范" class="headerlink" title="空格规范"></a>空格规范</h2><p>【强制】 选择器 与 { 之间必须包含空格。</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span> <span class="token punctuation">}</span></code></pre>
 <p>【强制】 属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格。</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">12</span>px<span class="token punctuation">;</span></code></pre>
-<h3 id="选择器规范"><a href="#选择器规范" class="headerlink" title="选择器规范"></a>选择器规范</h3><p>【强制】 当一个样式包含多个选择器时，每个选择器声明必须独占一行。</p>
+<h2 id="选择器规范"><a href="#选择器规范" class="headerlink" title="选择器规范"></a>选择器规范</h2><p>【强制】 当一个样式包含多个选择器时，每个选择器声明必须独占一行。</p>
 <pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*好习惯*/</span>
 <span class="token selector"><span class="token class">.post</span>,
 <span class="token class">.page</span>,
@@ -1110,7 +1112,7 @@
 <span class="token comment" spellcheck="true">/* 坏习惯 */</span>
 <span class="token selector"><span class="token class">.page</span> <span class="token class">.header</span> <span class="token class">.login</span> <span class="token id">#username</span> input </span><span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span class="token selector"><span class="token class">.comment</span> div * </span><span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
-<h3 id="属性规范"><a href="#属性规范" class="headerlink" title="属性规范"></a>属性规范</h3><p>【强制】 属性定义必须另起一行。<br>【强制】 属性定义后必须以分号结尾。</p>
+<h2 id="属性规范"><a href="#属性规范" class="headerlink" title="属性规范"></a>属性规范</h2><p>【强制】 属性定义必须另起一行。<br>【强制】 属性定义后必须以分号结尾。</p>
 <pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 好习惯 */</span>
 <span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span>
     <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -1119,22 +1121,22 @@
 
 <span class="token comment" spellcheck="true">/* 坏习惯 */</span>
 <span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span> <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
-<h3 id="高度格式"><a href="#高度格式" class="headerlink" title="高度格式"></a>高度格式</h3><p>顶线(字体最高)，中线(字体中间)，基线(字体底部)，底线(最底部)<br>基线与基线的距离为行高。<br>字体上距离=(设置值 - 字体) / 2（单位：px）</p>
-<h2 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h2><h3 id="CSS层叠性"><a href="#CSS层叠性" class="headerlink" title="CSS层叠性"></a>CSS层叠性</h3><p>指多种CSS样式的叠加。201,225,67</p>
+<h2 id="高度格式"><a href="#高度格式" class="headerlink" title="高度格式"></a>高度格式</h2><p>顶线(字体最高)，中线(字体中间)，基线(字体底部)，底线(最底部)<br>基线与基线的距离为行高。<br>字体上距离=(设置值 - 字体) / 2（单位：px）</p>
+<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h2 id="CSS层叠性"><a href="#CSS层叠性" class="headerlink" title="CSS层叠性"></a>CSS层叠性</h2><p>指多种CSS样式的叠加。201,225,67</p>
 <p>一般情况下，如果出现样式冲突，则会按照CSS书写的顺序，以最后的样式为准。</p>
 <ol>
 <li>样式冲突，遵循的原则是就近原则。 那个样式离着结构近，就执行那个样式。</li>
 <li>样式不冲突，不会层叠</li>
 </ol>
-<h3 id="CSS继承性"><a href="#CSS继承性" class="headerlink" title="CSS继承性"></a>CSS继承性</h3><p>子标签会继承父标签的某些样式。想要设置一个可继承的属性，只需将它应用于父元素即可。<br><em>恰当地使用继承可以简化代码，降低CSS样式的复杂性。子元素可以继承父元素的样式</em></p>
-<h3 id="CSS优先级"><a href="#CSS优先级" class="headerlink" title="CSS优先级"></a>CSS优先级</h3><p>出现两个或更多规则应用在同一元素上，这时就会出现优先级的问题。注意的特殊情况：</p>
+<h2 id="CSS继承性"><a href="#CSS继承性" class="headerlink" title="CSS继承性"></a>CSS继承性</h2><p>子标签会继承父标签的某些样式。想要设置一个可继承的属性，只需将它应用于父元素即可。<br><em>恰当地使用继承可以简化代码，降低CSS样式的复杂性。子元素可以继承父元素的样式</em></p>
+<h2 id="CSS优先级"><a href="#CSS优先级" class="headerlink" title="CSS优先级"></a>CSS优先级</h2><p>出现两个或更多规则应用在同一元素上，这时就会出现优先级的问题。注意的特殊情况：</p>
 <ol>
 <li>继承样式的权重为0！！！</li>
 <li>行内样式优先。</li>
 <li>权重相同时，CSS遵循就近原则。</li>
 <li>CSS定义了一个!important命令，该命令被赋予最大的优先级。</li>
 </ol>
-<h4 id="CSS特殊性"><a href="#CSS特殊性" class="headerlink" title="CSS特殊性"></a>CSS特殊性</h4><p>关于CSS权重，需要一套计算公式来去计算，这个就是 CSS Specificity，是衡量CSS值优先级的一个标准。<br>specificity用一个四位的数字串(CSS2是三位)来表示，更像四个级别，值从左到右，左面的最大，一级大于一级，数位之间没有进制，级别之间不可超越。 </p>
+<h2 id="CSS特殊性"><a href="#CSS特殊性" class="headerlink" title="CSS特殊性"></a>CSS特殊性</h2><p>关于CSS权重，需要一套计算公式来去计算，这个就是 CSS Specificity，是衡量CSS值优先级的一个标准。<br>specificity用一个四位的数字串(CSS2是三位)来表示，更像四个级别，值从左到右，左面的最大，一级大于一级，数位之间没有进制，级别之间不可超越。 </p>
 <table>
 <thead>
 <tr>
@@ -1177,7 +1179,7 @@ a:hover      -----—&gt;      0,0,1,1
 .nav a       ------&gt;      0,0,1,1   
 
 #nav p       -----&gt;       0,1,0,1</code></pre><p><strong>数位之间没有进制</strong>。比如说： 0,0,0,5 + 0,0,0,5 =0,0,0,10 而不是 0,0, 1, 0， 所以不会存在10个div能赶上一个类选择器的情况。</p>
-<h4 id="权重总结"><a href="#权重总结" class="headerlink" title="权重总结"></a>权重总结</h4><ol>
+<h3 id="权重总结"><a href="#权重总结" class="headerlink" title="权重总结"></a>权重总结</h3><ol>
 <li>使用了!important声明的规则。</li>
 <li>内嵌在HTML元素的style属性里面的声明。</li>
 <li>使用了ID 选择器的规则。</li>
@@ -1187,7 +1189,7 @@ a:hover      -----—&gt;      0,0,1,1
 <li>同一类选择器则遵循就近原则。</li>
 </ol>
 <p><strong><em>权重是优先级的算法，层叠是优先级的表现</em></strong></p>
-<h2 id="背景-background"><a href="#背景-background" class="headerlink" title="背景 (background)"></a>背景 (background)</h2><p>可以添加背景颜色和背景图片，以及来进行图片设置</p>
+<h1 id="背景-background"><a href="#背景-background" class="headerlink" title="背景 (background)"></a>背景 (background)</h1><p>可以添加背景颜色和背景图片，以及来进行图片设置</p>
 <table>
 <thead>
 <tr>
@@ -1224,11 +1226,11 @@ a:hover      -----—&gt;      0,0,1,1
 <td></td>
 </tr>
 </tbody></table>
-<h3 id="背景图片-image"><a href="#背景图片-image" class="headerlink" title="背景图片 (image)"></a>背景图片 (image)</h3><p>background-image属性允许指定一个图片展示在背景中，可以和background-color连用。如果图片不重复地话，图片覆盖不到地地方都会被背景色填充。 如果有背景图片平铺，则会覆盖背景颜色。<br>语法格式：</p>
+<h2 id="背景图片-image"><a href="#背景图片-image" class="headerlink" title="背景图片 (image)"></a>背景图片 (image)</h2><p>background-image属性允许指定一个图片展示在背景中，可以和background-color连用。如果图片不重复地话，图片覆盖不到地地方都会被背景色填充。 如果有背景图片平铺，则会覆盖背景颜色。<br>语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background-image</span> <span class="token punctuation">:</span> none | url<span class="token punctuation">;</span></code></pre>
 <p>none : 　无背景图（默认的）<br>url : 　使用绝对或相对地址指定背景图像<br><em>背景图片后面的地址，url不要加引号</em></p>
 <hr>
-<h3 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h3><p>语法格式：</p>
+<h2 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h2><p>语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background-repeat</span> <span class="token punctuation">:</span> repeat | no-repeat | repeat-x | repeat-y </code></pre>
 <table>
 <thead>
@@ -1256,7 +1258,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tbody></table>
 <p><em>设置背景图片时，默认把图片在水平和垂直方向平铺以铺满整个元素</em></p>
 <hr>
-<h3 id="背景位置-position"><a href="#背景位置-position" class="headerlink" title="背景位置 (position)"></a>背景位置 (position)</h3><p>语法格式：</p>
+<h2 id="背景位置-position"><a href="#背景位置-position" class="headerlink" title="背景位置 (position)"></a>背景位置 (position)</h2><p>语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background-position</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <table>
 <thead>
@@ -1281,23 +1283,23 @@ a:hover      -----—&gt;      0,0,1,1
 </ol>
 <p><em>实际工作用的最多的，就是背景图片居中对齐了</em></p>
 <hr>
-<h3 id="背景附着-attachment"><a href="#背景附着-attachment" class="headerlink" title="背景附着 (attachment)"></a>背景附着 (attachment)</h3><p>语法格式：</p>
+<h2 id="背景附着-attachment"><a href="#背景附着-attachment" class="headerlink" title="背景附着 (attachment)"></a>背景附着 (attachment)</h2><p>语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background-attachment</span> <span class="token punctuation">:</span> scroll | fixed </code></pre>
 <p><font color =8BE9FD>scroll </font>: 　背景图像是随对象内容滚动（默认）<br> <font color =8BE9FD>fixed</font>: 　背景图像固定 0<br><em>设置或检索背景图像是随对象内容滚动还是固定的</em></p>
 <hr>
-<h3 id="背景连写"><a href="#背景连写" class="headerlink" title="背景连写"></a>背景连写</h3><p>background属性的值的书写顺序没有强制标准的。语法格式：</p>
+<h2 id="背景连写"><a href="#背景连写" class="headerlink" title="背景连写"></a>背景连写</h2><p>background属性的值的书写顺序没有强制标准的。语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> transparent <span class="token url">url(路径)</span> repeat-y  scroll <span class="token number">50%</span> <span class="token number">0</span> <span class="token punctuation">;</span>
 
 <span class="token property">background</span><span class="token punctuation">:</span>背景颜色 背景图片地址 背景平铺 背景滚动 背景位置<span class="token punctuation">;</span></code></pre>
 <hr>
-<h3 id="背景透明"><a href="#背景透明" class="headerlink" title="背景透明"></a>背景透明</h3><p>CSS3支持背景半透明的写法语法格式是 :</p>
+<h2 id="背景透明-rgba"><a href="#背景透明-rgba" class="headerlink" title="背景透明 (rgba)"></a>背景透明 (rgba)</h2><p>CSS3支持背景半透明的写法语法格式是 :</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>,<span class="token number">0</span>,<span class="token number">0</span>,<span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>最后一个参数是透明度  取值范围 0~1之间<br><em>背景半透明是指盒子背景半透明， 盒子里面的内容不受影响</em></p>
-<h3 id="插入图片和背景图片的区别"><a href="#插入图片和背景图片的区别" class="headerlink" title="插入图片和背景图片的区别"></a>插入图片和背景图片的区别</h3><p><strong>插入图片</strong>我们用的最多。比如产品展示类<br><strong>背景图片</strong>一般用于小图标<strong>背景</strong>或者<strong>超大背景图片</strong></p>
-<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>盒子模型就是把HTML页面中的元素看作是一个矩形的盒子，也就是一个盛装内容的容器。每个矩形都由元素的内容、内边距（padding）、边框（border）和外边距（margin）组成。</p>
-<h3 id="盒子模型（Box-Model）"><a href="#盒子模型（Box-Model）" class="headerlink" title="盒子模型（Box Model）"></a>盒子模型（Box Model）</h3><p>元素框（element box），它描述了一个文档元素再网页布局汇总所占的位置大小。因此，<strong style="color: #f00;">每个盒子除了有自己大小和位置外，还影响着其他盒子的大小和位置。</strong></p>
+<h2 id="插入图片和背景图片的区别"><a href="#插入图片和背景图片的区别" class="headerlink" title="插入图片和背景图片的区别"></a>插入图片和背景图片的区别</h2><p><strong>插入图片</strong>我们用的最多。比如产品展示类<br><strong>背景图片</strong>一般用于小图标<strong>背景</strong>或者<strong>超大背景图片</strong></p>
+<h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>盒子模型就是把HTML页面中的元素看作是一个矩形的盒子，也就是一个盛装内容的容器。每个矩形都由元素的内容、内边距（padding）、边框（border）和外边距（margin）组成。</p>
+<h2 id="盒子模型（Box-Model）"><a href="#盒子模型（Box-Model）" class="headerlink" title="盒子模型（Box Model）"></a>盒子模型（Box Model）</h2><p>元素框（element box），它描述了一个文档元素再网页布局汇总所占的位置大小。因此，<strong style="color: #f00;">每个盒子除了有自己大小和位置外，还影响着其他盒子的大小和位置。</strong></p>
 <hr>
-<h3 id="盒子边框（border）"><a href="#盒子边框（border）" class="headerlink" title="盒子边框（border）"></a>盒子边框（border）</h3><p>盒子的外边框，语法格式：</p>
+<h2 id="盒子边框（border）"><a href="#盒子边框（border）" class="headerlink" title="盒子边框（border）"></a>盒子边框（border）</h2><p>盒子的外边框，语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">border-width</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>int<span class="token punctuation">)</span> ||
 <span class="token property">border-style</span><span class="token punctuation">:</span> 样式 || 
 <span class="token property">border-color</span><span class="token punctuation">:</span> 颜色</code></pre>
@@ -1324,7 +1326,7 @@ a:hover      -----—&gt;      0,0,1,1
 <p>border-style默认无边框（none），它有的样式：hidden（隐藏边框）、solid（实线边框）、dashed（虚线）、dotted（点线）、double（双实线）。<br><strong style="color: #f00;">如果border：0则清除所有边框！！！</strong><br><strong>连写：</strong></p>
 <pre class=" language-css"><code class="language-css"><span class="token property">border</span> <span class="token punctuation">:</span> 边框的粗细 边框的样式 边框的颜色<span class="token punctuation">;</span></code></pre>
 <p><font color = #b3d4fc>顺序无要求！</font></p>
-<h3 id="盒子边框写法总结表"><a href="#盒子边框写法总结表" class="headerlink" title="盒子边框写法总结表"></a>盒子边框写法总结表</h3><table>
+<h2 id="盒子边框写法总结表"><a href="#盒子边框写法总结表" class="headerlink" title="盒子边框写法总结表"></a>盒子边框写法总结表</h2><table>
 <thead>
 <tr>
 <th>设置内容</th>
@@ -1374,15 +1376,15 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <hr>
-<h3 id="表格的细线边框（collapse）"><a href="#表格的细线边框（collapse）" class="headerlink" title="表格的细线边框（collapse）"></a>表格的细线边框（collapse）</h3><p>table表格标签 ，表示相邻边框合并在一起的css语句：</p>
+<h2 id="表格的细线边框（collapse）"><a href="#表格的细线边框（collapse）" class="headerlink" title="表格的细线边框（collapse）"></a>表格的细线边框（collapse）</h2><p>table表格标签 ，表示相邻边框合并在一起的css语句：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">border-collapse</span><span class="token punctuation">:</span>collapse<span class="token punctuation">;</span></code></pre>
 <hr>
-<h3 id="圆角边框（radius）"><a href="#圆角边框（radius）" class="headerlink" title="圆角边框（radius）"></a>圆角边框（radius）</h3><p>border-radius使边角变圆角，radius 半径（距离）。语法格式：</p>
+<h2 id="圆角边框（radius）"><a href="#圆角边框（radius）" class="headerlink" title="圆角边框（radius）"></a>圆角边框（radius）</h2><p>border-radius使边角变圆角，radius 半径（距离）。语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token property">border-radius</span><span class="token punctuation">:</span> 左上角  右上角  右下角  左下角<span class="token punctuation">;</span>
 <span class="token property">ro</span><span class="token punctuation">:</span>
 <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">50%</span></code></pre>
 <hr>
-<h3 id="内边距（padding）"><a href="#内边距（padding）" class="headerlink" title="内边距（padding）"></a>内边距（padding）</h3><p>padding属性用于设置内边距。  指边框与内容之间的距离。</p>
+<h2 id="内边距（padding）"><a href="#内边距（padding）" class="headerlink" title="内边距（padding）"></a>内边距（padding）</h2><p>padding属性用于设置内边距。  指边框与内容之间的距离。</p>
 <table>
 <thead>
 <tr>
@@ -1434,7 +1436,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tbody></table>
 <p><font color=#f00><strong>注意：padding属性会撑破盒子原有的大小，适当食用。</strong></font></p>
 <hr>
-<h3 id="外边距（margin）"><a href="#外边距（margin）" class="headerlink" title="外边距（margin）"></a>外边距（margin）</h3><p>用于设置外边距。  设置外边距会在元素之间创建“空白”， 这段空白通常不能放置其他内容。</p>
+<h2 id="外边距（margin）"><a href="#外边距（margin）" class="headerlink" title="外边距（margin）"></a>外边距（margin）</h2><p>用于设置外边距。  设置外边距会在元素之间创建“空白”， 这段空白通常不能放置其他内容。</p>
 <table>
 <thead>
 <tr>
@@ -1464,75 +1466,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <p><font color=#f00>margin属性参数如果是多个使用方式和padding属性相同</font></p>
-<h3 id="外边距实现盒子居中"><a href="#外边距实现盒子居中" class="headerlink" title="外边距实现盒子居中"></a>外边距实现盒子居中</h3><p>可以让一个盒子实现水平居中，需要满足一下两个条件：</p>
-<ol>
-<li>必须是块级元素。     </li>
-<li>盒子必须指定了宽度（width）</li>
-</ol>
-<p>然后就给<strong>左右的外边距都设置为auto</strong>，就可使块级元素水平居中。例子：</p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.header</span></span><span class="token punctuation">{</span> 
-    <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">960</span>px<span class="token punctuation">;</span> 
-    <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">0</span> auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
-<h3 id="文字和盒子的居中"><a href="#文字和盒子的居中" class="headerlink" title="文字和盒子的居中"></a>文字和盒子的居中</h3><p>文字水平居中是 text-align: center<br>盒子水平居中 左右margin 改为 auto </p>
-<h3 id="清除元素的默认内外边距"><a href="#清除元素的默认内外边距" class="headerlink" title="清除元素的默认内外边距"></a>清除元素的默认内外边距</h3><p>为了更方便地控制网页中的元素，制作网页时，可使用如下代码清除元素的默认内外边距： </p>
-<pre class=" language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
-   <span class="token property">padding</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">/* 清除内边距 */</span>
-   <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">/* 清除外边距 */</span>
-<span class="token punctuation">}</span></code></pre>
-<p><font color=red>行内元素是只有左右外边距的，是没有上下外边距的，尽量不要给行内元素指定上下的内外边距就好了</font></p>
-<h2 id="外边距合并"><a href="#外边距合并" class="headerlink" title="外边距合并"></a>外边距合并</h2><p>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并。</p>
-<h3 id="相邻块元素垂直外边距的合并"><a href="#相邻块元素垂直外边距的合并" class="headerlink" title="相邻块元素垂直外边距的合并"></a>相邻块元素垂直外边距的合并</h3><p>当上下相邻的两个块元素相遇时，如果上块元素有下外边距，下块元素有上外边距，则他们之间的垂直间距不是margin-bottom(下外边距)与margin-top(上外边距)之和，而是两者中的较大者。该现象被称为<strong>相邻块元素垂直外边距的合并</strong>（也称<strong>外边距塌陷</strong>）。<strong><font color=red><em>遇见该问题经量避免</em></font></strong></p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-他们之间的距离为<span class="token number">30</span>px</code></pre>
-<h3 id="嵌套块元素垂直外边距的合并"><a href="#嵌套块元素垂直外边距的合并" class="headerlink" title="嵌套块元素垂直外边距的合并"></a>嵌套块元素垂直外边距的合并</h3><p>对于两个嵌套关系的块元素，如果父块元素没有<strong>上内边距、边框</strong>，则父块元素的上外边距会与子块元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。</p>
-<pre class=" language-css"><code class="language-css"> <span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-子块级元素的外边距控制父块级元素的外边距，子父外边距合并。</code></pre>
-<p>解决方案：</p>
-<ol>
-<li>可以为父元素定义1像素的上边框或上内边距。</li>
-<li>可以为父元素添加 overflow:hidden。</li>
-</ol>
-<h3 id="content宽度和高度"><a href="#content宽度和高度" class="headerlink" title="content宽度和高度"></a>content宽度和高度</h3><p>盒子的大小进行控制。盒子模型的总宽度和总高度的计算原则是：</p>
-<pre><code>  /*外盒尺寸计算（元素空间尺寸）*/
-  Element空间高度 = content height + padding + border + margin
-  Element 空间宽度 = content width + padding + border + margin
-  /*内盒尺寸计算（元素实际大小）*/
-  Element Height = content height + padding + border （Height为内容高度）
-  Element Width = content width + padding + border （Width为内容宽度）</code></pre><ol>
-<li>width和height仅适用于块级元素，对行内元素无效(img标签和input除外)</li>
-<li>计算盒子模型的总高度时，还应考虑上下两个盒子垂直外边距合并</li>
-<li><strong>如果一个盒子没有给定宽高，则会和父盒子一样；</strong></li>
-<li><strong>如果此盒子没有给定宽度则padding不会影响本盒子大小</strong></li>
-</ol>
-<h3 id="盒子模型布局稳定性"><a href="#盒子模型布局稳定性" class="headerlink" title="盒子模型布局稳定性"></a>盒子模型布局稳定性</h3><p>按照优先使用  <strong>宽度</strong> （width）  其次使用<strong>内边距</strong>（padding）再次<strong>外边距</strong>（margin）。<br>$$<br>width &gt;  padding  &gt;   margin<br>$$<br><strong>原因：</strong></p>
-<ol>
-<li>margin会有外边距合并还有下面margin加倍的bug所以最后使用。</li>
-<li>padding 会影响盒子大小，需要进行加减计算</li>
-<li>width没有问题，经常使用宽度剩余法 高度剩余法来做。</li>
-</ol>
-<h3 id="盒子阴影"><a href="#盒子阴影" class="headerlink" title="盒子阴影"></a>盒子阴影</h3><pre class=" language-css"><code class="language-css"><span class="token property">box-shadow</span><span class="token punctuation">:</span> 水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色  内/外阴影；</code></pre>
+<h2 id="盒子阴影-box-shadow"><a href="#盒子阴影-box-shadow" class="headerlink" title="盒子阴影 (box-shadow)"></a>盒子阴影 (box-shadow)</h2><pre class=" language-css"><code class="language-css"><span class="token property">box-shadow</span><span class="token punctuation">:</span> 水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色  内/外阴影；</code></pre>
 <table>
 <thead>
 <tr>
@@ -1565,7 +1499,24 @@ a:hover      -----—&gt;      0,0,1,1
 <td>将外阴影（默认）改为内阴影</td>
 </tr>
 </tbody></table>
-<h2 id="浮动-float"><a href="#浮动-float" class="headerlink" title="浮动 (float)"></a>浮动 (float)</h2><p>CSS的定位机制有3种：普通流（标准流）、浮动和定位。</p>
+<h2 id="外边距实现盒子居中"><a href="#外边距实现盒子居中" class="headerlink" title="外边距实现盒子居中"></a>外边距实现盒子居中</h2><p>可以让一个盒子实现水平居中，需要满足一下两个条件：</p>
+<ol>
+<li>必须是块级元素。     </li>
+<li>盒子必须指定了宽度（width）</li>
+</ol>
+<p>然后就给<strong>左右的外边距都设置为auto</strong>，就可使块级元素水平居中。例子：</p>
+<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.header</span></span><span class="token punctuation">{</span> 
+    <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">960</span>px<span class="token punctuation">;</span> 
+    <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">0</span> auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="文字和盒子的居中"><a href="#文字和盒子的居中" class="headerlink" title="文字和盒子的居中"></a>文字和盒子的居中</h2><p>文字水平居中是 text-align: center<br>盒子水平居中 左右margin 改为 auto </p>
+<h2 id="清除元素的默认内外边距"><a href="#清除元素的默认内外边距" class="headerlink" title="清除元素的默认内外边距"></a>清除元素的默认内外边距</h2><p>为了更方便地控制网页中的元素，制作网页时，可使用如下代码清除元素的默认内外边距： </p>
+<pre class=" language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
+   <span class="token property">padding</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">/* 清除内边距 */</span>
+   <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">/* 清除外边距 */</span>
+<span class="token punctuation">}</span></code></pre>
+<p><font color=red>行内元素是只有左右外边距的，是没有上下外边距的，尽量不要给行内元素指定上下的内外边距就好了</font></p>
+<h1 id="浮动-float"><a href="#浮动-float" class="headerlink" title="浮动 (float)"></a>浮动 (float)</h1><p>CSS的定位机制有3种：普通流（标准流）、浮动和定位。</p>
 <p>float属性来定义浮动，语法格式：</p>
 <pre class=" language-css"><code class="language-css"><span class="token selector">选择器</span><span class="token punctuation">{</span>
     <span class="token property">float</span><span class="token punctuation">:</span> 属性值<span class="token punctuation">;</span>
@@ -1590,7 +1541,7 @@ a:hover      -----—&gt;      0,0,1,1
 <td>不浮动</td>
 </tr>
 </tbody></table>
-<h3 id="浮动特性"><a href="#浮动特性" class="headerlink" title="浮动特性"></a>浮动特性</h3><p>浮动脱离标准流，不占位置，会影响标准流。浮动只有左右浮动。</p>
+<h2 id="浮动特性"><a href="#浮动特性" class="headerlink" title="浮动特性"></a>浮动特性</h2><p>浮动脱离标准流，不占位置，会影响标准流。浮动只有左右浮动。</p>
 <ol>
 <li>如果在一个父类盒子内浮动的子类盒子，浮动的子类盒子不会超出浮动范围</li>
 <li>一个父盒子里面的子盒子，如果其中一个子级有浮动的，则其他子级都需要浮动。这样才能一行对齐显示</li>
@@ -1600,7 +1551,7 @@ a:hover      -----—&gt;      0,0,1,1
 <p>浮动的目的就是为了让多个块级元素同一行上显示。</p>
 <p><strong>float      浮 漏 特</strong> </p>
 <p>浮：    加了浮动的元素盒子是浮起来的，漂浮在其他的标准流盒子上面。<br>漏：    加了浮动的盒子，不占位置的，它浮起来了，它原来的位置漏 给了标准流的盒子。<br>特：    特别注意，首先浮动的盒子需要和标准流的父级搭配使用， 其次 特别的注意浮动可以使元素显示模式体现为行内块特性。</p>
-<h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为 0 的问题。就是把浮动的盒子圈到里面，让父盒子闭合出口和入口不让他们出来影响其他元素。<br><strong>清除浮动：</strong></p>
+<h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为 0 的问题。就是把浮动的盒子圈到里面，让父盒子闭合出口和入口不让他们出来影响其他元素。<br><strong>清除浮动：</strong></p>
 <pre class=" language-css"><code class="language-css"> <span class="token property">clear</span><span class="token punctuation">:</span> 属性值<span class="token punctuation">;</span></code></pre>
 <table>
 <thead>
@@ -1622,18 +1573,17 @@ a:hover      -----—&gt;      0,0,1,1
 <td>同时清除左右两侧浮动的影响</td>
 </tr>
 </tbody></table>
-<hr>
-<h4 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h4><p>通过在浮动元素末尾添加一个空的标签！<br><font color=red    >注意：是最后一个空的子标签</font></p>
+<h3 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h3><p>通过在浮动元素末尾添加一个空的标签！<br><font color=red    >注意：是最后一个空的子标签</font></p>
 <pre class=" language-css"><code class="language-css">&lt;div style=”<span class="token property">clear</span><span class="token punctuation">:</span>both”>&lt;/div></code></pre>
 <p><strong>优点：</strong> 通俗易懂，书写方便</p>
 <p><strong>缺点：</strong> 添加许多无意义的标签，结构化较差</p>
 <hr>
-<h4 id="父级添加overflow属性方法"><a href="#父级添加overflow属性方法" class="headerlink" title="父级添加overflow属性方法"></a>父级添加overflow属性方法</h4><p>可以通过触发 BFC 的方式，可以实现清除浮动效果。<strong><font color=red><em>给父盒子添加！！！</em></font></strong></p>
+<h3 id="父级添加overflow属性方法"><a href="#父级添加overflow属性方法" class="headerlink" title="父级添加overflow属性方法"></a>父级添加overflow属性方法</h3><p>可以通过触发 BFC 的方式，可以实现清除浮动效果。<strong><font color=red><em>给父盒子添加！！！</em></font></strong></p>
 <pre class=" language-css"><code class="language-css"><span class="token property">overflow</span><span class="token punctuation">:</span> hidden|auto|scroll<span class="token punctuation">;</span></code></pre>
 <p><strong>优点：</strong>  代码简洁</p>
 <p><strong>缺点：</strong>  内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素</p>
 <hr>
-<h4 id="after伪元素清除浮动"><a href="#after伪元素清除浮动" class="headerlink" title="after伪元素清除浮动"></a>after伪元素清除浮动</h4><p><strong>:after 方式为空元素的升级版，好处是不用单独加标签了</strong> </p>
+<h3 id="after伪元素清除浮动"><a href="#after伪元素清除浮动" class="headerlink" title="after伪元素清除浮动"></a>after伪元素清除浮动</h3><p><strong>:after 方式为空元素的升级版，好处是不用单独加标签了</strong> </p>
 <pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span>  
     <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span> 
     <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span> 
@@ -1650,7 +1600,7 @@ a:hover      -----—&gt;      0,0,1,1
 <p><strong>缺点：</strong>低版本不支持</p>
 <p><font color=#f00><strong>注意： content:”” ，尽量不要带点</strong></font></p>
 <hr>
-<h4 id="使用before和after双伪元素清除浮动"><a href="#使用before和after双伪元素清除浮动" class="headerlink" title="使用before和after双伪元素清除浮动"></a>使用before和after双伪元素清除浮动</h4><pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:before</span>, <span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span> 
+<h3 id="使用before和after双伪元素清除浮动"><a href="#使用before和after双伪元素清除浮动" class="headerlink" title="使用before和after双伪元素清除浮动"></a>使用before和after双伪元素清除浮动</h3><pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:before</span>, <span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span> 
   <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span>
   <span class="token property">display</span><span class="token punctuation">:</span>table<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */</span>
 <span class="token punctuation">}</span>
@@ -1663,16 +1613,16 @@ a:hover      -----—&gt;      0,0,1,1
 <p>父盒子调用 <font color =8BE9FD>clearfix</font> 类使用即可<br><strong>优点：</strong>  代码更简洁</p>
 <p><strong>缺点：</strong> 低版本不支持</p>
 <hr>
-<h2 id="版心和布局流程"><a href="#版心和布局流程" class="headerlink" title="版心和布局流程"></a>版心和布局流程</h2><h3 id="版心"><a href="#版心" class="headerlink" title="版心"></a>版心</h3><p>是指网页中主体内容所在的区域。一般在浏览器窗口中水平居中显示，常见的宽度值为960px、980px、1000px、1200px等。</p>
-<h3 id="布局流程"><a href="#布局流程" class="headerlink" title="布局流程"></a>布局流程</h3><p>布局时通常需要遵守一定的布局流程，具体如下：</p>
+<h1 id="版心和布局流程"><a href="#版心和布局流程" class="headerlink" title="版心和布局流程"></a>版心和布局流程</h1><h2 id="版心"><a href="#版心" class="headerlink" title="版心"></a>版心</h2><p>是指网页中主体内容所在的区域。一般在浏览器窗口中水平居中显示，常见的宽度值为960px、980px、1000px、1200px等。</p>
+<h2 id="布局流程"><a href="#布局流程" class="headerlink" title="布局流程"></a>布局流程</h2><p>布局时通常需要遵守一定的布局流程，具体如下：</p>
 <ol>
 <li>确定页面的版心（可视区）</li>
 <li>分析页面中的行模块，以及每个行模块中的列模块</li>
 <li>制作HTML结构 </li>
 <li>CSS初始化，然后开始运用盒子模型的原理，通过DIV+CSS布局来控制网页的各个模块。</li>
 </ol>
-<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>定位可以实现<code>标准流</code>和<code>浮动</code>难以实现的结果简单化。</p>
-<h3 id="元素的定位属性"><a href="#元素的定位属性" class="headerlink" title="元素的定位属性"></a>元素的定位属性</h3><p>元素的定位属性主要包括定<code>位模式</code>和<code>边偏移</code>两部分。</p>
+<h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1><p>定位可以实现<code>标准流</code>和<code>浮动</code>难以实现的结果简单化。</p>
+<h2 id="元素的定位属性"><a href="#元素的定位属性" class="headerlink" title="元素的定位属性"></a>元素的定位属性</h2><p>元素的定位属性主要包括定<code>位模式</code>和<code>边偏移</code>两部分。</p>
 <p><strong>1、边偏移</strong></p>
 <table>
 <thead>
@@ -1698,7 +1648,7 @@ a:hover      -----—&gt;      0,0,1,1
 <td>右侧，定义元素相对于其父元素右边线的距离</td>
 </tr>
 </tbody></table>
-<p><strong>2、定位模式(定位的分类)</strong></p>
+<p><strong>2、定位模式 (定位的分类)</strong></p>
 <p>在CSS中，<font color =8BE9FD>position</font> 属性用于定义元素的 定位模式 ，语法格式如下：</p>
 <pre><code>选择器{position: 属性值;}</code></pre><table>
 <thead>
@@ -1725,22 +1675,46 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <hr>
-<h3 id="静态定位-static"><a href="#静态定位-static" class="headerlink" title="静态定位 (static)"></a>静态定位 (static)</h3><p>可以将元素定位于静态位置。 所谓静态位置就是各个元素在HTML文档流中默认的位置。<strong>在静态定位状态下，无法通过边偏移属性（top、bottom、left或right）来改变元素的位置。唯一用途是取消定位</strong></p>
+<h2 id="静态定位-static"><a href="#静态定位-static" class="headerlink" title="静态定位 (static)"></a>静态定位 (static)</h2><p>可以将元素定位于静态位置。 所谓静态位置就是各个元素在HTML文档流中默认的位置。<strong>在静态定位状态下，无法通过边偏移属性（top、bottom、left或right）来改变元素的位置。唯一用途是取消定位</strong></p>
 <hr>
-<h3 id="相对定位-relative"><a href="#相对定位-relative" class="headerlink" title="相对定位 (relative)"></a>相对定位 (relative)</h3><p>对元素设置相对定位后，可以通过边偏移属性改变元素的位置，但是它在文档流中的位置仍然保留</p>
+<h2 id="相对定位-relative"><a href="#相对定位-relative" class="headerlink" title="相对定位 (relative)"></a>相对定位 (relative)</h2><p>对元素设置相对定位后，可以通过边偏移属性改变元素的位置，但是它在文档流中的位置仍然保留</p>
 <p><font color=#f00><strong>注意：</strong></font></p>
 <ol>
 <li>可以通过边偏移移动位置，原来的所占的位置继续占有。</li>
 <li>每次移动的位置，是以自己的左上角为基点移动</li>
 </ol>
 <hr>
-<h3 id="绝对定位-absolute"><a href="#绝对定位-absolute" class="headerlink" title="绝对定位 (absolute)"></a>绝对定位 (absolute)</h3><p>对元素的定位模式设置为 绝对定位后，它可以通过边偏移移动位置，但是它完全脱标，完全不占位置。</p>
+<h2 id="绝对定位-absolute"><a href="#绝对定位-absolute" class="headerlink" title="绝对定位 (absolute)"></a>绝对定位 (absolute)</h2><p>对元素的定位模式设置为 绝对定位后，它可以通过边偏移移动位置，但是它完全脱标，完全不占位置。</p>
 <p><font color=#f00><strong>注意：</strong></font></p>
 <ol>
 <li>可以通过边偏移移动位置，原来的所占的位置不占有。</li>
 <li>无父级定位，以浏览器的左上角为基点移动</li>
 <li>有父级定位，以父级的左上角为基点移动</li>
 </ol>
+<p><strong>口诀技巧</strong></p>
+<ol>
+<li><strong>子绝父相</strong><br>子级盒子是绝对定位，父级盒子是相对定位</li>
+<li><strong>子绝父绝</strong><br>父级盒子是绝对定位，子级盒子是绝对定位</li>
+</ol>
+<hr>
+<h2 id="绝对定位盒子居中"><a href="#绝对定位盒子居中" class="headerlink" title="绝对定位盒子居中"></a>绝对定位盒子居中</h2><p>盒子是左右 margin 改为 auto 就可， 但是对于绝对定位和浮动就无效了</p>
+<p>定位的盒子也可以 水平 或 垂直 居中，有一个算法。</p>
+<ol>
+<li>首先left 50%   父盒子的一半大小</li>
+<li>然后走自己外边距负的一半值就可以了 margin-left。</li>
+</ol>
+<p>例子示范：</p>
+<pre class=" language-css"><code class="language-css"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
+<span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#666</span><span class="token punctuation">;</span>
+<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/*水平居中*/</span>
+<span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
+<span class="token property">margin-left</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span> 
+<span class="token comment" spellcheck="true">/*垂直居中*/</span>
+<span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
+<span class="token property">margin-top</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span></code></pre>
+<p>等待更新····</p>
 
             </div>
             <hr/>
@@ -1766,7 +1740,7 @@ a:hover      -----—&gt;      0,0,1,1
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/CSS/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/CSS/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(1)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(1)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1877,31 +1851,31 @@ a:hover      -----—&gt;      0,0,1,1
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/21/%E7%BE%A4%E6%99%96DSM%E4%BD%BF%E7%94%A8%E7%AB%AF%E5%8F%A3/">
+                <a href="/Sanscan12.github.io/2020/04/18/article%20(5)/">
                     <div class="card-image">
                         
                         
-                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="群辉DSM端口">
+                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="博客操作">
                         
-                        <span class="card-title">群辉DSM端口</span>
+                        <span class="card-title">博客操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DSM端口
+                            填充错误的经历
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-18
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
-                                    配置
+                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
@@ -1911,16 +1885,12 @@ a:hover      -----—&gt;      0,0,1,1
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%BE%A4%E8%BE%89/">
-                        <span class="chip bg-color">群辉</span>
-                    </a>
-                    
-                    <a href="/Sanscan12.github.io/tags/%E7%AB%AF%E5%8F%A3/">
-                        <span class="chip bg-color">端口</span>
-                    </a>
-                    
                     <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
                         <span class="chip bg-color">血的教训</span>
+                    </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
+                        <span class="chip bg-color">hexo指令</span>
                     </a>
                     
                 </div>
@@ -1934,19 +1904,19 @@ a:hover      -----—&gt;      0,0,1,1
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/16/MySQL/">
+                <a href="/Sanscan12.github.io/2020/04/16/article%20(4)/">
                     <div class="card-image">
                         
                         
-                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="MySQL">
+                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL API笔记">
                         
-                        <span class="card-title">MySQL</span>
+                        <span class="card-title">MySQL API笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记学习的点滴！！！
+                            记录学习的点滴！！！
                         
                     </div>
                     <div class="publish-info">
@@ -2170,7 +2140,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.8k</span>&nbsp;字
+                class="white-color">29.7k</span>&nbsp;字
             
             
             
