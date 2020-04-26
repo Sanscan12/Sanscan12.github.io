@@ -305,7 +305,7 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
@@ -740,6 +740,9 @@ header .go-back i {
 
 .index-card .card .card-content {
     padding: 20px 40px;
+    background-color: rgba(142, 140, 216, 0.3);
+    border-radius: 10px;
+    /*rgba(142, 140, 216, 0.2)*/
 }
 
 @media only screen and (min-width: 1418px) {
