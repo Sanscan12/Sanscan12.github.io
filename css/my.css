@@ -57,11 +57,11 @@
     }
 }
 
-@font-face{
-    font-family: 'aaTZv2.2';
-    src: url('../font/aaTZv2.2.ttf');
+font-face{
+    font-family: 'aaTZ';
+    src: url('../font/aaTZ.ttf');
 }
 
 body{
-    font-family: 'aaTZv2';
+    font-family: 'aaTZ';
 }
