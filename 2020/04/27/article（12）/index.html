@@ -484,7 +484,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    255
+                    438
                 </div>
                 
 
@@ -558,7 +558,28 @@
 <p>在ps另存PNG格式，然后编辑更改为JPG格式</p>
 <p><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no2.jpg" alt=""></p>
 <p>把图片文件放到相应位置即可部署即可！！!</p>
-<p>等待更新</p>
+<h2 id="添加背景动态线条"><a href="#添加背景动态线条" class="headerlink" title="添加背景动态线条"></a>添加背景动态线条</h2><p>在<code>themes/matery/layout/layout.ejs</code>文件里的body范围内添加以下代码：</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span>
+color<span class="token operator">=</span><span class="token string">"209 235 227"</span> opacity<span class="token operator">=</span><span class="token string">'0.6'</span> zIndex<span class="token operator">=</span><span class="token string">"-2"</span> count<span class="token operator">=</span><span class="token string">"300"</span> src<span class="token operator">=</span><span class="token string">"//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<h2 id="全局字体更改"><a href="#全局字体更改" class="headerlink" title="全局字体更改"></a>全局字体更改</h2><p>如果你有你喜欢的字体，先网站  <a href="https://transfonter.org/" target="_blank" rel="noopener">https://transfonter.org/</a>  编码，字体转base64编码<br><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no6.jpg" alt=""></p>
+<p>下载完后，在博客路径里<code>../source/font</code>里放刚刚下载的字体文件（.ttf）。如果没有font文件夹自行创建放进去。<br>最后在路径<code>../themes/matery/source/css/my.css</code>添加代码。</p>
+<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span><span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url('../font/myFont.ttf')</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">body</span><span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>例子：</p>
+<p><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no5.jpg" alt=""></p>
+<p>保存部署即可。<br><strong>学习来源：</strong></p>
+<ol>
+<li><a href="https://www.cnblogs.com/victorlyw/articles/9970805.html" target="_blank" rel="noopener">https://www.cnblogs.com/victorlyw/articles/9970805.html</a></li>
+<li>yafine-blog.cn/posts/49fb.html</li>
+</ol>
+<p>等待更新····</p>
 
             </div>
             <hr/>
@@ -990,7 +1011,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30k</span>&nbsp;字
+                class="white-color">30.1k</span>&nbsp;字
             
             
             
