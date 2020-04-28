@@ -30,7 +30,8 @@
     <script src="/Sanscan12.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/Sanscan12.github.io/atom.xml" title="柏竹博客" type="application/atom+xml">
-<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -512,7 +513,7 @@
             <div id="articleContent">
                 <h1 id="外边距合并问题"><a href="#外边距合并问题" class="headerlink" title="外边距合并问题"></a>外边距合并问题</h1><p>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并。</p>
 <h2 id="相邻块元素垂直外边距的合并"><a href="#相邻块元素垂直外边距的合并" class="headerlink" title="相邻块元素垂直外边距的合并"></a>相邻块元素垂直外边距的合并</h2><p>当上下相邻的两个块元素相遇时，如果上块元素有下外边距，下块元素有上外边距，则他们之间的垂直间距不是margin-bottom(下外边距)与margin-top(上外边距)之和，而是两者中的较大者。该现象被称为<strong>相邻块元素垂直外边距的合并</strong>（也称<strong>外边距塌陷</strong>）。<strong><font color=red><em>遇见该问题经量避免</em></font></strong></p>
-<pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
@@ -524,9 +525,9 @@
     <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
     <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-他们之间的距离为<span class="token number">30</span>px</code></pre>
+他们之间的距离为<span class="token number">30</span>px<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="嵌套块元素垂直外边距的合并"><a href="#嵌套块元素垂直外边距的合并" class="headerlink" title="嵌套块元素垂直外边距的合并"></a>嵌套块元素垂直外边距的合并</h2><p>对于两个嵌套关系的块元素，如果父块元素没有<strong>上内边距、边框</strong>，则父块元素的上外边距会与子块元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。</p>
-<pre class=" language-css"><code class="language-css"> <span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
+<pre class="line-numbers language-css"><code class="language-css"> <span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
      <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
      <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
      <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
@@ -537,7 +538,7 @@
     <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
     <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-子块级元素的外边距控制父块级元素的外边距，子父外边距合并。</code></pre>
+子块级元素的外边距控制父块级元素的外边距，子父外边距合并。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>解决方案：</p>
 <ol>
 <li>可以为父元素定义1像素的上边框或上内边距。</li>

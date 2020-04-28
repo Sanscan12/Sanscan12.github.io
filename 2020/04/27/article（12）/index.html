@@ -30,7 +30,8 @@
     <script src="/Sanscan12.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/Sanscan12.github.io/atom.xml" title="柏竹博客" type="application/atom+xml">
-<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -526,7 +527,7 @@
 </tr>
 </tbody></table>
 <h2 id="渐变颜色的修改"><a href="#渐变颜色的修改" class="headerlink" title="渐变颜色的修改"></a>渐变颜色的修改</h2><p>以下是颜色值：</p>
-<pre class=" language-css"><code class="language-css"><span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">142</span>,<span class="token number">140</span>, <span class="token number">220</span>, <span class="token number">0.7</span><span class="token punctuation">)</span>, <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">215</span>,<span class="token number">180</span>, <span class="token number">215</span>, <span class="token number">0.7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">142</span>,<span class="token number">140</span>, <span class="token number">220</span>, <span class="token number">0.7</span><span class="token punctuation">)</span>, <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">215</span>,<span class="token number">180</span>, <span class="token number">215</span>, <span class="token number">0.7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -559,19 +560,19 @@
 <p><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no2.jpg" alt=""></p>
 <p>把图片文件放到相应位置即可部署即可！！!</p>
 <h2 id="添加背景动态线条"><a href="#添加背景动态线条" class="headerlink" title="添加背景动态线条"></a>添加背景动态线条</h2><p>在<code>themes/matery/layout/layout.ejs</code>文件里的body范围内添加以下代码：</p>
-<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span>
 color<span class="token operator">=</span><span class="token string">"209 235 227"</span> opacity<span class="token operator">=</span><span class="token string">'0.6'</span> zIndex<span class="token operator">=</span><span class="token string">"-2"</span> count<span class="token operator">=</span><span class="token string">"300"</span> src<span class="token operator">=</span><span class="token string">"//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"</span><span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="全局字体更改"><a href="#全局字体更改" class="headerlink" title="全局字体更改"></a>全局字体更改</h2><p>如果你有你喜欢的字体，先网站  <a href="https://transfonter.org/" target="_blank" rel="noopener">https://transfonter.org/</a>  编码，字体转base64编码<br><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no6.jpg" alt=""></p>
 <p>下载完后，在博客路径里<code>../source/font</code>里放刚刚下载的字体文件（.ttf）。如果没有font文件夹自行创建放进去。<br>最后在路径<code>../themes/matery/source/css/my.css</code>添加代码。</p>
-<pre class=" language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span><span class="token punctuation">{</span>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span><span class="token punctuation">{</span>
     <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
     <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url">url('../font/myFont.ttf')</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token selector">body</span><span class="token punctuation">{</span>
     <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>例子：</p>
 <p><img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no5.jpg" alt=""></p>
 <p>保存部署即可。<br><strong>学习来源：</strong></p>
@@ -1050,12 +1051,12 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
                         <span class="chip bg-color">笔记</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
-                        <span class="chip bg-color">写作</span>
-                    </a>
-                    
                     <a href="/Sanscan12.github.io/tags/%E5%9C%88%E5%A4%96%E5%90%8C%E5%AD%A6/">
                         <span class="chip bg-color">圈外同学</span>
+                    </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
+                        <span class="chip bg-color">写作</span>
                     </a>
                     
                 </div>
