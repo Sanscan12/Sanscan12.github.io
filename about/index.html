@@ -595,7 +595,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"前端","value":2},{"name":"其他","value":2},{"name":"hexo","value":1},{"name":"脚本语言","value":1},{"name":"后端","value":1},{"name":"生活","value":1},{"name":"常识","value":2},{"name":"配置","value":2}],
+                data: [{"name":"前端","value":2},{"name":"其他","value":2},{"name":"hexo","value":1},{"name":"后端","value":1},{"name":"脚本语言","value":1},{"name":"生活","value":1},{"name":"常识","value":2},{"name":"配置","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -619,7 +619,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["笔记","css","血的教训","分享","圈外同学","搭色","hexo指令","JavaScript","数据库","计划"]
+                data: ["笔记","css","血的教训","分享","圈外同学","搭色","hexo指令","数据库","JavaScript","计划"]
             }
         ],
         yAxis: [
@@ -786,11 +786,11 @@
             
             
             
-            
-            
             <a href="/Sanscan12.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
                 <span class="chip center-align waves-effect waves-light chip-default">数据库</span>
             </a>
+            
+            
             
             
             
@@ -1081,6 +1081,14 @@ $(function () {
     
     <script src="/Sanscan12.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
+
+    <script type="text/javascript">
+        var OriginTitile=document.title,st;
+        document.addEventListener("visibilitychange",function(){
+            document.hidden?(document.title=" 网站丢失啦 qwq ！",clearTimeout(st)):(document.title="ヾ(Ő∀Ő3)ノ欢迎回来！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+        })
+    </script>
+
 <script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 
 </html>
