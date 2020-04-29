@@ -34,7 +34,7 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: rgba(30, 22, 107, 0.2);
     margin: 0;
     color: #39405e;
 }
@@ -258,7 +258,8 @@ mark {
 }
 
 .white-color {
-    color: #fff;
+    color: #f58794;
+    font-weight: 300;
 }
 
 .progress-bar {
@@ -588,10 +589,12 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 1.85em;
     margin-bottom: 20px;
-    font-weight: 450;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 24px;
     position: relative;
 }
 
@@ -1848,7 +1851,8 @@ footer a {
 }
 
 footer .copy-right {
-    color: #dbdbdb;
+    color: #8e8cd8;
+    font-weight: 700;
 }
 
 /*搜索层样式*/
