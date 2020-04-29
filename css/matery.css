@@ -383,8 +383,8 @@ header .side-nav .social-link {
 }
 
 .cover-btns a {
-    margin: 10px 15px;
-    padding: 0 35px;
+    margin: 0px 15px;
+    /*padding: 0 35px;*/
     height: 45px;
     line-height: 45px;
     font-size: 1rem;
@@ -512,7 +512,7 @@ header .side-nav .social-link {
 
 .cover-social-link {
     position: relative;
-    top: -8vh;
+    top: -5vh;
     width: 100%;
     text-align: center;
 }
