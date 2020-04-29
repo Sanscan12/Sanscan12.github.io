@@ -312,7 +312,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-04-30
                 </div>
                 
 
@@ -831,7 +831,7 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE SPATIAL INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD SPATIAL INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong><em>PS:后面需存储引擎(ENGINE =MyISAM)</em></strong></p>
-<h2 id="创建索引"><a href="#创建索引" class="headerlink" title="创建索引"></a>创建索引</h2><p><strong>建表时创建索引：</strong></p>
+<h2 id="索引创建"><a href="#索引创建" class="headerlink" title="索引创建"></a>索引创建</h2><p><strong>建表时创建索引：</strong></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
     字段名1 数据类型 [完整性约束条件]，
     字段名2 数据类型 [完整性约束条件]，
@@ -849,7 +849,7 @@ INDEX 索引名 ON 表名
 [UNIQUE | FULLTEXT | SPATIAL] 
 INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>UNIQUE： 可选参数，表示唯一性约束<br>FULLTEXT：可选参数，表示全文约束<br>SPATIAL： 可选参数，表示空间约束<br>INDEX和KEY：用来表示字段的索引，二者选一即可<br>索引名：可选参数，表示创建的索引的名称<br>字段名1：指定索引对应字段的名称<br>长度：可选参数，用于表示索引的长度<br>ASC和DESC：可选参数，其中，ASC表示升序排列，DESC表示降序排列</p>
-<h2 id="删除索引"><a href="#删除索引" class="headerlink" title="删除索引"></a>删除索引</h2><p>使用<strong>ALTER TABLE</strong>语句删除索引，语法格式:</p>
+<h2 id="索引删除"><a href="#索引删除" class="headerlink" title="索引删除"></a>索引删除</h2><p>使用<strong>ALTER TABLE</strong>语句删除索引，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP INDEX 索引名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>使用<strong>DROP INDEX</strong>删除索引，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DROP INDEX 索引名 ON 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -922,66 +922,66 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <td>不成立， 例如：where not(salary&gt;100);</td>
 </tr>
 </tbody></table>
-<h2 id="普通查询"><a href="#普通查询" class="headerlink" title="普通查询"></a>普通查询</h2><h3 id="条件查询WHERE语句"><a href="#条件查询WHERE语句" class="headerlink" title="条件查询WHERE语句"></a>条件查询WHERE语句</h3><p>SELECT的语法里的可选参数，满足条件的查询，基本语法：</p>
+<h2 id="普通查询"><a href="#普通查询" class="headerlink" title="普通查询"></a>普通查询</h2><h3 id="条件查询-WHERE"><a href="#条件查询-WHERE" class="headerlink" title="条件查询 (WHERE)"></a>条件查询 (WHERE)</h3><p>SELECT的语法里的可选参数，满足条件的查询，基本语法：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">可选参数:
 ··· WHERE (条件表达式);
 如:
 ··· WHERE Engilsh > 80;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="IN-指定值"><a href="#IN-指定值" class="headerlink" title="IN 指定值"></a>IN 指定值</h3><p>用于查指定的数值，语法格式：</p>
+<h3 id="指定查询-IN"><a href="#指定查询-IN" class="headerlink" title="指定查询 (IN)"></a>指定查询 (IN)</h3><p>用于查指定的数值，语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
 WHERE 字段名 [NOT] IN (值1，值2，···);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="BETWEEN-AND-范围"><a href="#BETWEEN-AND-范围" class="headerlink" title="BETWEEN  AND 范围"></a>BETWEEN  AND 范围</h3><p>用于查询指定范围值，语法格式：</p>
+<h3 id="范围查询-BETWEEN-AND"><a href="#范围查询-BETWEEN-AND" class="headerlink" title="范围查询 (BETWEEN  AND)"></a>范围查询 (BETWEEN  AND)</h3><p>用于查询指定范围值，语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
 FROM 表名 
 WHERE 字段名 [NOT] BETWEEN (int)值1 AND (int)值2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><em>查询字段名的值1和值2的范围，前提*</em>2值必须大于1值***</p>
-<h3 id="NULL-空值查询"><a href="#NULL-空值查询" class="headerlink" title="NULL 空值查询"></a>NULL 空值查询</h3><p>空值查询一判断某些列是否有NULL值。语法格式：</p>
+<h3 id="空值查询-NULL"><a href="#空值查询-NULL" class="headerlink" title="空值查询 (NULL)"></a>空值查询 (NULL)</h3><p>空值查询一判断某些列是否有NULL值。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
 FROM 表名 
 WHERE 字段名 IS [NOT] NULL;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="DISTINCT-过滤查询"><a href="#DISTINCT-过滤查询" class="headerlink" title="DISTINCT 过滤查询"></a>DISTINCT 过滤查询</h3><p>去除重复的字段值。语法格式：</p>
+<h3 id="过滤查询-DISTINCT"><a href="#过滤查询-DISTINCT" class="headerlink" title="过滤查询 (DISTINCT )"></a>过滤查询 (DISTINCT )</h3><p>去除重复的字段值。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT * | {字段1,字段2...字段n} FROM 表名 [···];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="LIKE-模糊查询"><a href="#LIKE-模糊查询" class="headerlink" title="LIKE  模糊查询"></a>LIKE  模糊查询</h3><p>寻找匹配的字符串。语法格式：</p>
+<h3 id="模糊查询-LIKE"><a href="#模糊查询-LIKE" class="headerlink" title="模糊查询 (LIKE)"></a>模糊查询 (LIKE)</h3><p>寻找匹配的字符串。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
 WHERE 字段名 [NOT] LIKE '匹配字符串%_';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>注意：</strong><font color = red>Like语句中，‘ % ’代表零个或多个任意字符，‘ _ ’代表一个字符，通配符前缀需右斜线‘ \ ’进行转义，“%”为‘ % ’。</font></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">例子：字段名 LIKE'_a%\%';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="AND-多条件查询"><a href="#AND-多条件查询" class="headerlink" title="AND 多条件查询"></a>AND 多条件查询</h3><p>（交集）连接两个或者多个查询条件。语法格式：</p>
+<h3 id="多条件查询-AND"><a href="#多条件查询-AND" class="headerlink" title="多条件查询  (AND)"></a>多条件查询  (AND)</h3><p>（交集）连接两个或者多个查询条件。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
 WHERE 条件表达式1 [AND 条件表达式2 [··· AND 条件表达式n]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="OR-多条件查询"><a href="#OR-多条件查询" class="headerlink" title="OR 多条件查询"></a>OR 多条件查询</h3><p>（并集）记录满足任意一个条件即被查出。语法格式：</p>
+<h3 id="多条件查询-OR"><a href="#多条件查询-OR" class="headerlink" title="多条件查询 (OR)"></a>多条件查询 (OR)</h3><p>（并集）记录满足任意一个条件即被查出。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
 FROM 表名 
 WHERE 条件表达式1 [OR 条件表达式2 [··· OR 条件表达式n]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>OR和AND一起用的情况：</strong><br><font color = #b3d4fc>AND的优先级高于OR，因此当两者在一起使用时，应该先运算AND两边的条件表达式，再运算OR两边的条件表达式。</font></p>
-<h2 id="高级查询"><a href="#高级查询" class="headerlink" title="高级查询"></a>高级查询</h2><h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><h4 id="COUNT-记数函数"><a href="#COUNT-记数函数" class="headerlink" title="COUNT() 记数函数"></a>COUNT() 记数函数</h4><p>用来统计记录的条数，语法格式:</p>
+<h2 id="高级查询"><a href="#高级查询" class="headerlink" title="高级查询"></a>高级查询</h2><h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><h4 id="记数函数-COUNT"><a href="#记数函数-COUNT" class="headerlink" title="记数函数 (COUNT())"></a>记数函数 (COUNT())</h4><p>用来统计记录的条数，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT COUNT((*) | (字段名)) 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h4 id="SUM-求和函数"><a href="#SUM-求和函数" class="headerlink" title="SUM() 求和函数"></a>SUM() 求和函数</h4><p>用于求出表中某个字段所有值的总和，语法格式:</p>
+<h4 id="求和函数-SUM"><a href="#求和函数-SUM" class="headerlink" title="求和函数 (SUM())"></a>求和函数 (SUM())</h4><p>用于求出表中某个字段所有值的总和，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SUM(字段名1)[,SUM(字段名2)...,SUM(字段名n)] 
 FROM 表名
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>SUM里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="AVG-平均值函数"><a href="#AVG-平均值函数" class="headerlink" title="AVG() 平均值函数"></a>AVG() 平均值函数</h4><p>用于求出某个字段所有值的平均值，语法格式:</p>
+<h4 id="平均值函数-AVG"><a href="#平均值函数-AVG" class="headerlink" title="平均值函数 (AVG())"></a>平均值函数 (AVG())</h4><p>用于求出某个字段所有值的平均值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT AVG(字段名1)[,AVG(字段名2)...,AVG(字段名n)] 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>AVG里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="MAX-最大值函数"><a href="#MAX-最大值函数" class="headerlink" title="MAX() 最大值函数"></a>MAX() 最大值函数</h4><p>用于求出某个字段的最大值，语法格式:</p>
+<h4 id="最大值函数-MAX"><a href="#最大值函数-MAX" class="headerlink" title="最大值函数 (MAX())"></a>最大值函数 (MAX())</h4><p>用于求出某个字段的最大值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT MAX(字段名1)[,MAX(字段名2)...,MAX(字段名n)] 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>MAX里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="MIN-最小值函数"><a href="#MIN-最小值函数" class="headerlink" title="MIN() 最小值函数"></a>MIN() 最小值函数</h4><p>用于求出某个字段的最小值，语法格式:</p>
+<h4 id="最小值函数-MIN"><a href="#最小值函数-MIN" class="headerlink" title="最小值函数 (MIN())"></a>最小值函数 (MIN())</h4><p>用于求出某个字段的最小值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT MIN(字段名1)[,MIN(字段名2)...,MIN(字段名n)] FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>MAX里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font><br><font color = red> 函数后面的字段和所有要有小号包括，否则无法识别要记录的数</font></p>
-<h3 id="ORDER-BY-顺序查询"><a href="#ORDER-BY-顺序查询" class="headerlink" title="ORDER BY (顺序查询)"></a>ORDER BY (顺序查询)</h3><p>对查询结果进行排序，语法格式:</p>
+<h3 id="顺序查询-ORDER-BY"><a href="#顺序查询-ORDER-BY" class="headerlink" title="顺序查询 (ORDER BY)"></a>顺序查询 (ORDER BY)</h3><p>对查询结果进行排序，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
 ORDER BY 字段名1 [ASC | DESC][,字段名2 [ASC| DESC]...,字段名n [ASC | DESC]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>ORDER BY：指定字段进行排序<br>SELECT：指定查询的字段<br>ASC升序（默认）、DESC降序<br><font color = red>ORDER BY子句应位于SELECT语句的结尾。</font><br><font color = #b3d4fc>指定字段升序排列时，如果某条字段值为NULL,则这条记录会在第一条显示，这是因为NULL值可以被认为是最小值</font></p>
-<h3 id="GROUP-BY-分组查询"><a href="#GROUP-BY-分组查询" class="headerlink" title="GROUP BY (分组查询)"></a>GROUP BY (分组查询)</h3><p>对字段值进行<strong>分组查询</strong>，语法格式:</p>
+<h3 id="分组查询-GROUP-BY"><a href="#分组查询-GROUP-BY" class="headerlink" title="分组查询 (GROUP BY)"></a>分组查询 (GROUP BY)</h3><p>对字段值进行<strong>分组查询</strong>，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT 字段名1 | 聚合函数[,字段2 | 聚合函数...,字段n|聚合函数]
 FROM 表名
 GROUP BY 字段名1,字段2,···[HAVING 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -996,7 +996,7 @@ GROUP BY 字段名1,字段2,···[HAVING 条件表达式];<span aria-hidden="tr
 </li>
 </ol>
 <p><font color=red><strong><em>WHERE语句可以进行过滤,他是分组之前进行过滤, WHERE语句中是不允许使用聚合函数的，如果想在分组之后进行过滤必须使用HAVING语句来进行, HAVING语句中是可以使用聚合函数的</em></strong></font></p>
-<h3 id="LIMIT-限制查询"><a href="#LIMIT-限制查询" class="headerlink" title="LIMIT (限制查询)"></a>LIMIT (限制查询)</h3><p>限制查询结果的数量，语法格式:</p>
+<h3 id="限制查询-LIMIT"><a href="#限制查询-LIMIT" class="headerlink" title="限制查询 (LIMIT)"></a>限制查询 (LIMIT)</h3><p>限制查询结果的数量，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT 字段名1[,字段名2,...字段n] FROM 表名
 LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>OFFSET</strong>：偏移量(从哪里开始的意思)，如果偏移量为0则从查询结果的第一条记录开始一以此类推，如果不指定默认值为0 “记录数”表示返回查询记录的条数。</p>
@@ -1308,7 +1308,7 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(5)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(5)/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/no%20(5)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/no%20(5)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1781,11 +1781,10 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/16/article%20(1)/">
+                <a href="/Sanscan12.github.io/2020/04/16/no%20(1)/">
                     <div class="card-image">
                         
-                        
-                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="CSS API笔记">
+                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg" class="responsive-img" alt="CSS API笔记">
                         
                         <span class="card-title">CSS API笔记</span>
                     </div>
@@ -1834,11 +1833,10 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/12/article%20(12)/">
+                <a href="/Sanscan12.github.io/2020/04/12/no%20(12)/">
                     <div class="card-image">
                         
-                        
-                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="英语语法">
+                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (2).jpg" class="responsive-img" alt="英语语法">
                         
                         <span class="card-title">英语语法</span>
                     </div>

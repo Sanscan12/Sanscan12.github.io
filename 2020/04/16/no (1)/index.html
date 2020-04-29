@@ -312,7 +312,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -478,14 +478,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-29
+                    2020-04-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9.1k
+                    9k
                 </div>
                 
 
@@ -1670,34 +1670,47 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <hr>
-<h2 id="静态定位-static"><a href="#静态定位-static" class="headerlink" title="静态定位 (static)"></a>静态定位 (static)</h2><p>可以将元素定位于静态位置。 所谓静态位置就是各个元素在HTML文档流中默认的位置。<strong>在静态定位状态下，无法通过边偏移属性（top、bottom、left或right）来改变元素的位置。唯一用途是取消定位</strong></p>
-<hr>
-<h2 id="相对定位-relative"><a href="#相对定位-relative" class="headerlink" title="相对定位 (relative)"></a>相对定位 (relative)</h2><p>对元素设置相对定位后，可以通过边偏移属性改变元素的位置，但是它在文档流中的位置仍然保留</p>
-<p><font color=#f00><strong>注意：</strong></font></p>
+<h2 id="静态定位-static"><a href="#静态定位-static" class="headerlink" title="静态定位 (static)"></a>静态定位 (static)</h2><p><font color =#05ffdc>position: static;</font> HTML文档流中默认样式</p>
+<blockquote>
 <ol>
-<li>可以通过边偏移移动位置，原来的所占的位置继续占有。</li>
-<li>每次移动的位置，是以自己的左上角为基点移动</li>
+<li>无法偏移</li>
+<li>可取消定位</li>
+<li>跟随滚动</li>
 </ol>
+</blockquote>
 <hr>
-<h2 id="绝对定位-absolute"><a href="#绝对定位-absolute" class="headerlink" title="绝对定位 (absolute)"></a>绝对定位 (absolute)</h2><p>对元素的定位模式设置为 绝对定位后，它可以通过边偏移移动位置，但是它完全脱标，完全不占位置。</p>
-<p><font color=#f00><strong>注意：</strong></font></p>
+<h2 id="相对定位-relative"><a href="#相对定位-relative" class="headerlink" title="相对定位 (relative)"></a>相对定位 (relative)</h2><p><font color =#05ffdc>position: relative; </font> 多个元素一个搞定，盒子打包</p>
+<blockquote>
 <ol>
-<li>可以通过边偏移移动位置，原来的所占的位置不占有。</li>
-<li>无父级定位，以浏览器的左上角为基点移动</li>
-<li>有父级定位，以父级的左上角为基点移动</li>
+<li>可偏移，原有位置继续占有</li>
+<li>移动位置，是以元素左上角为基点移动</li>
+<li>跟随滚动</li>
 </ol>
+</blockquote>
+<hr>
+<h2 id="绝对定位-absolute"><a href="#绝对定位-absolute" class="headerlink" title="绝对定位 (absolute)"></a>绝对定位 (absolute)</h2><p><font color =#05ffdc>position: absolute; </font> 不占空间的漂浮元素</p>
+<blockquote>
+<ol>
+<li>可偏移，原有位置不占有</li>
+<li>无父级，以浏览器为基准</li>
+<li>有父级，以父级盒子为基准</li>
+<li>跟随滚动</li>
+</ol>
+</blockquote>
 <p><strong>口诀技巧</strong></p>
 <ol>
 <li><strong>子绝父相</strong><br>子级盒子是绝对定位，父级盒子是相对定位</li>
 <li><strong>子绝父绝</strong><br>父级盒子是绝对定位，子级盒子是绝对定位</li>
 </ol>
 <hr>
-<h2 id="绝对定位盒子居中"><a href="#绝对定位盒子居中" class="headerlink" title="绝对定位盒子居中"></a>绝对定位盒子居中</h2><p>盒子是左右 margin 改为 auto 就可， 但是对于绝对定位和浮动就无效了</p>
-<p>定位的盒子也可以 水平 或 垂直 居中，有一个算法。</p>
+<h2 id="绝对定位盒子居中"><a href="#绝对定位盒子居中" class="headerlink" title="绝对定位盒子居中"></a>绝对定位盒子居中</h2><p>实现 绝对定位盒子 的居中问题！！</p>
+<p>定位的盒子也可以<code>水平</code>或<code>垂直</code>居中，的算法</p>
+<blockquote>
 <ol>
-<li>首先left 50%   父盒子的一半大小</li>
-<li>然后走自己外边距负的一半值就可以了 margin-left。</li>
+<li>首先left: 50%   父盒子的一半大小</li>
+<li>然后减去自身的一半宽 margin-left。</li>
 </ol>
+</blockquote>
 <p>例子示范：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
 <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
@@ -1710,15 +1723,60 @@ a:hover      -----—&gt;      0,0,1,1
 <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
 <span class="token property">margin-top</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="固定定位-fixed"><a href="#固定定位-fixed" class="headerlink" title="固定定位 (fixed)"></a>固定定位 (fixed)</h2><p>固定定位是绝对定位的一种特殊形式，它是以浏览器窗口作为参照物来定义网页元素，不管浏览器滚动条如何滚动，该元素都会始终显示在浏览器窗口的固定位置。</p>
+<h2 id="固定定位-fixed"><a href="#固定定位-fixed" class="headerlink" title="固定定位 (fixed)"></a>固定定位 (fixed)</h2><p><font color =#05ffdc>position: fixed; </font> 始终在窗口展示的元素</p>
 <blockquote>
 <ol>
-<li>固定定位的元素跟父亲没有任何关系，只认浏览器。</li>
-<li>固定定位完全脱标，不占有位置，不随着滚动条滚动。</li>
+<li>跟父亲没有关系，只认浏览器</li>
+<li>完全脱标，不占有位置</li>
+<li>不随滚动</li>
 </ol>
 </blockquote>
 <hr>
-<h2 id="叠放次序-z-index"><a href="#叠放次序-z-index" class="headerlink" title="叠放次序 (z-index)"></a>叠放次序 (z-index)</h2>
+<h2 id="叠放次序-z-index"><a href="#叠放次序-z-index" class="headerlink" title="叠放次序 (z-index)"></a>叠放次序 (z-index)</h2><p><font color =#05ffdc>z-index: 4; </font> 调整重叠定位元素的堆叠顺序</p>
+<blockquote>
+<ol>
+<li>默认属性值：0，值越大越靠顶层</li>
+<li>取值相同，书写顺序，后者居上</li>
+<li>没有单位</li>
+<li>除了静态，只能用于定位，其他类型，则无效</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="定位总结"><a href="#定位总结" class="headerlink" title="定位总结"></a>定位总结</h2><table>
+<thead>
+<tr>
+<th>定位模式</th>
+<th>是否脱标占有位置</th>
+<th>是否可以使用边偏移</th>
+<th>移动位置基准</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>静态 static</td>
+<td>不脱标，正常模式</td>
+<td>不可以</td>
+<td>正常模式</td>
+</tr>
+<tr>
+<td>相对定位 relative</td>
+<td>不脱标，占位置</td>
+<td>可以</td>
+<td>相对自身位置移动</td>
+</tr>
+<tr>
+<td>绝对定位 absolute</td>
+<td>脱标，不占位置</td>
+<td>可以</td>
+<td>相对于定位父级移动位置</td>
+</tr>
+<tr>
+<td>固定定位 fixed</td>
+<td>脱标，不占位置</td>
+<td>可以</td>
+<td>相对于浏览器移动位置</td>
+</tr>
+</tbody></table>
+
             </div>
             <hr/>
 
@@ -1743,7 +1801,7 @@ a:hover      -----—&gt;      0,0,1,1
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(1)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(1)/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/no%20(1)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/no%20(1)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -2216,7 +2274,7 @@ a:hover      -----—&gt;      0,0,1,1
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/18/article%20(6)/">
+                <a href="/Sanscan12.github.io/2020/04/18/no%20(6)/">
                     <div class="card-image">
                         
                         
@@ -2269,11 +2327,10 @@ a:hover      -----—&gt;      0,0,1,1
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/16/article%20(5)/">
+                <a href="/Sanscan12.github.io/2020/04/16/no%20(5)/">
                     <div class="card-image">
                         
-                        
-                        <img src="medias/loading.gif" data-original="/Sanscan12.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="MySQL API笔记">
+                        <img src="medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg" class="responsive-img" alt="MySQL API笔记">
                         
                         <span class="card-title">MySQL API笔记</span>
                     </div>
