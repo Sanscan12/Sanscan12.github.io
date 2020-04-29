@@ -478,14 +478,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-27
+                    2020-04-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.9k
+                    9.1k
                 </div>
                 
 
@@ -526,7 +526,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>link 必要属性</strong></p>
 <p><font color =8BE9FD>link</font> 是个单标签，link标签需要放在head头部标签中，并且必须指定link标签的三个属性：<br><font color =8BE9FD>href</font>：URL地址，可以是相对路径或绝对路径。<br><font color =8BE9FD>type</font>t：所链接文档的类型，在这里需要指定为“text/CSS”，表示链接的外部文件为CSS样式表。<br><font color =8BE9FD>rel</font>：当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件。</p>
-<h2 id="CSS样式规则"><a href="#CSS样式规则" class="headerlink" title="CSS样式规则"></a>CSS样式规则</h2><p>选择器{属性:属性值 ; 属性2:属性值2 ; ···}<br>CSS样式规则中:<br>1.选择器用于指定CSS样式作用的HTML对象，花括号内是对该对象设置的具体样式。<br>2.属性和属性值以“键值对”的形式出现。<br>3.属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等。<br>4.属性和属性值之间用英文“:”连接。<br>5.多个“键值对”之间用英文“;”进行区分。<br>可以用段落和表格的对齐的演示。</p>
+<h2 id="CSS样式规则"><a href="#CSS样式规则" class="headerlink" title="CSS样式规则"></a>CSS样式规则</h2><p>选择器 {属性:属性值 ; 属性2:属性值2 ; ···}<br>CSS样式规则中:<br>1.选择器用于指定CSS样式作用的HTML对象，花括号内是对该对象设置的具体样式。<br>2.属性和属性值以“键值对”的形式出现。<br>3.属性是对指定的对象设置的样式属性，例如字体大小、文本颜色等。<br>4.属性和属性值之间用英文“:”连接。<br>5.多个“键值对”之间用英文“;”进行区分。<br>可以用段落和表格的对齐的演示。</p>
 <h2 id="样式表总结"><a href="#样式表总结" class="headerlink" title="样式表总结"></a>样式表总结</h2><table>
 <thead>
 <tr>
@@ -564,7 +564,7 @@
     <span class="token selector">标签名 | 元素名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> ···<span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h2><p>类选择器可对指定的对象起作用。<br>用“.”做前缀进行标识，后面紧跟类名，在style标签中，基本语法格式如下：</p>
+<h2 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h2><p>类选择器可对指定的对象起作用。<br>用“.”做前缀进行标识，后面紧跟类名，在style标签中，语法格式如下：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector">.类名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -585,7 +585,7 @@
 <p>多类名选择器的使用，前提先定义了类：<em>（类名之间用空格隔开）</em></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>类名1 类名2 ···<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <hr>
-<h2 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h2><p>id选择器只对一个对象起作用。<br>用“#”做前缀进行标识，后面紧跟id名，id选择器只能对一个标签使用。<em>（可多个食用，建议不要多个使用）</em><br>基本语法格式如下： <em>（语法结构基本和类选择器相同。）</em></p>
+<h2 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h2><p><font color =#05ffdc>id</font> 选择器只对一个对象起作用。<br>用“#”做前缀进行标识，后面紧跟id名，id选择器只能对一个标签使用。<em>（可多个食用，建议不要多个使用）</em><br>基本语法格式如下： <em>（语法结构基本和类选择器相同。）</em></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token selector"><span class="token id">#id</span>名</span><span class="token punctuation">{</span>属性<span class="token property">1</span><span class="token punctuation">:</span>属性值<span class="token number">1</span><span class="token punctuation">;</span> 属性<span class="token property">2</span><span class="token punctuation">:</span>属性值<span class="token number">2</span><span class="token punctuation">;</span> 属性<span class="token property">3</span><span class="token punctuation">:</span>属性值<span class="token number">3</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -631,7 +631,7 @@
 <td>范围最广</td>
 </tr>
 </tbody></table>
-<h1 id="CSS字体样式属性"><a href="#CSS字体样式属性" class="headerlink" title="CSS字体样式属性"></a>CSS字体样式属性</h1><h2 id="字号大小-font-size"><a href="#字号大小-font-size" class="headerlink" title="字号大小 (font-size)"></a>字号大小 (font-size)</h2><p>font-size属性用于设置字号大小。<br>属性值设置相对长度单位，也设置绝对长度单位，详细：</p>
+<h1 id="CSS字体样式属性"><a href="#CSS字体样式属性" class="headerlink" title="CSS字体样式属性"></a>CSS字体样式属性</h1><h2 id="字号大小-font-size"><a href="#字号大小-font-size" class="headerlink" title="字号大小 (font-size)"></a>字号大小 (font-size)</h2><p><font color =#05ffdc>font-size</font>属性用于设置字号大小。<br>属性值设置相对长度单位，也设置绝对长度单位，详细：</p>
 <table>
 <thead>
 <tr>
@@ -673,7 +673,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="字体类型-font-family"><a href="#字体类型-font-family" class="headerlink" title="字体类型 (font-family)"></a>字体类型 (font-family)</h2><p>font-family属性用于设置字体。<br>可同时指定多个字体，中间以逗号隔开，如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体。</p>
+<h2 id="字体类型-font-family"><a href="#字体类型-font-family" class="headerlink" title="字体类型 (font-family)"></a>字体类型 (font-family)</h2><p><font color =#05ffdc>font-family</font>属性用于设置字体。<br>可同时指定多个字体，中间以逗号隔开，如果浏览器不支持第一个字体，则会尝试下一个，直到找到合适的字体。</p>
 <p><strong>常用技巧：</strong></p>
 <ol>
 <li>现在网页中普遍使用14px+。</li>
@@ -749,7 +749,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="字体粗细-font-weight"><a href="#字体粗细-font-weight" class="headerlink" title="字体粗细 (font-weight)"></a>字体粗细 (font-weight)</h2><p>font-weight属性用于设置字体粗细。<br>字体加粗除了用 b(粗体)和 strong(语气更强的强调)标签之外，也用CSS来实现，但是CSS 是没有语义的。<em>（尽量用数值代表细粗）</em><br>font-weight的属性值：</p>
+<h2 id="字体粗细-font-weight"><a href="#字体粗细-font-weight" class="headerlink" title="字体粗细 (font-weight)"></a>字体粗细 (font-weight)</h2><p><font color =#05ffdc>font-weight</font>属性用于设置字体粗细。<br>字体加粗除了用 b(粗体)和 strong(语气更强的强调)标签之外，也用CSS来实现，但是CSS 是没有语义的。<em>（尽量用数值代表细粗）</em><br>font-weight的属性值：</p>
 <table>
 <thead>
 <tr>
@@ -779,7 +779,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="倾斜字体-font-style"><a href="#倾斜字体-font-style" class="headerlink" title="倾斜字体 (font-style)"></a>倾斜字体 (font-style)</h2><p>font-style属性用倾斜字体。<br>字体倾斜除了用 i(倾斜)和 em(强调)标签之外可用CSS 来实现，但是CSS 是没有语义的。</p>
+<h2 id="倾斜字体-font-style"><a href="#倾斜字体-font-style" class="headerlink" title="倾斜字体 (font-style)"></a>倾斜字体 (font-style)</h2><p><font color =#05ffdc>font-style</font>属性用倾斜字体。<br>字体倾斜除了用 i(倾斜)和 em(强调)标签之外可用CSS 来实现，但是CSS 是没有语义的。</p>
 <table>
 <thead>
 <tr>
@@ -815,7 +815,7 @@
 <li>使用font属性时，必须按上面语法格式中的顺序书写，不能更换顺序，各个属性以空格隔开。</li>
 <li>不需要设置的属性可以省略属性值（取默认值），但必须保留font-size(字体大小)和font-family(字体类型)属性，否则font属性将不起作用。</li>
 </ol>
-<h1 id="CSS外观样式属性"><a href="#CSS外观样式属性" class="headerlink" title="CSS外观样式属性"></a>CSS外观样式属性</h1><h2 id="文本颜色-color"><a href="#文本颜色-color" class="headerlink" title="文本颜色 (color)"></a>文本颜色 (color)</h2><p>color属性用于定义文本的颜色。</p>
+<h1 id="CSS外观样式属性"><a href="#CSS外观样式属性" class="headerlink" title="CSS外观样式属性"></a>CSS外观样式属性</h1><h2 id="文本颜色-color"><a href="#文本颜色-color" class="headerlink" title="文本颜色 (color)"></a>文本颜色 (color)</h2><p><font color =#05ffdc>color</font>属性用于定义文本的颜色。</p>
 <table>
 <thead>
 <tr>
@@ -838,7 +838,7 @@
 </tbody></table>
 <p><em>注意:如果使用RGB代码的百分比颜色值，取值为0时也不能省略百分号，必须写为0%。</em></p>
 <hr>
-<h2 id="行间距-line-height"><a href="#行间距-line-height" class="headerlink" title="行间距 (line-height)"></a>行间距 (line-height)</h2><p>ine-height属性用于设置字符的高距。<br>行与行之间的距离，一般称为行高。<br>字体顶与最顶行的距离=(设置值 - 字体)/2（单位：px）<br>line-height常用的属性值单位有三种：</p>
+<h2 id="文本行间距-line-height"><a href="#文本行间距-line-height" class="headerlink" title="文本行间距 (line-height)"></a>文本行间距 (line-height)</h2><p><font color =#05ffdc>ine-height</font>属性用于设置字符的高距。<br>行与行之间的距离，一般称为行高。<br>字体顶与最顶行的距离=(设置值 - 字体)/2（单位：px）<br>line-height常用的属性值单位有三种：</p>
 <table>
 <thead>
 <tr>
@@ -860,7 +860,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="水平间距-letter-spacing"><a href="#水平间距-letter-spacing" class="headerlink" title="水平间距 (letter-spacing)"></a>水平间距 (letter-spacing)</h2><p>letter-spacing属性用于设置字符的水平间距。<br>字符与字符之间的距离，一般称为水平间距</p>
+<h2 id="文本水平间距-letter-spacing"><a href="#文本水平间距-letter-spacing" class="headerlink" title="文本水平间距 (letter-spacing)"></a>文本水平间距 (letter-spacing)</h2><p><font color =#05ffdc>letter-spacing</font>属性用于设置字符的水平间距。<br>字符与字符之间的距离，一般称为水平间距</p>
 <table>
 <thead>
 <tr>
@@ -882,7 +882,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="水平对齐方式-text-align"><a href="#水平对齐方式-text-align" class="headerlink" title="水平对齐方式 (text-align)"></a>水平对齐方式 (text-align)</h2><p>text-align属性用于设置指定字体水平对齐方式。<br>是让盒子里面的内容水平居中，而不是让盒子居中对齐</p>
+<h2 id="文本水平对齐方式-text-align"><a href="#文本水平对齐方式-text-align" class="headerlink" title="文本水平对齐方式 (text-align)"></a>文本水平对齐方式 (text-align)</h2><p><font color =#05ffdc>text-align</font>属性用于设置指定字体水平对齐方式。<br>是让盒子里面的内容水平居中，而不是让盒子居中对齐</p>
 <table>
 <thead>
 <tr>
@@ -904,7 +904,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="首行缩进-text-indent"><a href="#首行缩进-text-indent" class="headerlink" title="首行缩进 (text-indent)"></a>首行缩进 (text-indent)</h2><p>text-indent属性用于设置首行文本的缩进。</p>
+<h2 id="文本首行缩进-text-indent"><a href="#文本首行缩进-text-indent" class="headerlink" title="文本首行缩进 (text-indent)"></a>文本首行缩进 (text-indent)</h2><p><font color =#05ffdc>text-indent</font>属性用于设置首行文本的缩进。</p>
 <table>
 <thead>
 <tr>
@@ -927,7 +927,7 @@
 </tbody></table>
 <p><em>一般情况汉字的段落， 2em 就是两个汉字的宽度</em></p>
 <hr>
-<h2 id="文本装饰-text-decoration"><a href="#文本装饰-text-decoration" class="headerlink" title="文本装饰 (text-decoration)"></a>文本装饰 (text-decoration)</h2><p>text-decoration属性用于给链接修改装饰效果。</p>
+<h2 id="文本装饰-text-decoration"><a href="#文本装饰-text-decoration" class="headerlink" title="文本装饰 (text-decoration)"></a>文本装饰 (text-decoration)</h2><p><font color =#05ffdc>text-decoration</font>属性用于给链接修改装饰效果。</p>
 <table>
 <thead>
 <tr>
@@ -952,7 +952,7 @@
 <td>贯穿文本的一条线（删除线）</td>
 </tr>
 </tbody></table>
-<h1 id="开发者工具（chrome）"><a href="#开发者工具（chrome）" class="headerlink" title="开发者工具（chrome）"></a>开发者工具（chrome）</h1><p>此工具是我们的必备工具，以后代码出了问题，首先第一反应就是：<br>“按F12”或者是 “shift+ctrl+i”   打开 开发者工具。</p>
+<h1 id="开发者工具-chrome"><a href="#开发者工具-chrome" class="headerlink" title="开发者工具 (chrome)"></a>开发者工具 (chrome)</h1><p>此工具是我们的必备工具，以后代码出了问题，首先第一反应就是：<br>“按F12”或者是 “shift+ctrl+i”   打开 开发者工具。</p>
 <p><strong>小技巧：</strong></p>
 <ol>
 <li>ctrl+滚轮 可以 放大开发者工具代码大小。</li>
@@ -1042,7 +1042,7 @@
 <li><p>如果生成带有类名或者id名字的，  直接写  .demo  或者  #two   tab 键就可以了</p>
 </li>
 </ol>
-<h1 id="display（标签显示模式）"><a href="#display（标签显示模式）" class="headerlink" title="display（标签显示模式）"></a>display（标签显示模式）</h1><h2 id="block-level（块级元素）"><a href="#block-level（块级元素）" class="headerlink" title="block-level（块级元素）"></a>block-level（块级元素）</h2><p>块元素通常都会独自占据一整行或多整行。<br>块级元素可以设置宽度、高度、对齐等··属性，常用于网页布局和网页结构的搭建。</p>
+<h1 id="标签显示模式-display"><a href="#标签显示模式-display" class="headerlink" title="标签显示模式 (display)"></a>标签显示模式 (display)</h1><h2 id="块级元素-block-level"><a href="#块级元素-block-level" class="headerlink" title="块级元素 (block-level)"></a>块级元素 (block-level)</h2><p><font color =#05ffdc>block-level</font>块元素通常都会占一整行或多整行。<br>块级元素可以设置宽度、高度、对齐等··属性，常用于网页布局和网页结构的搭建。</p>
 <p>常见的块元素有<code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;div&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;ol&gt;</code>、<code>&lt;li&gt;</code>等，其中<code>&lt;div&gt;</code>标签是最典型的块元素。</p>
 <p> <strong>块级元素的特点：</strong></p>
 <ol>
@@ -1052,7 +1052,7 @@
 <li>可以容纳内联元素和其他块元素。</li>
 </ol>
 <hr>
-<h2 id="inline-level（行内元素）"><a href="#inline-level（行内元素）" class="headerlink" title="inline-level（行内元素）"></a>inline-level（行内元素）</h2><p>行内元素又称内联元素，单纯字体空间。<br>自身的字体大小和图像尺寸来支撑结构，<strong>一般不可以设置宽度、高度、对齐等属性，常用于控制页面中文本的样式。</strong></p>
+<h2 id="行内元素-inline-level"><a href="#行内元素-inline-level" class="headerlink" title="行内元素 (inline-level)"></a>行内元素 (inline-level)</h2><p><font color =#05ffdc>inline-level</font>行内元素又称内联元素，单纯字体空间。<br>自身的字体大小和图像尺寸来支撑结构，<strong>一般不可以设置宽度、高度、对齐等属性，常用于控制页面中文本的样式。</strong></p>
 <p>常见的行内元素有<code>&lt;a&gt;</code>、<code>&lt;strong&gt;</code>、<code>&lt;b&gt;</code>、<code>&lt;em&gt;</code>、<code>&lt;i&gt;</code>、<code>&lt;del&gt;</code>、<code>&lt;s&gt;</code>、<code>&lt;ins&gt;</code>、<code>&lt;u&gt;</code>、<code>&lt;span&gt;</code>等，其中<code>&lt;span&gt;</code>标签最典型的行内元素。</p>
 <p><strong>行内元素的特点：</strong></p>
 <ol>
@@ -1062,13 +1062,13 @@
 <li>注意：只有文字才能组成段落 因此 p  里面不能放块级元素。链接里面不能再放链接。*</li>
 </ol>
 <hr>
-<h2 id="inline-block（行内块元素）"><a href="#inline-block（行内块元素）" class="headerlink" title="inline-block（行内块元素）"></a>inline-block（行内块元素）</h2><p><strong>行内块元素的特点：</strong></p>
+<h2 id="行内块元素-inline-block"><a href="#行内块元素-inline-block" class="headerlink" title="行内块元素 (inline-block)"></a>行内块元素 (inline-block)</h2><p><font color =#05ffdc>inline-block</font>：范围只限于内容范围的大小<br><strong>行内块元素的特点：</strong></p>
 <ol>
 <li>和相邻行内元素（行内块）在一行上,但是之间会有空白缝隙。</li>
 <li>默认宽度就是它本身内容的宽度。</li>
 <li>高度，行高、外边距以及内边距都可以控制。</li>
 </ol>
-<h2 id="display（显示模式转换）"><a href="#display（显示模式转换）" class="headerlink" title="display（显示模式转换）"></a>display（显示模式转换）</h2><p>块级元素 转 行内元素：display : inline;<br>行内元素 转 块级元素：display : block;<br>块、行内元素 转 行内块元素： display : inline-block;</p>
+<h2 id="显示模式转换-display"><a href="#显示模式转换-display" class="headerlink" title="显示模式转换 (display)"></a>显示模式转换 (display)</h2><p>块级元素 转 行内元素：display : inline;<br>行内元素 转 块级元素：display : block;<br>块、行内元素 转 行内块元素： display : inline-block;</p>
 <h2 id="标签显示总结"><a href="#标签显示总结" class="headerlink" title="标签显示总结"></a>标签显示总结</h2><table>
 <thead>
 <tr>
@@ -1123,8 +1123,7 @@
 <span class="token comment" spellcheck="true">/* 坏习惯 */</span>
 <span class="token selector"><span class="token class">.selector</span> </span><span class="token punctuation">{</span> <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="高度格式"><a href="#高度格式" class="headerlink" title="高度格式"></a>高度格式</h2><p>顶线(字体最高)，中线(字体中间)，基线(字体底部)，底线(最底部)<br>基线与基线的距离为行高。<br>字体上距离=(设置值 - 字体) / 2（单位：px）</p>
-<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h2 id="CSS层叠性"><a href="#CSS层叠性" class="headerlink" title="CSS层叠性"></a>CSS层叠性</h2><p>指多种CSS样式的叠加。201,225,67</p>
-<p>一般情况下，如果出现样式冲突，则会按照CSS书写的顺序，以最后的样式为准。</p>
+<h1 id="CSS-三大特性"><a href="#CSS-三大特性" class="headerlink" title="CSS 三大特性"></a>CSS 三大特性</h1><h2 id="CSS层叠性"><a href="#CSS层叠性" class="headerlink" title="CSS层叠性"></a>CSS层叠性</h2><p>一般情况下，如果出现样式冲突，则会按照CSS书写的顺序，以最后的样式为准。</p>
 <ol>
 <li>样式冲突，遵循的原则是就近原则。 那个样式离着结构近，就执行那个样式。</li>
 <li>样式不冲突，不会层叠</li>
@@ -1227,11 +1226,11 @@ a:hover      -----—&gt;      0,0,1,1
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="背景图片-image"><a href="#背景图片-image" class="headerlink" title="背景图片 (image)"></a>背景图片 (image)</h2><p>background-image属性允许指定一个图片展示在背景中，可以和background-color连用。如果图片不重复地话，图片覆盖不到地地方都会被背景色填充。 如果有背景图片平铺，则会覆盖背景颜色。<br>语法格式：</p>
+<h2 id="背景图片-image"><a href="#背景图片-image" class="headerlink" title="背景图片 (image)"></a>背景图片 (image)</h2><p><font color =#05ffdc>background-image</font>属性允许指定一个图片展示在背景中<br>可以和background-color连用。如果图片不重复地话，图片覆盖不到地地方都会被背景色填充。 如果有背景图片平铺，则会覆盖背景颜色。语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-image</span> <span class="token punctuation">:</span> none | url<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>none : 　无背景图（默认的）<br>url : 　使用绝对或相对地址指定背景图像<br><em>背景图片后面的地址，url不要加引号</em></p>
 <hr>
-<h2 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h2><p>语法格式：</p>
+<h2 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h2><p><font color =#05ffdc>background-repeat</font>背景布局形式！语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-repeat</span> <span class="token punctuation">:</span> repeat | no-repeat | repeat-x | repeat-y <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
@@ -1259,7 +1258,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tbody></table>
 <p><em>设置背景图片时，默认把图片在水平和垂直方向平铺以铺满整个元素</em></p>
 <hr>
-<h2 id="背景位置-position"><a href="#背景位置-position" class="headerlink" title="背景位置 (position)"></a>背景位置 (position)</h2><p>语法格式：</p>
+<h2 id="背景位置-position"><a href="#背景位置-position" class="headerlink" title="背景位置 (position)"></a>背景位置 (position)</h2><p><font color =#05ffdc>background-position</font>背景坐标，语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-position</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
@@ -1284,23 +1283,23 @@ a:hover      -----—&gt;      0,0,1,1
 </ol>
 <p><em>实际工作用的最多的，就是背景图片居中对齐了</em></p>
 <hr>
-<h2 id="背景附着-attachment"><a href="#背景附着-attachment" class="headerlink" title="背景附着 (attachment)"></a>背景附着 (attachment)</h2><p>语法格式：</p>
+<h2 id="背景附着-attachment"><a href="#背景附着-attachment" class="headerlink" title="背景附着 (attachment)"></a>背景附着 (attachment)</h2><p><font color =#05ffdc>background-attachment</font> 是否随滚动条移动。语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-attachment</span> <span class="token punctuation">:</span> scroll | fixed <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color =8BE9FD>scroll </font>: 　背景图像是随对象内容滚动（默认）<br> <font color =8BE9FD>fixed</font>: 　背景图像固定 0<br><em>设置或检索背景图像是随对象内容滚动还是固定的</em></p>
 <hr>
-<h2 id="背景连写"><a href="#背景连写" class="headerlink" title="背景连写"></a>背景连写</h2><p>background属性的值的书写顺序没有强制标准的。语法格式：</p>
+<h2 id="背景连写"><a href="#背景连写" class="headerlink" title="背景连写"></a>背景连写</h2><p><font color =#05ffdc>background</font>属性的值的书写顺序没有强制标准的。语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> transparent <span class="token url">url(路径)</span> repeat-y  scroll <span class="token number">50%</span> <span class="token number">0</span> <span class="token punctuation">;</span>
 
 <span class="token property">background</span><span class="token punctuation">:</span>背景颜色 背景图片地址 背景平铺 背景滚动 背景位置<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="背景透明-rgba"><a href="#背景透明-rgba" class="headerlink" title="背景透明 (rgba)"></a>背景透明 (rgba)</h2><p>CSS3支持背景半透明的写法语法格式是 :</p>
+<h2 id="背景透明-rgba"><a href="#背景透明-rgba" class="headerlink" title="背景透明 (rgba)"></a>背景透明 (rgba)</h2><p><font color =#05ffdc>rgba</font>背景半透明的写法语法格式是 :</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>,<span class="token number">0</span>,<span class="token number">0</span>,<span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>最后一个参数是透明度  取值范围 0~1之间<br><em>背景半透明是指盒子背景半透明， 盒子里面的内容不受影响</em></p>
+<p>最后一个参数是 <code>透明度</code>  取值范围 0~1之间<br><em>背景半透明是指盒子背景半透明， 盒子里面的内容不受影响</em></p>
 <h2 id="插入图片和背景图片的区别"><a href="#插入图片和背景图片的区别" class="headerlink" title="插入图片和背景图片的区别"></a>插入图片和背景图片的区别</h2><p><strong>插入图片</strong>我们用的最多。比如产品展示类<br><strong>背景图片</strong>一般用于小图标<strong>背景</strong>或者<strong>超大背景图片</strong></p>
 <h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>盒子模型就是把HTML页面中的元素看作是一个矩形的盒子，也就是一个盛装内容的容器。每个矩形都由元素的内容、内边距（padding）、边框（border）和外边距（margin）组成。</p>
-<h2 id="盒子模型（Box-Model）"><a href="#盒子模型（Box-Model）" class="headerlink" title="盒子模型（Box Model）"></a>盒子模型（Box Model）</h2><p>元素框（element box），它描述了一个文档元素再网页布局汇总所占的位置大小。因此，<strong style="color: #f00;">每个盒子除了有自己大小和位置外，还影响着其他盒子的大小和位置。</strong></p>
+<h2 id="盒子模型-Box-Model"><a href="#盒子模型-Box-Model" class="headerlink" title="盒子模型 (Box Model)"></a>盒子模型 (Box Model)</h2><p>元素框（element box），它描述了一个文档元素再网页布局汇总所占的位置大小。因此，<strong style="color: #f00;">每个盒子除了有自己大小和位置外，还影响着其他盒子的大小和位置。</strong></p>
 <hr>
-<h2 id="盒子边框（border）"><a href="#盒子边框（border）" class="headerlink" title="盒子边框（border）"></a>盒子边框（border）</h2><p>盒子的外边框，语法格式：</p>
+<h2 id="盒子边框-border"><a href="#盒子边框-border" class="headerlink" title="盒子边框 (border)"></a>盒子边框 (border)</h2><p><font color =#05ffdc>border</font> 盒子的外边框，语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">border-width</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>int<span class="token punctuation">)</span> ||
 <span class="token property">border-style</span><span class="token punctuation">:</span> 样式 || 
 <span class="token property">border-color</span><span class="token punctuation">:</span> 颜色<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -1377,15 +1376,15 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <hr>
-<h2 id="表格的细线边框（collapse）"><a href="#表格的细线边框（collapse）" class="headerlink" title="表格的细线边框（collapse）"></a>表格的细线边框（collapse）</h2><p>table表格标签 ，表示相邻边框合并在一起的css语句：</p>
+<h2 id="盒子表格边框线合并-collapse"><a href="#盒子表格边框线合并-collapse" class="headerlink" title="盒子表格边框线合并 (collapse)"></a>盒子表格边框线合并 (collapse)</h2><p><font color =#05ffdc>border-collapse</font> <code>table</code>表格标签 ，表示相邻边框合并在一起的css语句：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">border-collapse</span><span class="token punctuation">:</span>collapse<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <hr>
-<h2 id="圆角边框（radius）"><a href="#圆角边框（radius）" class="headerlink" title="圆角边框（radius）"></a>圆角边框（radius）</h2><p>border-radius使边角变圆角，radius 半径（距离）。语法格式：</p>
+<h2 id="盒子圆角边框-radius"><a href="#盒子圆角边框-radius" class="headerlink" title="盒子圆角边框 (radius)"></a>盒子圆角边框 (radius)</h2><p><font color =#05ffdc>border-radius</font> 使边角变圆角，radius 半径（距离）。语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">border-radius</span><span class="token punctuation">:</span> 左上角  右上角  右下角  左下角<span class="token punctuation">;</span>
 <span class="token property">ro</span><span class="token punctuation">:</span>
 <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">50%</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="内边距（padding）"><a href="#内边距（padding）" class="headerlink" title="内边距（padding）"></a>内边距（padding）</h2><p>padding属性用于设置内边距。  指边框与内容之间的距离。</p>
+<h2 id="盒子内边距-padding"><a href="#盒子内边距-padding" class="headerlink" title="盒子内边距 (padding)"></a>盒子内边距 (padding)</h2><p><font color =#05ffdc>padding</font> 属性用于设置内边距。  指边框与内容之间的距离。</p>
 <table>
 <thead>
 <tr>
@@ -1437,7 +1436,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tbody></table>
 <p><font color=#f00><strong>注意：padding属性会撑破盒子原有的大小，适当食用。</strong></font></p>
 <hr>
-<h2 id="外边距（margin）"><a href="#外边距（margin）" class="headerlink" title="外边距（margin）"></a>外边距（margin）</h2><p>用于设置外边距。  设置外边距会在元素之间创建“空白”， 这段空白通常不能放置其他内容。</p>
+<h2 id="盒子外边距-margin"><a href="#盒子外边距-margin" class="headerlink" title="盒子外边距 (margin)"></a>盒子外边距 (margin)</h2><p><font color =#05ffdc>margin</font>用于设置外边距。  设置外边距会在元素之间创建“空白”， 这段空白通常不能放置其他内容。</p>
 <table>
 <thead>
 <tr>
@@ -1500,7 +1499,7 @@ a:hover      -----—&gt;      0,0,1,1
 <td>将外阴影（默认）改为内阴影</td>
 </tr>
 </tbody></table>
-<h2 id="外边距实现盒子居中"><a href="#外边距实现盒子居中" class="headerlink" title="外边距实现盒子居中"></a>外边距实现盒子居中</h2><p>可以让一个盒子实现水平居中，需要满足一下两个条件：</p>
+<h2 id="盒子外边距实现居中"><a href="#盒子外边距实现居中" class="headerlink" title="盒子外边距实现居中"></a>盒子外边距实现居中</h2><p>可以让一个盒子实现水平居中，需要满足一下两个条件：</p>
 <ol>
 <li>必须是块级元素。     </li>
 <li>盒子必须指定了宽度（width）</li>
@@ -1510,7 +1509,7 @@ a:hover      -----—&gt;      0,0,1,1
     <span class="token property">width</span><span class="token punctuation">:</span><span class="token number">960</span>px<span class="token punctuation">;</span> 
     <span class="token property">margin</span><span class="token punctuation">:</span><span class="token number">0</span> auto<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="文字和盒子的居中"><a href="#文字和盒子的居中" class="headerlink" title="文字和盒子的居中"></a>文字和盒子的居中</h2><p>文字水平居中是 text-align: center<br>盒子水平居中 左右margin 改为 auto </p>
+<h2 id="盒子和文本的居中"><a href="#盒子和文本的居中" class="headerlink" title="盒子和文本的居中"></a>盒子和文本的居中</h2><p>文字水平居中是 text-align: center<br>盒子水平居中 左右margin 改为 auto </p>
 <h2 id="清除元素的默认内外边距"><a href="#清除元素的默认内外边距" class="headerlink" title="清除元素的默认内外边距"></a>清除元素的默认内外边距</h2><p>为了更方便地控制网页中的元素，制作网页时，可使用如下代码清除元素的默认内外边距： </p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
    <span class="token property">padding</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>         <span class="token comment" spellcheck="true">/* 清除内边距 */</span>
@@ -1518,7 +1517,7 @@ a:hover      -----—&gt;      0,0,1,1
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><font color=red>行内元素是只有左右外边距的，是没有上下外边距的，尽量不要给行内元素指定上下的内外边距就好了</font></p>
 <h1 id="浮动-float"><a href="#浮动-float" class="headerlink" title="浮动 (float)"></a>浮动 (float)</h1><p>CSS的定位机制有3种：普通流（标准流）、浮动和定位。</p>
-<p>float属性来定义浮动，语法格式：</p>
+<p><font color =#05ffdc>float</font> 属性来定义浮动，语法格式：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">选择器</span><span class="token punctuation">{</span>
     <span class="token property">float</span><span class="token punctuation">:</span> 属性值<span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -1552,7 +1551,7 @@ a:hover      -----—&gt;      0,0,1,1
 <p>浮动的目的就是为了让多个块级元素同一行上显示。</p>
 <p><strong>float      浮 漏 特</strong> </p>
 <p>浮：    加了浮动的元素盒子是浮起来的，漂浮在其他的标准流盒子上面。<br>漏：    加了浮动的盒子，不占位置的，它浮起来了，它原来的位置漏 给了标准流的盒子。<br>特：    特别注意，首先浮动的盒子需要和标准流的父级搭配使用， 其次 特别的注意浮动可以使元素显示模式体现为行内块特性。</p>
-<h2 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h2><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为 0 的问题。就是把浮动的盒子圈到里面，让父盒子闭合出口和入口不让他们出来影响其他元素。<br><strong>清除浮动：</strong></p>
+<h2 id="浮动清除"><a href="#浮动清除" class="headerlink" title="浮动清除"></a>浮动清除</h2><p>清除浮动主要为了解决父级元素因为子级浮动引起内部高度为 0 的问题。就是把浮动的盒子圈到里面，让父盒子闭合出口和入口不让他们出来影响其他元素。<br><strong>清除浮动：</strong></p>
 <pre class="line-numbers language-css"><code class="language-css"> <span class="token property">clear</span><span class="token punctuation">:</span> 属性值<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
@@ -1650,7 +1649,7 @@ a:hover      -----—&gt;      0,0,1,1
 </tr>
 </tbody></table>
 <p><strong>2、定位模式 (定位的分类)</strong></p>
-<p>在CSS中，<font color =8BE9FD>position</font> 属性用于定义元素的 定位模式 ，语法格式如下：</p>
+<p><font color =#05ffdc>position</font> 属性用于定义元素的 定位模式 ，语法格式如下：</p>
 <pre><code>选择器{position: 属性值;}</code></pre><table>
 <thead>
 <tr>
@@ -1715,8 +1714,16 @@ a:hover      -----—&gt;      0,0,1,1
 <span class="token comment" spellcheck="true">/*垂直居中*/</span>
 <span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
 <span class="token property">margin-top</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>等待更新····</p>
-
+<hr>
+<h2 id="固定定位-fixed"><a href="#固定定位-fixed" class="headerlink" title="固定定位 (fixed)"></a>固定定位 (fixed)</h2><p>固定定位是绝对定位的一种特殊形式，它是以浏览器窗口作为参照物来定义网页元素，不管浏览器滚动条如何滚动，该元素都会始终显示在浏览器窗口的固定位置。</p>
+<blockquote>
+<ol>
+<li>固定定位的元素跟父亲没有任何关系，只认浏览器。</li>
+<li>固定定位完全脱标，不占有位置，不随着滚动条滚动。</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="叠放次序-z-index"><a href="#叠放次序-z-index" class="headerlink" title="叠放次序 (z-index)"></a>叠放次序 (z-index)</h2>
             </div>
             <hr/>
 
@@ -2214,7 +2221,7 @@ a:hover      -----—&gt;      0,0,1,1
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/18/article%20(5)/">
+                <a href="/Sanscan12.github.io/2020/04/18/article%20(6)/">
                     <div class="card-image">
                         
                         
@@ -2267,7 +2274,7 @@ a:hover      -----—&gt;      0,0,1,1
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/16/article%20(4)/">
+                <a href="/Sanscan12.github.io/2020/04/16/article%20(5)/">
                     <div class="card-image">
                         
                         
@@ -2503,7 +2510,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30.1k</span>&nbsp;字
+                class="white-color">30.5k</span>&nbsp;字
             
             
             

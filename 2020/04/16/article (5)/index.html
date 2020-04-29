@@ -478,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-26
+                    2020-04-29
                 </div>
                 
 
@@ -507,25 +507,31 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
+                <hr>
+<p>便捷查找方式：按<code>Ctrl+F</code>可查找<br>搜索方法查找方法：数据名+操作方式</p>
+<blockquote>
+<p>例子： 字段删除</p>
+</blockquote>
+<hr>
+<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="数据库创建"><a href="#数据库创建" class="headerlink" title="数据库创建"></a>数据库创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
 编码集设置:
 CHARACTER SET 字符集名 [校对规则]
 校对规则:
 COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>IF NOT EXISTS：检查是否已存在的状态<br>CHARACTER SET：编码集设置<br>COLLATE：校对规则 <em>（在字符集内用于比较字符的一套规则）</em></p>
-<h2 id="查看数据库"><a href="#查看数据库" class="headerlink" title="查看数据库"></a>查看数据库</h2><pre class="line-numbers language-mysql"><code class="language-mysql">显示数据库:
+<h2 id="数据库查看"><a href="#数据库查看" class="headerlink" title="数据库查看"></a>数据库查看</h2><pre class="line-numbers language-mysql"><code class="language-mysql">显示数据库:
 SHOW DATABASES;
 显示数据库创建语句:
 SHOW CREATE DATABASE 数据库名;
 查看当前所选的数据库：
 SELECT DATABASE();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="修改数据库"><a href="#修改数据库" class="headerlink" title="修改数据库"></a>修改数据库</h2><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
+<h2 id="数据库修改"><a href="#数据库修改" class="headerlink" title="数据库修改"></a>数据库修改</h2><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
 编码集设置:
 CHARACTER SET 字符集名 [校对规则]
 校对规则:
 COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">DROP DATABASE [IF EXISTS]  数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="选择数据库"><a href="#选择数据库" class="headerlink" title="选择数据库"></a>选择数据库</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">USE 数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="数据库删除"><a href="#数据库删除" class="headerlink" title="数据库删除"></a>数据库删除</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">DROP DATABASE [IF EXISTS]  数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="数据库选择"><a href="#数据库选择" class="headerlink" title="数据库选择"></a>数据库选择</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">USE 数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="整型数据"><a href="#整型数据" class="headerlink" title="整型数据"></a>整型数据</h2><table>
 <thead>
 <tr>
@@ -722,7 +728,7 @@ COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span
 </tbody></table>
 <h2 id="枚举型"><a href="#枚举型" class="headerlink" title="枚举型"></a>枚举型</h2><p>ENUM类型数据格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ENUM('值1','值2'···'值n')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="操作表"><a href="#操作表" class="headerlink" title="操作表"></a>操作表</h1><h2 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
+<h1 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h1><h2 id="表创建"><a href="#表创建" class="headerlink" title="表创建"></a>表创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
    字段名1 数据类型 [完整性约束条件],
    字段名2 数据类型 [完整性约束条件],
    ·······
@@ -734,23 +740,23 @@ CHARACTER SET 字符集名 [校对规则]
 校对规则:
 COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><em>建议不要在数据库中设置太多字符集名和校对规则</em></p>
-<h2 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h2><pre class="line-numbers language-mysql"><code class="language-mysql">查看表结构：
+<h2 id="表查看"><a href="#表查看" class="headerlink" title="表查看"></a>表查看</h2><pre class="line-numbers language-mysql"><code class="language-mysql">查看表结构：
 DESC 表名;
 查看所有表:
 SHOW TABLES;
 查看表的详细结构：
 SHOW CREATE TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><h3 id="增加字段"><a href="#增加字段" class="headerlink" title="增加字段"></a>增加字段</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD 字段名 数据类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="修改字段与顺序"><a href="#修改字段与顺序" class="headerlink" title="修改字段与顺序"></a>修改字段与顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名1 数据类型 [更改字段循序 | 完整性约束条件];
+<h2 id="表修改"><a href="#表修改" class="headerlink" title="表修改"></a>表修改</h2><h3 id="字段增加"><a href="#字段增加" class="headerlink" title="字段增加"></a>字段增加</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD 字段名 数据类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="字段-修改-与-顺序"><a href="#字段-修改-与-顺序" class="headerlink" title="字段 修改 与 顺序"></a>字段 修改 与 顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名1 数据类型 [更改字段循序 | 完整性约束条件];
 更改字段循序:
 FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>FIRST</strong>：将字段1更改为表的第一个字段<br><strong>AFTER</strong>：将字段1插入字段2的后面</p>
-<h3 id="修改字段名"><a href="#修改字段名" class="headerlink" title="修改字段名"></a>修改字段名</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 CHANGE 字段名 新字段名 字段类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="修改表名"><a href="#修改表名" class="headerlink" title="修改表名"></a>修改表名</h3><pre class="line-numbers language-mysql"><code class="language-mysql">RENAME TABLE 表名 to 新表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="修改表字符集"><a href="#修改表字符集" class="headerlink" title="修改表字符集"></a>修改表字符集</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 CHARACTER SET 字符集类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="删除字段"><a href="#删除字段" class="headerlink" title="删除字段"></a>删除字段</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP 字段名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h2><pre class="line-numbers language-mysql"><code class="language-mysql">DROP TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="表的约束"><a href="#表的约束" class="headerlink" title="表的约束"></a>表的约束</h3><p>为了防止数据表中插入错误的数据。</p>
+<h3 id="字段名修改"><a href="#字段名修改" class="headerlink" title="字段名修改"></a>字段名修改</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 CHANGE 字段名 新字段名 字段类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="表名修改"><a href="#表名修改" class="headerlink" title="表名修改"></a>表名修改</h3><pre class="line-numbers language-mysql"><code class="language-mysql">RENAME TABLE 表名 to 新表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="表字符集修改"><a href="#表字符集修改" class="headerlink" title="表字符集修改"></a>表字符集修改</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 CHARACTER SET 字符集类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="字段删除"><a href="#字段删除" class="headerlink" title="字段删除"></a>字段删除</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP 字段名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="表删除"><a href="#表删除" class="headerlink" title="表删除"></a>表删除</h2><pre class="line-numbers language-mysql"><code class="language-mysql">DROP TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="表约束"><a href="#表约束" class="headerlink" title="表约束"></a>表约束</h2><p>为了防止数据表中插入错误的数据。</p>
 <table>
 <thead>
 <tr>
@@ -791,7 +797,8 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 UNSIGNED<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>约束范围：</strong></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 CHECK (字段值>0 and 字段值<=100)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h6 id="单字段主键："><a href="#单字段主键：" class="headerlink" title="单字段主键："></a><strong>单字段主键：</strong></h6><p>是由一个字段构成的主键，语法格式:</p>
+<p><strong>单字段主键：</strong></p>
+<p>是由一个字段构成的主键，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 PRIMARY KEY<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>多字段主键：</strong><br>是多个字段组合而成的主键，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">PRIMARY KEY {字段名1，字段名2，···字段名n}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -851,18 +858,18 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP INDEX 索引名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>使用<strong>DROP INDEX</strong>删除索引，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DROP INDEX 索引名 ON 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="数据添加"><a href="#数据添加" class="headerlink" title="数据添加"></a>数据添加</h1><h2 id="新增数据"><a href="#新增数据" class="headerlink" title="新增数据"></a>新增数据</h2><p>使用INSERT语句向表插入数据</p>
+<h1 id="数据添加"><a href="#数据添加" class="headerlink" title="数据添加"></a>数据添加</h1><h2 id="数据新增"><a href="#数据新增" class="headerlink" title="数据新增"></a>数据新增</h2><p>使用INSERT语句向表插入数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">INSERT INTO 表名 [(字段名1 [，字段名2. . .])] VALUES(值1 [,值2. . .]);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><em>插入的数据应与字段的数据类型相同。</em><br><em>数据的大小应在字段的数据类型规定范围内。</em><br><strong><em>在VALUES中列出的数据位置必须与被加入的字段的排列位置相对应。</em></strong><br><em>字符和日期型数据应包含在<strong>单引号</strong>中。</em><br><em>插入空值:不指定或 INSERT INTO 表名 VALUES(NULL)；</em><br><em>如果要插入所有字段可以省写字段，直接按表中字段顺序写值。</em></p>
-<h2 id="更新数据"><a href="#更新数据" class="headerlink" title="更新数据"></a>更新数据</h2><p>使用UPDATE语句修改表中的数据</p>
+<h2 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h2><p>使用UPDATE语句修改表中的数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">UPDATE 表名 SET 字段名1 = 值1 [,字段名2 = 值2..]
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>条件表达式:<br>指定字段行的数据更改，如 id = 112 、name = ‘刘邦’<br>UPDATE：可以用新值更新原有表行中的各列<br>SET：指示要修改哪些列和要给予哪些值。<br>WHERE：指定更新哪些行。没有WHERE子句，<strong><em>则更新所有的行</em></strong>。</p>
-<h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><p>使用DELETE语句删除表中数据</p>
+<h2 id="数据删除"><a href="#数据删除" class="headerlink" title="数据删除"></a>数据删除</h2><p>使用DELETE语句删除表中数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DELETE FROM 表名 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong><em>如果不使用where子句，将删除表中所有数据。</em></strong><br>DELETE语句不能删除某一列的值 ( 可使用update)<br>使用DELETE语句仅删除记录，不删除表本身<br>从一个表中删除记录将引起其它表的参照完整性<br><strong><em>外键约束</em></strong><br>删除表中数据也可使用TRUNCATE语句，它和delete有所<br>不同，格式化数据！！！</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">TRUNCATE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h1><p><strong>SELECT的语法结构：</strong></p>
+<h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><p><strong>SELECT的语法结构：</strong></p>
 <pre class="line-numbers language-MYSQL"><code class="language-MYSQL">SELECT [DISTINCT] (* | {字段名1 [别名][,字段名2[别名]····,字段名n[别名]]} ) FROM 表名 [可选参数];
 可选参数:
 [WHERE 条件表达式];
@@ -926,10 +933,9 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 如:
 ··· WHERE Engilsh > 80;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="IN-指定值"><a href="#IN-指定值" class="headerlink" title="IN 指定值"></a>IN 指定值</h3><p>用于查指定的数值，语法格式：</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
-FROM 表名 
-WHERE 字段名 [NOT] IN (值1，值2，···);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="BETWEEN-AND-范围"><a href="#BETWEEN-AND-范围" class="headerlink" title="BETWEEN AND 范围"></a>BETWEEN AND 范围</h3><p>用于查询指定范围值，语法格式：</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
+WHERE 字段名 [NOT] IN (值1，值2，···);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="BETWEEN-AND-范围"><a href="#BETWEEN-AND-范围" class="headerlink" title="BETWEEN  AND 范围"></a>BETWEEN  AND 范围</h3><p>用于查询指定范围值，语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
 FROM 表名 
 WHERE 字段名 [NOT] BETWEEN (int)值1 AND (int)值2;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -941,15 +947,13 @@ WHERE 字段名 IS [NOT] NULL;<span aria-hidden="true" class="line-numbers-rows"
 <h3 id="DISTINCT-过滤查询"><a href="#DISTINCT-过滤查询" class="headerlink" title="DISTINCT 过滤查询"></a>DISTINCT 过滤查询</h3><p>去除重复的字段值。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DISTINCT * | {字段1,字段2...字段n} FROM 表名 [···];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="LIKE-模糊查询"><a href="#LIKE-模糊查询" class="headerlink" title="LIKE  模糊查询"></a>LIKE  模糊查询</h3><p>寻找匹配的字符串。语法格式：</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
-FROM 表名 
-WHERE 字段名 [NOT] LIKE '匹配字符串%_';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
+WHERE 字段名 [NOT] LIKE '匹配字符串%_';<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><strong>注意：</strong><font color = red>Like语句中，‘ % ’代表零个或多个任意字符，‘ _ ’代表一个字符，通配符前缀需右斜线‘ \ ’进行转义，“%”为‘ % ’。</font></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">例子：字段名 LIKE'_a%\%';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="AND-多条件查询"><a href="#AND-多条件查询" class="headerlink" title="AND 多条件查询"></a>AND 多条件查询</h3><p>（交集）连接两个或者多个查询条件。语法格式：</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
-FROM 表名 
-WHERE 条件表达式1 [AND 条件表达式2 [··· AND 条件表达式n]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
+WHERE 条件表达式1 [AND 条件表达式2 [··· AND 条件表达式n]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="OR-多条件查询"><a href="#OR-多条件查询" class="headerlink" title="OR 多条件查询"></a>OR 多条件查询</h3><p>（并集）记录满足任意一个条件即被查出。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n}
 FROM 表名 
@@ -979,9 +983,8 @@ FROM 表名
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>MAX里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font><br><font color = red> 函数后面的字段和所有要有小号包括，否则无法识别要记录的数</font></p>
 <h3 id="ORDER-BY-顺序查询"><a href="#ORDER-BY-顺序查询" class="headerlink" title="ORDER BY (顺序查询)"></a>ORDER BY (顺序查询)</h3><p>对查询结果进行排序，语法格式:</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT 字段名1[,字段2...,字段n]
-FROM 表名 
-ORDER BY 字段名1 [ASC | DESC][,字段名2 [ASC| DESC]...,字段名n [ASC | DESC]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * | {字段1,字段2...字段n} FROM 表名 
+ORDER BY 字段名1 [ASC | DESC][,字段名2 [ASC| DESC]...,字段名n [ASC | DESC]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>ORDER BY：指定字段进行排序<br>SELECT：指定查询的字段<br>ASC升序（默认）、DESC降序<br><font color = red>ORDER BY子句应位于SELECT语句的结尾。</font><br><font color = #b3d4fc>指定字段升序排列时，如果某条字段值为NULL,则这条记录会在第一条显示，这是因为NULL值可以被认为是最小值</font></p>
 <h3 id="GROUP-BY-分组查询"><a href="#GROUP-BY-分组查询" class="headerlink" title="GROUP BY (分组查询)"></a>GROUP BY (分组查询)</h3><p>对字段值进行<strong>分组查询</strong>，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT 字段名1 | 聚合函数[,字段2 | 聚合函数...,字段n|聚合函数]
@@ -1160,7 +1163,7 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <td>使用pwd作为密码解密字符串str</td>
 </tr>
 </tbody></table>
-<h1 id="多表操作"><a href="#多表操作" class="headerlink" title="多表操作"></a>多表操作</h1><h2 id="添加外键"><a href="#添加外键" class="headerlink" title="添加外键"></a>添加外键</h2><p>外键是指<strong>引用另一个表中的一个字段或多个字段</strong>。建立、加强两个表数据之间的链接。</p>
+<h1 id="多表操作"><a href="#多表操作" class="headerlink" title="多表操作"></a>多表操作</h1><h2 id="外键添加"><a href="#外键添加" class="headerlink" title="外键添加"></a>外键添加</h2><p>外键是指<strong>引用另一个表中的一个字段或多个字段</strong>。建立、加强两个表数据之间的链接。</p>
 <ol>
 <li>主表是被外键引用的字段，应具有主键约束或唯一性约束</li>
 <li>被引用是<strong>主表</strong>，引用外键的表是<strong>从表</strong>，两表是主从关系</li>
@@ -1202,13 +1205,13 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </tbody></table>
 <p>注意事项：<br><font color=red>    1.建立外键的表必须是InnoDB型不能是临时表。因为MySQL中只有InnoDB型的表才支持外键。</font><br><font color=red>    2.定义外键名时，不能加引号。如: constraint ‘FK_ ID’ 或constraint” FK_ID “都是错误的。</font></p>
-<h2 id="删除外键"><a href="#删除外键" class="headerlink" title="删除外键"></a>删除外键</h2><p>根据逻辑的需求，需要解除两个表之间的关联关系时，就需要删除外键约束。语法格式：</p>
+<h2 id="外键删除"><a href="#外键删除" class="headerlink" title="外键删除"></a>外键删除</h2><p>根据逻辑的需求，需要解除两个表之间的关联关系时，就需要删除外键约束。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP FOREIGN KEY 外键名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="关联表添加数据"><a href="#关联表添加数据" class="headerlink" title="关联表添加数据"></a>关联表添加数据</h2><h3 id="多对一"><a href="#多对一" class="headerlink" title="多对一"></a>多对一</h3><p>在多对一的表关系中，应将外键建在多的一方。</p>
+<h2 id="关联表数据添加"><a href="#关联表数据添加" class="headerlink" title="关联表数据添加"></a>关联表数据添加</h2><h3 id="多对一"><a href="#多对一" class="headerlink" title="多对一"></a>多对一</h3><p>在多对一的表关系中，应将外键建在多的一方。</p>
 <h3 id="多对多"><a href="#多对多" class="headerlink" title="多对多"></a>多对多</h3><p>为了实现数据表多对多的关系，需要定义一张<strong>第三方中间表</strong>，该表保存两个关系表的外键。</p>
 <h3 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h3><p>一对一的对应关系中，<strong>需要分清主从关系</strong>，通常在从表中建立外键。</p>
 <p><font color=red>在从表添加数据时，外键字段的值与外表引用字段的值相同且存在的前提下添加数据，否则受约束！</font> </p>
-<h2 id="删除关联表数据"><a href="#删除关联表数据" class="headerlink" title="删除关联表数据"></a>删除关联表数据</h2><p><strong><font color=red>删除也如此，先删除从表有关联的数据，在删除主表数据</font></strong> </p>
+<h2 id="关联表数据删除"><a href="#关联表数据删除" class="headerlink" title="关联表数据删除"></a>关联表数据删除</h2><p><strong><font color=red>删除也如此，先删除从表有关联的数据，在删除主表数据</font></strong> </p>
 <h2 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h2><p>交叉连接又称“笛卡尔积”，返回结果的是<strong>被连接的两个表中所有数据行的乘积</strong>。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1 CROSS JOIN 表2 [WHERE 条件表达式];
 or:
@@ -1310,7 +1313,7 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(4)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(4)/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(5)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/16/article%20(5)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1836,7 +1839,7 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/12/article%20(11)/">
+                <a href="/Sanscan12.github.io/2020/04/12/article%20(12)/">
                     <div class="card-image">
                         
                         
@@ -2068,7 +2071,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30.1k</span>&nbsp;字
+                class="white-color">30.5k</span>&nbsp;字
             
             
             
