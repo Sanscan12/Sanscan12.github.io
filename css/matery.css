@@ -912,8 +912,8 @@ article .card {
 }
 
 article .card-image {
-    background-color: #222;
-    border-radius: 8px;
+    background-color: rgba(30, 22, 107,0.05);
+    border-radius: 8px 8px 0 0;
 }
 
 article .card-image img {
