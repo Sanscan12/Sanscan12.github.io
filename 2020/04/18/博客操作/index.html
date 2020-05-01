@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="css外边距合并问题, 柏竹博客">
+    <meta name="keywords" content="博客操作, 柏竹博客">
     <meta name="description" content="小白码农">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>css外边距合并问题 | 柏竹博客</title>
+    <title>博客操作 | 柏竹博客</title>
     <link rel="icon" type="image/png" href="/Sanscan12.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Sanscan12.github.io/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">css外边距合并问题</h1>
+                    <h1 class="description center-align post-title">博客操作</h1>
                 </div>
             </div>
         </div>
@@ -446,12 +446,8 @@
                                 <span class="chip bg-color">血的教训</span>
                             </a>
                         
-                            <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
-                            </a>
-                        
-                            <a href="/Sanscan12.github.io/tags/css/">
-                                <span class="chip bg-color">css</span>
+                            <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
+                                <span class="chip bg-color">hexo指令</span>
                             </a>
                         
                     </div>
@@ -462,8 +458,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
+                                hexo
                             </a>
                         
                     </div>
@@ -475,89 +471,95 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-20
+                    2020-04-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-26
+                    2020-04-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    650
+                    465
                 </div>
                 
 
                 
 
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
             </div>
         </div>
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="外边距合并问题"><a href="#外边距合并问题" class="headerlink" title="外边距合并问题"></a>外边距合并问题</h1><p>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并。</p>
-<h2 id="相邻块元素垂直外边距的合并"><a href="#相邻块元素垂直外边距的合并" class="headerlink" title="相邻块元素垂直外边距的合并"></a>相邻块元素垂直外边距的合并</h2><p>当上下相邻的两个块元素相遇时，如果上块元素有下外边距，下块元素有上外边距，则他们之间的垂直间距不是margin-bottom(下外边距)与margin-top(上外边距)之和，而是两者中的较大者。该现象被称为<strong>相邻块元素垂直外边距的合并</strong>（也称<strong>外边距塌陷</strong>）。<strong><font color=red><em>遇见该问题经量避免</em></font></strong></p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-他们之间的距离为<span class="token number">30</span>px<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="嵌套块元素垂直外边距的合并"><a href="#嵌套块元素垂直外边距的合并" class="headerlink" title="嵌套块元素垂直外边距的合并"></a>嵌套块元素垂直外边距的合并</h2><p>对于两个嵌套关系的块元素，如果父块元素没有<strong>上内边距、边框</strong>，则父块元素的上外边距会与子块元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。</p>
-<pre class="line-numbers language-css"><code class="language-css"> <span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-     <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-子块级元素的外边距控制父块级元素的外边距，子父外边距合并。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>解决方案：</p>
-<ol>
-<li>可以为父元素定义1像素的上边框或上内边距。</li>
-<li>可以为父元素添加 overflow:hidden。</li>
-</ol>
-<h2 id="content宽度和高度"><a href="#content宽度和高度" class="headerlink" title="content宽度和高度"></a>content宽度和高度</h2><p>盒子的大小进行控制。盒子模型的总宽度和总高度的计算原则是：</p>
-<pre><code>  /*外盒尺寸计算（元素空间尺寸）*/
-  Element空间高度 = content height + padding + border + margin
-  Element 空间宽度 = content width + padding + border + margin
-  /*内盒尺寸计算（元素实际大小）*/
-  Element Height = content height + padding + border （Height为内容高度）
-  Element Width = content width + padding + border （Width为内容宽度）</code></pre><ol>
-<li>width和height仅适用于块级元素，对行内元素无效(img标签和input除外)</li>
-<li>计算盒子模型的总高度时，还应考虑上下两个盒子垂直外边距合并</li>
-<li><strong>如果一个盒子没有给定宽高，则会和父盒子一样；</strong></li>
-<li><strong>如果此盒子没有给定宽度则padding不会影响本盒子大小</strong></li>
-</ol>
-<h2 id="盒子模型布局稳定性"><a href="#盒子模型布局稳定性" class="headerlink" title="盒子模型布局稳定性"></a>盒子模型布局稳定性</h2><p>按照优先使用  <strong>宽度</strong> （width）  其次使用<strong>内边距</strong>（padding）再次<strong>外边距</strong>（margin）。<br>$$<br>width &gt;  padding  &gt;   margin<br>$$<br><strong>原因：</strong></p>
-<ol>
-<li>margin会有外边距合并还有下面margin加倍的bug所以最后使用。</li>
-<li>padding 会影响盒子大小，需要进行加减计算</li>
-<li>width没有问题，经常使用宽度剩余法 高度剩余法来做。</li>
-</ol>
-
+                <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><p>命令要在根路经下运行！</p>
+<ul>
+<li><p><code>hexo server</code>  等价于 <code>hexo s</code><br>#启动本地服务器，用于预览主题。Hexo 会监视文件变动并自动更新，除修改站点配置文件外,无须重启服务器,直接刷新网页即可生效。</p>
+</li>
+<li><p><code>hexo server -s</code><br>#以静态模式启动</p>
+</li>
+<li><p><code>hexo server -p 5000</code><br>#更改访问端口 (默认端口为4000)</p>
+</li>
+<li><p><code>hexo server -i IP地址</code><br>#自定义 IP</p>
+</li>
+<li><p><code>hexo clean</code><br>#清除缓存。会删掉站点根目录下的public文件夹</p>
+</li>
+<li><p><code>hexo generate</code> 相当于<code>hexo g</code><br>#生成静态网页 (根目录下生成public文件夹, 会将” source / _posts / “ 下面的.md文件编译为.html后缀的文件,存放在”public/ “ 路径下)</p>
+</li>
+<li><p><code>hexo d</code><br>#自动生成网站静态文件，将本地数据部署到设定的仓库</p>
+</li>
+<li><p><code>hexo init</code> 文件夹名称<br>#初始化XX文件夹名称</p>
+</li>
+<li><p><code>npm update hexo -g</code></p>
+<p>#升级</p>
+</li>
+<li><p><code>npm install hexo -g</code><br>#安装</p>
+</li>
+<li><p><code>node-v</code><br>#查看 node.js 版本号</p>
+</li>
+<li><p><code>npm -v</code><br>#查看npm版本号</p>
+</li>
+<li><p><code>git --version</code><br> #查看git版本号</p>
+</li>
+<li><p><code>hexo -v</code><br>#查看hexo版本号</p>
+</li>
+</ul>
+<h2 id="文章开头布局"><a href="#文章开头布局" class="headerlink" title="文章开头布局"></a>文章开头布局</h2><p><code>author</code>：作者</p>
+<p><code>categories</code>: 字符串<br>//文章分类，尽量一个</p>
+<p><code>cover</code>：布尔值<br>// 需要加入到首页轮播封面中</p>
+<p><code>coverImg</code>：url<br>//文章在首页轮播封面显示的图片路径</p>
+<p><code>date</code>：0000-00-00 00:00:00</p>
+<p><code>img</code>：url<br>//文章图片路径</p>
+<p><code>keywords</code>：文章标题<br>//文章关键字</p>
+<p><code>mathjax</code>: 布尔值<br>//是否开启数学公式支持</p>
+<p><code>password</code>：字符串<br>//文章阅读密码</p>
+<p><code>reprintPolicy</code>：<br>//文章转载规则</p>
+<p><code>summary</code>: 字符串<br>//文章摘要</p>
+<p><code>top</code>：布尔值<br>// 推荐文章（文章是否置顶）</p>
+<p><code>title</code>： 标题</p>
+<p><code>toc</code>: 布尔值<br>// TOC 的功能</p>
+<p><code>tags</code>:    //文章标签,可以多个</p>
+<pre><code>- 标签名1</code></pre><ul>
+<li>标签名2<br>···</li>
+</ul>
+<h3 id="开头样板"><a href="#开头样板" class="headerlink" title="开头样板"></a>开头样板</h3><pre><code>---
+title: 标题
+date: 2000-04-16 00:00:00
+author: 柏竹
+mathjax: true
+toc: true
+coverImg：url
+summary: 文章摘要
+categories: 分类
+tags:
+  - 标签1
+  - 标签2
+---</code></pre>
             </div>
             <hr/>
 
@@ -582,7 +584,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/20/no%20(2)/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/20/no%20(2)/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/18/%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/18/%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -624,12 +626,8 @@
                                     <span class="chip bg-color">血的教训</span>
                                 </a>
                             
-                                <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
-                                </a>
-                            
-                                <a href="/Sanscan12.github.io/tags/css/">
-                                    <span class="chip bg-color">css</span>
+                                <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
+                                    <span class="chip bg-color">hexo指令</span>
                                 </a>
                             
                         </div>
@@ -1059,13 +1057,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/21/no%20(4)/">
+                <a href="/Sanscan12.github.io/2020/04/20/CSS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no（5）.jpg" class="responsive-img" alt="CSS 问题">
                         
-                        <img src="/Sanscan12.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="JavaScript API笔记">
-                        
-                        <span class="card-title">JavaScript API笔记</span>
+                        <span class="card-title">CSS 问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1076,14 +1073,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80/" class="post-category">
-                                    脚本语言
+                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1093,12 +1090,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/Sanscan12.github.io/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
+                        <span class="chip bg-color">血的教训</span>
+                    </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -1112,31 +1113,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/18/no%20(6)/">
+                <a href="/Sanscan12.github.io/2020/04/16/CSS/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg" class="responsive-img" alt="CSS API笔记">
                         
-                        <img src="/Sanscan12.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="博客操作">
-                        
-                        <span class="card-title">博客操作</span>
+                        <span class="card-title">CSS API笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            填充错误的经历
+                            记录学习的点滴！！！
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
-                                    hexo
+                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1146,12 +1146,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                        <span class="chip bg-color">血的教训</span>
+                    <a href="/Sanscan12.github.io/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
-                        <span class="chip bg-color">hexo指令</span>
+                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -1348,7 +1348,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">30.5k</span>&nbsp;字
+                class="white-color">30.9k</span>&nbsp;字
             
             
             
