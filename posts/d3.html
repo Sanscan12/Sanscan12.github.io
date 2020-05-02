@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客操作, 柏竹博客">
+    <meta name="keywords" content="赛博朋克风格, 柏竹博客">
     <meta name="description" content="小白码农">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客操作 | 柏竹博客</title>
+    <title>赛博朋克风格 | 柏竹博客</title>
     <link rel="icon" type="image/png" href="/Sanscan12.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Sanscan12.github.io/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/赛博 (3).png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">博客操作</h1>
+                    <h1 class="description center-align post-title">赛博朋克风格</h1>
                 </div>
             </div>
         </div>
@@ -379,12 +379,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                <span class="chip bg-color">血的教训</span>
+                            <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                                <span class="chip bg-color">分享</span>
                             </a>
                         
-                            <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
-                                <span class="chip bg-color">hexo指令</span>
+                            <a href="/Sanscan12.github.io/tags/%E5%96%9C%E5%A5%BD/">
+                                <span class="chip bg-color">喜好</span>
+                            </a>
+                        
+                            <a href="/Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/">
+                                <span class="chip bg-color">搭色</span>
                             </a>
                         
                     </div>
@@ -395,8 +399,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/Sanscan12.github.io/categories/%E5%85%B6%E4%BB%96/" class="post-category">
+                                其他
                             </a>
                         
                     </div>
@@ -408,7 +412,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-18
+                    2020-05-01
                 </div>
                 
 
@@ -422,7 +426,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    465
+                    128
                 </div>
                 
 
@@ -434,69 +438,21 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><p>命令要在根路经下运行！</p>
-<ul>
-<li><p><code>hexo server</code>  等价于 <code>hexo s</code><br>#启动本地服务器，用于预览主题。Hexo 会监视文件变动并自动更新，除修改站点配置文件外,无须重启服务器,直接刷新网页即可生效。</p>
-</li>
-<li><p><code>hexo server -s</code><br>#以静态模式启动</p>
-</li>
-<li><p><code>hexo server -p 5000</code><br>#更改访问端口 (默认端口为4000)</p>
-</li>
-<li><p><code>hexo server -i IP地址</code><br>#自定义 IP</p>
-</li>
-<li><p><code>hexo clean</code><br>#清除缓存。会删掉站点根目录下的public文件夹</p>
-</li>
-<li><p><code>hexo generate</code> 相当于<code>hexo g</code><br>#生成静态网页 (根目录下生成public文件夹, 会将” source / _posts / “ 下面的.md文件编译为.html后缀的文件,存放在”public/ “ 路径下)</p>
-</li>
-<li><p><code>hexo d</code><br>#自动生成网站静态文件，将本地数据部署到设定的仓库</p>
-</li>
-<li><p><code>hexo init</code> 文件夹名称<br>#初始化XX文件夹名称</p>
-</li>
-<li><p><code>npm update hexo -g</code></p>
-<p>#升级</p>
-</li>
-<li><p><code>npm install hexo -g</code><br>#安装</p>
-</li>
-<li><p><code>node-v</code><br>#查看 node.js 版本号</p>
-</li>
-<li><p><code>npm -v</code><br>#查看npm版本号</p>
-</li>
-<li><p><code>git --version</code><br> #查看git版本号</p>
-</li>
-<li><p><code>hexo -v</code><br>#查看hexo版本号</p>
-</li>
-</ul>
-<h2 id="文章开头布局"><a href="#文章开头布局" class="headerlink" title="文章开头布局"></a>文章开头布局</h2><p><code>author</code>：作者</p>
-<p><code>categories</code>: 字符串<br>//文章分类，尽量一个</p>
-<p><code>cover</code>：布尔值<br>// 需要加入到首页轮播封面中</p>
-<p><code>coverImg</code>：url<br>//文章在首页轮播封面显示的图片路径</p>
-<p><code>date</code>：0000-00-00 00:00:00</p>
-<p><code>img</code>：url<br>//文章图片路径</p>
-<p><code>keywords</code>：文章标题<br>//文章关键字</p>
-<p><code>mathjax</code>: 布尔值<br>//是否开启数学公式支持</p>
-<p><code>password</code>：字符串<br>//文章阅读密码</p>
-<p><code>reprintPolicy</code>：<br>//文章转载规则</p>
-<p><code>summary</code>: 字符串<br>//文章摘要</p>
-<p><code>top</code>：布尔值<br>// 推荐文章（文章是否置顶）</p>
-<p><code>title</code>： 标题</p>
-<p><code>toc</code>: 布尔值<br>// TOC 的功能</p>
-<p><code>tags</code>:    //文章标签,可以多个</p>
-<pre><code>- 标签名1</code></pre><ul>
-<li>标签名2<br>···</li>
-</ul>
-<h3 id="开头样板"><a href="#开头样板" class="headerlink" title="开头样板"></a>开头样板</h3><pre><code>---
-title: 标题
-date: 2000-04-16 00:00:00
-author: 柏竹
-mathjax: true
-toc: true
-coverImg：url
-summary: 文章摘要
-categories: 分类
-tags:
-  - 标签1
-  - 标签2
----</code></pre>
+                <h1 id="赛博风格"><a href="#赛博风格" class="headerlink" title="赛博风格"></a>赛博风格</h1><h2 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h2><p>科技、时尚、未来、神秘、低生活、黑客、数字空间、恐怖·····</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/5.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/2.png" alt=""></p>
+<h2 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h2><h3 id="黑暗系列"><a href="#黑暗系列" class="headerlink" title="黑暗系列"></a>黑暗系列</h3><p><font color=#1c1769>#1c1769</font> 、<font color=#eb19c4>#ed175c</font> 、<font color=#fc4ced>#fc4ced</font> 、<font color=#05ffdc>#05ffdc</font>   、<font color=#40d4fa>#40d4fa</font> 、<font color=#e2fcfd>#e2fcfd</font> 、<font color=#21eafe>#21eafe</font> </p>
+<h3 id="光感"><a href="#光感" class="headerlink" title="光感"></a>光感</h3><p>背景偏暗，要灯光点要强烈光感，方框线高亮</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/7.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/9.jpg" alt=""></p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>故障感、粗体、倾斜</p>
+<h3 id="屏幕故障"><a href="#屏幕故障" class="headerlink" title="屏幕故障"></a>屏幕故障</h3><p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/6.png" alt=""></p>
+<p>注入灵魂。RGB 三原色 体现出来</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/4.png" alt=""></p>
+<h3 id="环境字体"><a href="#环境字体" class="headerlink" title="环境字体"></a>环境字体</h3><p>字体描边高亮，字体彩色阴影</p>
+<h3 id="反光"><a href="#反光" class="headerlink" title="反光"></a>反光</h3><p>灯光线反射强烈程度根据反射物决定，暗淡透明升高 或 高亮直白</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/1.jpg" alt=""></p>
+
             </div>
             <hr/>
 
@@ -521,7 +477,7 @@ tags:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/18/%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/18/%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/posts/d3.html">https://Sanscan12.github.io/Sanscan12.github.io/posts/d3.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -559,12 +515,16 @@ tags:
                     
                         <div class="article-tag">
                             
-                                <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                    <span class="chip bg-color">血的教训</span>
+                                <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                                    <span class="chip bg-color">分享</span>
                                 </a>
                             
-                                <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
-                                    <span class="chip bg-color">hexo指令</span>
+                                <a href="/Sanscan12.github.io/tags/%E5%96%9C%E5%A5%BD/">
+                                    <span class="chip bg-color">喜好</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/">
+                                    <span class="chip bg-color">搭色</span>
                                 </a>
                             
                         </div>
@@ -990,53 +950,55 @@ tags:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/20/CSS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">
+                <a href="/Sanscan12.github.io/posts/d3.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no（5）.jpg" class="responsive-img" alt="CSS 问题">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/赛博 (3).png" class="responsive-img" alt="赛博朋克风格">
                         
-                        <span class="card-title">CSS 问题</span>
+                        <span class="card-title">赛博朋克风格</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记录学习的点滴！！！
+                            分享喜好！
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/Sanscan12.github.io/categories/%E5%85%B6%E4%BB%96/" class="post-category">
+                                    其他
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/css/">
-                        <span class="chip bg-color">css</span>
+                    <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/Sanscan12.github.io/tags/%E5%96%9C%E5%A5%BD/">
+                        <span class="chip bg-color">喜好</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                        <span class="chip bg-color">血的教训</span>
+                    <a href="/Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/">
+                        <span class="chip bg-color">搭色</span>
                     </a>
                     
                 </div>
@@ -1050,30 +1012,31 @@ tags:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/16/CSS/">
+                <a href="/Sanscan12.github.io/posts/d810.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (4).jpg" class="responsive-img" alt="CSS API笔记">
                         
-                        <span class="card-title">CSS API笔记</span>
+                        <img src="/Sanscan12.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="Hexo个人装饰篇">
+                        
+                        <span class="card-title">Hexo个人装饰篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记录学习的点滴！！！
+                            给个人博客添加衣服~
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
+                            <a href="/Sanscan12.github.io/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    配置
                                 </a>
                             
                             
@@ -1087,8 +1050,8 @@ tags:
                         <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">笔记</span>
+                    <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1285,7 +1248,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">31.2k</span>&nbsp;字
+                class="white-color">31.1k</span>&nbsp;字
             
             
             

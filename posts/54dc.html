@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CSS 问题, 柏竹博客">
+    <meta name="keywords" content="结构写作, 柏竹博客">
     <meta name="description" content="小白码农">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS 问题 | 柏竹博客</title>
+    <title>结构写作 | 柏竹博客</title>
     <link rel="icon" type="image/png" href="/Sanscan12.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Sanscan12.github.io/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no（5）.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (2).jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS 问题</h1>
+                    <h1 class="description center-align post-title">结构写作</h1>
                 </div>
             </div>
         </div>
@@ -379,16 +379,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Sanscan12.github.io/tags/css/">
-                                <span class="chip bg-color">css</span>
-                            </a>
-                        
                             <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
-                            <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                <span class="chip bg-color">血的教训</span>
+                            <a href="/Sanscan12.github.io/tags/%E5%9C%88%E5%A4%96%E5%90%8C%E5%AD%A6/">
+                                <span class="chip bg-color">圈外同学</span>
+                            </a>
+                        
+                            <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
+                                <span class="chip bg-color">写作</span>
                             </a>
                         
                     </div>
@@ -399,8 +399,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/Sanscan12.github.io/categories/%E5%B8%B8%E8%AF%86/" class="post-category">
+                                常识
                             </a>
                         
                     </div>
@@ -412,7 +412,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-20
+                    2020-04-24
                 </div>
                 
 
@@ -426,7 +426,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    881
+                    2k
                 </div>
                 
 
@@ -438,135 +438,126 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="相邻块元素外边距合并"><a href="#相邻块元素外边距合并" class="headerlink" title="相邻块元素外边距合并"></a>相邻块元素外边距合并</h2><p>当上下相邻的两个块元素相遇时，如果上块元素有下外边距，下块元素有上外边距，则他们之间的垂直间距不是margin-bottom(下外边距)与margin-top(上外边距)之和，而是两者中的较大者。该现象被称为<strong>相邻块元素垂直外边距的合并</strong>（也称<strong>外边距塌陷</strong>）。<strong><font color=red><em>遇见该问题经量避免</em></font></strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/wbj.png" alt=""></p>
-<p>代码例子</p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">div </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*上盒子*/</span>
-<span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*下盒子*/</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> hotpink<span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*结果他们之间的距离为30px*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="结构写作训练"><a href="#结构写作训练" class="headerlink" title="结构写作训练"></a>结构写作训练</h1><h2 id="确定写作方向"><a href="#确定写作方向" class="headerlink" title="确定写作方向"></a>确定写作方向</h2><p><font size=2>如何确定写作内容？</font></p>
+<h3 id="分析目标对象"><a href="#分析目标对象" class="headerlink" title="分析目标对象"></a>分析目标对象</h3><p> 通过<strong>提问</strong>、<strong>观察</strong>、<strong>侧面了解</strong>。<br> <strong>第一层次：</strong>对方是否与你所持的立场一致?<br> <strong>第二层次：</strong>对方是否存在客观环境和外部资源的约束？</p>
 <hr>
-<h2 id="嵌套块元素外边距合并"><a href="#嵌套块元素外边距合并" class="headerlink" title="嵌套块元素外边距合并"></a>嵌套块元素外边距合并</h2><p>对于两个嵌套关系的块元素，如果父块元素没有<strong>内边距、外边框</strong>，则父块元素的上外边距会与子块元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/qt.png" alt=""></p>
-<p>代码例子</p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*父盒子*/</span>
-<span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#b3d4fc</span><span class="token punctuation">;</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*子盒子*/</span>
-<span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">100</span>px<span class="token punctuation">;</span>
-    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">/*非子块级元素*/</span>
-    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">/*子块级元素的外边距控制父块级元素的外边距，子父外边距合并。*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color = #b3d4fc size=5><strong>例子：</strong></font></p>
+<p>　　老板最近发现公司的效率不高，是因为层级太多，导致信息传递很慢。于是，他想通过减少组织层级的方法，来解决这个问题。但是呢，这种方案在实际执行后，会遇到很多阻力，没法一下子什么都不管地进行推进。于是，他布置了一个任务，让部门写一份组织架构调整方案。<br>　　老板是想通过减少组织层级来提高效率的（目的），实际行动时，会遇到很多问题，有客观环境和外部资源的问题（约束），只是苦于没有解决这些问题的方案，所以暂时没办法这么实施行动。</p>
+<hr>
+<h3 id="游说矩形"><a href="#游说矩形" class="headerlink" title="游说矩形"></a>游说矩形</h3><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>与你立场一致</strong></th>
+<th><strong>与你立场不一致</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>不存在约束（资源充足）</strong></td>
+<td>罗列事实:提供给对方需要知道的事实</td>
+<td>说服:强调利益所在，说服对方转换立场</td>
+</tr>
+<tr>
+<td><strong>存在约束</strong></td>
+<td>解决问题:对受约束的问题，提供解决方案</td>
+<td>既要说服，也要解决问题</td>
+</tr>
+</tbody></table>
+<hr>
+<p><font color = #b3d4fc size=5><strong>例子：</strong></font></p>
+<p>　　上司让你写一份策划案，关于举办元旦庆祝晚会的事，预算金<br>额大概是5000元。<br><strong>情况一，立场一致且不存在资源约束问题</strong></p>
 <blockquote>
-<p>解决方案：</p>
-<ol>
-<li>为父元素定义 1px 上边框或上内边距</li>
-<li>为父元素添加 overflow: hidden ;(清除浮动)</li>
-</ol>
+<p><font size=2><strong>就可以只简单提供给对方他需要知道的事实</strong>。只需要把这个场所离工作的地点近、菜单品种丰富、要价也在预算之内等信息，传递给你的老板就好了。</font></p>
+</blockquote>
+<p><strong>情况二，立场一致且存在资源约束问题</strong></p>
+<blockquote>
+<p><font size=2><strong>需要侧重于解决问题，受约束的问题，提供你的解决方案</strong>。因此，把事情分析清楚，使他觉得“虽然超支1000元、但是非常物有所值”。或者也可以告诉老板，如果这次能多提供1000元的预算资金，你会在另外一个活动中节约出这1000元的预算开支等。</font></p>
+</blockquote>
+<p><strong>情况三，立场不一致且不存在资源约束问题</strong></p>
+<blockquote>
+<p><font size=2><strong>内容就应该强调你的建议能带来的好处，说服对方转换立场，同意你的建议。</strong>庆祝元旦的方式由聚餐改为去看话剧演出。就应该是强调看元旦话剧演出的好处，想办法说服你的老板，让他转换立场。比如说，看元旦话剧，更能够给员工留下特殊的回忆等等。</font></p>
+</blockquote>
+<p><strong>情况四，立场不一致且存在资源约束问题</strong></p>
+<blockquote>
+<p><font size=2><strong>先说服对方转换立场，再解决相关的约束问题。</strong>如果你想建议用看一场元旦话剧演出代替原来的聚餐，而且演出的整体票价也超过了预算。就应该是先表明看元旦话剧演出的处，让他转换立场，再对预算超了的问题提出解决方案。</font></p>
 </blockquote>
 <hr>
-<h2 id="盒子宽度和高度"><a href="#盒子宽度和高度" class="headerlink" title="盒子宽度和高度"></a>盒子宽度和高度</h2><p>盒子的大小进行控制。盒子模型的总宽度和总高度的计算原则是：</p>
-<pre class="line-numbers language-css"><code class="language-css">  <span class="token comment" spellcheck="true">/*外盒尺寸计算（元素空间尺寸）*/</span>
-  Element Height = content height + padding + border + margin
-  Element Width = content width + padding + border + margin
-  <span class="token comment" spellcheck="true">/*内盒尺寸计算（元素实际大小）*/</span>
-  Element Height = height + padding + border
-  Element Width = width + padding + border<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol>
-<li>width 和 height 仅适用于块级元素，对行内元素无效(img标签和input除外)</li>
-<li>计算盒子模型的总高度时，还应考虑上下两个盒子垂直外边距合并</li>
-<li><strong>如果一个盒子没有给定宽高，则会和父盒子一样；</strong></li>
-<li><strong>如果此盒子没有给定宽度则padding不会影响本盒子大小</strong></li>
+<h2 id="构思写作框架"><a href="#构思写作框架" class="headerlink" title="构思写作框架"></a>构思写作框架</h2><h3 id="四步法构思写作框架"><a href="#四步法构思写作框架" class="headerlink" title="四步法构思写作框架"></a>四步法构思写作框架</h3><ol>
+<li><p><strong>收集素材：</strong>事实、观点、故事、新闻</p>
+</li>
+<li><p><strong>提炼结构：</strong><br>信息归类、归纳共性、提炼结构、验证结构</p>
+<p>常用结构：简单类、要素类、二维矩形类、流程类</p>
+</li>
+<li><p><strong>补充信息：</strong>除了包括最开始的素材，从最终确定的结构所关联想到的相关素材 ，也需要补充</p>
+</li>
+<li><p><strong>提炼主题：</strong><br>结论法：由下层信息推导出上层信息，适用于做因果关系推论</p>
+</li>
 </ol>
 <hr>
-<h2 id="盒子模型布局"><a href="#盒子模型布局" class="headerlink" title="盒子模型布局"></a>盒子模型布局</h2><p>按照优先使用  <strong>宽度</strong> (width) 其次使用<strong>内边距 **(padding) 再次</strong>外边距 **(margin)<br>$$<br>width &gt;  padding  &gt;   margin<br>$$</p>
-<blockquote>
-<p>原因：</p>
+<p><strong>事实</strong>是已经发生或存在的一种客观状况，它可以被证明真或假。而<strong>观点</strong>则往往表达个人的看法，是你的预测、推断、结论等主观的表达。比如你说今天很冷，但别人不这么认为···。好的<strong>故事</strong>，能够吸引读者看下去，或者调动他们的情感、引发共鸣，又或者让内容更容易被理解。<strong>新闻</strong>素材，有时效性，能作为事实信息来佐证自己的观点。新闻素材可根据场景来定。<br><font color = #b3d4fc size=5><strong>例子：</strong></font></p>
+<p>　　朋友来向你询问职业选择的建议，他拿到了两个offer，技术方面的，销售方面的。你分析了他的特点和相关岗位后。以下是你经过头脑风暴和查阅资料后，收集到的素材:</p>
 <ol>
-<li>margin会有外边距合并还有下面margin加倍的bug所以最后使用</li>
-<li>padding 会影响盒子大小，需要进行加减计算</li>
-<li>width没有问题，经常使用宽度剩余法 高度剩余法来做</li>
+<li>他学的专业是工科，有做技术的基本知识</li>
+<li>他的性格外向，更喜欢与人交往，做销售可能更适合他的个性</li>
+<li>销售岗位的晋升可能更容易，晋升会伴随着加薪</li>
+<li>做技术的基本工资可能较高</li>
+<li>销售的奖金更多</li>
+<li>他没有做销售的经验和知识，上手需要–定的时间</li>
 </ol>
-</blockquote>
+<p><strong>信息归类：</strong>3 , 4 , 5 ；1 , 6  ；2<br><strong>归纳共性：</strong>3 , 4 , 5 归纳为工资待遇，1 , 6 归纳为知识经验和经验储备，2就是有关性格的<br><strong>提炼结构：</strong>以重要性可分类为：工资、性格、知识储备。然后根据MECE原则验证结构。</p>
+<p>把工资、知识经验储备和性格，补充为赚钱、擅长和兴趣的最终结构。赚钱分组下，原来收集的素材中只考虑了基本工资、加薪速度、奖金等，现在还能想到的是，发放的福利也会影响赚钱的多少，所以可以将它补充进去。<strong>补充信息</strong>。</p>
+<p>素材中推导出各个类别的三个子主题是“做销售更有赚大钱的机会”、“朋友更喜欢做销售”、“朋友能够把销售做好”。最后主题为：我应该建议朋友做销！</p>
 <hr>
-<h2 id="绝对定位盒子居中"><a href="#绝对定位盒子居中" class="headerlink" title="绝对定位盒子居中"></a>绝对定位盒子居中</h2><p>实现 绝对定位盒子 的居中问题！！</p>
-<p>定位的盒子也可以<code>水平</code>或<code>垂直</code>居中，的算法</p>
-<blockquote>
-<ol>
-<li>首先left: 50%   父盒子的一半大小</li>
-<li>然后减去自身的一半宽 margin-left。</li>
-</ol>
-</blockquote>
-<p>代码示范：</p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-<span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-<span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#666</span><span class="token punctuation">;</span>
-<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">/*水平居中*/</span>
-<span class="token property">left</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-<span class="token property">margin-left</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span> 
-<span class="token comment" spellcheck="true">/*垂直居中*/</span>
-<span class="token property">top</span><span class="token punctuation">:</span> <span class="token number">50%</span><span class="token punctuation">;</span>
-<span class="token property">margin-top</span><span class="token punctuation">:</span> -<span class="token number">100</span>px<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<h2 id="插入图片和背景的区别"><a href="#插入图片和背景的区别" class="headerlink" title="插入图片和背景的区别"></a>插入图片和背景的区别</h2><ul>
-<li><strong>插入图片</strong>我们用的最多 ，比如产品展示类</li>
-<li><strong>背景图片</strong>一般用于小图标<strong>背景</strong>或者<strong>超大背景图片</strong></li>
+<h2 id="填充内容与成文修改"><a href="#填充内容与成文修改" class="headerlink" title="填充内容与成文修改"></a>填充内容与成文修改</h2><p><font size=2>如何丰富内容和修改？</font></p>
+<h3 id="正式写作四个步骤"><a href="#正式写作四个步骤" class="headerlink" title="正式写作四个步骤"></a>正式写作四个步骤</h3><ol>
+<li><p><strong>主题鲜明：</strong></p>
+<ul>
+<li>主题要符合预期</li>
+<li>铺垫要适应</li>
+<li>避免没有思想的主题</li>
 </ul>
-<hr>
-<h2 id="相邻块元素边框线叠加"><a href="#相邻块元素边框线叠加" class="headerlink" title="相邻块元素边框线叠加"></a>相邻块元素边框线叠加</h2><p>以下是浮动<code>div</code>的盒子边框线5px</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/dj.png" alt=""></p>
-<p>代码例子</p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
-    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">li </span><span class="token punctuation">{</span>
-    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">200</span>px<span class="token punctuation">;</span>
-    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">250</span>px<span class="token punctuation">;</span>
-    <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span><span class="token comment" spellcheck="true">/*无装饰*/</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">5</span>px solid <span class="token hexcode">#666666</span><span class="token punctuation">;</span>
-    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector">li<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
-    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">5</span>px solid red<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token selector"><span class="token class">.no2</span> li </span><span class="token punctuation">{</span>
-    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
-    <span class="token property">margin-left</span><span class="token punctuation">:</span> -<span class="token number">5</span>px<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="伪类高亮遮挡"><a href="#伪类高亮遮挡" class="headerlink" title="伪类高亮遮挡"></a>伪类高亮遮挡</h2><p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/dj3.png" alt=""></p>
-<blockquote>
-<p>解决方案：</p>
-<ol>
-<li>每个块元素添加外边距减回去 <code>margin-left: -5px</code>，-5是有由边框线的像素决定的</li>
-<li>每个块元素添加相对定位 <code>position: relative;</code>， 防止伪类高亮遮挡</li>
+</li>
+<li><p><strong>完善提纲：</strong></p>
+<p>根据提纲补充每个子主题下的支持信息</p>
+</li>
+<li><p><strong>承上启下：</strong></p>
+<p>从上个平主题中，挑选个关键词/短语来总结思想，将用在下个主期的起始句中。</p>
+</li>
+<li><p><strong>结尾升华：</strong></p>
+<p>阐明建议或下一步计划，展望未来。</p>
+</li>
 </ol>
-</blockquote>
-<hr>
+<h3 id="检查修改文章的五个方面"><a href="#检查修改文章的五个方面" class="headerlink" title="检查修改文章的五个方面"></a>检查修改文章的五个方面</h3><ol>
+<li><p><strong>主题：</strong><br>检查主题和子主题是否明确</p>
+</li>
+<li><p><strong>思路：</strong><br>检查支持主题的子主题是否充分，排布是否符合提纲的结构顺序</p>
+</li>
+<li><p><strong>内容：</strong></p>
+<p>检查子主题内的支持论据是否具体，必要时加数字的证据</p>
+</li>
+<li><p><strong>表述：</strong></p>
+<p>检查你的传达目的是否达到，语言是否尽量口语化。是否需要附注、附件。</p>
+</li>
+<li><p><strong>其他：</strong></p>
+<p>检查语法、标点符号、词语</p>
+</li>
+</ol>
+<h2 id="常见商务文体写作"><a href="#常见商务文体写作" class="headerlink" title="常见商务文体写作"></a>常见商务文体写作</h2><h3 id="商业邮件的六个步骤"><a href="#商业邮件的六个步骤" class="headerlink" title="商业邮件的六个步骤"></a>商业邮件的六个步骤</h3><ol>
+<li>在标题栏写明主题</li>
+<li>开头概括出需要接收者做的事(主题)</li>
+<li>中间内容说明情况，用简单明了的词语、避免长句复杂句，重要的内容特殊标出。</li>
+<li>结尾再次给山明确的行动指令，给出相关的截止时间。</li>
+<li>某一单独部分的内容过多时，可以适当地使用链接和附件。</li>
+<li>发送前，用5W1H来检验所给的信息是否完整。</li>
+</ol>
+<p>工作总结的三个部分</p>
+<ol>
+<li><strong>工作业绩</strong><br>写框架可参考KPI列表，或参考以下四个方面，对收入利润的贡献、对客户/用户的贡献、对管理的贡献和流程的贡献，以及对学习成长的贡献</li>
+<li><strong>个人成长</strong><br>写框架可参考岗位所需的能力项目。客观分析个人的进步和不足，总结经验和教训；通过他人评价、个人真实案例来展现闪光点</li>
+<li><strong>工作计划</strong><br>参考PDCA模型制定计划。P(Plan)计划、 D(Do)执行、 C(Check)检查、A(Action)修正</li>
+</ol>
+<p>未完成···</p>
+<p><strong>学习来源：圈外同学</strong></p>
 
             </div>
             <hr/>
@@ -592,7 +583,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/2020/04/20/CSS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">https://Sanscan12.github.io/Sanscan12.github.io/2020/04/20/CSS%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/posts/54dc.html">https://Sanscan12.github.io/Sanscan12.github.io/posts/54dc.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -630,16 +621,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Sanscan12.github.io/tags/css/">
-                                    <span class="chip bg-color">css</span>
-                                </a>
-                            
                                 <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
                                 </a>
                             
-                                <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                    <span class="chip bg-color">血的教训</span>
+                                <a href="/Sanscan12.github.io/tags/%E5%9C%88%E5%A4%96%E5%90%8C%E5%AD%A6/">
+                                    <span class="chip bg-color">圈外同学</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
+                                    <span class="chip bg-color">写作</span>
                                 </a>
                             
                         </div>
@@ -1069,30 +1060,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/21/%E9%A2%9C%E8%89%B2%E6%90%AD%E9%85%8D/">
+                <a href="/Sanscan12.github.io/posts/d810.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (1).jpg" class="responsive-img" alt="颜色搭配">
                         
-                        <span class="card-title">颜色搭配</span>
+                        <img src="/Sanscan12.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="Hexo个人装饰篇">
+                        
+                        <span class="card-title">Hexo个人装饰篇</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            分享颜色搭配。
+                            给个人博客添加衣服~
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-27
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E5%85%B6%E4%BB%96/" class="post-category">
-                                    其他
+                            <a href="/Sanscan12.github.io/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    配置
                                 </a>
                             
                             
@@ -1102,12 +1094,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
-                        <span class="chip bg-color">分享</span>
+                    <a href="/Sanscan12.github.io/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/">
-                        <span class="chip bg-color">搭色</span>
+                    <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1121,31 +1113,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/2020/04/18/%E5%8D%9A%E5%AE%A2%E6%93%8D%E4%BD%9C/">
+                <a href="/Sanscan12.github.io/posts/f461.html">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no (3).jpg" class="responsive-img" alt="生活计划">
                         
-                        <img src="/Sanscan12.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="博客操作">
-                        
-                        <span class="card-title">博客操作</span>
+                        <span class="card-title">生活计划</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            填充错误的经历
+                            照亮道路
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
-                                    hexo
+                            <a href="/Sanscan12.github.io/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
+                                    生活
                                 </a>
                             
                             
@@ -1155,12 +1146,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                        <span class="chip bg-color">血的教训</span>
-                    </a>
-                    
-                    <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
-                        <span class="chip bg-color">hexo指令</span>
+                    <a href="/Sanscan12.github.io/tags/%E8%AE%A1%E5%88%92/">
+                        <span class="chip bg-color">计划</span>
                     </a>
                     
                 </div>
@@ -1357,7 +1344,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">31.2k</span>&nbsp;字
+                class="white-color">31.1k</span>&nbsp;字
             
             
             
