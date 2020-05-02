@@ -383,12 +383,12 @@
                                 <span class="chip bg-color">css</span>
                             </a>
                         
-                            <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
-                            </a>
-                        
                             <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
                                 <span class="chip bg-color">血的教训</span>
+                            </a>
+                        
+                            <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
                             </a>
                         
                     </div>
@@ -426,7 +426,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    881
+                    859
                 </div>
                 
 
@@ -438,7 +438,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="相邻块元素外边距合并"><a href="#相邻块元素外边距合并" class="headerlink" title="相邻块元素外边距合并"></a>相邻块元素外边距合并</h2><p>当上下相邻的两个块元素相遇时，如果上块元素有下外边距，下块元素有上外边距，则他们之间的垂直间距不是margin-bottom(下外边距)与margin-top(上外边距)之和，而是两者中的较大者。该现象被称为<strong>相邻块元素垂直外边距的合并</strong>（也称<strong>外边距塌陷</strong>）。<strong><font color=red><em>遇见该问题经量避免</em></font></strong></p>
+                <h2 id="相邻块元素外边距合并"><a href="#相邻块元素外边距合并" class="headerlink" title="相邻块元素外边距合并"></a>相邻块元素外边距合并</h2><p>当上下两个有上下外边距的元素相邻时，则被外边距较大者覆盖。也可称<strong>外边距塌陷</strong>。*<font color=red><strong>*遇见该问题经量避免</strong></font></p>
 <p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/wbj.png" alt=""></p>
 <p>代码例子</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">div </span><span class="token punctuation">{</span>
@@ -457,7 +457,7 @@
 <span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">/*结果他们之间的距离为30px*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="嵌套块元素外边距合并"><a href="#嵌套块元素外边距合并" class="headerlink" title="嵌套块元素外边距合并"></a>嵌套块元素外边距合并</h2><p>对于两个嵌套关系的块元素，如果父块元素没有<strong>内边距、外边框</strong>，则父块元素的上外边距会与子块元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父元素的上外边距为0，也会发生合并。</p>
+<h2 id="嵌套块元素外边距合并"><a href="#嵌套块元素外边距合并" class="headerlink" title="嵌套块元素外边距合并"></a>嵌套块元素外边距合并</h2><p>两个元素父子关系的块元素，父没有<strong>内边距、外边框</strong>的前提，父子的垂直外边距会被较大者覆盖，即使父元素的上外边距为0，也会发生合并。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/qt.png" alt=""></p>
 <p>代码例子</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">* </span><span class="token punctuation">{</span>
@@ -561,9 +561,22 @@
 <h2 id="伪类高亮遮挡"><a href="#伪类高亮遮挡" class="headerlink" title="伪类高亮遮挡"></a>伪类高亮遮挡</h2><p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/dj3.png" alt=""></p>
 <blockquote>
 <p>解决方案：</p>
-<ol>
+<ul>
 <li>每个块元素添加外边距减回去 <code>margin-left: -5px</code>，-5是有由边框线的像素决定的</li>
 <li>每个块元素添加相对定位 <code>position: relative;</code>， 防止伪类高亮遮挡</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="基线对齐底线溢出"><a href="#基线对齐底线溢出" class="headerlink" title="基线对齐底线溢出"></a>基线对齐底线溢出</h2><p>先说明字体线段基准！！！<br><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/jx.png" alt=""></p>
+<p>在图片/表格与内容同行时底线会溢出，由于对齐时默认是基线对齐</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/yc.png" alt=""></p>
+<p>更改后</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/yc2.png" alt=""></p>
+<blockquote>
+<p>解决方案：</p>
+<ol>
+<li>图片img设置： <code>vertical-align: bottom;</code> </li>
+<li>内容设置： <code>border: 0;</code></li>
 </ol>
 </blockquote>
 <hr>
@@ -634,12 +647,12 @@
                                     <span class="chip bg-color">css</span>
                                 </a>
                             
-                                <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
-                                </a>
-                            
                                 <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
                                     <span class="chip bg-color">血的教训</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
                                 </a>
                             
                         </div>
@@ -1357,7 +1370,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">31.1k</span>&nbsp;字
+                class="white-color">31k</span>&nbsp;字
             
             
             
