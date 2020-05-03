@@ -82,10 +82,8 @@ div:hover span {
     cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/22.png"), pointer !important;
 }
 div:hover button {
+    /*d */
     cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/22.png"), pointer !important;
-}
-div:hover textarea {
-    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/33.png"), pointer !important;
 }
 div:hover textarea {
     cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/33.png"), pointer !important;
