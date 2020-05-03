@@ -64,8 +64,8 @@
 
 body{
     font-family: 'AaT';
-    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/pointer.cur"), auto;
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/2.png"), auto;
 }
 a:hover {
-    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/alternate.cur"), pointer;
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/1.png"), pointer;
 }
