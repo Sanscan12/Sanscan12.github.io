@@ -64,8 +64,17 @@
 
 body{
     font-family: 'AaT';
-    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/2.png"), auto;
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/11.png"), default !important;
+}
+div {
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/11.png"), default !important;
 }
 a:hover {
-    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/1.png"), pointer;
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/22.png"), pointer !important;
+}
+a:hover span {
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/22.png"), pointer !important;
+}
+div:hover img {
+    cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/22.png"), pointer !important;
 }
