@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.7k
                 </div>
                 
 
@@ -435,7 +435,8 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="Hexo个人装饰篇"><a href="#Hexo个人装饰篇" class="headerlink" title="Hexo个人装饰篇"></a>Hexo个人装饰篇</h1><h2 id="颜色更改"><a href="#颜色更改" class="headerlink" title="颜色更改"></a>颜色更改</h2><p>看图，找要修改样式颜色的！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no3.jpg" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no3.jpg" style="zoom:50%;" />
+
 <p>主题里的文件路径：<code>..\source\css\matery.css</code><br>在本地找到相应位置的文件查找对象修改部署即可！！!<br>附加：可选透明颜色的值有</p>
 <table>
 <thead>
@@ -493,16 +494,18 @@
 <h2 id="透明背景"><a href="#透明背景" class="headerlink" title="透明背景"></a>透明背景</h2><p>看图：<br><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no4.jpg" alt=""></p>
 <p>样式属性为：background-color: transparent; 即可！<br>主题里的文件路径：<code>..\source\css\matery.css</code></p>
 <h2 id="主页面壁纸透明"><a href="#主页面壁纸透明" class="headerlink" title="主页面壁纸透明"></a>主页面壁纸透明</h2><p>先用ps对图片进行编辑！</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no1.jpg" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no1.jpg" style="zoom:50%;" />
+
 <p>在ps另存PNG格式，然后编辑更改为JPG格式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no2.jpg" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no2.jpg" style="zoom:50%;" />
+
 <p>把图片文件放到相应位置即可部署即可！！!</p>
 <h2 id="导航栏"><a href="#导航栏" class="headerlink" title="导航栏"></a>导航栏</h2><p>在<code>themes/matery/source/css/matery.css</code>找到<code>.bg-color</code>类选择器编辑即可<br>下图是我的编辑<br><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no7.jpg" alt=""></p>
 <h2 id="背景动态线条"><a href="#背景动态线条" class="headerlink" title="背景动态线条"></a>背景动态线条</h2><p>在<code>themes/matery/layout/layout.ejs</code>文件里的body范围内添加以下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span>
 color<span class="token operator">=</span><span class="token string">"209 235 227"</span> opacity<span class="token operator">=</span><span class="token string">'0.6'</span> zIndex<span class="token operator">=</span><span class="token string">"-2"</span> count<span class="token operator">=</span><span class="token string">"300"</span> src<span class="token operator">=</span><span class="token string">"//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"</span><span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a>全局字体</h2><p>如果你有你喜欢的字体，先网站  <a href="https://transfonter.org/" target="_blank" rel="noopener">https://transfonter.org/</a>  编码，字体转base64编码<br><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no6.jpg" alt=""></p>
+<h2 id="全局字体"><a href="#全局字体" class="headerlink" title="全局字体"></a>全局字体</h2><p>如果你有你喜欢的字体，先网站  <a href="https://transfonter.org/" target="_blank" rel="noopener">https://transfonter.org/</a>  编码，字体转base64编码<br><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no6.jpg" style="zoom: 33%;" /></p>
 <p>下载完后，在博客路径里<code>../source/font</code>里放刚刚下载的字体文件（.ttf）。如果没有font文件夹自行创建放进去。<br>最后在路径<code>../themes/matery/source/css/my.css</code>添加代码。</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span><span class="token punctuation">{</span>
     <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
@@ -513,7 +516,8 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
     <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'myFont'</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>例子：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no5.jpg" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Blogdecoration/no5.jpg" style="zoom:50%;" />
+
 <p>保存部署即可。<br><strong>学习来源：</strong></p>
 <ol>
 <li><a href="https://www.cnblogs.com/victorlyw/articles/9970805.html" target="_blank" rel="noopener">https://www.cnblogs.com/victorlyw/articles/9970805.html</a></li>
@@ -672,6 +676,29 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
 <td align="left">此光标指示可用的帮助（通常是一个问号或一个气球）</td>
 </tr>
 </tbody></table>
+<h2 id="文章链接溢出问题"><a href="#文章链接溢出问题" class="headerlink" title="文章链接溢出问题"></a>文章链接溢出问题</h2><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj.png" style="zoom:50%;" />
+
+<p><strong>解决方案</strong></p>
+<p>在主题文件下<code>source\css\matery.css</code> 文件，查找<code>#artDetail .reprint</code> 位置中添加<code>word-break: break-all;</code>代码。一下是例子,<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo  s</code> 在4000端口预览，成功部署即可！！！</p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj22.png" style="zoom:50%;" />
+
+<h2 id="目录样式"><a href="#目录样式" class="headerlink" title="目录样式"></a>目录样式</h2><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Mlml1.png" style="zoom:50%;" />
+
+<blockquote>
+<ol>
+<li>滚动条去掉</li>
+<li>方块去掉</li>
+</ol>
+</blockquote>
+<p>在主题文件下 <code>source\css\my.css</code> 文件，最下面添加代码</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*去掉滚动条*/</span>
+<span class="token selector"><span class="token id">#toc-content</span> </span><span class="token punctuation">{</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> visible <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/*去掉方块*/</span>
+<span class="token selector"><span class="token id">#toc-content</span> <span class="token class">.is-active-link</span><span class="token pseudo-element">::before</span> </span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> transparent <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>等待更新····</p>
 
             </div>
@@ -1264,12 +1291,12 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
                         <span class="chip bg-color">笔记</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
-                        <span class="chip bg-color">写作</span>
-                    </a>
-                    
                     <a href="/Sanscan12.github.io/tags/%E5%9C%88%E5%A4%96%E5%90%8C%E5%AD%A6/">
                         <span class="chip bg-color">圈外同学</span>
+                    </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/%E5%86%99%E4%BD%9C/">
+                        <span class="chip bg-color">写作</span>
                     </a>
                     
                 </div>
@@ -1466,7 +1493,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">31.9k</span>&nbsp;字
+                class="white-color">32.2k</span>&nbsp;字
             
             
             
