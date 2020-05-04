@@ -598,11 +598,11 @@ header .go-back i {
     font-size: 6rem;
     line-height: 1.85em;
     margin-bottom: 20px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.8);
-    letter-spacing: 24px;
+    font-weight: 580;
+    color: rgb(255,255,255,1);
+    letter-spacing: 14px;
     position: relative;
-    text-shadow:0 0 4px #000;
+    text-shadow:0 0 4px #fd974f;
 }
 
 
@@ -986,7 +986,7 @@ article .article-tags .chip {
 
 .prev-next .article-badge {
     min-width: 3rem;
-    margin-top: 7px;
+    margin-top: 8px;
     padding: 3px 10px 3px 8px;
     text-align: center;
     font-size: 1rem;
@@ -1182,6 +1182,7 @@ article .article-tags .chip {
     margin-bottom: 0.8rem;
     padding: 0.5rem 0.8rem;
     /*border: 1px solid #eee;*/
+    word-break: break-all;
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
     line-height: 2;
     transition: box-shadow 0.3s ease-in-out

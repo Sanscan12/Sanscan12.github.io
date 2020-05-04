@@ -91,3 +91,10 @@ div:hover textarea {
 div:hover input {
     cursor: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/33.png"), pointer !important;
 }
+
+#toc-content {
+    overflow: visible !important;
+}
+#toc-content .is-active-link::before {
+    background-color: transparent !important;
+}
