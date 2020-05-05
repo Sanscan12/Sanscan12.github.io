@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo个人装饰篇, 柏竹博客">
+    <meta name="keywords" content="Hexo个人装饰及解决问题篇, 柏竹博客">
     <meta name="description" content="小白码农">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo个人装饰篇 | 柏竹博客</title>
+    <title>Hexo个人装饰及解决问题篇 | 柏竹博客</title>
     <link rel="icon" type="image/png" href="/Sanscan12.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Sanscan12.github.io/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Sanscan12.github.io/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo个人装饰篇</h1>
+                    <h1 class="description center-align post-title">Hexo个人装饰及解决问题篇</h1>
                 </div>
             </div>
         </div>
@@ -387,6 +387,10 @@
                                 <span class="chip bg-color">分享</span>
                             </a>
                         
+                            <a href="/Sanscan12.github.io/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -415,7 +419,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-04
+                    2020-05-05
                 </div>
                 
 
@@ -596,7 +600,7 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
 <span class="token selector">div<span class="token pseudo-class">:hover</span> input </span><span class="token punctuation">{</span>
     <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token url">url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/shubiao/33.png")</span>, pointer <span class="token important">!important</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>代码详细：(可跳过)</strong></p>
+<p><strong>代码详细：（可跳过）</strong></p>
 <p><code>:hover</code> ：作用鼠标经过时显示</p>
 <p><code>!important</code>：可以获取最高权限来下显示鼠标样式，并覆盖原有的鼠标样式</p>
 <p><code>cursor</code> 属性规定要显示的光标的类型（形状）该属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状</p>
@@ -676,12 +680,6 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
 <td align="left">此光标指示可用的帮助（通常是一个问号或一个气球）</td>
 </tr>
 </tbody></table>
-<h2 id="文章链接溢出问题"><a href="#文章链接溢出问题" class="headerlink" title="文章链接溢出问题"></a>文章链接溢出问题</h2><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj.png" style="zoom:50%;" />
-
-<p><strong>解决方案</strong></p>
-<p>在主题文件下<code>source\css\matery.css</code> 文件，查找<code>#artDetail .reprint</code> 位置中添加<code>word-break: break-all;</code>代码。一下是例子,<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo  s</code> 在4000端口预览，成功部署即可！！！</p>
-<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj22.png" style="zoom:50%;" />
-
 <h2 id="目录样式"><a href="#目录样式" class="headerlink" title="目录样式"></a>目录样式</h2><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/Mlml1.png" style="zoom:50%;" />
 
 <blockquote>
@@ -699,6 +697,17 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
 <span class="token selector"><span class="token id">#toc-content</span> <span class="token class">.is-active-link</span><span class="token pseudo-element">::before</span> </span><span class="token punctuation">{</span>
     <span class="token property">background-color</span><span class="token punctuation">:</span> transparent <span class="token important">!important</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo  s</code> 在4000端口预览，成功部署即可！！！</p>
+<h1 id="hexo问题解决篇"><a href="#hexo问题解决篇" class="headerlink" title="hexo问题解决篇"></a>hexo问题解决篇</h1><h2 id="文章链接溢出问题"><a href="#文章链接溢出问题" class="headerlink" title="文章链接溢出问题"></a>文章链接溢出问题</h2><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj.png" style="zoom:50%;" />
+
+<p><strong>解决方案</strong></p>
+<p>在主题文件下<code>source\css\matery.css</code> 文件，查找<code>#artDetail .reprint</code> 位置中添加<code>word-break: break-all;</code>代码。<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo  s</code> 在4000端口预览，成功部署即可！！！<br>以下是例子</p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/lj22.png" style="zoom:50%;" />
+
+
+
+
+
 <p>等待更新····</p>
 
             </div>
@@ -725,7 +734,7 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/posts/d810.html">https://Sanscan12.github.io/Sanscan12.github.io/posts/d810.html</a>
+                    <a href="https://Sanscan12.github.io/Sanscan12.github.io/posts/e958.html">https://Sanscan12.github.io/Sanscan12.github.io/posts/e958.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -769,6 +778,10 @@ color<span class="token operator">=</span><span class="token string">"209 235 22
                             
                                 <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
                                     <span class="chip bg-color">分享</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
