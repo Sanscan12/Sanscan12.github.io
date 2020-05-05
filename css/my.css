@@ -98,3 +98,12 @@ div:hover input {
 #toc-content .is-active-link::before {
     background-color: transparent !important;
 }
+#veditor {
+    font-size: 18px;
+    overflow: visible !important;
+    color: #FFFFFF !important;
+}
+ div>.v {
+    font-size: 18px !important;
+    color: #FFFFFF !important;
+}
