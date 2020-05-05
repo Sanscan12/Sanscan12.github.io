@@ -107,3 +107,28 @@ div:hover input {
     font-size: 18px !important;
     color: #FFFFFF !important;
 }
+ .vcontent p{
+     color: #FFFFFF !important;
+ }
+.vctrl span {
+    color: #FFFFFF !important;
+}
+.vinput p {
+    color: #FFFFFF !important;
+}
+.aos-init {
+    box-shadow: none !important;
+    border: 0 !important;
+    background-color: transparent !important;
+}
+.card {
+    box-shadow: 0 0 10px 10px rgba(5, 255, 220,0.8);
+}
+#tag-wordcloud {
+    box-shadow: 0 0 10px 10px rgba(5, 255, 220,0.8) inset;
+}
+#vcomments {
+    box-shadow: none !important;
+    border: 0 !important;
+    background-color: transparent !important;
+}
