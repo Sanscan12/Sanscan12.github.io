@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-02
+                    2020-05-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    3.8k
                 </div>
                 
 
@@ -435,7 +435,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="JavaScript初识"><a href="#JavaScript初识" class="headerlink" title="JavaScript初识"></a>JavaScript初识</h1><p>JavaScript是Web页面中的一种脚本编程语言，也是一种通用的、跨平台的、基于对象和事件驱动并具有安全性的脚本语言。它不需要进行编译，而是直接嵌入在HTML页面中，把静态页面转变成支持用户交互并响应相应事件的动态页面。</p>
-<h1 id="在HTML中的使用"><a href="#在HTML中的使用" class="headerlink" title="在HTML中的使用"></a>在HTML中的使用</h1><h2 id="1-在页面中直接嵌入JavaScript"><a href="#1-在页面中直接嵌入JavaScript" class="headerlink" title="1.在页面中直接嵌入JavaScript"></a>1.在页面中直接嵌入JavaScript</h2><p>​    在HTML文档中可以使用<script>... </script>标记将JavaScript脚本嵌入到其中。<br>​<strong>script属性：</strong></p>
+<h1 id="在HTML中的使用"><a href="#在HTML中的使用" class="headerlink" title="在HTML中的使用"></a>在HTML中的使用</h1><h2 id="在页面中直接嵌入JavaScript"><a href="#在页面中直接嵌入JavaScript" class="headerlink" title="在页面中直接嵌入JavaScript"></a>在页面中直接嵌入JavaScript</h2><p>​    在HTML文档中可以使用<script>... </script>标记将JavaScript脚本嵌入到其中。<br>​<strong>script属性：</strong></p>
 <table>
 <thead>
 <tr>
@@ -462,17 +462,23 @@
 </tbody></table>
 <p><strong>type属性的语法格式：</strong></p>
 <pre class="line-numbers language-html"><code class="language-html">&lt;script type = "text/javascript"><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="2-链接外部JavaScript文件"><a href="#2-链接外部JavaScript文件" class="headerlink" title="2.链接外部JavaScript文件"></a>2.链接外部JavaScript文件</h2><p>​    语法格式：<em>多了个src属性</em></p>
+<h2 id="链接外部JavaScript文件"><a href="#链接外部JavaScript文件" class="headerlink" title="链接外部JavaScript文件"></a>链接外部JavaScript文件</h2><p>​    语法格式：<em>多了个src属性</em></p>
 <pre class="line-numbers language-html"><code class="language-html">&lt;script type = "text/javascript" src = "js文件的rul路径"><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>注意：</strong><br>1.外部JavaScript文件中只能包含JavaScript代码，不能包含HTML和<code>&lt;script&gt;</code>标签。<br>2.在<code>&lt;script&gt;</code>标签内部不要存在其他的JavaScript代码。<br>3.在链接外部JavaScript文件时<code>&lt;/script&gt;</code>结束标签不能省略。</p>
-<h2 id="3-作为标签的属性值使用"><a href="#3-作为标签的属性值使用" class="headerlink" title="3.作为标签的属性值使用"></a>3.作为标签的属性值使用</h2><p>在HTML文档中可以在<code>&lt;a&gt;</code>标签、<code>&lt;input&gt;</code>标签 中使用JavaScript脚本作为它们的属性值。<br>    <strong>通过“JavaScript”调用</strong></p>
+<p><strong>注意：</strong> </p>
+<ol>
+<li>外部JavaScript文件中只能包含JavaScript代码，不能包含HTML和<code>&lt;script&gt;</code>标签。 </li>
+<li>在<code>&lt;script&gt;</code>标签内部不要存在其他的JavaScript代码。 </li>
+<li>在链接外部JavaScript文件时<code>&lt;/script&gt;</code>结束标签不能省略。</li>
+</ol>
+<h2 id="作为标签的属性值使用"><a href="#作为标签的属性值使用" class="headerlink" title="作为标签的属性值使用"></a>作为标签的属性值使用</h2><p>在HTML文档中可以在<code>&lt;a&gt;</code>标签、<code>&lt;input&gt;</code>标签 中使用JavaScript脚本作为它们的属性值。<br>    <strong>通过“JavaScript”调用</strong></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:alert(<span class="token punctuation">'</span>你好JavaScript<span class="token punctuation">'</span>)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>测试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>​    <strong>与实践结合调用</strong></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>测试<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert(<span class="token punctuation">'</span>你好JavaScript <span class="token punctuation">'</span>)<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="1-执行顺序"><a href="#1-执行顺序" class="headerlink" title="1.执行顺序"></a>1.执行顺序</h2><p>程序按照在HTML文件中出现的顺序逐行执行。</p>
-<h2 id="2-大小写敏感"><a href="#2-大小写敏感" class="headerlink" title="2.大小写敏感"></a>2.大小写敏感</h2><p>在输入语言的关键字、函数名、变量时，都必须采用正确的大小写形式。</p>
-<h2 id="3-空格与换行"><a href="#3-空格与换行" class="headerlink" title="3.空格与换行"></a>3.空格与换行</h2><p>在JavaScript中会忽略程序中的空格、换行和制表符。</p>
-<h2 id="4-每行结尾的分号可有可无"><a href="#4-每行结尾的分号可有可无" class="headerlink" title="4.每行结尾的分号可有可无"></a>4.每行结尾的分号可有可无</h2><h2 id="5-注释"><a href="#5-注释" class="headerlink" title="5.注释"></a>5.注释</h2><p>注释就是向文件代码中添加的–些说明性的文字，或者对代码进行暂时屏蔽。// ro /**/</p>
+<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>程序按照在HTML文件中出现的顺序逐行执行。</p>
+<h2 id="大小写敏感"><a href="#大小写敏感" class="headerlink" title="大小写敏感"></a>大小写敏感</h2><p>在输入语言的关键字、函数名、变量时，都必须采用正确的大小写形式。</p>
+<h2 id="空格与换行"><a href="#空格与换行" class="headerlink" title="空格与换行"></a>空格与换行</h2><p>在JavaScript中会忽略程序中的空格、换行和制表符。</p>
+<h2 id="每行结尾的分号可有可无"><a href="#每行结尾的分号可有可无" class="headerlink" title="每行结尾的分号可有可无"></a>每行结尾的分号可有可无</h2><p>为了养好习惯，经量写上分号。</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>注释就是向文件代码中添加的–些说明性的文字，或者对代码进行暂时屏蔽。<code>//内容</code>ro <code>/*内容*/</code></p>
 <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="数值型"><a href="#数值型" class="headerlink" title="数值型"></a>数值型</h3><table>
 <thead>
 <tr>
@@ -482,7 +488,7 @@
 </thead>
 <tbody><tr>
 <td>十进制</td>
-<td>由0~9组成的数字序列。</td>
+<td>由0~9组成的数字序列</td>
 </tr>
 <tr>
 <td>十六进制</td>
@@ -493,19 +499,28 @@
 <td>以0开头</td>
 </tr>
 <tr>
-<td>浮点型数据</td>
-<td>传统计数法、科学计数法 e或E后面的整数表示10的指数次幂</td>
+<td>浮点型</td>
+<td>传统计数法、科学计数法e或E后面的整数表示10的指数次幂</td>
 </tr>
 <tr>
 <td>特殊值Infinity</td>
-<td>超出最大值范围，则输出正值<br />超出最小范围，则输出负数</td>
+<td>超出最大值范围，则正<br />超出最小范围，则负</td>
 </tr>
 <tr>
 <td>特殊值NaN</td>
 <td>非数字</td>
 </tr>
 </tbody></table>
-<h3 id="字符串型"><a href="#字符串型" class="headerlink" title="字符串型"></a>字符串型</h3><p>字符串是由0个或多个字符组成的序列，它可以包含<strong>太小写字母、数字、标点符号或其他字符，也可以包含汉字</strong>。程序中的字符串型数据是包含在<strong>单引号或双引号</strong>中的。<br><em>由单引号定界的字符串中可以含有双引号，由双引号定界的字符串中也可以含有单引号。</em><br><em>空字符串不包含任何字符，也不包含任何空格，用一对引号表示，即 “” 或 ‘ ‘</em><br>转义字符：<br>转义字符是“\”，通过转义字符可以在字符串中添加不可显示的特殊字符(例如\n, \t)，或者防止引号匹配混乱的问题(&#39;、&quot;) 。</p>
+<p><strong>科学计数法</strong><br>语法格式：</p>
+<pre class="line-numbers language-text"><code class="language-text">[digits] [.digits] [E|e[(+|-)]]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>例子：<br>$$<br>4E+2 = 4*10^{2} = 400<br>$$</p>
+<p>$$<br>3.14e4 = 3.14*10^{4} = 31400<br>$$</p>
+<p>$$<br>.14e4 = 0.14*10^{4} = 1400<br>$$</p>
+<p>$$<br>314E-2 = 314*10^{-2} = 3.14<br>$$</p>
+<h3 id="字符串型"><a href="#字符串型" class="headerlink" title="字符串型"></a>字符串型</h3><p>字符串是由0个或多个字符组成的序列，它可以包含<strong>太小写字母、数字、标点符号或其他字符，也可以包含汉字</strong>。程序中的字符串型数据是包含在<strong>单引号或双引号</strong>中的。<br><em>由单引号定界的字符串中可以含有双引号，由双引号定界的字符串中也可以含有单引号。</em></p>
+<pre class="line-numbers language-text"><code class="language-text">"I'm legend" = I'm legend 
+'你好"JavaScript"' = 你好"JavaScript"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><strong>空字符串</strong>不包含任何字符，也不包含任何空格，用一对引号表示，即 “” 或 ‘ ‘<br><strong>转义字符</strong>是<code>\</code>，通过转义字符可以在字符串中<strong>添加不可显示的特殊字符</strong>（例如<code>\n</code>, <code>\t</code>），或者<strong>防止引号匹配混乱</strong>的问题 </p>
 <h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><table>
 <thead>
 <tr>
@@ -562,9 +577,15 @@
 <td>十六进制编码Unicode字符</td>
 </tr>
 </tbody></table>
-<p><em>在document. write()语句中使用转义字符时，只有将其放在格式化文本块中才会起作用，即脚本必须放在<pre></pre>标签内。</em></p>
-<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>布尔数据类型只有两个值，一 个是true (真)，一个是false (假)，它说明了某个事物是真还是假。<br>特殊数据类型：<br>未定义值就是undefined，表示还没赋值</p>
-<h3 id="空值（null）"><a href="#空值（null）" class="headerlink" title="空值（null）"></a>空值（null）</h3><p>用于定义空的或不存在的引用。</p>
+<p>在document. write()语句中使用转义字符时，只有将其放在格式化文本块中才会起作用，即脚本必须放在<code>&lt;pre&gt;&lt;/pre&gt;</code>标签内。<br>代码：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;pre>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"网页基础:\nHTML\nCSS\nJavascript"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;pre>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js1.png" alt=""></p>
+<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>布尔数据类型只有两个值，一 个是true （真），一个是false （假），它说明了某个事物是真还是假。<br>特殊数据类型：<br>未定义值就是undefined，表示还没赋值</p>
+<h3 id="空值-null"><a href="#空值-null" class="headerlink" title="空值  (null)"></a>空值  (null)</h3><p>用于定义空的或不存在的引用。</p>
 <h3 id="常量与变量"><a href="#常量与变量" class="headerlink" title="常量与变量"></a>常量与变量</h3><p>常量：固定不变数据<br>变量：存储要用的数据<br>如果只是声明了变量，并未对其赋值，则其值默认为undef ined。可以使用var语句重复声明同一个变量，也可以在重复声明变量时为该变量赋一个新值。<br><em>在JavaScript中的变量必须要先定义后使用，没有定义过的变量不能直接使用。</em></p>
 <h2 id="JavaScript的关键字"><a href="#JavaScript的关键字" class="headerlink" title="JavaScript的关键字"></a>JavaScript的关键字</h2><table>
 <thead>
@@ -649,17 +670,21 @@
 </tbody></table>
 <h1 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h1><p>用于在程序中进行加、减、乘、除等运算。</p>
 <h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><p>对操作数进行比较，然后返回一个布尔值true或faIse.</p>
-<pre><code>&lt; , &lt;= , &gt; , &gt;= , == , != , === (绝对等于) , !==(绝对不等于)</code></pre><h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p><strong>简单赋值运算符</strong>：=<br><strong>符合赋值运算符</strong>：+= , -= , *= , /= , %=</p>
+<blockquote>
+<p><code>&lt;</code> , <code>&lt;=</code> , <code>&gt;</code> , <code>&gt;=</code> , <code>==</code> , <code>!=</code> , <code>===</code> (绝对等于) , <code>!==</code>(绝对不等于)</p>
+</blockquote>
+<h2 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h2><p><strong>简单赋值运算符</strong>：<code>=</code><br><strong>符合赋值运算符</strong>：<code>+=</code> , <code>-=</code> , <code>*=</code> , <code>/=</code> , <code>%=</code></p>
 <h2 id="字符串运算符"><a href="#字符串运算符" class="headerlink" title="字符串运算符"></a>字符串运算符</h2><p>用于两个字符串型数据之间的运算符，它的作用是将两个字符串连接起来。<br><em>如果比较字符串，则逐个比较字符的ASCIl码值，ASCII码值大的字符串大。ASCII码值都相等，字符数多的字符串大。</em></p>
-<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p>用于对一个或多个布尔值进行逻辑运算：&amp;&amp; 与 , || 或 , ! 非 </p>
-<h2 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h2><pre><code>表达式?结果1:结果2
-结果1为true
-结果2为false</code></pre><h2 id="逗号运算符"><a href="#逗号运算符" class="headerlink" title="逗号运算符"></a>逗号运算符</h2><p>用于将多个表达式排在一起，整个表达式的值为最后一个表达式的值。<br>例子：</p>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><p>用于对一个或多个布尔值进行逻辑运算：<code>&amp;&amp;</code>（与 ）、<code>||</code>（或） 、<code>!</code>(非） </p>
+<h2 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h2><blockquote>
+<p>表达式?结果1:结果2<br>结果1为: <code>true</code><br>结果2为: <code>false</code></p>
+</blockquote>
+<h2 id="逗号运算符"><a href="#逗号运算符" class="headerlink" title="逗号运算符"></a>逗号运算符</h2><p>用于将多个表达式排在一起，整个表达式的值为最后一个表达式的值。<br>例子：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> a <span class="token punctuation">,</span> b <span class="token punctuation">,</span> c <span class="token punctuation">,</span> d<span class="token punctuation">;</span>
 a <span class="token operator">=</span> <span class="token punctuation">(</span>b<span class="token operator">=</span><span class="token number">3</span> <span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token number">4</span> <span class="token punctuation">,</span> d<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"a最终值为"</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
-结果为 <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="typeof运算符"><a href="#typeof运算符" class="headerlink" title="typeof运算符"></a>typeof运算符</h2><p>用于判断操作数的数据类型。语法格式：</p>
+<span class="token comment" spellcheck="true">//结果为 1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="运算符-typeof"><a href="#运算符-typeof" class="headerlink" title="运算符 (typeof)"></a>运算符 (typeof)</h2><p><font color =#05ffdc>typeof</font> 用于判断操作数的数据类型。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">typeof</span> 操作数<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
@@ -697,11 +722,11 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td>functio</td>
 </tr>
 </tbody></table>
-<h2 id="new运算符"><a href="#new运算符" class="headerlink" title="new运算符"></a>new运算符</h2><p>用来创建一个新的对象实例。语法格式：</p>
-<pre><code>格式1：
-对象实例名称 = new 对象类型(参数);
-格式2：
-对象实例名称 = new 对象类型2;</code></pre><h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><table>
+<h2 id="运算符-new"><a href="#运算符-new" class="headerlink" title="运算符 (new)"></a>运算符 (new)</h2><p><font color =#05ffdc>new</font> 用来创建一个新的对象实例。语法格式：</p>
+<blockquote>
+<p>格式1：<br>对象实例名称 = new 对象类型(参数);<br>格式2：<br>对象实例名称 = new 对象类型2;</p>
+</blockquote>
+<h2 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h2><table>
 <thead>
 <tr>
 <th>优先级</th>
@@ -876,7 +901,8 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td>若存在，结果为toString()方法的值，否则结果为”undefined”</td>
 </tr>
 </tbody></table>
-<h1 id="语句结构"><a href="#语句结构" class="headerlink" title="语句结构"></a>语句结构</h1><h2 id="赋值语句"><a href="#赋值语句" class="headerlink" title="赋值语句"></a>赋值语句</h2><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p><strong>if语句</strong>，语法格式：</p>
+<h1 id="语句结构"><a href="#语句结构" class="headerlink" title="语句结构"></a>语句结构</h1><h2 id="赋值语句"><a href="#赋值语句" class="headerlink" title="赋值语句"></a>赋值语句</h2><p>···</p>
+<h2 id="判断语句-if"><a href="#判断语句-if" class="headerlink" title="判断语句 (if)"></a>判断语句 (if)</h2><p><strong>if语句</strong>，语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
   语句
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -897,7 +923,8 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
     语句n<span class="token operator">+</span><span class="token number">1</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="if语句的嵌套"><a href="#if语句的嵌套" class="headerlink" title="if语句的嵌套"></a>if语句的嵌套</h3><p> 套娃格式，if中的if。语法格式：</p>
+<p><strong>if语句的嵌套</strong></p>
+<p> 套娃格式，if中的if。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>表达式<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>表达式<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         语句<span class="token number">1</span>
@@ -911,7 +938,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
         语句<span class="token number">4</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="switch-分支语句"><a href="#switch-分支语句" class="headerlink" title="switch 分支语句"></a>switch 分支语句</h2><p>它根据一个表达式的值，选择不同的分支执行。语法格式：</p>
+<h2 id="分支语句-switch"><a href="#分支语句-switch" class="headerlink" title="分支语句 (switch)"></a>分支语句 (switch)</h2><p><font color =#05ffdc>switch</font> 它根据一个表达式的值，选择不同的分支执行。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">switch</span> <span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">case</span> 常量表达式<span class="token number">1</span> <span class="token punctuation">:</span>
         语句<span class="token number">1</span><span class="token punctuation">;</span>
@@ -930,24 +957,25 @@ document<span class="token punctuation">.</span><span class="token function">wri
         语句n<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
         <span class="token keyword">break</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><font color = #b3d4fc><strong><em>default语句可以省略。在表达式的值不能与任何一个case语句中的值相匹配的情况下，JavaScript会直接结束switch语句，不进行任何操作。</em></strong></font><br><font color=red><em>case后面常量表达式的数据类型必须与表达式的数据类型相同，否则匹配会全部失败，而去执行default语句中的内容。</em></font><br><font color=red><em>在switch语句中漏写break语句。则会影响其他语句</em></font></p>
-<h2 id="while-循环语句"><a href="#while-循环语句" class="headerlink" title="while 循环语句"></a>while 循环语句</h2><p>也称为前测试循环语句，它是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
+<p><font color = #b3d4fc><strong><em>default语句可以省略。在表达式的值不能与任何一个case语句中的值相匹配的情况下，JavaScript会直接结束switch语句，不进行任何操作。</em></strong></font><br><font color=red><strong><em>case后面常量表达式的数据类型必须与表达式的数据类型相同，否则匹配会全部失败，而去执行default语句中的内容。</em></strong></font><br><font color=red><strong><em>在switch语句中漏写break语句。则会影响其他语句</em></strong></font></p>
+<h2 id="循环语句-while"><a href="#循环语句-while" class="headerlink" title="循环语句 (while)"></a>循环语句 (while)</h2><p><font color =#05ffdc>while</font> 判断，它是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">while</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">(</span>
    语句（循环体）
 <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><font color =red><em>在使用while语句时，一定要保证循环可以正常结束，即必须保证条件表达式的值存在为false的情况，否则将形成死循环。</em></font></p>
-<h2 id="do…while-循环语句"><a href="#do…while-循环语句" class="headerlink" title="do…while 循环语句"></a>do…while 循环语句</h2><p>也称为后测试循环语句，它也是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
+<p><font color =red><strong><em>在使用while语句时，一定要保证循环可以正常结束，即必须保证条件表达式的值存在为false的情况，否则将形成死循环。</em></strong></font></p>
+<h2 id="循环语句-do…while"><a href="#循环语句-do…while" class="headerlink" title="循环语句 (do…while)"></a>循环语句 (do…while)</h2><p><font color =#05ffdc>do…while</font> 后判断，它也是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">do</span><span class="token punctuation">{</span>
    语句
 <span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="for-循环语句"><a href="#for-循环语句" class="headerlink" title="for 循环语句"></a>for 循环语句</h2><p>也称为计次循环语句，一般用于循环次数已知的情况。语法格式：</p>
+<h2 id="循环语句-for"><a href="#循环语句-for" class="headerlink" title="循环语句 (for)"></a>循环语句 (for)</h2><p><font color =#05ffdc>for</font> 计次循环，一般用于循环次数已知的情况。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>初始化表达式<span class="token punctuation">;</span>条件表达式<span class="token punctuation">;</span>迭代表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
     语句（循环体）
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p><font color = red><em>在使用for语句时，也一定要保证循环可以正常结束，也就是必须保证循环条件的结果存在为false的情况，否则循环体将无休止地执行下去，从而形成死循环。</em></font></p>
-<h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>用于跳过本次循环，并开始下一次循环。<br><font color = #b3d4fc><em>当使用continue语句跳过本次循环后，如果循环条件的结果为false,则退出<br>循环，否则继续下一次循环。</em></font><br><font color = red><em>continue语句只能应用在while、for、do…while语句中.</em></font></p>
+<p><font color = red><strong><em>在使用for语句时，也一定要保证循环可以正常结束，也就是必须保证循环条件的结果存在为false的情况，否则循环体将无休止地执行下去，从而形成死循环。</em></strong></font></p>
+<h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>用于跳过本次循环，并开始下一次循环。<br><font color = #b3d4fc><em>当使用continue语句跳过本次循环后，如果循环条件的结果为false,则退出<br>循环，否则继续下一次循环。</em></font><br><font color = red><strong><em>continue语句只能应用在while、for、do…while语句中.</em></strong></font></p>
 <h3 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h3><p>在循环语句中，break语句用于跳出循环。</p>
-<p><font color = red><em>continue语句只能应用在while、for、do…while或switch语句中。在嵌套的循环语句中，break语句只能跳出当前这一层的循环语句，而不是跳出所有的循环语句。</em></font></p>
+<p><font color = red><strong><em>continue语句只能应用在while、for、do…while或switch语句中。在嵌套的循环语句中，break语句只能跳出当前这一层的循环语句，而不是跳出所有的循环语句。</em></strong></font></p>
+<hr>
 <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><h2 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h2><p>函数是<strong>定义一次</strong>，可以<strong>调用或执行多次</strong>的一段JavaScript代码。定义函数的语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span><span class="token punctuation">[</span>参数<span class="token number">1</span><span class="token punctuation">,</span>参数<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     语句
@@ -958,7 +986,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <p><font color = red><strong>函数名有大小写的区分</strong></font></p>
 <h3 id="在事件响应中调用函数"><a href="#在事件响应中调用函数" class="headerlink" title="在事件响应中调用函数"></a>在事件响应中调用函数</h3><p><strong>事件处理流程</strong>：</p>
 <p><font size =5><em>触发事件→调用和执行函数→在页面中产生响应</em></font></p>
-<h3 id="通过链接调用函数"><a href="#通过链接调用函数" class="headerlink" title="通过链接调用函数"></a>通过链接调用函数</h3><p>在 &lt; a &gt; 标签中的href(链接地址)属性中使用“ javascript: 函数名() ”格式来调用函数，当用户单击这个链接时，相关函数将被执行。</p>
+<h3 id="通过链接调用函数"><a href="#通过链接调用函数" class="headerlink" title="通过链接调用函数"></a>通过链接调用函数</h3><p>在 <code>&lt; a &gt;</code> 标签中的href(链接地址)属性中使用“ javascript: 函数名() ”格式来调用函数，当用户单击这个链接时，相关函数将被执行。</p>
 <h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>函数的参数分为<strong>形参</strong>和<strong>实参</strong>。<br><strong>形参</strong>：定义函数时指定的参数<br><strong>实参</strong>：调用函数时实际传递的值<br>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">定义函数参数的语法格式<span class="token punctuation">:</span>
 <span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>形参<span class="token number">1</span><span class="token punctuation">,</span>形参<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -970,7 +998,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <p> <font color = red><strong>形参和实参要对应</strong></font></p>
 <h2 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><p>在函数中，可以使用return语句为函数返回一个值。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">retutn 表达式<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h2><h4 id="函数的嵌套定义"><a href="#函数的嵌套定义" class="headerlink" title="函数的嵌套定义"></a>函数的嵌套定义</h4><p>函数的嵌套定义就是在函数内部再定义其他的函数。<br> <font color = \#b3d4fc><em>允许使用函数的嵌套定义，但会使程序的可读性降低。</em></font></p>
+<h2 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h2><h4 id="函数的嵌套定义"><a href="#函数的嵌套定义" class="headerlink" title="函数的嵌套定义"></a>函数的嵌套定义</h4><p>函数的嵌套定义就是在函数内部再定义其他的函数。<br><em>允许使用函数的嵌套定义，但会使程序的可读性降低。</em></p>
 <h4 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h4><p>允许在一个函数的函数体中对另一个函数进行调用。</p>
 <h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><p>所谓递归函数就是函数在自身的函数体内调用自身，<strong>只在特定的情况下使用</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -1021,32 +1049,37 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h2><h3 id="parseInt-函数"><a href="#parseInt-函数" class="headerlink" title="parseInt() 函数"></a>parseInt() 函数</h3><p>该函数主要<strong>将首位为数字的字符串转换成数字</strong>，如果字符串不是以数字开头，那么将返回NaN，<strong>前提是默认十进制</strong>。语法格式：(默认十进制)</p>
+<h2 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h2><h3 id="字符转数字函数-parseInt"><a href="#字符转数字函数-parseInt" class="headerlink" title="字符转数字函数  ( parseInt )"></a>字符转数字函数  ( parseInt )</h3><p><font color =#05ffdc>parseInt </font>该函数主要<strong>将首位为数字的字符串转换成数字</strong>，如果字符串不是以数字开头，那么将返回<code>NaN</code>，<strong>前提是默认十进制</strong>。语法格式：（默认十进制）</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseInt</span><span class="token punctuation">(</span>String<span class="token punctuation">,</span><span class="token punctuation">[</span>进制数<span class="token punctuation">]</span><span class="token punctuation">)</span> 
 如<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"e2b"</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="parseFloat-函数"><a href="#parseFloat-函数" class="headerlink" title="parseFloat() 函数"></a>parseFloat() 函数</h3><p>该函数主要<strong>将首位为数字的字符串转化成浮点型数字</strong>，如果字符串不是以数字开头，那么将返回NaN。语法格式：</p>
+<h3 id="字符转浮点函数-parseFloat"><a href="#字符转浮点函数-parseFloat" class="headerlink" title="字符转浮点函数 (parseFloat)"></a>字符转浮点函数 (parseFloat)</h3><p><font color =#05ffdc>parseFloat</font> 该函数主要<strong>将首位为数字的字符串转化成浮点型数字</strong>，如果字符串不是以数字开头，那么将返回NaN。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseFloat</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 如<span class="token punctuation">:</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"5 * 4"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="isNaN-函数"><a href="#isNaN-函数" class="headerlink" title="isNaN() 函数"></a>isNaN() 函数</h3><p>该函数主要用于<strong>检验某个值是否为NaN</strong>。语法格式：</p>
+<h3 id="检验函数-isNaN"><a href="#检验函数-isNaN" class="headerlink" title="检验函数 (isNaN)"></a>检验函数 (isNaN)</h3><p><font color =#05ffdc>isNaN </font> 该函数主要用于<strong>检验某个值是否为NaN</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isNaN</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>返回值：</strong><br>如果参数 num 为 NaN ,函数返回值为true<br>如果参数 num 不为 NaN ,函数返回值为false</p>
-<h3 id="isFinite-函数"><a href="#isFinite-函数" class="headerlink" title="isFinite() 函数"></a>isFinite() 函数</h3><p>该函数主要用于<strong>检验其参数是否有限</strong>。语法格式：</p>
-<pre><code>isFinite(num)</code></pre><p>返回值：<br>如果参数 num 是 <strong>有限数字</strong>，则返回true<br>如果参数 num 是 <strong>NaN或无穷大</strong>，则返回false</p>
-<h2 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h2><h3 id="eval-函数"><a href="#eval-函数" class="headerlink" title="eval() 函数"></a>eval() 函数</h3><p>该函数的功能是<strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
+<blockquote>
+<p><strong>返回值：</strong><br>如果参数 <code>num</code> 为 <code>NaN</code> ,函数返回值为<code>true</code><br>如果参数 <code>num</code> 不为 <code>NaN</code> ,函数返回值为<code>false</code></p>
+</blockquote>
+<h3 id="检验限度函数-isFinite"><a href="#检验限度函数-isFinite" class="headerlink" title="检验限度函数 (isFinite)"></a>检验限度函数 (isFinite)</h3><p><font color =#05ffdc>isFinite</font> 该函数主要用于<strong>检验其参数是否有限</strong>。语法格式：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isFinite</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p><strong>返回值：</strong><br>如果参数 <code>num</code> 是 <strong>有限数字</strong>，则返回<code>true</code><br>如果参数 <code>num</code> 是 <strong>NaN或无穷大</strong>，则返回<code>false</code></p>
+</blockquote>
+<h2 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h2><h3 id="字符表达式值函数-eval"><a href="#字符表达式值函数-eval" class="headerlink" title="字符表达式值函数 (eval)"></a>字符表达式值函数 (eval)</h3><p><font color =#05ffdc>eval</font> 该函数的功能是<strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">eval</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"5 * 4"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="escape-函数"><a href="#escape-函数" class="headerlink" title="escape() 函数"></a>escape() 函数</h3><p>该函数用于<strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
+<span class="token comment" spellcheck="true">//如: eval("5 * 4")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="字符串编码函数-escape"><a href="#字符串编码函数-escape" class="headerlink" title="字符串编码函数 (escape)"></a>字符串编码函数 (escape)</h3><p><font color =#05ffdc>escape</font> 该函数用于<strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">escape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span> <span class="token function">escape</span><span class="token punctuation">(</span><span class="token string">"You &amp; Me"</span><span class="token punctuation">)</span> →You<span class="token operator">%</span><span class="token number">20</span><span class="token operator">%</span><span class="token number">26</span><span class="token operator">%</span>20Me<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="unescape-函数"><a href="#unescape-函数" class="headerlink" title="unescape() 函数"></a>unescape() 函数</h3><p>该函数主要用于<strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
+<span class="token comment" spellcheck="true">//如: escape("You &amp; Me") →You%20%26%20Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="字符串解码函数-unescape"><a href="#字符串解码函数-unescape" class="headerlink" title="字符串解码函数 (unescape)"></a>字符串解码函数 (unescape)</h3><p><font color =#05ffdc>unescape</font> 该函数主要用于<strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">unescape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span> <span class="token function">unescape</span><span class="token punctuation">(</span><span class="token string">"You%20%26%20Me"</span><span class="token punctuation">)</span> →You <span class="token operator">&amp;</span> Me<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="encodeURI-函数"><a href="#encodeURI-函数" class="headerlink" title="encodeURI() 函数"></a>encodeURI() 函数</h3><p>该函数主要用于<strong>将URI字符串进行编码</strong>。语法格式：</p>
+<span class="token comment" spellcheck="true">//如: unescape("You%20%26%20Me") →You &amp; Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="URL编码函数-encodeURI"><a href="#URL编码函数-encodeURI" class="headerlink" title="URL编码函数 (encodeURI )"></a>URL编码函数 (encodeURI )</h3><p><font color =#05ffdc>encodeURI </font> 该函数主要用于<strong>将URI字符串进行编码</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">encodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span><span class="token function">encodeURI</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="decodeURI-函数"><a href="#decodeURI-函数" class="headerlink" title="decodeURI() (函数)"></a>decodeURI() (函数)</h3><p>该函数主要用于<strong>对已编码的UR I字符串进行解码</strong>。语法格式：</p>
+<span class="token comment" spellcheck="true">//如:encodeURI("https://www.baidu.com/?name=测试");</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="URL解码函数-decodeURI"><a href="#URL解码函数-decodeURI" class="headerlink" title="URL解码函数 (decodeURI)"></a>URL解码函数 (decodeURI)</h3><p><font color =#05ffdc>decodeURI</font> 该函数主要用于<strong>对已编码的URI字符串进行解码</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">decodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span><span class="token function">decodeURI</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true">//如:decodeURI("https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h2 id="定义函数的其他方法"><a href="#定义函数的其他方法" class="headerlink" title="定义函数的其他方法"></a>定义函数的其他方法</h2><h3 id="定义匿名函数"><a href="#定义匿名函数" class="headerlink" title="定义匿名函数"></a>定义匿名函数</h3><p>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> 变量名 <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>参数<span class="token number">1</span>，参数<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     函数体
@@ -1678,30 +1711,30 @@ document<span class="token punctuation">.</span><span class="token function">wri
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/posts/f461.html">
+                <a href="/Sanscan12.github.io/posts/a920.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (3).jpg" class="responsive-img" alt="生活计划">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (1).jpg" class="responsive-img" alt="颜色搭配">
                         
-                        <span class="card-title">生活计划</span>
+                        <span class="card-title">颜色搭配</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            照亮道路
+                            分享颜色搭配。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-21
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
+                            <a href="/Sanscan12.github.io/categories/%E5%85%B6%E4%BB%96/" class="post-category">
+                                    其他
                                 </a>
                             
                             
@@ -1711,8 +1744,12 @@ document<span class="token punctuation">.</span><span class="token function">wri
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Sanscan12.github.io/tags/%E8%AE%A1%E5%88%92/">
-                        <span class="chip bg-color">计划</span>
+                    <a href="/Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/">
+                        <span class="chip bg-color">搭色</span>
+                    </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">分享</span>
                     </a>
                     
                 </div>
@@ -1726,31 +1763,30 @@ document<span class="token punctuation">.</span><span class="token function">wri
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Sanscan12.github.io/posts/96bc.html">
+                <a href="/Sanscan12.github.io/posts/3194.html">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no（5）.jpg" class="responsive-img" alt="CSS 问题">
                         
-                        <img src="/Sanscan12.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="群辉DSM端口">
-                        
-                        <span class="card-title">群辉DSM端口</span>
+                        <span class="card-title">CSS 问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DSM端口
+                            记录自己踏过的坑···
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Sanscan12.github.io/categories/%E9%85%8D%E7%BD%AE/" class="post-category">
-                                    配置
+                            <a href="/Sanscan12.github.io/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -1764,12 +1800,12 @@ document<span class="token punctuation">.</span><span class="token function">wri
                         <span class="chip bg-color">血的教训</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%BE%A4%E8%BE%89/">
-                        <span class="chip bg-color">群辉</span>
+                    <a href="/Sanscan12.github.io/tags/css/">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
-                    <a href="/Sanscan12.github.io/tags/%E7%AB%AF%E5%8F%A3/">
-                        <span class="chip bg-color">端口</span>
+                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -1966,7 +2002,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">32.2k</span>&nbsp;字战绩
+                class="white-color">33.6k</span>&nbsp;字战绩
             
             
             

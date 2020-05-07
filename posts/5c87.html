@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-04
+                    2020-05-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9.4k
+                    10.1k
                 </div>
                 
 
@@ -1165,8 +1165,8 @@ a:hover      -----—&gt;      0,0,1,1
 <pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-image</span> <span class="token punctuation">:</span> none | url<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>none : 　无背景图（默认的）<br>url : 　使用绝对或相对地址指定背景图像<br><em>背景图片后面的地址，url不要加引号</em></p>
 <hr>
-<h2 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h2><p><font color =#05ffdc>background-repeat</font>背景布局形式！语法格式：</p>
-<pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-repeat</span> <span class="token punctuation">:</span> repeat | no-repeat | repeat-x | repeat-y <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="背景平铺-repeat"><a href="#背景平铺-repeat" class="headerlink" title="背景平铺 (repeat)"></a>背景平铺 (repeat)</h2><p><font color =#05ffdc>background-repeat  </font>背景布局形式！语法格式：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token property">background-repeat</span> <span class="token punctuation">:</span> repeat | no-repeat | repeat-x | repeat-y <span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -1867,7 +1867,331 @@ a:hover      -----—&gt;      0,0,1,1
 </tbody></table>
 <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/1.png" style="zoom: 67%;" />
 
-<p>等待更新</p>
+<hr>
+<h2 id="空格换行-white-space"><a href="#空格换行-white-space" class="headerlink" title="空格换行 (white-space)"></a>空格换行 (white-space)</h2><p><font color =#05ffdc>white-space</font> 对元素内容的空格处理！br可换行！！！</p>
+<table>
+<thead>
+<tr>
+<th>white-space属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal （默认）</td>
+<td>默认处理</td>
+</tr>
+<tr>
+<td>pre</td>
+<td>超出边界不断行</td>
+</tr>
+<tr>
+<td>pre-wrap</td>
+<td>空白距离不合并，碰边断行</td>
+</tr>
+<tr>
+<td>pre-line</td>
+<td>合并多余空白，碰边断行</td>
+</tr>
+<tr>
+<td>nowrap</td>
+<td>合并多余空白，结束换行</td>
+</tr>
+</tbody></table>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css1.png" style="zoom:50%;" />
+
+<hr>
+<h2 id="文字溢出-text-overflow"><a href="#文字溢出-text-overflow" class="headerlink" title="文字溢出 (text-overflow)"></a>文字溢出 (text-overflow)</h2><p><font color =#05ffdc>text-overflow</font>  将元素内容溢出时用自定义字符代替</p>
+<table>
+<thead>
+<tr>
+<th>text-overflow属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>clip</td>
+<td>切掉溢出部分</td>
+</tr>
+<tr>
+<td>ellipsis</td>
+<td>溢出部分替换为（…）</td>
+</tr>
+<tr>
+<td>```css</td>
+<td></td>
+</tr>
+<tr>
+<td><!DOCTYPE html></td>
+<td></td>
+</tr>
+<tr>
+<td><html lang="en"></td>
+<td></td>
+</tr>
+<tr>
+<td><head></td>
+<td></td>
+</tr>
+<tr>
+<td><meta charset="UTF-8"></td>
+<td></td>
+</tr>
+<tr>
+<td><title>Title</title></td>
+<td></td>
+</tr>
+<tr>
+<td><style></td>
+<td></td>
+</tr>
+<tr>
+<td>div {</td>
+<td></td>
+</tr>
+<tr>
+<td>width: 100px;</td>
+<td></td>
+</tr>
+<tr>
+<td>height: 20px;</td>
+<td></td>
+</tr>
+<tr>
+<td>border: 1px solid red;</td>
+<td></td>
+</tr>
+<tr>
+<td>margin: 20px;</td>
+<td></td>
+</tr>
+<tr>
+<td>overflow: hidden;</td>
+<td></td>
+</tr>
+<tr>
+<td>white-space: nowrap;</td>
+<td></td>
+</tr>
+<tr>
+<td>}</td>
+<td></td>
+</tr>
+<tr>
+<td>.no1 {</td>
+<td></td>
+</tr>
+<tr>
+<td>text-overflow: clip;</td>
+<td></td>
+</tr>
+<tr>
+<td>}</td>
+<td></td>
+</tr>
+<tr>
+<td>.no2 {</td>
+<td></td>
+</tr>
+<tr>
+<td>text-overflow: ellipsis;</td>
+<td></td>
+</tr>
+<tr>
+<td>}</td>
+<td></td>
+</tr>
+<tr>
+<td></style></td>
+<td></td>
+</tr>
+<tr>
+<td><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/Sanscan12.github.io/atom.xml" title="柏竹博客" type="application/atom+xml">
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-line-numbers.css" type="text/css"></head></td>
+<td></td>
+</tr>
+<tr>
+<td><body></td>
+<td></td>
+</tr>
+<tr>
+<td><ul></td>
+<td></td>
+</tr>
+<tr>
+<td><li>clip<div class="no1">内容内容内容内容内容内容</div></li></td>
+<td></td>
+</tr>
+<tr>
+<td><li>ellipsis<div class="no2">内容内容内容内容内容内容</div></li></td>
+<td></td>
+</tr>
+<tr>
+<td></ul></td>
+<td></td>
+</tr>
+<tr>
+<td></body></td>
+<td></td>
+</tr>
+<tr>
+<td></html></td>
+<td></td>
+</tr>
+<tr>
+<td>```</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css2.png" alt=""></p>
+<blockquote>
+<p><font color=red><strong>生效前提：</strong></font></p>
+<ol>
+<li>元素宽度小于内容</li>
+<li>超出内容隐藏的属性<code>overflow: hidden</code></li>
+<li>操出边界不换行的属性<code>white-space:( pre | nowrap )</code></li>
+</ol>
+</blockquote>
+<hr>
+<h1 id="精灵图"><a href="#精灵图" class="headerlink" title="精灵图"></a>精灵图</h1><p>由很多小的背景图像合成的大图被称为 精灵图。可以减少浏览器与服务器数据交换的次数。</p>
+<p><strong>精灵图运用</strong></p>
+<p>根据大小查找图片,锁定位置。</p>
+<p>精灵图在css使用到的属性有</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*背景连写*/</span>
+background
+<span class="token comment" spellcheck="true">/*背景图片*/</span>
+<span class="token property">background-image</span><span class="token punctuation">:</span> none | url<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/*背景平铺 */</span>
+<span class="token property">background-repeat</span><span class="token punctuation">:</span> repeat | no-repeat | repeat-x | repeat-y <span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/*背景位置*/</span>
+<span class="token property">background-position</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span> <span class="token punctuation">(</span>length | position<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/*length: 精准坐标、position: 方位名词*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>原图调用 ：（京东精灵图）</p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css4.png" style="zoom:50%;" />
+
+<p>示范代码：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>Title&lt;/title>
+    &lt;style>
+        li </span><span class="token punctuation">{</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.no1</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">30</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">26</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/jd.png")</span> no-repeat<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.no2</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">22</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/jd.png")</span> no-repeat <span class="token number">0</span> -<span class="token number">68</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.no3</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">230</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">52</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/jd.png")</span> no-repeat <span class="token number">0</span> -<span class="token number">134</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.no4</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">26</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/jd.png")</span> no-repeat <span class="token number">0</span> -<span class="token number">408</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.no5</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">42</span>px<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">44</span>px<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/jd.png")</span> no-repeat <span class="token number">0</span> -<span class="token number">442</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    &lt;/style>
+&lt;/head>
+&lt;body>
+&lt;ul>
+    &lt;li class=<span class="token string">"no1"</span>>&lt;/li>
+    &lt;li class=<span class="token string">"no2"</span>>&lt;/li>
+    &lt;li class=<span class="token string">"no3"</span>>&lt;/li>
+    &lt;li class=<span class="token string">"no4"</span>>&lt;/li>
+    &lt;li class=<span class="token string">"no5"</span>>&lt;/li>
+&lt;/ul>
+&lt;/body>
+&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>结果图示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css3.png" alt=""></p>
+<hr>
+<h1 id="滑动门"><a href="#滑动门" class="headerlink" title="滑动门"></a>滑动门</h1><p>为网页元素设置特殊形状的背景。<br>以下我网站例子：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css5.png" alt=""></p>
+<p>背景原型：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css7.png" alt=""><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css8.png" /></p>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css11.jpg" style="zoom:50%;" />
+
+<p>滑动门应用：</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector">* </span><span class="token punctuation">{</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">body </span><span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">1000</span>px<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">/*背景*/</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/wx.jpg")</span> repeat-x<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> li </span><span class="token punctuation">{</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+            <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> a </span><span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">33</span>px<span class="token punctuation">;</span>
+            <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">33</span>px<span class="token punctuation">;</span>
+            <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">/*按钮样式背景（左）*/</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/to.png")</span> no-repeat<span class="token punctuation">;</span>
+            <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> span </span><span class="token punctuation">{</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">33</span>px<span class="token punctuation">;</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">/*按钮样式背景（右）*/</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/to.png")</span> right<span class="token punctuation">;</span>
+            <span class="token property">padding-right</span><span class="token punctuation">:</span> <span class="token number">16</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">/*鼠标指定时高亮*/</span>
+        <span class="token selector"><span class="token class">.box</span> a<span class="token pseudo-class">:hover</span> span </span><span class="token punctuation">{</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/ao.png")</span> right<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> a<span class="token pseudo-class">:hover</span> </span><span class="token punctuation">{</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("img/ao.png")</span> no-repeat<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>PC平台<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>开放平台<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>帮助与反馈<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">></span></span>首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css9.png" alt=""></p>
+<blockquote>
+<p>说明：</p>
+<ol>
+<li>a 设置背景左侧，内边距撑开左框中的宽度</li>
+<li>span 设置背景右侧，内边距撑开有边框的宽度，左边有内容</li>
+<li>a包含span是因为整体是可以点击的缘故</li>
+</ol>
+</blockquote>
+<p>等待更新·····</p>
 
             </div>
             <hr/>
@@ -2492,59 +2816,6 @@ a:hover      -----—&gt;      0,0,1,1
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/posts/124c.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/Sanscan12.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="博客操作">
-                        
-                        <span class="card-title">博客操作</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            填充错误的经历
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-18
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                        <span class="chip bg-color">血的教训</span>
-                    </a>
-                    
-                    <a href="/Sanscan12.github.io/tags/hexo%E6%8C%87%E4%BB%A4/">
-                        <span class="chip bg-color">hexo指令</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/Sanscan12.github.io/posts/53d1.html">
                     <div class="card-image">
                         
@@ -2560,9 +2831,9 @@ a:hover      -----—&gt;      0,0,1,1
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -2584,6 +2855,54 @@ a:hover      -----—&gt;      0,0,1,1
                     
                     <a href="/Sanscan12.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
                         <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Sanscan12.github.io/posts/d796.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (2).jpg" class="responsive-img" alt="英语语法">
+                        
+                        <span class="card-title">英语语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            努力学习英语中···
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Sanscan12.github.io/categories/%E5%85%B6%E4%BB%96/" class="post-category">
+                                    其他
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
@@ -2780,7 +3099,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">32.2k</span>&nbsp;字战绩
+                class="white-color">33.6k</span>&nbsp;字战绩
             
             
             
