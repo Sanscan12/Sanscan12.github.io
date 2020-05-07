@@ -379,12 +379,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Sanscan12.github.io/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
-                            </a>
-                        
                             <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                 <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/Sanscan12.github.io/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
                     </div>
@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.8k
+                    4.1k
                 </div>
                 
 
@@ -474,11 +474,13 @@
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>javascript:alert(<span class="token punctuation">'</span>你好JavaScript<span class="token punctuation">'</span>)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>测试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>​    <strong>与实践结合调用</strong></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>测试<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert(<span class="token punctuation">'</span>你好JavaScript <span class="token punctuation">'</span>)<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<hr>
 <h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>程序按照在HTML文件中出现的顺序逐行执行。</p>
 <h2 id="大小写敏感"><a href="#大小写敏感" class="headerlink" title="大小写敏感"></a>大小写敏感</h2><p>在输入语言的关键字、函数名、变量时，都必须采用正确的大小写形式。</p>
 <h2 id="空格与换行"><a href="#空格与换行" class="headerlink" title="空格与换行"></a>空格与换行</h2><p>在JavaScript中会忽略程序中的空格、换行和制表符。</p>
 <h2 id="每行结尾的分号可有可无"><a href="#每行结尾的分号可有可无" class="headerlink" title="每行结尾的分号可有可无"></a>每行结尾的分号可有可无</h2><p>为了养好习惯，经量写上分号。</p>
 <h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>注释就是向文件代码中添加的–些说明性的文字，或者对代码进行暂时屏蔽。<code>//内容</code>ro <code>/*内容*/</code></p>
+<hr>
 <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="数值型"><a href="#数值型" class="headerlink" title="数值型"></a>数值型</h3><table>
 <thead>
 <tr>
@@ -584,7 +586,7 @@
     document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;pre>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js1.png" alt=""></p>
-<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>布尔数据类型只有两个值，一 个是true （真），一个是false （假），它说明了某个事物是真还是假。<br>特殊数据类型：<br>未定义值就是undefined，表示还没赋值</p>
+<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><p>布尔数据类型只有两个值，一 个是true （真），一个是false （假），它说明了某个事物是真还是假。<br><strong>特殊数据类型：</strong><br>未定义值就是undefined，表示还没赋值</p>
 <h3 id="空值-null"><a href="#空值-null" class="headerlink" title="空值  (null)"></a>空值  (null)</h3><p>用于定义空的或不存在的引用。</p>
 <h3 id="常量与变量"><a href="#常量与变量" class="headerlink" title="常量与变量"></a>常量与变量</h3><p>常量：固定不变数据<br>变量：存储要用的数据<br>如果只是声明了变量，并未对其赋值，则其值默认为undef ined。可以使用var语句重复声明同一个变量，也可以在重复声明变量时为该变量赋一个新值。<br><em>在JavaScript中的变量必须要先定义后使用，没有定义过的变量不能直接使用。</em></p>
 <h2 id="JavaScript的关键字"><a href="#JavaScript的关键字" class="headerlink" title="JavaScript的关键字"></a>JavaScript的关键字</h2><table>
@@ -668,6 +670,7 @@
 <td></td>
 </tr>
 </tbody></table>
+<hr>
 <h1 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h1><p>用于在程序中进行加、减、乘、除等运算。</p>
 <h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><p>对操作数进行比较，然后返回一个布尔值true或faIse.</p>
 <blockquote>
@@ -816,6 +819,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 </tr>
 </tbody></table>
 <p><strong>结合性</strong><br>左结合：除了赋值、条件和单目运算符<br>右结合：赋值运算符、条件运算符</p>
+<hr>
 <h1 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h1><p>是<strong>运算符</strong>和<strong>操作数</strong>组合而成的式子。运算结果可分为：<strong>算术表达式</strong>、<strong>字符串表达式</strong>、<strong>逻辑表达式</strong><br><em>表达式是一个相对的概念，在表达式中可以含有若千个子表达式，而且表达式中的一个常量或变量都可以看作是一个表达式。</em></p>
 <h2 id="表达式类型转换"><a href="#表达式类型转换" class="headerlink" title="表达式类型转换"></a>表达式类型转换</h2><h3 id="转换为数值型"><a href="#转换为数值型" class="headerlink" title="转换为数值型"></a>转换为数值型</h3><table>
 <thead>
@@ -901,6 +905,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td>若存在，结果为toString()方法的值，否则结果为”undefined”</td>
 </tr>
 </tbody></table>
+<hr>
 <h1 id="语句结构"><a href="#语句结构" class="headerlink" title="语句结构"></a>语句结构</h1><h2 id="赋值语句"><a href="#赋值语句" class="headerlink" title="赋值语句"></a>赋值语句</h2><p>···</p>
 <h2 id="判断语句-if"><a href="#判断语句-if" class="headerlink" title="判断语句 (if)"></a>判断语句 (if)</h2><p><strong>if语句</strong>，语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -986,8 +991,10 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <p><font color = red><strong>函数名有大小写的区分</strong></font></p>
 <h3 id="在事件响应中调用函数"><a href="#在事件响应中调用函数" class="headerlink" title="在事件响应中调用函数"></a>在事件响应中调用函数</h3><p><strong>事件处理流程</strong>：</p>
 <p><font size =5><em>触发事件→调用和执行函数→在页面中产生响应</em></font></p>
-<h3 id="通过链接调用函数"><a href="#通过链接调用函数" class="headerlink" title="通过链接调用函数"></a>通过链接调用函数</h3><p>在 <code>&lt; a &gt;</code> 标签中的href(链接地址)属性中使用“ javascript: 函数名() ”格式来调用函数，当用户单击这个链接时，相关函数将被执行。</p>
-<h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>函数的参数分为<strong>形参</strong>和<strong>实参</strong>。<br><strong>形参</strong>：定义函数时指定的参数<br><strong>实参</strong>：调用函数时实际传递的值<br>语法格式：</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"button"</span> value<span class="token operator">=</span><span class="token string">"提交"</span> onclick<span class="token operator">=</span><span class="token string">"[调用函数]"</span><span class="token operator">/</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="通过链接调用函数"><a href="#通过链接调用函数" class="headerlink" title="通过链接调用函数"></a>通过链接调用函数</h3><p>在 <code>&lt; a &gt;</code> 标签中的href(链接地址)属性中使用<code>javascript:函数名()</code>格式来调用函数，单击这个链接时，函数将被执行。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"javascaript:[调用函数]"</span><span class="token operator">></span> 单击链接 <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>函数的参数分为 <strong>形参</strong> 和 <strong>实参</strong><br><strong>形参</strong>：定义函数时指定的参数<br><strong>实参</strong>：调用函数时实际传递的值<br>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">定义函数参数的语法格式<span class="token punctuation">:</span>
 <span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>形参<span class="token number">1</span><span class="token punctuation">,</span>形参<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     函数体
@@ -998,8 +1005,8 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <p> <font color = red><strong>形参和实参要对应</strong></font></p>
 <h2 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><p>在函数中，可以使用return语句为函数返回一个值。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">retutn 表达式<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h2><h4 id="函数的嵌套定义"><a href="#函数的嵌套定义" class="headerlink" title="函数的嵌套定义"></a>函数的嵌套定义</h4><p>函数的嵌套定义就是在函数内部再定义其他的函数。<br><em>允许使用函数的嵌套定义，但会使程序的可读性降低。</em></p>
-<h4 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h4><p>允许在一个函数的函数体中对另一个函数进行调用。</p>
+<h2 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h2><h4 id="函数的嵌套定义"><a href="#函数的嵌套定义" class="headerlink" title="函数的嵌套定义"></a>函数的嵌套定义</h4><p>函数的嵌套定义就是在函数内部再定义其他的函数。 会使程序的可读性降低</p>
+<h4 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h4><p>允许在一个函数的函数体中对另一个函数进行调 用</p>
 <h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><p>所谓递归函数就是函数在自身的函数体内调用自身，<strong>只在特定的情况下使用</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">函数名</span><span class="token punctuation">(</span>参数<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1049,37 +1056,102 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h2><h3 id="字符转数字函数-parseInt"><a href="#字符转数字函数-parseInt" class="headerlink" title="字符转数字函数  ( parseInt )"></a>字符转数字函数  ( parseInt )</h3><p><font color =#05ffdc>parseInt </font>该函数主要<strong>将首位为数字的字符串转换成数字</strong>，如果字符串不是以数字开头，那么将返回<code>NaN</code>，<strong>前提是默认十进制</strong>。语法格式：（默认十进制）</p>
+<h2 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h2><h3 id="字符转数字函数-parseInt"><a href="#字符转数字函数-parseInt" class="headerlink" title="字符转数字函数  ( parseInt )"></a>字符转数字函数  ( parseInt )</h3><p><font color =#05ffdc>parseInt </font><strong>将首位为数字的字符串转换成数字</strong>，字符串开头不是数字的字符，则返回<code>NaN</code>，<strong>前提是默认十进制</strong>。语法格式：（默认十进制）</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseInt</span><span class="token punctuation">(</span>String<span class="token punctuation">,</span><span class="token punctuation">[</span>进制数<span class="token punctuation">]</span><span class="token punctuation">)</span> 
-如<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"e2b"</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="字符转浮点函数-parseFloat"><a href="#字符转浮点函数-parseFloat" class="headerlink" title="字符转浮点函数 (parseFloat)"></a>字符转浮点函数 (parseFloat)</h3><p><font color =#05ffdc>parseFloat</font> 该函数主要<strong>将首位为数字的字符串转化成浮点型数字</strong>，如果字符串不是以数字开头，那么将返回NaN。语法格式：</p>
+如<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"e2b"</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span>
+结果为<span class="token punctuation">:</span><span class="token number">3627</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="字符转浮点函数-parseFloat"><a href="#字符转浮点函数-parseFloat" class="headerlink" title="字符转浮点函数 (parseFloat)"></a>字符转浮点函数 (parseFloat)</h3><p><font color =#05ffdc>parseFloat</font> <strong>将首位为数字的字符串转化成浮点型数字</strong>，字符串不是以数字开头，则返回NaN。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseFloat</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
-如<span class="token punctuation">:</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"5 * 4"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="检验函数-isNaN"><a href="#检验函数-isNaN" class="headerlink" title="检验函数 (isNaN)"></a>检验函数 (isNaN)</h3><p><font color =#05ffdc>isNaN </font> 该函数主要用于<strong>检验某个值是否为NaN</strong>。语法格式：</p>
+如<span class="token punctuation">:</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">"5.411"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="检验函数-isNaN"><a href="#检验函数-isNaN" class="headerlink" title="检验函数 (isNaN)"></a>检验函数 (isNaN)</h3><p><font color =#05ffdc>isNaN </font> <strong>检验某个值是否为NaN</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isNaN</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
-<p><strong>返回值：</strong><br>如果参数 <code>num</code> 为 <code>NaN</code> ,函数返回值为<code>true</code><br>如果参数 <code>num</code> 不为 <code>NaN</code> ,函数返回值为<code>false</code></p>
+<p><strong>返回值：</strong><br>结果为<code>NaN</code> 函数返回值为<code>true</code><br>否则，函数返回值为<code>false</code></p>
 </blockquote>
-<h3 id="检验限度函数-isFinite"><a href="#检验限度函数-isFinite" class="headerlink" title="检验限度函数 (isFinite)"></a>检验限度函数 (isFinite)</h3><p><font color =#05ffdc>isFinite</font> 该函数主要用于<strong>检验其参数是否有限</strong>。语法格式：</p>
+<h3 id="检验限度函数-isFinite"><a href="#检验限度函数-isFinite" class="headerlink" title="检验限度函数 (isFinite)"></a>检验限度函数 (isFinite)</h3><p><font color =#05ffdc>isFinite</font> <strong>检验其参数是否有限</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isFinite</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>num：需要验证的数字</p>
 <blockquote>
-<p><strong>返回值：</strong><br>如果参数 <code>num</code> 是 <strong>有限数字</strong>，则返回<code>true</code><br>如果参数 <code>num</code> 是 <strong>NaN或无穷大</strong>，则返回<code>false</code></p>
+<p><strong>返回值：</strong><br>有限数字，则返回<code>true</code><br>NaN或无穷大，则返回<code>false</code></p>
 </blockquote>
-<h2 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h2><h3 id="字符表达式值函数-eval"><a href="#字符表达式值函数-eval" class="headerlink" title="字符表达式值函数 (eval)"></a>字符表达式值函数 (eval)</h3><p><font color =#05ffdc>eval</font> 该函数的功能是<strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
+<p><strong>代码示范：</strong></p>
+<pre class="line-numbers language-css"><code class="language-css">&lt;!DOCTYPE html>
+&lt;html lang=<span class="token string">"en"</span>>
+&lt;head>
+    &lt;meta charset=<span class="token string">"UTF-8"</span>> 
+    &lt;title>Title&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;script type=<span class="token string">"text/javascript"</span>>
+        var no<span class="token number">1</span> = <span class="token string">"123abc"</span><span class="token punctuation">;</span>
+        var no<span class="token number">2</span> = <span class="token string">"abc123"</span><span class="token punctuation">;</span>
+        var no<span class="token number">3</span> = <span class="token string">"e2b"</span><span class="token punctuation">;</span>
+        var no<span class="token number">4</span> = <span class="token string">"3434.43"</span><span class="token punctuation">;</span>
+        var no<span class="token number">5</span> = <span class="token string">"abb434.43"</span><span class="token punctuation">;</span>
+        var no<span class="token number">6</span> = <span class="token string">"12322"</span><span class="token punctuation">;</span>
+        var no<span class="token number">7</span> = <span class="token string">"1232a2"</span><span class="token punctuation">;</span>
+        var no<span class="token number">8</span> = <span class="token string">"123"</span><span class="token punctuation">;</span>
+        var no<span class="token number">9</span> = <span class="token string">"123abc"</span><span class="token punctuation">;</span>
+        var no<span class="token number">10</span> = <span class="token string">"1/0"</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"parseInt:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">1</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abc123 = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">2</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"e2b = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">3</span>,<span class="token number">16</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"parseFloat:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3434.43 = "</span>+<span class="token function">parseFloat</span><span class="token punctuation">(</span>no<span class="token number">4</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abb434.43 = "</span>+<span class="token function">parseFloat</span><span class="token punctuation">(</span>no<span class="token number">5</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"isNaN:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"12322 = "</span>+<span class="token function">isNaN</span><span class="token punctuation">(</span>no<span class="token number">6</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1232a2 = "</span>+<span class="token function">isNaN</span><span class="token punctuation">(</span>no<span class="token number">7</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"isFinite:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123 = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">8</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">9</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1/0 = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">10</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    &lt;/script>
+&lt;/body>
+&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js2.png" alt=""></p>
+<h2 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h2><h3 id="字符表达式值函数-eval"><a href="#字符表达式值函数-eval" class="headerlink" title="字符表达式值函数 (eval)"></a>字符表达式值函数 (eval)</h3><p><font color =#05ffdc>eval</font> <strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">eval</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: eval("5 * 4")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="字符串编码函数-escape"><a href="#字符串编码函数-escape" class="headerlink" title="字符串编码函数 (escape)"></a>字符串编码函数 (escape)</h3><p><font color =#05ffdc>escape</font> 该函数用于<strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
+<h3 id="字符串编码函数-escape"><a href="#字符串编码函数-escape" class="headerlink" title="字符串编码函数 (escape)"></a>字符串编码函数 (escape)</h3><p><font color =#05ffdc>escape</font> <strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">escape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: escape("You &amp; Me") →You%20%26%20Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="字符串解码函数-unescape"><a href="#字符串解码函数-unescape" class="headerlink" title="字符串解码函数 (unescape)"></a>字符串解码函数 (unescape)</h3><p><font color =#05ffdc>unescape</font> 该函数主要用于<strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
+<h3 id="字符串解码函数-unescape"><a href="#字符串解码函数-unescape" class="headerlink" title="字符串解码函数 (unescape)"></a>字符串解码函数 (unescape)</h3><p><font color =#05ffdc>unescape</font> <strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">unescape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: unescape("You%20%26%20Me") →You &amp; Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="URL编码函数-encodeURI"><a href="#URL编码函数-encodeURI" class="headerlink" title="URL编码函数 (encodeURI )"></a>URL编码函数 (encodeURI )</h3><p><font color =#05ffdc>encodeURI </font> 该函数主要用于<strong>将URI字符串进行编码</strong>。语法格式：</p>
+<h3 id="URL编码函数-encodeURI"><a href="#URL编码函数-encodeURI" class="headerlink" title="URL编码函数 (encodeURI )"></a>URL编码函数 (encodeURI )</h3><p><font color =#05ffdc>encodeURI </font> <strong>将URI字符串进行编码</strong>，语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">encodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如:encodeURI("https://www.baidu.com/?name=测试");</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="URL解码函数-decodeURI"><a href="#URL解码函数-decodeURI" class="headerlink" title="URL解码函数 (decodeURI)"></a>URL解码函数 (decodeURI)</h3><p><font color =#05ffdc>decodeURI</font> 该函数主要用于<strong>对已编码的URI字符串进行解码</strong>。语法格式：</p>
+<h3 id="URL解码函数-decodeURI"><a href="#URL解码函数-decodeURI" class="headerlink" title="URL解码函数 (decodeURI)"></a>URL解码函数 (decodeURI)</h3><p><font color =#05ffdc>decodeURI</font> <strong>对已编码URI字符串进行解码，</strong>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">decodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如:decodeURI("https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>代码示范：</p>
+<pre class="line-numbers language-css"><code class="language-css">&lt;!DOCTYPE html>
+&lt;html lang=<span class="token string">"en"</span>>
+&lt;head>
+    &lt;meta charset=<span class="token string">"UTF-8"</span>>
+    &lt;title>Title&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;script type=<span class="token string">"text/javascript"</span>>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"eval:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3+5 ="</span>+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3+5"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1 = "</span>+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"x = 5 ; y = 6 ; document.write(x * y)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span>+<span class="token string">"escape:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21 ="</span>+<span class="token function">escape</span><span class="token punctuation">(</span><span class="token string">"I love JS !!!"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"unescape:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I love JS !!! = "</span>+<span class="token function">unescape</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"encodeURI:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95 = "</span>+<span class="token function">encodeURI</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"decodeURI:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试 = "</span>+<span class="token function">decodeURI</span><span class="token punctuation">(</span><span class="token string">"decodeURI(\"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95\")"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    &lt;/script>
+&lt;/body>
+&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js3.png" style="zoom: 67%;" />
+
 <h2 id="定义函数的其他方法"><a href="#定义函数的其他方法" class="headerlink" title="定义函数的其他方法"></a>定义函数的其他方法</h2><h3 id="定义匿名函数"><a href="#定义匿名函数" class="headerlink" title="定义匿名函数"></a>定义匿名函数</h3><p>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> 变量名 <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>参数<span class="token number">1</span>，参数<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     函数体
@@ -1150,12 +1222,12 @@ document<span class="token punctuation">.</span><span class="token function">wri
                     
                         <div class="article-tag">
                             
-                                <a href="/Sanscan12.github.io/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
-                                </a>
-                            
                                 <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
                         </div>
@@ -1999,7 +2071,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">33.6k</span>&nbsp;字战绩
+                class="white-color">33.9k</span>&nbsp;字战绩
             
             
             
