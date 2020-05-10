@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-08
+                    2020-05-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    10.2k
+                    10.5k
                 </div>
                 
 
@@ -2094,7 +2094,53 @@ background
 <li>a包含span是因为整体是可以点击的缘故</li>
 </ol>
 </blockquote>
-<p>等待更新·····</p>
+<hr>
+<h1 id="字体图标"><a href="#字体图标" class="headerlink" title="字体图标"></a>字体图标</h1><p>字体图标是以特殊形式的字体呈现出来的图标，可透明、旋转、改颜色等····</p>
+<blockquote>
+<p><strong>使用流程：</strong></p>
+<ol>
+<li>获取svg格式的效果图</li>
+<li>上传生成兼容性的字体文件包</li>
+<li>下载到本地的兼容字体文件包</li>
+<li>字体文件包引入到HTML页面中</li>
+</ol>
+</blockquote>
+<p><strong>引入网页：</strong></p>
+<ol>
+<li><p>创建fonts文件夹在根路经里</p>
+</li>
+<li><p>在样式里声明字体图标，声明代码可在下载的项目里获取！！！</p>
+<p>以下是例子：<font color=red><strong>（不同来源网站不同声明代码！！！）</strong></font></p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'icomoon'</span><span class="token punctuation">;</span>
+  <span class="token property">src</span><span class="token punctuation">:</span>  <span class="token url">url('fonts/icomoon.eot?7kkyc2')</span><span class="token punctuation">;</span>
+  <span class="token property">src</span><span class="token punctuation">:</span>  <span class="token url">url('fonts/icomoon.eot?7kkyc2#iefix')</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'embedded-opentype'</span><span class="token punctuation">)</span>,
+    <span class="token url">url('fonts/icomoon.ttf?7kkyc2')</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'truetype'</span><span class="token punctuation">)</span>,
+    <span class="token url">url('fonts/icomoon.woff?7kkyc2')</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff'</span><span class="token punctuation">)</span>,
+    <span class="token url">url('fonts/icomoon.svg?7kkyc2#icomoon')</span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'svg'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">/*清除粗细*/</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">/*清除倾斜*/</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>盒子使用字体</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token comment" spellcheck="true">/*盒子字体可用*/</span>
+<span class="token selector">span </span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/*icomoon: 字体图标的名称*/</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"icomoon"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>盒子里添加结构，图标编码可在项目里获取！</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">span<span class="token pseudo-element">::before</span> </span><span class="token punctuation">{</span>
+         <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">"\e900"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">/*或者 （一下是特殊字体图标）*/</span>
+&lt;span>&amp;#xe<span class="token number">613</span><span class="token punctuation">;</span>&lt;/span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>本人学时：5个月</p>
+<p>本站对你有用，欢迎在以下留言评论，反馈问题也是可以的！！</p>
 
             </div>
             <hr/>
@@ -3007,7 +3053,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">34.3k</span>&nbsp;字战绩
+                class="white-color">34.6k</span>&nbsp;字战绩
             
             
             
