@@ -59,7 +59,7 @@
 
 @font-face{
     font-family: 'AaT';
-    src: url("../font/AaT.ttf");
+    src: url("http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/font/AaT.ttf");
 }
 
 body{
