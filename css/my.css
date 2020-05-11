@@ -123,6 +123,7 @@ div:hover input {
 }
 .card {
     box-shadow: 0 0 10px 10px rgba(5, 255, 220,0.8);
+
 }
 #tag-wordcloud {
     box-shadow: 0 0 10px 10px rgba(5, 255, 220,0.8) inset;
@@ -131,4 +132,10 @@ div:hover input {
     box-shadow: none !important;
     border: 0 !important;
     background-color: transparent !important;
+}
+/*#artDetail {*/
+/*    word-break: break-word !important;*/
+/*}*/
+#articleContent {
+    word-break: break-word !important;
 }
