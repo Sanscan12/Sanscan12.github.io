@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="JavaScript API笔记, 柏竹博客">
-    <meta name="description" content="小白码农">
+    <meta name="description" content="记录学习，记录知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -147,7 +147,7 @@
         <div class="logo-name">柏竹博客</div>
         <div class="logo-desc">
             
-            小白码农
+            记录学习，记录知识
             
         </div>
     </div>
@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-07
+                    2020-05-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.1k
+                    5.2k
                 </div>
                 
 
@@ -943,6 +943,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
         语句<span class="token number">4</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
 <h2 id="分支语句-switch"><a href="#分支语句-switch" class="headerlink" title="分支语句 (switch)"></a>分支语句 (switch)</h2><p><font color =#05ffdc>switch</font> 它根据一个表达式的值，选择不同的分支执行。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">switch</span> <span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token keyword">case</span> 常量表达式<span class="token number">1</span> <span class="token punctuation">:</span>
@@ -963,20 +964,22 @@ document<span class="token punctuation">.</span><span class="token function">wri
         <span class="token keyword">break</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc><strong><em>default语句可以省略。在表达式的值不能与任何一个case语句中的值相匹配的情况下，JavaScript会直接结束switch语句，不进行任何操作。</em></strong></font><br><font color=red><strong><em>case后面常量表达式的数据类型必须与表达式的数据类型相同，否则匹配会全部失败，而去执行default语句中的内容。</em></strong></font><br><font color=red><strong><em>在switch语句中漏写break语句。则会影响其他语句</em></strong></font></p>
-<h2 id="循环语句-while"><a href="#循环语句-while" class="headerlink" title="循环语句 (while)"></a>循环语句 (while)</h2><p><font color =#05ffdc>while</font> 判断，它是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
+<hr>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><h3 id="循环语句-while"><a href="#循环语句-while" class="headerlink" title="循环语句 (while)"></a>循环语句 (while)</h3><p><font color =#05ffdc>while</font> 判断，它是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">while</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">(</span>
    语句（循环体）
 <span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color =red><strong><em>在使用while语句时，一定要保证循环可以正常结束，即必须保证条件表达式的值存在为false的情况，否则将形成死循环。</em></strong></font></p>
-<h2 id="循环语句-do…while"><a href="#循环语句-do…while" class="headerlink" title="循环语句 (do…while)"></a>循环语句 (do…while)</h2><p><font color =#05ffdc>do…while</font> 后判断，它也是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
+<h3 id="循环语句-do…while"><a href="#循环语句-do…while" class="headerlink" title="循环语句 (do…while)"></a>循环语句 (do…while)</h3><p><font color =#05ffdc>do…while</font> 后判断，它也是利用一个条件来控制是否要继续重复执行这个语句。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">do</span><span class="token punctuation">{</span>
    语句
 <span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>表达式<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="循环语句-for"><a href="#循环语句-for" class="headerlink" title="循环语句 (for)"></a>循环语句 (for)</h2><p><font color =#05ffdc>for</font> 计次循环，一般用于循环次数已知的情况。语法格式：</p>
+<h3 id="循环语句-for"><a href="#循环语句-for" class="headerlink" title="循环语句 (for)"></a>循环语句 (for)</h3><p><font color =#05ffdc>for</font> 计次循环，一般用于循环次数已知的情况。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span>初始化表达式<span class="token punctuation">;</span>条件表达式<span class="token punctuation">;</span>迭代表达式<span class="token punctuation">)</span><span class="token punctuation">{</span>
     语句（循环体）
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = red><strong><em>在使用for语句时，也一定要保证循环可以正常结束，也就是必须保证循环条件的结果存在为false的情况，否则循环体将无休止地执行下去，从而形成死循环。</em></strong></font></p>
+<hr>
 <h2 id="跳转语句"><a href="#跳转语句" class="headerlink" title="跳转语句"></a>跳转语句</h2><h3 id="continue语句"><a href="#continue语句" class="headerlink" title="continue语句"></a>continue语句</h3><p>用于跳过本次循环，并开始下一次循环。<br><font color = #b3d4fc><em>当使用continue语句跳过本次循环后，如果循环条件的结果为false,则退出<br>循环，否则继续下一次循环。</em></font><br><font color = red><strong><em>continue语句只能应用在while、for、do…while语句中.</em></strong></font></p>
 <h3 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h3><p>在循环语句中，break语句用于跳出循环。</p>
 <p><font color = red><strong><em>continue语句只能应用在while、for、do…while或switch语句中。在嵌套的循环语句中，break语句只能跳出当前这一层的循环语句，而不是跳出所有的循环语句。</em></strong></font></p>
@@ -986,6 +989,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
     语句
     <span class="token punctuation">[</span><span class="token keyword">return</span>返回值<span class="token punctuation">]</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
 <h2 id="函数调用"><a href="#函数调用" class="headerlink" title="函数调用"></a>函数调用</h2><h3 id="函数的简单调用"><a href="#函数的简单调用" class="headerlink" title="函数的简单调用"></a>函数的简单调用</h3><p>调用的语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">函数名</span><span class="token punctuation">(</span>传递给函数的参数<span class="token number">1</span><span class="token punctuation">,</span>传递给函数的参数<span class="token number">2</span><span class="token punctuation">,</span><span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = red><strong>函数名有大小写的区分</strong></font></p>
@@ -994,6 +998,7 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"button"</span> value<span class="token operator">=</span><span class="token string">"提交"</span> onclick<span class="token operator">=</span><span class="token string">"[调用函数]"</span><span class="token operator">/</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="通过链接调用函数"><a href="#通过链接调用函数" class="headerlink" title="通过链接调用函数"></a>通过链接调用函数</h3><p>在 <code>&lt; a &gt;</code> 标签中的href(链接地址)属性中使用<code>javascript:函数名()</code>格式来调用函数，单击这个链接时，函数将被执行。</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"javascaript:[调用函数]"</span><span class="token operator">></span> 单击链接 <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<hr>
 <h2 id="函数的参数"><a href="#函数的参数" class="headerlink" title="函数的参数"></a>函数的参数</h2><p>函数的参数分为 <strong>形参</strong> 和 <strong>实参</strong><br><strong>形参</strong>：定义函数时指定的参数<br><strong>实参</strong>：调用函数时实际传递的值<br>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">定义函数参数的语法格式<span class="token punctuation">:</span>
 <span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>形参<span class="token number">1</span><span class="token punctuation">,</span>形参<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -1003,15 +1008,19 @@ document<span class="token punctuation">.</span><span class="token function">wri
 调用函数语法格式<span class="token punctuation">:</span>
 <span class="token function">函数名</span><span class="token punctuation">(</span>实参<span class="token number">1</span><span class="token punctuation">,</span>实参<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p> <font color = red><strong>形参和实参要对应</strong></font></p>
+<hr>
 <h2 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><p>在函数中，可以使用return语句为函数返回一个值。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript">retutn 表达式<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<hr>
 <h2 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h2><h4 id="函数的嵌套定义"><a href="#函数的嵌套定义" class="headerlink" title="函数的嵌套定义"></a>函数的嵌套定义</h4><p>函数的嵌套定义就是在函数内部再定义其他的函数。 会使程序的可读性降低</p>
 <h4 id="函数的嵌套调用"><a href="#函数的嵌套调用" class="headerlink" title="函数的嵌套调用"></a>函数的嵌套调用</h4><p>允许在一个函数的函数体中对另一个函数进行调 用</p>
+<hr>
 <h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><p>所谓递归函数就是函数在自身的函数体内调用自身，<strong>只在特定的情况下使用</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">函数名</span><span class="token punctuation">(</span>参数<span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">函数名</span><span class="token punctuation">(</span>参数<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = red><strong>注意判断结束条件，否则死循环！！！</strong></font></p>
+<hr>
 <h2 id="内置函数"><a href="#内置函数" class="headerlink" title="内置函数"></a>内置函数</h2><table>
 <thead>
 <tr>
@@ -1056,109 +1065,358 @@ document<span class="token punctuation">.</span><span class="token function">wri
 <td></td>
 </tr>
 </tbody></table>
-<h2 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h2><h3 id="字符转数字函数-parseInt"><a href="#字符转数字函数-parseInt" class="headerlink" title="字符转数字函数  ( parseInt )"></a>字符转数字函数  ( parseInt )</h3><p><font color =#05ffdc>parseInt </font><strong>将首位为数字的字符串转换成数字</strong>，字符串开头不是数字的字符，则返回<code>NaN</code>，<strong>前提是默认十进制</strong>。语法格式：（默认十进制）</p>
+<h3 id="数值处理函数"><a href="#数值处理函数" class="headerlink" title="数值处理函数"></a>数值处理函数</h3><h4 id="字符转数字函数-parseInt"><a href="#字符转数字函数-parseInt" class="headerlink" title="字符转数字函数  ( parseInt )"></a>字符转数字函数  ( parseInt )</h4><p><font color =#05ffdc>parseInt </font><strong>将首位为数字的字符串转换成数字</strong>，字符串开头不是数字的字符，则返回<code>NaN</code>，<strong>前提是默认十进制</strong>。语法格式：（默认十进制）</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseInt</span><span class="token punctuation">(</span>String<span class="token punctuation">,</span><span class="token punctuation">[</span>进制数<span class="token punctuation">]</span><span class="token punctuation">)</span> 
 如<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"e2b"</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span>
 结果为<span class="token punctuation">:</span><span class="token number">3627</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="字符转浮点函数-parseFloat"><a href="#字符转浮点函数-parseFloat" class="headerlink" title="字符转浮点函数 (parseFloat)"></a>字符转浮点函数 (parseFloat)</h3><p><font color =#05ffdc>parseFloat</font> <strong>将首位为数字的字符串转化成浮点型数字</strong>，字符串不是以数字开头，则返回NaN。语法格式：</p>
+<h4 id="字符转浮点函数-parseFloat"><a href="#字符转浮点函数-parseFloat" class="headerlink" title="字符转浮点函数 (parseFloat)"></a>字符转浮点函数 (parseFloat)</h4><p><font color =#05ffdc>parseFloat</font> <strong>将首位为数字的字符串转化成浮点型数字</strong>，字符串不是以数字开头，则返回NaN。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">parseFloat</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 如<span class="token punctuation">:</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">"5.411"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="检验函数-isNaN"><a href="#检验函数-isNaN" class="headerlink" title="检验函数 (isNaN)"></a>检验函数 (isNaN)</h3><p><font color =#05ffdc>isNaN </font> <strong>检验某个值是否为NaN</strong>。语法格式：</p>
+<h4 id="检验函数-isNaN"><a href="#检验函数-isNaN" class="headerlink" title="检验函数 (isNaN)"></a>检验函数 (isNaN)</h4><p><font color =#05ffdc>isNaN </font> <strong>检验某个值是否为NaN</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isNaN</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p><strong>返回值：</strong><br>结果为<code>NaN</code> 函数返回值为<code>true</code><br>否则，函数返回值为<code>false</code></p>
 </blockquote>
-<h3 id="检验限度函数-isFinite"><a href="#检验限度函数-isFinite" class="headerlink" title="检验限度函数 (isFinite)"></a>检验限度函数 (isFinite)</h3><p><font color =#05ffdc>isFinite</font> <strong>检验其参数是否有限</strong>。语法格式：</p>
+<h4 id="检验限度函数-isFinite"><a href="#检验限度函数-isFinite" class="headerlink" title="检验限度函数 (isFinite)"></a>检验限度函数 (isFinite)</h4><p><font color =#05ffdc>isFinite</font> <strong>检验其参数是否有限</strong>。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">isFinite</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>num：需要验证的数字</p>
 <blockquote>
 <p><strong>返回值：</strong><br>有限数字，则返回<code>true</code><br>NaN或无穷大，则返回<code>false</code></p>
 </blockquote>
 <p><strong>代码示范：</strong></p>
-<pre class="line-numbers language-css"><code class="language-css">&lt;!DOCTYPE html>
-&lt;html lang=<span class="token string">"en"</span>>
-&lt;head>
-    &lt;meta charset=<span class="token string">"UTF-8"</span>> 
-    &lt;title>Title&lt;/title>
-&lt;/head>
-&lt;body>
-    &lt;script type=<span class="token string">"text/javascript"</span>>
-        var no<span class="token number">1</span> = <span class="token string">"123abc"</span><span class="token punctuation">;</span>
-        var no<span class="token number">2</span> = <span class="token string">"abc123"</span><span class="token punctuation">;</span>
-        var no<span class="token number">3</span> = <span class="token string">"e2b"</span><span class="token punctuation">;</span>
-        var no<span class="token number">4</span> = <span class="token string">"3434.43"</span><span class="token punctuation">;</span>
-        var no<span class="token number">5</span> = <span class="token string">"abb434.43"</span><span class="token punctuation">;</span>
-        var no<span class="token number">6</span> = <span class="token string">"12322"</span><span class="token punctuation">;</span>
-        var no<span class="token number">7</span> = <span class="token string">"1232a2"</span><span class="token punctuation">;</span>
-        var no<span class="token number">8</span> = <span class="token string">"123"</span><span class="token punctuation">;</span>
-        var no<span class="token number">9</span> = <span class="token string">"123abc"</span><span class="token punctuation">;</span>
-        var no<span class="token number">10</span> = <span class="token string">"1/0"</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"parseInt:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">1</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abc123 = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">2</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"e2b = "</span>+<span class="token function">parseInt</span><span class="token punctuation">(</span>no<span class="token number">3</span>,<span class="token number">16</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"parseFloat:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3434.43 = "</span>+<span class="token function">parseFloat</span><span class="token punctuation">(</span>no<span class="token number">4</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abb434.43 = "</span>+<span class="token function">parseFloat</span><span class="token punctuation">(</span>no<span class="token number">5</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"isNaN:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"12322 = "</span>+<span class="token function">isNaN</span><span class="token punctuation">(</span>no<span class="token number">6</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1232a2 = "</span>+<span class="token function">isNaN</span><span class="token punctuation">(</span>no<span class="token number">7</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"isFinite:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123 = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">8</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">9</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1/0 = "</span>+<span class="token function">isFinite</span><span class="token punctuation">(</span>no<span class="token number">10</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    &lt;/script>
-&lt;/body>
-&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">var</span> no1 <span class="token operator">=</span> <span class="token string">"123abc"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no2 <span class="token operator">=</span> <span class="token string">"abc123"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no3 <span class="token operator">=</span> <span class="token string">"e2b"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no4 <span class="token operator">=</span> <span class="token string">"3434.43"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no5 <span class="token operator">=</span> <span class="token string">"abb434.43"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no6 <span class="token operator">=</span> <span class="token string">"12322"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no7 <span class="token operator">=</span> <span class="token string">"1232a2"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no8 <span class="token operator">=</span> <span class="token string">"123"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no9 <span class="token operator">=</span> <span class="token string">"123abc"</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> no10 <span class="token operator">=</span> <span class="token string">"1/0"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"parseInt:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span><span class="token operator">+</span><span class="token function">parseInt</span><span class="token punctuation">(</span>no1<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abc123 = "</span><span class="token operator">+</span><span class="token function">parseInt</span><span class="token punctuation">(</span>no2<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"e2b = "</span><span class="token operator">+</span><span class="token function">parseInt</span><span class="token punctuation">(</span>no3<span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"parseFloat:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3434.43 = "</span><span class="token operator">+</span><span class="token function">parseFloat</span><span class="token punctuation">(</span>no4<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"abb434.43 = "</span><span class="token operator">+</span><span class="token function">parseFloat</span><span class="token punctuation">(</span>no5<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"isNaN:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"12322 = "</span><span class="token operator">+</span><span class="token function">isNaN</span><span class="token punctuation">(</span>no6<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1232a2 = "</span><span class="token operator">+</span><span class="token function">isNaN</span><span class="token punctuation">(</span>no7<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"isFinite:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123 = "</span><span class="token operator">+</span><span class="token function">isFinite</span><span class="token punctuation">(</span>no8<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"123abc = "</span><span class="token operator">+</span><span class="token function">isFinite</span><span class="token punctuation">(</span>no9<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1/0 = "</span><span class="token operator">+</span><span class="token function">isFinite</span><span class="token punctuation">(</span>no10<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js2.png" alt=""></p>
-<h2 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h2><h3 id="字符表达式值函数-eval"><a href="#字符表达式值函数-eval" class="headerlink" title="字符表达式值函数 (eval)"></a>字符表达式值函数 (eval)</h3><p><font color =#05ffdc>eval</font> <strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
+<hr>
+<h3 id="字符串处理函数"><a href="#字符串处理函数" class="headerlink" title="字符串处理函数"></a>字符串处理函数</h3><h4 id="字符表达式值函数-eval"><a href="#字符表达式值函数-eval" class="headerlink" title="字符表达式值函数 (eval)"></a>字符表达式值函数 (eval)</h4><p><font color =#05ffdc>eval</font> <strong>计算字符串表达式的值</strong>并执行。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">eval</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: eval("5 * 4")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="字符串编码函数-escape"><a href="#字符串编码函数-escape" class="headerlink" title="字符串编码函数 (escape)"></a>字符串编码函数 (escape)</h3><p><font color =#05ffdc>escape</font> <strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
+<h4 id="字符串编码函数-escape"><a href="#字符串编码函数-escape" class="headerlink" title="字符串编码函数 (escape)"></a>字符串编码函数 (escape)</h4><p><font color =#05ffdc>escape</font> <strong>将一些特殊字符</strong>(不包括字母和数字字符以及<em>、@、一、_、+、.和/)*</em>进行编码<strong>，它可以将这些特殊字符转换为“</strong>%XX**” 格式的数字。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">escape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: escape("You &amp; Me") →You%20%26%20Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="字符串解码函数-unescape"><a href="#字符串解码函数-unescape" class="headerlink" title="字符串解码函数 (unescape)"></a>字符串解码函数 (unescape)</h3><p><font color =#05ffdc>unescape</font> <strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
+<h4 id="字符串解码函数-unescape"><a href="#字符串解码函数-unescape" class="headerlink" title="字符串解码函数 (unescape)"></a>字符串解码函数 (unescape)</h4><p><font color =#05ffdc>unescape</font> <strong>对应用escape()函数编码后的字符串进行解码</strong>。它可以将字符串中“<strong>%XX</strong>”格式的数字转换为字符。语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">unescape</span><span class="token punctuation">(</span>String<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如: unescape("You%20%26%20Me") →You &amp; Me</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="URL编码函数-encodeURI"><a href="#URL编码函数-encodeURI" class="headerlink" title="URL编码函数 (encodeURI )"></a>URL编码函数 (encodeURI )</h3><p><font color =#05ffdc>encodeURI </font> <strong>将URI字符串进行编码</strong>，语法格式：</p>
+<h4 id="URL编码函数-encodeURI"><a href="#URL编码函数-encodeURI" class="headerlink" title="URL编码函数 (encodeURI )"></a>URL编码函数 (encodeURI )</h4><p><font color =#05ffdc>encodeURI </font> <strong>将URI字符串进行编码</strong>，语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">encodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如:encodeURI("https://www.baidu.com/?name=测试");</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="URL解码函数-decodeURI"><a href="#URL解码函数-decodeURI" class="headerlink" title="URL解码函数 (decodeURI)"></a>URL解码函数 (decodeURI)</h3><p><font color =#05ffdc>decodeURI</font> <strong>对已编码URI字符串进行解码，</strong>语法格式：</p>
+<h4 id="URL解码函数-decodeURI"><a href="#URL解码函数-decodeURI" class="headerlink" title="URL解码函数 (decodeURI)"></a>URL解码函数 (decodeURI)</h4><p><font color =#05ffdc>decodeURI</font> <strong>对已编码URI字符串进行解码，</strong>语法格式：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token function">decodeURI</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true">//如:decodeURI("https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>代码示范：</p>
-<pre class="line-numbers language-css"><code class="language-css">&lt;!DOCTYPE html>
-&lt;html lang=<span class="token string">"en"</span>>
-&lt;head>
-    &lt;meta charset=<span class="token string">"UTF-8"</span>>
-    &lt;title>Title&lt;/title>
-&lt;/head>
-&lt;body>
-    &lt;script type=<span class="token string">"text/javascript"</span>>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"eval:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3+5 ="</span>+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3+5"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1 = "</span>+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"eval:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3+5 ="</span><span class="token operator">+</span><span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3+5"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1 = "</span><span class="token operator">+</span><span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"3*4/2+1"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token function">eval</span><span class="token punctuation">(</span><span class="token string">"x = 5 ; y = 6 ; document.write(x * y)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span>+<span class="token string">"escape:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21 ="</span>+<span class="token function">escape</span><span class="token punctuation">(</span><span class="token string">"I love JS !!!"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"unescape:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I love JS !!! = "</span>+<span class="token function">unescape</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"encodeURI:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95 = "</span>+<span class="token function">encodeURI</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span>+<span class="token string">"decodeURI:"</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token number">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试 = "</span>+<span class="token function">decodeURI</span><span class="token punctuation">(</span><span class="token string">"decodeURI(\"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95\")"</span><span class="token punctuation">)</span>+<span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    &lt;/script>
-&lt;/body>
-&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token operator">+</span><span class="token string">"escape:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21 ="</span><span class="token operator">+</span><span class="token function">escape</span><span class="token punctuation">(</span><span class="token string">"I love JS !!!"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"unescape:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"I love JS !!! = "</span><span class="token operator">+</span><span class="token function">unescape</span><span class="token punctuation">(</span><span class="token string">"I%20love%20JS%20%21%21%21"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"encodeURI:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95 = "</span><span class="token operator">+</span><span class="token function">encodeURI</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>"</span><span class="token operator">+</span><span class="token string">"decodeURI:"</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"https://www.baidu.com/?name=测试 = "</span><span class="token operator">+</span><span class="token function">decodeURI</span><span class="token punctuation">(</span><span class="token string">"decodeURI(\"https://www.baidu.com/?name=%E6%B5%8B%E8%AF%95\")"</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/js3.png" style="zoom: 67%;" />
 
-<h2 id="定义函数的其他方法"><a href="#定义函数的其他方法" class="headerlink" title="定义函数的其他方法"></a>定义函数的其他方法</h2><h3 id="定义匿名函数"><a href="#定义匿名函数" class="headerlink" title="定义匿名函数"></a>定义匿名函数</h3><p>语法格式：</p>
+<hr>
+<h2 id="定义函数的其他方法"><a href="#定义函数的其他方法" class="headerlink" title="定义函数的其他方法"></a>定义函数的其他方法</h2><h3 id="定义匿名函数"><a href="#定义匿名函数" class="headerlink" title="定义匿名函数"></a>定义匿名函数</h3><p><strong>语法格式：</strong></p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> 变量名 <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>参数<span class="token number">1</span>，参数<span class="token number">2</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     函数体
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="Function-构造函数"><a href="#Function-构造函数" class="headerlink" title="Function() 构造函数"></a>Function() 构造函数</h3><p>语法格式：</p>
+<p><strong>个人练习以及使用方法：</strong></p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">/*1~20筛选3的倍数*/</span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">var</span> and <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>x <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+              document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"1~20的三的倍数有："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">20</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">and</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h3 id="Function-构造函数"><a href="#Function-构造函数" class="headerlink" title="Function() 构造函数"></a>Function() 构造函数</h3><p><strong>语法格式：</strong></p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> 变量名 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span><span class="token string">"参数1"</span><span class="token punctuation">,</span><span class="token string">"参数2"</span><span class="token punctuation">,</span><span class="token operator">...</span><span class="token string">"函数体"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color = red><strong>Function()构造函数中的所有参数和函数体都必须是字符串类型，因此一定要用双引号或单引号引起来。</strong></font></p>
+<p><font color = red><strong>一定要用双引号或单引号引起来。</strong></font></p>
+<p><strong>个人练习以及使用方法：</strong></p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">var</span> vc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Function</span><span class="token punctuation">(</span><span class="token string">"x"</span><span class="token punctuation">,</span><span class="token string">"y"</span><span class="token punctuation">,</span><span class="token string">"z"</span><span class="token punctuation">,</span><span class="token string">"document.write(x+y+z);"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">vc</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h1 id="对象与数组"><a href="#对象与数组" class="headerlink" title="对象与数组"></a>对象与数组</h1><h2 id="Object-对象"><a href="#Object-对象" class="headerlink" title="Object 对象"></a>Object 对象</h2><p>Object对象功能最全，所有对象的基础</p>
+<h3 id="Object-对象创建"><a href="#Object-对象创建" class="headerlink" title="Object 对象创建"></a>Object 对象创建</h3><pre class="line-numbers language-javascript"><code class="language-javascript">obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">[</span>value<span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：<br><strong>obj</strong> ：赋值为Object 对象的变量名<br><strong>value</strong>：任意的基本数据类型，空值则没内容</p>
+</blockquote>
+<h3 id="Object-对象属性"><a href="#Object-对象属性" class="headerlink" title="Object 对象属性"></a>Object 对象属性</h3><p><font color =#05ffdc>prototype</font> 属性。返回对象类型原型的引用</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">objectName<span class="token punctuation">.</span>prototype<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：<br><strong>objectName</strong>：对象名称<br><strong>prototype</strong>：提供对象的类的一组新的基本功能</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">function</span> <span class="token function">array_max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> i <span class="token punctuation">,</span> max <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token keyword">this</span><span class="token punctuation">.</span>length <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>max <span class="token operator">&lt;</span> <span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    max <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        Array<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>max <span class="token operator">=</span> array_max<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"MAX："</span><span class="token operator">+</span>x<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color =#05ffdc>constructor</font> 属性。表示创建对象的函数</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">object<span class="token punctuation">.</span>constructor<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>object</strong>：对象或函数名称<br><strong>constructor</strong>：保存了对构造特定对象实例的函数的引用，除了Global和Math对象</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        x <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"Hi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>x<span class="token punctuation">.</span>constructor <span class="token operator">==</span> String<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"真 ： "</span><span class="token operator">+</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token comment" spellcheck="true">/*ro: */</span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">function</span> <span class="token function">MyFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        y <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>y<span class="token punctuation">.</span>constructor <span class="token operator">==</span> MyFunc<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"真 ： "</span><span class="token operator">+</span><span class="token function">MyFunc</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Object-对象方法"><a href="#Object-对象方法" class="headerlink" title="Object 对象方法"></a>Object 对象方法</h3><p><font color =#05ffdc>toLocaleString() </font> 方法。返回日期，该日期使用当前区域设置并已被转换为字符串</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">dateObj<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>dateObj</strong>：为任意的Datc对象</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+  <span class="token keyword">var</span> Object <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">toLocaleString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color =#05ffdc>toString()</font> 方法。返回对象的字符串表示</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">objectname<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">[</span>radix<span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>objctname</strong>：要得到字符串表示的对象<br><strong>radix</strong>：指定将数字值转换为字符串时的进制</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Array</td>
+<td>将ArrayArray的元素转换为字符串</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>如果Boolean值为 true，则返回true，否则返回 false</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>返回日期的文字表示法</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>返回包含相关错误消息的字符串</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>返回格式的字符串</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>返回数字的文字表示</td>
+</tr>
+<tr>
+<td>String</td>
+<td>返回String对象的值</td>
+</tr>
+<tr>
+<td>默认</td>
+<td>返回[object objectname]，对象类型的名称</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>    <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 方法 测试<span class="token operator">--</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token comment" spellcheck="true">// Array</span>
+        <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"George"</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Sanscan"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Array:  "</span><span class="token operator">+</span>arr<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//Boolean</span>
+        <span class="token keyword">var</span> bool <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Boolean:  "</span><span class="token operator">+</span>bool<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//Date</span>
+        <span class="token keyword">var</span> de <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Date:   "</span><span class="token operator">+</span>de<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//Number</span>
+        <span class="token keyword">var</span> ber <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">123321</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Number:   "</span><span class="token operator">+</span>ber<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//String</span>
+        <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"Sanscan"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"String:   "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color =#05ffdc>valueOf()</font> 方法。返回指定对象的初始值</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">object<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>object</strong>：是任意固有JavaScript对象</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>返回值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Array</td>
+<td>数组的元素被转换为字符串，每个元素用逗号分隔</td>
+</tr>
+<tr>
+<td>Boolem</td>
+<td>Boolem值</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>存储的时间是从1970.1.1 00:00:00 开始​</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>函数本身</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>数字值</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>对象本身（默认）</td>
+</tr>
+<tr>
+<td>String</td>
+<td>字符串值</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>    <span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 方法 测试<span class="token operator">--</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+    <span class="token comment" spellcheck="true">// Array</span>
+    <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"George"</span><span class="token punctuation">;</span>
+    arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"John"</span><span class="token punctuation">;</span>
+    arr<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"Sanscan"</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Array:  "</span><span class="token operator">+</span>arr<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//Boolean</span>
+    <span class="token keyword">var</span> boo <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Boolean:   "</span><span class="token operator">+</span>boo<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//Date (时间截)</span>
+    <span class="token keyword">var</span> de <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Date:   "</span><span class="token operator">+</span>de<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//Number</span>
+    <span class="token keyword">var</span> nbr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token string">"1123123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"Number:   "</span><span class="token operator">+</span>nbr<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//String</span>
+    <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"Sanscan"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"String:   "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h2 id="String-对象"><a href="#String-对象" class="headerlink" title="String 对象"></a>String 对象</h2><p>String对象是动态对象，需要创建对象实例后才能引用属性和方法，该对象主要用于处理或格式化文本字符串</p>
+<h3 id="String-对象创建"><a href="#String-对象创建" class="headerlink" title="String 对象创建"></a>String 对象创建</h3><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>String_Text<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>str</strong>：创建String对象名<br><strong>String_Text</strong>：字符串文本</p>
+</blockquote>
+<h3 id="String-对象属性"><a href="#String-对象属性" class="headerlink" title="String 对象属性"></a>String 对象属性</h3><p><font color =#05ffdc>lenght</font> 属性。获取字符串的长度</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">stringObject<span class="token punctuation">.</span>length<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>stringObject</strong>： 字符串</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"abcdefg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> p <span class="token operator">=</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"str: "</span><span class="token operator">+</span>str<span class="token operator">+</span><span class="token string">"。str个数为："</span><span class="token operator">+</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color =#05ffdc>constructor</font> 属性。对当前对象的函数引用</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">Object<span class="token punctuation">.</span>constructor<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>Object</strong>：String对象 或 字符变量名</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">var</span> No1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token number">33.123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"No1("</span><span class="token operator">+</span>No1<span class="token operator">+</span><span class="token string">")是："</span><span class="token operator">+</span>No1<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">var</span> No2 <span class="token operator">=</span> <span class="token keyword">new</span>  <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token string">"Sans"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"No2("</span><span class="token operator">+</span>No2<span class="token operator">+</span><span class="token string">")是："</span><span class="token operator">+</span>No2<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">function</span> <span class="token function">student</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>year<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>year <span class="token operator">=</span> year<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">var</span> No3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">student</span><span class="token punctuation">(</span><span class="token string">"sanscan"</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"No3("</span><span class="token operator">+</span>No3<span class="token operator">+</span><span class="token string">")是："</span><span class="token operator">+</span>No3<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color =#05ffdc>prototype</font> 属性。可以为对象添加属性和方法</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -2071,7 +2329,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">34.6k</span>&nbsp;字战绩
+                class="white-color">36k</span>&nbsp;字战绩
             
             
             

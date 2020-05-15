@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="CSS 问题, 柏竹博客">
-    <meta name="description" content="小白码农">
+    <meta name="description" content="记录学习，记录知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -147,7 +147,7 @@
         <div class="logo-name">柏竹博客</div>
         <div class="logo-desc">
             
-            小白码农
+            记录学习，记录知识
             
         </div>
     </div>
@@ -383,12 +383,12 @@
                                 <span class="chip bg-color">css</span>
                             </a>
                         
-                            <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                <span class="chip bg-color">血的教训</span>
-                            </a>
-                        
                             <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                 <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
+                                <span class="chip bg-color">血的教训</span>
                             </a>
                         
                     </div>
@@ -419,14 +419,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-04
+                    2020-05-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    859
+                    1.2k
                 </div>
                 
 
@@ -580,6 +580,68 @@
 </ol>
 </blockquote>
 <hr>
+<h2 id="标签递增添加样式"><a href="#标签递增添加样式" class="headerlink" title="标签递增添加样式"></a>标签递增添加样式</h2><p>使集合中多个相同元素里的标签添加不用的样式，如背景图片</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token attribute">[类名 | 选择器]</span><span class="token pseudo-class">:nth-of-type(n)</span> </span><span class="token punctuation">{</span>
+    样式空间
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token attribute">[类名 | 选择器]</span><span class="token pseudo-class">:nth-of-type(n+1)</span> </span><span class="token punctuation">{</span>
+    样式空间
+<span class="token punctuation">}</span>
+···<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>n为相同标签的排列序号</p>
+<p>例如：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/css10.png" alt=""></p>
+<p>代码整体：</p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector">&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>畅销书&lt;/title>
+    &lt;style>
+        * </span><span class="token punctuation">{</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> </span><span class="token punctuation">{</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px<span class="token punctuation">;</span>
+            <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to bottom, <span class="token hexcode">#f8fad0</span>,<span class="token hexcode">#ffffff</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">50</span>px auto<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> h2 </span><span class="token punctuation">{</span>
+
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode">#518700</span> <span class="token url">url("../img/bang.gif")</span> no-repeat <span class="token number">130</span>px <span class="token number">3</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector">li </span><span class="token punctuation">{</span>
+            <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px <span class="token number">10</span>px <span class="token number">10</span>px <span class="token number">20</span>px<span class="token punctuation">;</span>
+            <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> li<span class="token pseudo-class">:nth-of-type(1)</span></span><span class="token punctuation">{</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("../img/book_no01.gif")</span> no-repeat <span class="token number">0</span>px <span class="token number">1</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.box</span> li<span class="token pseudo-class">:nth-of-type(5)</span></span><span class="token punctuation">{</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url">url("../img/book_no05.gif")</span> no-repeat <span class="token number">0</span>px <span class="token number">4</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    &lt;/style>
+&lt;/head>
+&lt;body>
+    &lt;div class=<span class="token string">"box"</span>>
+        &lt;h<span class="token number">2</span>>畅销书排行&lt;/h<span class="token number">2</span>>
+        &lt;ul>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>不抱怨的世界<span class="token punctuation">(</span>畅<span class="token number">..</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>具遇见未知的自己<span class="token number">..</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>活法<span class="token punctuation">(</span>季羡林、<span class="token number">...</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>高效能人士的七个习惯&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>被迫强大 <span class="token punctuation">(</span>北外女生香奈儿<span class="token number">...</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>遇见心想事成的自己 <span class="token punctuation">(</span>《遇<span class="token number">...</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>世界上最伟大的推销员<span class="token punctuation">(</span>插<span class="token number">..</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>我的成功可以复制 <span class="token punctuation">(</span>唐骏亲<span class="token number">...</span>&lt;/a>&lt;/li>
+            &lt;li>&lt;a href=<span class="token string">"#"</span>>少有人走的路<span class="token punctuation">:</span>心智成熟的<span class="token number">..</span>&lt;/a>&lt;/li>
+        &lt;/ul>
+    &lt;/div>
+&lt;/body>
+&lt;/html><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -647,12 +709,12 @@
                                     <span class="chip bg-color">css</span>
                                 </a>
                             
-                                <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                                    <span class="chip bg-color">血的教训</span>
-                                </a>
-                            
                                 <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
+                                    <span class="chip bg-color">血的教训</span>
                                 </a>
                             
                         </div>
@@ -1496,7 +1558,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">34.6k</span>&nbsp;字战绩
+                class="white-color">36k</span>&nbsp;字战绩
             
             
             
