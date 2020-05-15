@@ -415,7 +415,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-02
+                    2020-05-16
                 </div>
                 
 
@@ -437,7 +437,7 @@
                 <hr>
 <p>便捷查找方式：按<code>Ctrl+F</code>可查找<br>搜索方法查找方法：数据名+操作方式</p>
 <blockquote>
-<p>例子： 字段删除</p>
+<p>例子： 字段删除、表修改</p>
 </blockquote>
 <hr>
 <h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="数据库创建"><a href="#数据库创建" class="headerlink" title="数据库创建"></a>数据库创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
@@ -737,15 +737,15 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 DEFAULT 默认值<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="字段自动增加"><a href="#字段自动增加" class="headerlink" title="字段自动增加"></a>字段自动增加</h2><p>在数据表中，若想为表中插入的新记录自动生成<strong>唯一的 ID</strong>,可以使用自增约束来实现。AUTO_ INCREMENT约束的字段可以是任何整数类型。默认情况下，该字段的值是从1开始自增的。使用AUTO_ INCREMENT设置表字段值自动增加的基本语法格式:      <em>该字段是唯一性类型</em></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 AUTO_INCREMENT<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="普通索引"><a href="#普通索引" class="headerlink" title="普通索引"></a>普通索引</h2><p>INDEX。可以创建在任何数据类型中，值是否唯一和非空没有固定的要求。</p>
+<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="普通索引-INDEX"><a href="#普通索引-INDEX" class="headerlink" title="普通索引 (INDEX)"></a>普通索引 (INDEX)</h2><p>INDEX。可以创建在任何数据类型中，值是否唯一和非空没有固定的要求。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">INDEX(字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="唯一索引"><a href="#唯一索引" class="headerlink" title="唯一索引"></a>唯一索引</h2><p>UNIQUE。该索引所在字段的值必须是唯一的。</p>
+<h2 id="唯一索引-UNIQUE"><a href="#唯一索引-UNIQUE" class="headerlink" title="唯一索引 (UNIQUE )"></a>唯一索引 (UNIQUE )</h2><p>UNIQUE。该索引所在字段的值必须是唯一的。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">UNIQUE INDEX 索引名 (字段名 (ASC | DESC))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE UNIQUE INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD UNIQUE INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="全文索引"><a href="#全文索引" class="headerlink" title="全文索引"></a>全文索引</h2><p>FULLTEXT。它只能创建在CHAR、VARCHAR或TEXT类型的字段上，现在只有<strong>MyISAM存储引擎</strong>支持全文索引。</p>
+<h2 id="全文索引-FULLTEXT"><a href="#全文索引-FULLTEXT" class="headerlink" title="全文索引 (FULLTEXT)"></a>全文索引 (FULLTEXT)</h2><p>FULLTEXT。它只能创建在CHAR、VARCHAR或TEXT类型的字段上，现在只有<strong>MyISAM存储引擎</strong>支持全文索引。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">FULLTEXT INDEX 索引名 (字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE FULLTEXT INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD FULLTEXT INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -758,7 +758,7 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">INDEX 索引名 (字段名1,字段名2,···字段名n)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE INDEX 索引名 ON 表名 (字段名1,字段名2,···字段名n);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD INDEX 索引名  (字段名1,字段名2,···字段名n);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="空间索引"><a href="#空间索引" class="headerlink" title="空间索引"></a>空间索引</h2><p>SPATIAL。它只能创建在空间数据类型的字段上。MySQL中的空间数据类型有4种,分别是<strong>LGEOMETRY、POINT、 LINESTRING和POLYGON</strong>，空间索引只能在存储引擎为<strong>MyISAM</strong>的表中创建。</p>
+<h2 id="空间索引-SPATIAL"><a href="#空间索引-SPATIAL" class="headerlink" title="空间索引 (SPATIAL)"></a>空间索引 (SPATIAL)</h2><p>SPATIAL。它只能创建在空间数据类型的字段上。MySQL中的空间数据类型有4种,分别是<strong>LGEOMETRY、POINT、 LINESTRING和POLYGON</strong>，空间索引只能在存储引擎为<strong>MyISAM</strong>的表中创建。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SPATIAL INDEX 索引名 (字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE SPATIAL INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD SPATIAL INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -785,14 +785,14 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP INDEX 索引名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>使用<strong>DROP INDEX</strong>删除索引，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DROP INDEX 索引名 ON 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="数据添加"><a href="#数据添加" class="headerlink" title="数据添加"></a>数据添加</h1><h2 id="数据新增"><a href="#数据新增" class="headerlink" title="数据新增"></a>数据新增</h2><p>使用INSERT语句向表插入数据</p>
+<h1 id="数据添加"><a href="#数据添加" class="headerlink" title="数据添加"></a>数据添加</h1><h2 id="数据新增-INSERT"><a href="#数据新增-INSERT" class="headerlink" title="数据新增 (INSERT)"></a>数据新增 (INSERT)</h2><p>使用INSERT语句向表插入数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">INSERT INTO 表名 [(字段名1 [，字段名2. . .])] VALUES(值1 [,值2. . .]);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><em>插入的数据应与字段的数据类型相同。</em><br><em>数据的大小应在字段的数据类型规定范围内。</em><br><strong><em>在VALUES中列出的数据位置必须与被加入的字段的排列位置相对应。</em></strong><br><em>字符和日期型数据应包含在<strong>单引号</strong>中。</em><br><em>插入空值:不指定或 INSERT INTO 表名 VALUES(NULL)；</em><br><em>如果要插入所有字段可以省写字段，直接按表中字段顺序写值。</em></p>
-<h2 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h2><p>使用UPDATE语句修改表中的数据</p>
+<h2 id="数据更新-UPDATE"><a href="#数据更新-UPDATE" class="headerlink" title="数据更新 (UPDATE)"></a>数据更新 (UPDATE)</h2><p>使用UPDATE语句修改表中的数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">UPDATE 表名 SET 字段名1 = 值1 [,字段名2 = 值2..]
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>条件表达式:<br>指定字段行的数据更改，如 id = 112 、name = ‘刘邦’<br>UPDATE：可以用新值更新原有表行中的各列<br>SET：指示要修改哪些列和要给予哪些值。<br>WHERE：指定更新哪些行。没有WHERE子句，<strong><em>则更新所有的行</em></strong>。</p>
-<h2 id="数据删除"><a href="#数据删除" class="headerlink" title="数据删除"></a>数据删除</h2><p>使用DELETE语句删除表中数据</p>
+<h2 id="数据删除-DELETE"><a href="#数据删除-DELETE" class="headerlink" title="数据删除 (DELETE)"></a>数据删除 (DELETE)</h2><p>使用DELETE语句删除表中数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DELETE FROM 表名 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong><em>如果不使用where子句，将删除表中所有数据。</em></strong><br>DELETE语句不能删除某一列的值 ( 可使用update)<br>使用DELETE语句仅删除记录，不删除表本身<br>从一个表中删除记录将引起其它表的参照完整性<br><strong><em>外键约束</em></strong><br>删除表中数据也可使用TRUNCATE语句，它和delete有所<br>不同，格式化数据！！！</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">TRUNCATE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1143,13 +1143,13 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1 CROSS JOIN 表2 [WHERE 条件表达式];
 or:
 SELECT * FROM 表1,表2 [WHERE 条件表达式];;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="INNER-JOIN-内连接"><a href="#INNER-JOIN-内连接" class="headerlink" title="INNER JOIN (内连接)"></a>INNER JOIN (内连接)</h2><p>内连接(INNER JOIN)又称 简单连接 或 自然连接 ，内连接使用 比较运算符 对两个表中的数据进行比较，列出与连接条件匹配的数据行，组合成新的记录。语法格式：(INNER有无误差)</p>
+<h2 id="内连接-INNER-JOIN"><a href="#内连接-INNER-JOIN" class="headerlink" title="内连接 (INNER JOIN)"></a>内连接 (INNER JOIN)</h2><p>内连接(INNER JOIN)又称 简单连接 或 自然连接 ，内连接使用 比较运算符 对两个表中的数据进行比较，列出与连接条件匹配的数据行，组合成新的记录。语法格式：(INNER有无误差)</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 [INNER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="OUTER-JOIN-外连接"><a href="#OUTER-JOIN-外连接" class="headerlink" title="OUTER JOIN (外连接)"></a>OUTER JOIN (外连接)</h2><p>(OUTER有无误差)</p>
+<h2 id="外连接-OUTER-JOIN"><a href="#外连接-OUTER-JOIN" class="headerlink" title="外连接 (OUTER JOIN)"></a>外连接 (OUTER JOIN)</h2><p>(OUTER有无误差)</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 { LEFT|RIGHT} [OUTER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="LEFT-JOIN-左连接"><a href="#LEFT-JOIN-左连接" class="headerlink" title="LEFT JOIN (左连接)"></a>LEFT JOIN (左连接)</h3><p>指定左表的所有记录,和所有满足连接条件的记录。如果左表的某条记录在右表中不存在,则在右表中显示为空值。</p>
-<h3 id="RIGHT-JOIN-右连接"><a href="#RIGHT-JOIN-右连接" class="headerlink" title="RIGHT JOIN (右连接)"></a>RIGHT JOIN (右连接)</h3><p>右连接与左连接正好相反，返回右表中所有指定的记录和所有满足连接条件的记录。如果右表的某条记录在左表中没有匹配，则左表将返回空值。</p>
-<h2 id="UNION-复合条件连接"><a href="#UNION-复合条件连接" class="headerlink" title="UNION (复合条件连接)"></a>UNION (复合条件连接)</h2><p>复合条件连接又称<strong>全外连接</strong>，就是在连接查询的过程中，通过添加过滤条件来限制查询结果，使查询结果更加精确。</p>
+<h3 id="左连接-LEFT-JOIN"><a href="#左连接-LEFT-JOIN" class="headerlink" title="左连接 (LEFT JOIN)"></a>左连接 (LEFT JOIN)</h3><p>指定左表的所有记录,和所有满足连接条件的记录。如果左表的某条记录在右表中不存在,则在右表中显示为空值。</p>
+<h3 id="右连接-RIGHT-JOIN"><a href="#右连接-RIGHT-JOIN" class="headerlink" title="右连接 (RIGHT JOIN)"></a>右连接 (RIGHT JOIN)</h3><p>右连接与左连接正好相反，返回右表中所有指定的记录和所有满足连接条件的记录。如果右表的某条记录在左表中没有匹配，则左表将返回空值。</p>
+<h2 id="复合条件连接-UNION"><a href="#复合条件连接-UNION" class="headerlink" title="复合条件连接 (UNION)"></a>复合条件连接 (UNION)</h2><p>复合条件连接又称<strong>全外连接</strong>，就是在连接查询的过程中，通过添加过滤条件来限制查询结果，使查询结果更加精确。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 LEFT JOIN 表2 ON 表1.关系字段 = 表2.关系字段 
 union
 SELECT {* | 查询字段} FROM 表1 RIGHT JOIN 表2 ON 表1.关系字段 = 表2.关系字段;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -2122,7 +2122,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">36k</span>&nbsp;字战绩
+                class="white-color">37.4k</span>&nbsp;字战绩
             
             
             

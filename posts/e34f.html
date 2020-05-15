@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-14
+                    2020-05-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.2k
+                    6.6k
                 </div>
                 
 
@@ -1416,7 +1416,337 @@ document<span class="token punctuation">.</span><span class="token function">wri
         document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"No3("</span><span class="token operator">+</span>No3<span class="token operator">+</span><span class="token string">")是："</span><span class="token operator">+</span>No3<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><font color =#05ffdc>prototype</font> 属性。可以为对象添加属性和方法</p>
-<pre class="line-numbers language-javascript"><code class="language-javascript"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-javascript"><code class="language-javascript">object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>name <span class="token operator">=</span> value<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参数说明：</p>
+<p><strong>object</strong>：对象名或字符变量名<br><strong>name</strong>：要添加的属性名<br><strong>value</strong>：添加属性的值</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"> <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> age<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">var</span> inf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">fun</span><span class="token punctuation">(</span><span class="token string">"sanscan"</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        fun<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>salary <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        inf<span class="token punctuation">.</span>salary <span class="token operator">=</span> <span class="token number">1700</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>inf<span class="token punctuation">.</span>salary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="String-对象方法"><a href="#String-对象方法" class="headerlink" title="String 对象方法"></a>String 对象方法</h3><table>
+<thead>
+<tr>
+<th align="left">方法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">anchor()</td>
+<td align="left">创建 HTML 锚</td>
+</tr>
+<tr>
+<td align="left">big()</td>
+<td align="left">用大号字体显示字符串</td>
+</tr>
+<tr>
+<td align="left">blink()</td>
+<td align="left">显示闪动字符串</td>
+</tr>
+<tr>
+<td align="left">bold()</td>
+<td align="left">使用粗体显示字符串</td>
+</tr>
+<tr>
+<td align="left">charAt()</td>
+<td align="left">返回在指定位置的字符</td>
+</tr>
+<tr>
+<td align="left">charCodeAt()</td>
+<td align="left">返回在指定的位置的字符的 Unicode 编码</td>
+</tr>
+<tr>
+<td align="left">concat()</td>
+<td align="left">连接字符串</td>
+</tr>
+<tr>
+<td align="left">fixed()</td>
+<td align="left">以打字机文本显示字符串</td>
+</tr>
+<tr>
+<td align="left">fontcolor()</td>
+<td align="left">使用指定的颜色来显示字符串</td>
+</tr>
+<tr>
+<td align="left">fontsize()</td>
+<td align="left">使用指定的尺寸来显示字符串</td>
+</tr>
+<tr>
+<td align="left">fromCharCode()</td>
+<td align="left">从字符编码创建一个字符串</td>
+</tr>
+<tr>
+<td align="left">indexOf()</td>
+<td align="left">检索字符串</td>
+</tr>
+<tr>
+<td align="left">italics()</td>
+<td align="left">使用斜体显示字符串</td>
+</tr>
+<tr>
+<td align="left">lastIndexOf()</td>
+<td align="left">从后向前搜索字符串</td>
+</tr>
+<tr>
+<td align="left">link()</td>
+<td align="left">将字符串显示为链接</td>
+</tr>
+<tr>
+<td align="left">localeCompare()</td>
+<td align="left">用本地特定的顺序来比较两个字符串</td>
+</tr>
+<tr>
+<td align="left">match()</td>
+<td align="left">找到一个或多个正则表达式的匹配</td>
+</tr>
+<tr>
+<td align="left">replace()</td>
+<td align="left">替换与正则表达式匹配的子串</td>
+</tr>
+<tr>
+<td align="left">search()</td>
+<td align="left">检索与正则表达式相匹配的值</td>
+</tr>
+<tr>
+<td align="left">slice()</td>
+<td align="left">提取字符串的片断，并在新的字符串中返回被提取的部分</td>
+</tr>
+<tr>
+<td align="left">small()</td>
+<td align="left">使用小字号来显示字符串</td>
+</tr>
+<tr>
+<td align="left">split()</td>
+<td align="left">把字符串分割为字符串数组</td>
+</tr>
+<tr>
+<td align="left">strike()</td>
+<td align="left">使用删除线来显示字符串</td>
+</tr>
+<tr>
+<td align="left">sub()</td>
+<td align="left">把字符串显示为下标</td>
+</tr>
+<tr>
+<td align="left">substr()</td>
+<td align="left">从起始索引号提取字符串中指定数目的字符</td>
+</tr>
+<tr>
+<td align="left">substring()</td>
+<td align="left">提取字符串中两个指定的索引号之间的字符</td>
+</tr>
+<tr>
+<td align="left">sup()</td>
+<td align="left">把字符串显示为上标</td>
+</tr>
+<tr>
+<td align="left">toLocaleLowerCase()</td>
+<td align="left">把字符串转换为小写</td>
+</tr>
+<tr>
+<td align="left">toLocaleUpperCase()</td>
+<td align="left">把字符串转换为大写</td>
+</tr>
+<tr>
+<td align="left">toLowerCase()</td>
+<td align="left">把字符串转换为小写</td>
+</tr>
+<tr>
+<td align="left">toUpperCase()</td>
+<td align="left">把字符串转换为大写</td>
+</tr>
+<tr>
+<td align="left">toSource()</td>
+<td align="left">代表对象的源代码</td>
+</tr>
+<tr>
+<td align="left">toString()</td>
+<td align="left">返回字符串</td>
+</tr>
+<tr>
+<td align="left">valueOf()</td>
+<td align="left">返回某个字符串对象的原始值</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+        <span class="token comment" spellcheck="true">//anchor()</span>
+        <span class="token keyword">var</span> txt <span class="token operator">=</span> <span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"anchor() 创建 HTML 锚 :  "</span><span class="token operator">+</span>txt<span class="token punctuation">.</span><span class="token function">anchor</span><span class="token punctuation">(</span><span class="token string">"myanchor"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//big()</span>
+        <span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"big() 用大号字体显示字符串 : "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">big</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//blink()</span>
+        <span class="token keyword">var</span> str2<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"blink() 显示闪动字符串 : "</span><span class="token operator">+</span>str2<span class="token punctuation">.</span><span class="token function">blink</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//bold()</span>
+        <span class="token keyword">var</span> str3 <span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"bold() 使用粗体显示字符串 : "</span><span class="token operator">+</span>str3<span class="token punctuation">.</span><span class="token function">bold</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//charAt()</span>
+        <span class="token keyword">var</span> str4<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"charAt() 返回在指定位置(1)的字符 : "</span><span class="token operator">+</span>str4<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//charCodeAt()</span>
+        <span class="token keyword">var</span> str5<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"charCodeAt() 返回在指定的位置的字符的 Unicode 编码 : "</span><span class="token operator">+</span>str5<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//concat()</span>
+        <span class="token keyword">var</span> str6<span class="token operator">=</span><span class="token string">"Hello "</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> str7<span class="token operator">=</span><span class="token string">"world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"concat() 连接字符串 : "</span><span class="token operator">+</span>str6<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>str7<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//fixed()</span>
+        <span class="token keyword">var</span> str8<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"fixed() 以打字机文本显示字符串 : "</span><span class="token operator">+</span>str8<span class="token punctuation">.</span><span class="token function">fixed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//fontcolor()</span>
+        <span class="token keyword">var</span> str9<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"fontcolor() 使用指定的颜色来显示字符串 : "</span><span class="token operator">+</span>str9<span class="token punctuation">.</span><span class="token function">fontcolor</span><span class="token punctuation">(</span><span class="token string">"red"</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//fontsize()</span>
+        <span class="token keyword">var</span> str10<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"fontsize() 使用指定的尺寸来显示字符串 : "</span><span class="token operator">+</span>str10<span class="token punctuation">.</span><span class="token function">fontsize</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//fromCharCode()</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"fromCharCode() 从字符编码创建一个字符串 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>String<span class="token punctuation">.</span><span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token number">72</span><span class="token punctuation">,</span><span class="token number">69</span><span class="token punctuation">,</span><span class="token number">76</span><span class="token punctuation">,</span><span class="token number">76</span><span class="token punctuation">,</span><span class="token number">79</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>String<span class="token punctuation">.</span><span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token number">65</span><span class="token punctuation">,</span><span class="token number">66</span><span class="token punctuation">,</span><span class="token number">67</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//indexOf()</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"indexOf() 检索字符串 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> str11<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str11<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str11<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"World"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str11<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"world"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//italics()</span>
+        <span class="token keyword">var</span> str12<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"italics() 使用斜体显示字符串 : "</span><span class="token operator">+</span>str12<span class="token punctuation">.</span><span class="token function">italics</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//lastIndexOf()</span>
+        <span class="token keyword">var</span> str13<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"lastIndexOf() 从后向前搜索字符串 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str13<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str13<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">"World"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str13<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">"world"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//link()</span>
+        <span class="token keyword">var</span> str14<span class="token operator">=</span><span class="token string">"Personal blog!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"link() 将字符串显示为链接 : "</span><span class="token operator">+</span>str14<span class="token punctuation">.</span><span class="token function">link</span><span class="token punctuation">(</span><span class="token string">"http://Sanscan.top/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//localeCompare()</span>
+        <span class="token comment" spellcheck="true">// var str15;</span>
+        <span class="token comment" spellcheck="true">// document.write("localeCompare() 用本地特定的顺序来比较两个字符串 : "+str15.sort (a.localeCompare(b)) );</span>
+        <span class="token comment" spellcheck="true">// document.write("&lt;br/>&lt;br/>");</span>
+
+        <span class="token comment" spellcheck="true">//match()</span>
+        <span class="token keyword">var</span> str16 <span class="token operator">=</span> <span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"match() 找到一个或多个正则表达式的匹配 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str16<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"world"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str16<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"World"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str16<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"worlld"</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str16<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token string">"world!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//replace()</span>
+        <span class="token keyword">var</span> str17 <span class="token operator">=</span><span class="token string">"Visit Microsoft!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"replace() 替换与正则表达式匹配的子串 : "</span><span class="token operator">+</span>str17<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex">/Microsoft/</span><span class="token punctuation">,</span> <span class="token string">"Sanscan"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//search()</span>
+        <span class="token keyword">var</span> str18<span class="token operator">=</span><span class="token string">"Visit Sanscan!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"search() 检索与正则表达式相匹配的值 : "</span><span class="token operator">+</span>str18<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span><span class="token regex">/Sanscan/</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//slice()</span>
+        <span class="token keyword">var</span> str19<span class="token operator">=</span><span class="token string">"Hello happy world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"slice() 提取字符串的片断，并在新的字符串中返回被提取的部分 : "</span><span class="token operator">+</span>str19<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//small()</span>
+        <span class="token keyword">var</span> str20<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"small() 使用小字号来显示字符串 : "</span><span class="token operator">+</span>str20<span class="token punctuation">.</span><span class="token function">small</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//split()</span>
+        <span class="token keyword">var</span> str21<span class="token operator">=</span><span class="token string">"How are you doing today?"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"split() 把字符串分割为字符串数组 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str21<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str21<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"、"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>str21<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//strike()</span>
+        <span class="token keyword">var</span> str22<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"strike() 使用删除线来显示字符串 : "</span><span class="token operator">+</span>str22<span class="token punctuation">.</span><span class="token function">strike</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//sub()</span>
+        <span class="token keyword">var</span> str23<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"sub() 把字符串显示为下标 : "</span><span class="token operator">+</span>str23<span class="token punctuation">.</span><span class="token function">sub</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//substr()</span>
+        <span class="token keyword">var</span> str24<span class="token operator">=</span><span class="token string">"Hello world!"</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"substr() 从起始索引号提取字符串中指定数目(3)的字符 : "</span><span class="token operator">+</span>str24<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//substring()</span>
+        <span class="token keyword">var</span> str25<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"substring() 提取字符串中两个指定的索引号之间的字符(3) ： "</span><span class="token operator">+</span>str25<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//sup()</span>
+        <span class="token keyword">var</span> str26<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"sup() 把字符串显示为上标 : "</span><span class="token operator">+</span>str26<span class="token punctuation">.</span><span class="token function">sup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//toLocaleLowerCase()</span>
+        <span class="token keyword">var</span> str27<span class="token operator">=</span><span class="token string">"Hello World!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"toLocaleLowerCase() 把字符串转换为小写 : "</span><span class="token operator">+</span>str27<span class="token punctuation">.</span><span class="token function">toLocaleLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//toLocaleUpperCase()</span>
+        <span class="token keyword">var</span> str28<span class="token operator">=</span><span class="token string">"Hello World!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"toLocaleUpperCase() 把字符串转换为大写 : "</span><span class="token operator">+</span>str28<span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//toLowerCase()</span>
+        <span class="token keyword">var</span> str29<span class="token operator">=</span><span class="token string">"Hello World!"</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"toLowerCase() 把字符串转换为小写 : "</span><span class="token operator">+</span>str29<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//toUpperCase()</span>
+        <span class="token keyword">var</span> str30<span class="token operator">=</span><span class="token string">"Hello World!"</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"toUpperCase() 把字符串转换为大写 : "</span><span class="token operator">+</span>str30<span class="token punctuation">.</span><span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br/>&lt;br/>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -2329,7 +2659,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">36k</span>&nbsp;字战绩
+                class="white-color">37.4k</span>&nbsp;字战绩
             
             
             
