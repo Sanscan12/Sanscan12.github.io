@@ -249,7 +249,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 02.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-23
+                    2020-05-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9.5k
+                    9.7k
                 </div>
                 
 
@@ -2285,6 +2285,76 @@ document<span class="token punctuation">.</span><span class="token function">get
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span> 按下 Ctrl键 + Alt键 + Shift键 百度搜！<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color = #05ffdc> button </font> 属性。获取事件发生时用户所按的 鼠标键 </p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>button<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>属性值</strong>： </p>
+<table>
+<thead>
+<tr>
+<th>button 值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>没有 按键</td>
+</tr>
+<tr>
+<td>1</td>
+<td>按下 左键（主键）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>按下 右键</td>
+</tr>
+<tr>
+<td>3</td>
+<td>同时按下 左键 和 右键</td>
+</tr>
+<tr>
+<td>4</td>
+<td>按下 中键</td>
+</tr>
+<tr>
+<td>5</td>
+<td>同时按下 左键 和 中键</td>
+</tr>
+<tr>
+<td>6</td>
+<td>同时按下 左键 和 中键</td>
+</tr>
+<tr>
+<td>7</td>
+<td>同时按下 左键 、中键 、 右键</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p> <font color = red>注意 </font>： </p>
+<p>如果同时按下两个按键执行的特殊动作，会干扰到目标行为。</p>
+</blockquote>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
+        <span class="token keyword">function</span> <span class="token function">sanscan</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//获取鼠标右键时激活</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>button <span class="token operator">==</span> <span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"欢迎来到柏竹博客"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment" spellcheck="true">//将指定资源加载到新的或现有的浏览上下文</span>
+                window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">"http://sanscan.top"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//onmousedown事件 当用户使用任一鼠标按钮单击对象时触发</span>
+        document<span class="token punctuation">.</span>onmousedown <span class="token operator">=</span> sanscan<span class="token punctuation">;</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>鼠标右键可以进入我的博客！！<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -2912,7 +2982,7 @@ document<span class="token punctuation">.</span><span class="token function">get
                 <a href="/Sanscan12.github.io/posts/f461.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (3).jpg" class="responsive-img" alt="生活计划">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 03.jpg" class="responsive-img" alt="生活计划">
                         
                         <span class="card-title">生活计划</span>
                     </div>
@@ -2960,8 +3030,7 @@ document<span class="token punctuation">.</span><span class="token function">get
                 <a href="/Sanscan12.github.io/posts/96bc.html">
                     <div class="card-image">
                         
-                        
-                        <img src="http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="群辉DSM端口">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 13.jpg" class="responsive-img" alt="群辉DSM端口">
                         
                         <span class="card-title">群辉DSM端口</span>
                     </div>
@@ -3193,7 +3262,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">45k</span>&nbsp;字战绩
+                class="white-color">45.7k</span>&nbsp;字战绩
             
             
             

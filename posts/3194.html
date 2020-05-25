@@ -249,7 +249,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no（5）.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 06.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -419,14 +419,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-23
+                    2020-05-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    2.1k
                 </div>
                 
 
@@ -662,7 +662,7 @@
 </ol>
 </blockquote>
 <hr>
-<h2 id="标签递增添加样式"><a href="#标签递增添加样式" class="headerlink" title="标签递增添加样式"></a>标签递增添加样式</h2><p>使集合中多个相同元素里的标签添加不用的样式，如背景图片</p>
+<h2 id="标签递增添加样式"><a href="#标签递增添加样式" class="headerlink" title="标签递增添加样式"></a>标签递增添加样式</h2><p>使集合中多个相同元素里的标签添加不用的样式,前提要同一子盒子内，如背景图片</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token attribute">[类名 | 选择器]</span><span class="token pseudo-class">:nth-of-type(n)</span> </span><span class="token punctuation">{</span>
     样式属性的空间
 <span class="token punctuation">}</span>
@@ -778,6 +778,46 @@
 <blockquote>
 <p>解决方案：绝对定位的盒子的上一级盒子的定位必须为 相对定位，上上级则无效<br>以上解决：剪切 <strong>.box类</strong> 的 <strong>position: relative;</strong> 样式到 <strong>.w</strong> ;</p>
 </blockquote>
+<hr>
+<h2 id="子级浮动"><a href="#子级浮动" class="headerlink" title="子级浮动"></a>子级浮动</h2><p>在一个盒子内子级浮动会造成父级盒子为0的问题，解决方法： 父盒子清除浮动<br>清除浮动的方法</p>
+<h3 id="额外标签法"><a href="#额外标签法" class="headerlink" title="额外标签法"></a>额外标签法</h3><p>通过在浮动元素末尾添加一个空的标签！<br><font color=red    >注意：是最后一个空的子标签</font></p>
+<pre class="line-numbers language-css"><code class="language-css">&lt;div style=”<span class="token property">clear</span><span class="token punctuation">:</span>both”>&lt;/div><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>优点：</strong> 通俗易懂，书写方便</p>
+<p><strong>缺点：</strong> 添加许多无意义的标签，结构化较差</p>
+<hr>
+<h3 id="父级添加overflow属性方法"><a href="#父级添加overflow属性方法" class="headerlink" title="父级添加overflow属性方法"></a>父级添加overflow属性方法</h3><p>可以通过触发 BFC 的方式，可以实现清除浮动效果。<strong><font color=red><em>给父盒子添加！！！</em></font></strong></p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token property">overflow</span><span class="token punctuation">:</span> hidden | auto | scroll<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>优点：</strong>  代码简洁</p>
+<p><strong>缺点：</strong>  内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素</p>
+<h3 id="after伪元素清除浮动"><a href="#after伪元素清除浮动" class="headerlink" title="after伪元素清除浮动"></a>after伪元素清除浮动</h3><p><strong>:after 方式为空元素的升级版，好处是不用单独加标签了</strong> </p>
+<pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span>  
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span> 
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span> 
+    <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span> 
+    <span class="token property">visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+ <span class="token selector"><span class="token class">.clearfix</span> </span><span class="token punctuation">{</span>
+    *<span class="token property">zoom</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+/*zoom <span class="token number">1</span>就是ie<span class="token number">6</span>清除浮动方式 * ie<span class="token number">7</span>以下的版本所识别* /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>父盒子调用 <font color =8BE9FD>clearfix</font> 类使用即可</p>
+<p><strong>优点：</strong> 符合闭合浮动思想  结构语义化正确</p>
+<p><strong>缺点：</strong>低版本不支持</p>
+<p><font color=#f00><strong>注意： content:”” ，尽量不要带点</strong></font></p>
+<h3 id="使用before和after双伪元素清除浮动"><a href="#使用before和after双伪元素清除浮动" class="headerlink" title="使用before和after双伪元素清除浮动"></a>使用before和after双伪元素清除浮动</h3><pre class="line-numbers language-css"><code class="language-css"><span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:before</span>, <span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span> 
+  <span class="token property">content</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span>table<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">/* 这句话可以出发BFC BFC可以清除浮动,BFC我们后面讲 */</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.clearfix</span><span class="token pseudo-element">:after</span> </span><span class="token punctuation">{</span>
+  <span class="token property">clear</span><span class="token punctuation">:</span>both<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.clearfix</span> </span><span class="token punctuation">{</span>
+  *<span class="token property">zoom</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>父盒子调用 <font color =8BE9FD>clearfix</font> 类使用即可<br><strong>优点：</strong>  代码更简洁</p>
+<p><strong>缺点：</strong> 低版本不支持</p>
+<hr>
 
             </div>
             <hr/>
@@ -1409,7 +1449,7 @@
                 <a href="/Sanscan12.github.io/posts/a920.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article/no (1).jpg" class="responsive-img" alt="颜色搭配">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 15.jpg" class="responsive-img" alt="颜色搭配">
                         
                         <span class="card-title">颜色搭配</span>
                     </div>
@@ -1461,8 +1501,7 @@
                 <a href="/Sanscan12.github.io/posts/124c.html">
                     <div class="card-image">
                         
-                        
-                        <img src="http://cdn.jsdelivr.net/gh/Sanscan12/Sanscan12.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="博客操作">
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 18.jpg" class="responsive-img" alt="博客操作">
                         
                         <span class="card-title">博客操作</span>
                     </div>
@@ -1690,7 +1729,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">45k</span>&nbsp;字战绩
+                class="white-color">45.7k</span>&nbsp;字战绩
             
             
             
