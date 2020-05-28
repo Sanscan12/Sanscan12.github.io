@@ -2184,3 +2184,20 @@ footer .copy-right {
     padding: 0px;
     margin: 0px;
 }
+/* 滚动条 */
+/*滚动条样式*/
+::-webkit-scrollbar-thumb {
+    background-color: #05ffdc;
+    background-image: -webkit-linear-gradient(45deg,rgba(0,0,0,.4) 25%,transparent 25%,transparent 50%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.4) 75%,transparent 75%,transparent);
+    /* 滚动条圆角*/
+    border-radius: 2em;
+}
+/*滚动条背景*/
+::-webkit-scrollbar-track {
+    background-color: #3f426f;
+}
+/*横向时或纵向时的宽高*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
