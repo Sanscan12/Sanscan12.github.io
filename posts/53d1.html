@@ -30,7 +30,7 @@
     <script src="/Sanscan12.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/Sanscan12.github.io/atom.xml" title="柏竹博客" type="application/atom+xml">
-<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/Sanscan12.github.io/css/prism-synthwave84.css" type="text/css">
 <link rel="stylesheet" href="/Sanscan12.github.io/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -415,7 +415,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-25
+                    2020-05-27
                 </div>
                 
 
@@ -440,23 +440,21 @@
 <p>例子： 字段删除、表修改</p>
 </blockquote>
 <hr>
-<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="数据库创建"><a href="#数据库创建" class="headerlink" title="数据库创建"></a>数据库创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
-编码集设置:
-CHARACTER SET 字符集名 [校对规则]
-校对规则:
-COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>IF NOT EXISTS：检查是否已存在的状态<br>CHARACTER SET：编码集设置<br>COLLATE：校对规则 <em>（在字符集内用于比较字符的一套规则）</em></p>
-<h2 id="数据库查看"><a href="#数据库查看" class="headerlink" title="数据库查看"></a>数据库查看</h2><pre class="line-numbers language-mysql"><code class="language-mysql">显示数据库:
-SHOW DATABASES;
-显示数据库创建语句:
-SHOW CREATE DATABASE 数据库名;
-查看当前所选的数据库：
-SELECT DATABASE();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="数据库修改"><a href="#数据库修改" class="headerlink" title="数据库修改"></a>数据库修改</h2><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];
-编码集设置:
-CHARACTER SET 字符集名 [校对规则]
-校对规则:
-COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="数据库操作"><a href="#数据库操作" class="headerlink" title="数据库操作"></a>数据库操作</h1><h2 id="数据库创建"><a href="#数据库创建" class="headerlink" title="数据库创建"></a>数据库创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>编码集设置:<br>CHARACTER SET 字符集名 [校对规则]<br>校对规则:<br>COLLATE 校对名</p>
+</blockquote>
+<p><strong>IF NOT EXISTS</strong>：检查是否已存在的状态<br><strong>CHARACTER SET</strong>：编码集设置<br><strong>COLLATE</strong>：校对规则 （在字符集内用于比较字符的一套规则）</p>
+<h2 id="数据库查看"><a href="#数据库查看" class="headerlink" title="数据库查看"></a>数据库查看</h2><p>显示数据库:</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SHOW DATABASES;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>显示数据库创建语句:</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SHOW CREATE DATABASE 数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>查看当前所选的数据库：</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT DATABASE();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="数据库修改"><a href="#数据库修改" class="headerlink" title="数据库修改"></a>数据库修改</h2><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER DATABASE [IF NOT EXISTS] 数据库名 [编码集设置];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>编码集设置:<br>CHARACTER SET 字符集名 [校对规则]<br>校对规则:<br>COLLATE 校对名</p>
+</blockquote>
 <h2 id="数据库删除"><a href="#数据库删除" class="headerlink" title="数据库删除"></a>数据库删除</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">DROP DATABASE [IF EXISTS]  数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="数据库选择"><a href="#数据库选择" class="headerlink" title="数据库选择"></a>数据库选择</h2><pre class="line-numbers language-MYSQL"><code class="language-MYSQL">USE 数据库名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="整型数据"><a href="#整型数据" class="headerlink" title="整型数据"></a>整型数据</h2><table>
@@ -519,7 +517,7 @@ COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span
 <td></td>
 </tr>
 <tr>
-<td>DECIMAL(（）M , 2)</td>
+<td>DECIMAL（（）M , 2）</td>
 <td>M+2</td>
 </tr>
 </tbody></table>
@@ -578,12 +576,12 @@ COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span
 </tr>
 </thead>
 <tbody><tr>
-<td>CHAR((int)Max)</td>
+<td>CHAR（（int）Max）</td>
 <td>固定</td>
 <td>查询快</td>
 </tr>
 <tr>
-<td>VARCHAR((int)Max)</td>
+<td>VARCHAR（（int）Max）</td>
 <td>动态</td>
 <td>省空间</td>
 </tr>
@@ -591,16 +589,16 @@ COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span
 <h2 id="二进制数据类型"><a href="#二进制数据类型" class="headerlink" title="二进制数据类型"></a>二进制数据类型</h2><table>
 <thead>
 <tr>
-<th>二进制数据类型(单位：长度)</th>
+<th>二进制数据类型（单位：长度）</th>
 <th>长度状态</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>BINARY((int)Max)</td>
+<td>BINARY（（int）Max）</td>
 <td>固定</td>
 </tr>
 <tr>
-<td>VARBINARY((int)Max)</td>
+<td>VARBINARY（（int）Max）</td>
 <td>动态</td>
 </tr>
 </tbody></table>
@@ -661,22 +659,22 @@ COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span
    ·······
    字段名n 数据类型 [完整性约束条件],
    [完整性约束条件](字段1,字段2,·····,字段n)
-)[编码集设置];
-编码集设置:
-CHARACTER SET 字符集名 [校对规则]
-校对规则:
-COLLATE 校对名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><em>建议不要在数据库中设置太多字符集名和校对规则</em></p>
-<h2 id="表查看"><a href="#表查看" class="headerlink" title="表查看"></a>表查看</h2><pre class="line-numbers language-mysql"><code class="language-mysql">查看表结构：
-DESC 表名;
-查看所有表:
-SHOW TABLES;
-查看表的详细结构：
-SHOW CREATE TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+)[编码集设置];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>编码集设置:<br>CHARACTER SET 字符集名 [校对规则]<br>校对规则:<br>COLLATE 校对名</p>
+</blockquote>
+<p><font color = red> <strong>建议不要在数据库中设置太多字符集名和校对规则</strong></font> </p>
+<h2 id="表查看"><a href="#表查看" class="headerlink" title="表查看"></a>表查看</h2><p>查看表结构：</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">DESC 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>查看所有表:</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SHOW TABLES;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>查看表的详细结构：</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SHOW CREATE TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="表修改"><a href="#表修改" class="headerlink" title="表修改"></a>表修改</h2><h3 id="字段增加"><a href="#字段增加" class="headerlink" title="字段增加"></a>字段增加</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD 字段名 数据类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="字段-修改-与-顺序"><a href="#字段-修改-与-顺序" class="headerlink" title="字段 修改 与 顺序"></a>字段 修改 与 顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名1 数据类型 [更改字段循序 | 完整性约束条件];
-更改字段循序:
-FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="字段-修改-与-顺序"><a href="#字段-修改-与-顺序" class="headerlink" title="字段 修改 与 顺序"></a>字段 修改 与 顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名1 数据类型 [更改字段循序 | 完整性约束条件];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>更改字段循序:<br>FIRST | （AFTER 字段名2）</p>
+</blockquote>
 <p><strong>FIRST</strong>：将字段1更改为表的第一个字段<br><strong>AFTER</strong>：将字段1插入字段2的后面</p>
 <h3 id="字段名修改"><a href="#字段名修改" class="headerlink" title="字段名修改"></a>字段名修改</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 CHANGE 字段名 新字段名 字段类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="表名修改"><a href="#表名修改" class="headerlink" title="表名修改"></a>表名修改</h3><pre class="line-numbers language-mysql"><code class="language-mysql">RENAME TABLE 表名 to 新表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -737,15 +735,15 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 DEFAULT 默认值<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="字段自动增加"><a href="#字段自动增加" class="headerlink" title="字段自动增加"></a>字段自动增加</h2><p>在数据表中，若想为表中插入的新记录自动生成<strong>唯一的 ID</strong>,可以使用自增约束来实现。AUTO_ INCREMENT约束的字段可以是任何整数类型。默认情况下，该字段的值是从1开始自增的。使用AUTO_ INCREMENT设置表字段值自动增加的基本语法格式:      <em>该字段是唯一性类型</em></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">字段名 数据类型 AUTO_INCREMENT<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="普通索引-INDEX"><a href="#普通索引-INDEX" class="headerlink" title="普通索引 (INDEX)"></a>普通索引 (INDEX)</h2><p>INDEX。可以创建在任何数据类型中，值是否唯一和非空没有固定的要求。</p>
+<h1 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h1><h2 id="普通索引-INDEX"><a href="#普通索引-INDEX" class="headerlink" title="普通索引 (INDEX)"></a>普通索引 (INDEX)</h2><p><font color = #05ffdc>INDEX </font> 。可以创建在任何数据类型中，值是否唯一和非空没有固定的要求。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">INDEX(字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="唯一索引-UNIQUE"><a href="#唯一索引-UNIQUE" class="headerlink" title="唯一索引 (UNIQUE )"></a>唯一索引 (UNIQUE )</h2><p>UNIQUE。该索引所在字段的值必须是唯一的。</p>
+<h2 id="唯一索引-UNIQUE"><a href="#唯一索引-UNIQUE" class="headerlink" title="唯一索引 (UNIQUE )"></a>唯一索引 (UNIQUE )</h2><p><font color = #05ffdc>UNIQUE </font> 。该索引所在字段的值必须是唯一的。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">UNIQUE INDEX 索引名 (字段名 (ASC | DESC))<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE UNIQUE INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD UNIQUE INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="全文索引-FULLTEXT"><a href="#全文索引-FULLTEXT" class="headerlink" title="全文索引 (FULLTEXT)"></a>全文索引 (FULLTEXT)</h2><p>FULLTEXT。它只能创建在CHAR、VARCHAR或TEXT类型的字段上，现在只有<strong>MyISAM存储引擎</strong>支持全文索引。</p>
+<h2 id="全文索引-FULLTEXT"><a href="#全文索引-FULLTEXT" class="headerlink" title="全文索引 (FULLTEXT)"></a>全文索引 (FULLTEXT)</h2><p><font color = #05ffdc>FULLTEXT </font> 。它只能创建在CHAR、VARCHAR或TEXT类型的字段上，现在只有<strong>MyISAM存储引擎</strong>支持全文索引。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">FULLTEXT INDEX 索引名 (字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE FULLTEXT INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD FULLTEXT INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -758,11 +756,11 @@ FIRST | (AFTER 字段名2)<span aria-hidden="true" class="line-numbers-rows"><sp
 <pre class="line-numbers language-mysql"><code class="language-mysql">INDEX 索引名 (字段名1,字段名2,···字段名n)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE INDEX 索引名 ON 表名 (字段名1,字段名2,···字段名n);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD INDEX 索引名  (字段名1,字段名2,···字段名n);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="空间索引-SPATIAL"><a href="#空间索引-SPATIAL" class="headerlink" title="空间索引 (SPATIAL)"></a>空间索引 (SPATIAL)</h2><p>SPATIAL。它只能创建在空间数据类型的字段上。MySQL中的空间数据类型有4种,分别是<strong>LGEOMETRY、POINT、 LINESTRING和POLYGON</strong>，空间索引只能在存储引擎为<strong>MyISAM</strong>的表中创建。</p>
+<h2 id="空间索引-SPATIAL"><a href="#空间索引-SPATIAL" class="headerlink" title="空间索引 (SPATIAL)"></a>空间索引 (SPATIAL)</h2><p><font color = #05ffdc>SPATIAL </font> 。它只能创建在空间数据类型的字段上。MySQL中的空间数据类型有4种,分别是<strong>LGEOMETRY、POINT、 LINESTRING和POLYGON</strong>，空间索引只能在存储引擎为<strong>MyISAM</strong>的表中创建。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SPATIAL INDEX 索引名 (字段名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE SPATIAL INDEX 索引名 ON 表名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD SPATIAL INDEX 索引名 (字段名);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong><em>PS:后面需存储引擎(ENGINE =MyISAM)</em></strong></p>
+<p><strong>*PS:后面需存储引擎（ENGINE =MyISAM）</strong></p>
 <h2 id="索引创建"><a href="#索引创建" class="headerlink" title="索引创建"></a>索引创建</h2><p><strong>建表时创建索引：</strong></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
     字段名1 数据类型 [完整性约束条件]，
@@ -780,7 +778,7 @@ INDEX 索引名 ON 表名
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD 
 [UNIQUE | FULLTEXT | SPATIAL] 
 INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>UNIQUE： 可选参数，表示唯一性约束<br>FULLTEXT：可选参数，表示全文约束<br>SPATIAL： 可选参数，表示空间约束<br>INDEX和KEY：用来表示字段的索引，二者选一即可<br>索引名：可选参数，表示创建的索引的名称<br>字段名1：指定索引对应字段的名称<br>长度：可选参数，用于表示索引的长度<br>ASC和DESC：可选参数，其中，ASC表示升序排列，DESC表示降序排列</p>
+<p><strong>UNIQUE</strong>： 可选参数，表示唯一性约束<br><strong>FULLTEXT</strong>：可选参数，表示全文约束<br><strong>SPATIAL</strong>： 可选参数，表示空间约束<br><strong>INDEX</strong> 和 <strong>KEY</strong>：用来表示字段的索引，二者选一即可<br><strong>索引名</strong>：可选参数，表示创建的索引的名称<br><strong>字段名1</strong>：指定索引对应字段的名称<br><strong>长度</strong>：可选参数，用于表示索引的长度<br><strong>ASC</strong> 和 <strong>DESC</strong>：可选参数，其中，ASC表示升序排列，DESC表示降序排列</p>
 <h2 id="索引删除"><a href="#索引删除" class="headerlink" title="索引删除"></a>索引删除</h2><p>使用<strong>ALTER TABLE</strong>语句删除索引，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP INDEX 索引名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>使用<strong>DROP INDEX</strong>删除索引，语法格式:</p>
@@ -789,21 +787,17 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <pre class="line-numbers language-mysql"><code class="language-mysql">INSERT INTO 表名 [(字段名1 [，字段名2. . .])] VALUES(值1 [,值2. . .]);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><em>插入的数据应与字段的数据类型相同。</em><br><em>数据的大小应在字段的数据类型规定范围内。</em><br><strong><em>在VALUES中列出的数据位置必须与被加入的字段的排列位置相对应。</em></strong><br><em>字符和日期型数据应包含在<strong>单引号</strong>中。</em><br><em>插入空值:不指定或 INSERT INTO 表名 VALUES(NULL)；</em><br><em>如果要插入所有字段可以省写字段，直接按表中字段顺序写值。</em></p>
 <h2 id="数据更新-UPDATE"><a href="#数据更新-UPDATE" class="headerlink" title="数据更新 (UPDATE)"></a>数据更新 (UPDATE)</h2><p>使用UPDATE语句修改表中的数据</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">UPDATE 表名 SET 字段名1 = 值1 [,字段名2 = 值2..]
-[WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>条件表达式:<br>指定字段行的数据更改，如 id = 112 、name = ‘刘邦’<br>UPDATE：可以用新值更新原有表行中的各列<br>SET：指示要修改哪些列和要给予哪些值。<br>WHERE：指定更新哪些行。没有WHERE子句，<strong><em>则更新所有的行</em></strong>。</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">UPDATE 表名 SET 字段名1 = 值1 [,字段名2 = 值2..] [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>条件表达式:<br>指定字段行的数据更改，如 id = 112 、name = ‘刘邦’<br><strong>UPDATE</strong>：可以用新值更新原有表行中的各列<br><strong>SET</strong>：指示要修改哪些列和要给予哪些值。<br><strong>WHERE</strong>：指定更新哪些行。没有WHERE子句，<strong><em>则更新所有的行</em></strong>。</p>
 <h2 id="数据删除-DELETE"><a href="#数据删除-DELETE" class="headerlink" title="数据删除 (DELETE)"></a>数据删除 (DELETE)</h2><p>使用DELETE语句删除表中数据</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">DELETE FROM 表名 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong><em>如果不使用where子句，将删除表中所有数据。</em></strong><br>DELETE语句不能删除某一列的值 ( 可使用update)<br>使用DELETE语句仅删除记录，不删除表本身<br>从一个表中删除记录将引起其它表的参照完整性<br><strong><em>外键约束</em></strong><br>删除表中数据也可使用TRUNCATE语句，它和delete有所<br>不同，格式化数据！！！</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">TRUNCATE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><p><strong>SELECT的语法结构：</strong></p>
-<pre class="line-numbers language-MYSQL"><code class="language-MYSQL">SELECT [DISTINCT] (* | {字段名1 [别名][,字段名2[别名]····,字段名n[别名]]} ) FROM 表名 [可选参数];
-可选参数:
-[WHERE 条件表达式];
-高级查询的语句:
-[GROUP BY 字段名 [HAVING 条件表达式2]] ;
-[ORDER BY 字段名 [ASC | DESC]] ;
-[LIMIT [OFFSET] (int)记录数];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-MYSQL"><code class="language-MYSQL">SELECT [DISTINCT] (* | {字段名1 [别名][,字段名2[别名]····,字段名n[别名]]} ) FROM 表名 [可选参数];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>可选参数:<br>    [WHERE 条件表达式];<br>高级查询的语句:<br>    [GROUP BY 字段名 [HAVING 条件表达式2]] ;<br>    [ORDER BY 字段名 [ASC | DESC]] ;<br>    [LIMIT [OFFSET] (int)记录数];</p>
+</blockquote>
 <p><strong>SELECT</strong>：指定查询那个字段数据<br><strong>*：</strong>查询所有字段(列)的意思<br><strong>{字段1,字段2,字段3..}:</strong> 指定查询字段<br>    字段里可进行运算，前提类型符合 ，但底层数据不会被修改！！！<br><strong>别名</strong>：代替字段名<br> <strong>FROM</strong>：指定查询的表<br>可选参数：<br><strong>DISTINCT：</strong>过滤表字段中重复的值（数据），如果指定是多个字段，而且指定的字段值相同，则过滤重复的值！！！<br><strong>WHERE：</strong>指定查询条件<br><strong>GROUP BY：</strong>将查询结果按指定字段进行分组<br>    <strong>HAVING：</strong>对分组后的结果进行过滤<br><strong>ORDER BY：</strong>将查询结果按指定字段进行排序，排列方式有参数ASC（升序）、DESC（降序）控制，默认为ASC（升序）<br><strong>LIMIT：</strong>限制查询结果的数量，后面有可有两个参数，<br>    <strong>OFFSET：</strong>表示偏移量，如果偏移量为0则从第一条开始,。不指定参数1，其默认值为0。<br>    <strong>记录数：</strong>表示返回查询记录的条数</p>
 <table>
 <thead>
@@ -825,7 +819,7 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 </tr>
 <tr>
 <td></td>
-<td>字段 IN(值1,值2,···)</td>
+<td>字段 IN（值1,值2,···）</td>
 <td>显示在字段里的值</td>
 </tr>
 <tr>
@@ -854,7 +848,7 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <td>不成立， 例如：where not(salary&gt;100);</td>
 </tr>
 </tbody></table>
-<h2 id="普通查询"><a href="#普通查询" class="headerlink" title="普通查询"></a>普通查询</h2><h3 id="条件查询-WHERE"><a href="#条件查询-WHERE" class="headerlink" title="条件查询 (WHERE)"></a>条件查询 (WHERE)</h3><p>SELECT的语法里的可选参数，满足条件的查询，基本语法：</p>
+<h2 id="普通查询"><a href="#普通查询" class="headerlink" title="普通查询"></a>普通查询</h2><h3 id="条件查询-WHERE"><a href="#条件查询-WHERE" class="headerlink" title="条件查询 (WHERE)"></a>条件查询 (WHERE)</h3><p><font color = #05ffdc>SELECT </font> 的语法里的可选参数，满足条件的查询，基本语法：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">可选参数:
 ··· WHERE (条件表达式);
 如:
@@ -886,26 +880,26 @@ WHERE 条件表达式1 [AND 条件表达式2 [··· AND 条件表达式n]];<spa
 FROM 表名 
 WHERE 条件表达式1 [OR 条件表达式2 [··· OR 条件表达式n]];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><strong>OR和AND一起用的情况：</strong><br><font color = #b3d4fc>AND的优先级高于OR，因此当两者在一起使用时，应该先运算AND两边的条件表达式，再运算OR两边的条件表达式。</font></p>
-<h2 id="高级查询"><a href="#高级查询" class="headerlink" title="高级查询"></a>高级查询</h2><h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><h4 id="记数函数-COUNT"><a href="#记数函数-COUNT" class="headerlink" title="记数函数 (COUNT())"></a>记数函数 (COUNT())</h4><p>用来统计记录的条数，语法格式:</p>
+<h2 id="高级查询"><a href="#高级查询" class="headerlink" title="高级查询"></a>高级查询</h2><h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><h4 id="记数函数-COUNT（）"><a href="#记数函数-COUNT（）" class="headerlink" title="记数函数 (COUNT（）)"></a>记数函数 (COUNT（）)</h4><p>用来统计记录的条数，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT COUNT((*) | (字段名)) 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h4 id="求和函数-SUM"><a href="#求和函数-SUM" class="headerlink" title="求和函数 (SUM())"></a>求和函数 (SUM())</h4><p>用于求出表中某个字段所有值的总和，语法格式:</p>
+<h4 id="求和函数-SUM-）"><a href="#求和函数-SUM-）" class="headerlink" title="求和函数 (SUM()）"></a>求和函数 (SUM()）</h4><p>用于求出表中某个字段所有值的总和，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT SUM(字段名1)[,SUM(字段名2)...,SUM(字段名n)] 
 FROM 表名
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>SUM里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="平均值函数-AVG"><a href="#平均值函数-AVG" class="headerlink" title="平均值函数 (AVG())"></a>平均值函数 (AVG())</h4><p>用于求出某个字段所有值的平均值，语法格式:</p>
+<h4 id="平均值函数-AVG（）"><a href="#平均值函数-AVG（）" class="headerlink" title="平均值函数 (AVG（）)"></a>平均值函数 (AVG（）)</h4><p>用于求出某个字段所有值的平均值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT AVG(字段名1)[,AVG(字段名2)...,AVG(字段名n)] 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>AVG里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="最大值函数-MAX"><a href="#最大值函数-MAX" class="headerlink" title="最大值函数 (MAX())"></a>最大值函数 (MAX())</h4><p>用于求出某个字段的最大值，语法格式:</p>
+<h4 id="最大值函数-MAX（）"><a href="#最大值函数-MAX（）" class="headerlink" title="最大值函数 (MAX（）)"></a>最大值函数 (MAX（）)</h4><p>用于求出某个字段的最大值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT MAX(字段名1)[,MAX(字段名2)...,MAX(字段名n)] 
 FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>MAX里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font></p>
-<h4 id="最小值函数-MIN"><a href="#最小值函数-MIN" class="headerlink" title="最小值函数 (MIN())"></a>最小值函数 (MIN())</h4><p>用于求出某个字段的最小值，语法格式:</p>
+<h4 id="最小值函数-MIN（）"><a href="#最小值函数-MIN（）" class="headerlink" title="最小值函数 (MIN（）)"></a>最小值函数 (MIN（）)</h4><p>用于求出某个字段的最小值，语法格式:</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT MIN(字段名1)[,MIN(字段名2)...,MIN(字段名n)] FROM 表名 
 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><font color = #b3d4fc>MAX里面的字段可进行运算，前提类型符合 ，但底层数据不会被修改！！！</font><br><font color = red> 函数后面的字段和所有要有小号包括，否则无法识别要记录的数</font></p>
@@ -946,35 +940,35 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </thead>
 <tbody><tr>
-<td>ABS(x)</td>
+<td>ABS（x）</td>
 <td>返回x的绝对值</td>
 </tr>
 <tr>
-<td>SQRT(x)</td>
+<td>SQRT（x）</td>
 <td>返回x的非负2次方根</td>
 </tr>
 <tr>
-<td>MOD(x , y)</td>
+<td>MOD（x , y）</td>
 <td>返回x被y除后的余数</td>
 </tr>
 <tr>
-<td>CEILING(x)</td>
+<td>CEILING（x）</td>
 <td>返回不小于x的最小整数</td>
 </tr>
 <tr>
-<td>FLOOR(x)</td>
+<td>FLOOR（x）</td>
 <td>返回不大于x的最大整数</td>
 </tr>
 <tr>
-<td>ROUND(x , y)</td>
+<td>ROUND（x , y）</td>
 <td>对x进行四舍五入操作，小数点后保留y位</td>
 </tr>
 <tr>
-<td>TRUNCATE(x)</td>
+<td>TRUNCATE（x）</td>
 <td>舍去x中小数点y位后面的的数</td>
 </tr>
 <tr>
-<td>SIGN(x)</td>
+<td>SIGN（x）</td>
 <td>返回x的符号，-1、0或者1</td>
 </tr>
 </tbody></table>
@@ -986,31 +980,31 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </thead>
 <tbody><tr>
-<td>LENGTH(str)</td>
+<td>LENGTH（str）</td>
 <td>返回字符串str的长度</td>
 </tr>
 <tr>
-<td>CONCAT(s1 , s2 , …..)</td>
+<td>CONCAT（s1 , s2 , …..）</td>
 <td>返回一个或者多个字符串连接产生的新的字符串</td>
 </tr>
 <tr>
-<td>TRIM(str)</td>
+<td>TRIM（str）</td>
 <td>删除字符串两侧的空格</td>
 </tr>
 <tr>
-<td>REPLACE(str , s1 , s2)</td>
+<td>REPLACE（str , s1 , s2）</td>
 <td>使用字符串s2替换字符串str中所有的字符串s1</td>
 </tr>
 <tr>
-<td>SUBSTRING(tr , n , len)</td>
+<td>SUBSTRING（tr , n , len）</td>
 <td>返回字符串st的子串，起始位置为n,长度为len</td>
 </tr>
 <tr>
-<td>REVERSE(str)</td>
+<td>REVERSE（str）</td>
 <td>返回字符串反转后的结果</td>
 </tr>
 <tr>
-<td>LOCATE(s1 , str)</td>
+<td>LOCATE（s1 , str）</td>
 <td>返回子串s1在字符串str中的起始位置</td>
 </tr>
 </tbody></table>
@@ -1022,31 +1016,31 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </thead>
 <tbody><tr>
-<td>CURDATE()</td>
+<td>CURDATE（）</td>
 <td>获取系统当前日期</td>
 </tr>
 <tr>
-<td>CURTIME()</td>
+<td>CURTIME（）</td>
 <td>获取系统当前时间</td>
 </tr>
 <tr>
-<td>SYSDATE()</td>
+<td>SYSDATE（）</td>
 <td>获取当前系统日期和时间</td>
 </tr>
 <tr>
-<td>TIME_ _TO_SEC()</td>
+<td>TIME_ _TO_SEC（）</td>
 <td>返回将时间转换成秒的结果</td>
 </tr>
 <tr>
-<td>ADDDATE()</td>
+<td>ADDDATE（）</td>
 <td>执行日期的加运算</td>
 </tr>
 <tr>
-<td>SBUDATE()</td>
+<td>SBUDATE（）</td>
 <td>执行日期的减运算</td>
 </tr>
 <tr>
-<td>DATE_ FORMAT()</td>
+<td>DATE_ FORMAT（）</td>
 <td>格式化输出日期和时间值</td>
 </tr>
 </tbody></table>
@@ -1058,11 +1052,11 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </thead>
 <tbody><tr>
-<td>IF(expr , v1 , v2)</td>
+<td>IF（expr , v1 , v2）</td>
 <td>如果expr表达式为true返回v1,否则返回v2</td>
 </tr>
 <tr>
-<td>IFNULL(v1 , v2)</td>
+<td>IFNULL（v1 , v2）</td>
 <td>如果v1不为NULL返回v1,否则返回v2</td>
 </tr>
 <tr>
@@ -1078,15 +1072,15 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 </tr>
 </thead>
 <tbody><tr>
-<td>MD5(str)</td>
+<td>MD5（str）</td>
 <td>对字符串 str 进行MD5加密</td>
 </tr>
 <tr>
-<td>ENCODE(str , pwd stu)</td>
+<td>ENCODE（str , pwd stu）</td>
 <td>使用pwd作为密码加密字符串str</td>
 </tr>
 <tr>
-<td>DECODE(str , pwd str)</td>
+<td>DECODE（str , pwd str）</td>
 <td>使用pwd作为密码解密字符串str</td>
 </tr>
 </tbody></table>
@@ -1140,9 +1134,9 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <p><font color=red>在从表添加数据时，外键字段的值与外表引用字段的值相同且存在的前提下添加数据，否则受约束！</font> </p>
 <h2 id="关联表数据删除"><a href="#关联表数据删除" class="headerlink" title="关联表数据删除"></a>关联表数据删除</h2><p><strong><font color=red>删除也如此，先删除从表有关联的数据，在删除主表数据</font></strong> </p>
 <h2 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h2><p>交叉连接又称“笛卡尔积”，返回结果的是<strong>被连接的两个表中所有数据行的乘积</strong>。语法格式：</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1 CROSS JOIN 表2 [WHERE 条件表达式];
-or:
-SELECT * FROM 表1,表2 [WHERE 条件表达式];;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1 CROSS JOIN 表2 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>or:</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1,表2 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="内连接-INNER-JOIN"><a href="#内连接-INNER-JOIN" class="headerlink" title="内连接 (INNER JOIN)"></a>内连接 (INNER JOIN)</h2><p>内连接(INNER JOIN)又称 简单连接 或 自然连接 ，内连接使用 比较运算符 对两个表中的数据进行比较，列出与连接条件匹配的数据行，组合成新的记录。语法格式：(INNER有无误差)</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 [INNER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="外连接-OUTER-JOIN"><a href="#外连接-OUTER-JOIN" class="headerlink" title="外连接 (OUTER JOIN)"></a>外连接 (OUTER JOIN)</h2><p>(OUTER有无误差)</p>
@@ -1183,7 +1177,7 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <p><strong>隔离安全问题</strong></p>
 <p><strong><font size=5px>脏读：</font></strong>一个事务读取到另一个事务未提交的数据</p>
 <p><strong><font size=5px>不可重复读：</font></strong>一个事务多次读取同一条记录,读取的结果不相同过程数据有更改。<font color = #b3d4fc>(一个事务读取到另一个事务已经提交的数据)</font></p>
-<p><font size=5px>虚读(幻读)：</font>一个事务多次查询整表的数据，由于其他事务新增或删除记录造成多次查询出的记录条数不同<font color = #b3d4fc>(一个事务读取到另一个事务已经提交的数据)</font></p>
+<p><font size=5px>虚读（幻读）：</font>一个事务多次查询整表的数据，由于其他事务新增或删除记录造成多次查询出的记录条数不同<font color = #b3d4fc>(一个事务读取到另一个事务已经提交的数据)</font></p>
 <hr>
 <h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><p>防止不同隔离性的问题</p>
 <table>
@@ -1210,7 +1204,13 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <td>没问题，单线程，性能最低</td>
 </tr>
 </tbody></table>
-<p>从安全性考虑：<br>$$<br>SERIALIZABLE&gt;REPEATABLE READ&gt;READ COMMITTED&gt;READ UNCOMMITTED<br>$$<br>从性能上考虑：<br>$$<br>READ UNCOMMITTED&gt;READ COMMITTED&gt;REPEATABLE READ&gt;SERIALIZABLE<br>$$<br><strong>修改当前数据库隔离级别：</strong></p>
+<blockquote>
+<p>从 <strong>安全</strong> 性考虑：<br>SERIALIZABLE&gt;REPEATABLE READ&gt;READ COMMITTED&gt;READ UNCOMMITTED</p>
+</blockquote>
+<blockquote>
+<p>从 <strong>性能</strong> 上考虑：<br>READUNCOMMITTED&gt;READ COMMITTED&gt;REPEATABLE READ&gt;SERIALIZABLE</p>
+</blockquote>
+<p><strong>修改当前数据库隔离级别：</strong></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SET [SESSION / GLOBAL] TRANSACTION ISOLATION LEVEL 隔离类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>查询当前数据库的隔离级别：</strong></p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT @@TX_ISOLATION;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1839,54 +1839,6 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Sanscan12.github.io/posts/124c.html">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 18.jpg" class="responsive-img" alt="博客操作">
-                        
-                        <span class="card-title">博客操作</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            填充错误的经历
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-18
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/Sanscan12.github.io/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/Sanscan12.github.io/tags/%E8%A1%80%E7%9A%84%E6%95%99%E8%AE%AD/">
-                        <span class="chip bg-color">血的教训</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/Sanscan12.github.io/posts/5c87.html">
                     <div class="card-image">
                         
@@ -1902,9 +1854,9 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-16
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1923,6 +1875,54 @@ ROLLBACK;<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     <a href="/Sanscan12.github.io/tags/css/">
                         <span class="chip bg-color">css</span>
                     </a>
+                    
+                    <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Sanscan12.github.io/posts/d796.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/Sanscan12/img/img/article 12.jpg" class="responsive-img" alt="英语语法">
+                        
+                        <span class="card-title">英语语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            正努力学习英语中···
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Sanscan12.github.io/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-category">
+                                    学习记录
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
                     
                     <a href="/Sanscan12.github.io/tags/%E7%AC%94%E8%AE%B0/">
                         <span class="chip bg-color">笔记</span>
