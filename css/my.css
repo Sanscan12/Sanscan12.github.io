@@ -143,9 +143,12 @@ div:hover input {
 /*滚动条样式*/
 ::-webkit-scrollbar-thumb {
     background-color: #05ffdc;
-    background-image: -webkit-linear-gradient(45deg,rgba(0,0,0,.4) 25%,transparent 25%,transparent 50%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.4) 75%,transparent 75%,transparent);
+    background-image: -webkit-linear-gradient(45deg,rgba(32,32,32,.4) 25%,transparent 25%,transparent 50%,rgba(32,32,32,.4) 50%,rgba(32,32,32,.4) 75%,transparent 75%,transparent);
     /* 滚动条圆角*/
     border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-image: -webkit-linear-gradient(45deg,rgba(0,0,0,.4) 25%,transparent 25%,transparent 50%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.4) 75%,transparent 75%,transparent);
 }
 /*滚动条背景*/
 ::-webkit-scrollbar-track {
