@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-25
+                    2020-05-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    9.7k
+                    10k
                 </div>
                 
 
@@ -2275,8 +2275,11 @@ document<span class="token punctuation">.</span><span class="token function">get
                 <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"快乐学习，JS！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 <span class="token comment" spellcheck="true">//链接 URL 路径</span>
                 window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'http://www.baidu.com'</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
             <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ctrlKey<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">alert</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ctrlKey<span class="token operator">+</span><span class="token string">" , 按下了Ctrl键"</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
         <span class="token comment" spellcheck="true">//应用 onkeydown 事件输出函数中的内容</span>
         document<span class="token punctuation">.</span>onkeydown <span class="token operator">=</span> exa<span class="token punctuation">;</span>
     </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
@@ -2284,7 +2287,7 @@ document<span class="token punctuation">.</span><span class="token function">get
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span> 按下 Ctrl键 + Alt键 + Shift键 百度搜！<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><font color = #05ffdc> button </font> 属性。获取事件发生时用户所按的 鼠标键 </p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>button<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>属性值</strong>： </p>
@@ -2328,6 +2331,35 @@ document<span class="token punctuation">.</span><span class="token function">get
 <td>同时按下 左键 、中键 、 右键</td>
 </tr>
 </tbody></table>
+<p>个人测试的 button值</p>
+<table>
+<thead>
+<tr>
+<th>button 值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>按下 左键（主键）</td>
+</tr>
+<tr>
+<td>1</td>
+<td>按下 中键</td>
+</tr>
+<tr>
+<td>2</td>
+<td>按下 右键</td>
+</tr>
+<tr>
+<td>3</td>
+<td>按下 侧键5号键</td>
+</tr>
+<tr>
+<td>4</td>
+<td>按下 侧键4号键</td>
+</tr>
+</tbody></table>
 <blockquote>
 <p> <font color = red>注意 </font>： </p>
 <p>如果同时按下两个按键执行的特殊动作，会干扰到目标行为。</p>
@@ -2355,6 +2387,39 @@ document<span class="token punctuation">.</span><span class="token function">get
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>鼠标右键可以进入我的博客！！<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color = #05ffdc>clientX </font> 属性。获取 鼠标在浏览器窗口的 X坐标 ，只能获取信息不能更改</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>clientX<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>clientY </font> 属性。获取 鼠标在浏览器窗口的 Y坐标 ，只能获取信息不能更改</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>clientY<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
+    <span class="token keyword">var</span> x <span class="token punctuation">,</span> y <span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">zuobiao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            x <span class="token operator">=</span> window<span class="token punctuation">.</span>event<span class="token punctuation">.</span>clientX<span class="token punctuation">;</span>
+            y <span class="token operator">=</span> window<span class="token punctuation">.</span>event<span class="token punctuation">.</span>clientY<span class="token punctuation">;</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"x : "</span><span class="token operator">+</span>x <span class="token operator">+</span><span class="token string">"\n y : "</span><span class="token operator">+</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    document<span class="token punctuation">.</span>onmousedown <span class="token operator">=</span> zuobiao <span class="token punctuation">;</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>点击鼠标<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><font color = #05ffdc>X </font> 属性。设置或获取鼠标位置，非定位元素 则以body元素作参照对象（鼠标在窗口外则：-1）</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>X<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>Y </font> 属性。设置或获取鼠标位置，非 定位元素 则以body元素作参照对象（鼠标在窗口外则：-1）</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>Y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>cancelBubble </font> 属性。检测是否接受上层元素的控制，控制为false，非控制true （默认：false）</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>cancelBubble<span class="token punctuation">[</span> <span class="token operator">=</span> cancelBubble<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>srcElement </font> 属性。设置或获取触发的事件的对象 ,初始目标为HTML元素。</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">[</span>window<span class="token punctuation">.</span><span class="token punctuation">]</span>event<span class="token punctuation">.</span>srcElement<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -3262,7 +3327,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">45.9k</span>&nbsp;字战绩
+                class="white-color">46.7k</span>&nbsp;字战绩
             
             
             
