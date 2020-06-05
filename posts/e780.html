@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-03
+                    2020-06-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    535
+                    1.8k
                 </div>
                 
 
@@ -434,12 +434,92 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="面向对象概述"><a href="#面向对象概述" class="headerlink" title="面向对象概述"></a>面向对象概述</h1><h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象 就是通过java类所产生的实体<br>如：动物百科的记载中有兔子类（java封装的类），根据百科中所呈现出来且真实存在的 实体 被为对象，相当于得到了兔子的 对象</p>
-<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>类 是封装 对象 的 行为 和 属性 的载体。反过来，具有 相同属性 和 行为 的一类实体被称为类<br>如：兔子类（所有物种的兔子）封装有兔子的 共同属性 和 行为</p>
-<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>封装是将类的某些信息隐藏在类的内部，不许外部直接访问<br>通过类提供的方法实现对 隐藏信息 的 访问 和 操作<br>如：QQ聊天的界面，聊天的内容位置是已经提供方法，可 访问 和 操作 的，可避免其他操作影响的不良后果</p>
-<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>继承 是类与类之间同样具有关系，则为两类的关联<br>如：学生类 与 教师类 关联关系</p>
-<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>多态 是父类对象应用于子类的特征</p>
-<h1 id="类-1"><a href="#类-1" class="headerlink" title="类"></a>类</h1><h2 id="成员变量"><a href="#成员变量" class="headerlink" title="成员变量"></a>成员变量</h2><p>变量是java类中的属性</p>
+                <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><p><font color = #05ffdc>length（） </font> 测长度，返回字符串长度</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>inexOf(String s） </font> 找参数的位置，返回参数字符串在字符串首个字符索引位置</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>lastIndexOf（String s）</font> 找参数最后出现的位置，返回指定参数的字符串最后一个出现的索引位置</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>charAt（int i） </font> 查找索引下标，返回指定索引处的字符</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>substring（int i） </font> 查找索引下标开始到结尾，返回指定位置开始到结尾的字符串</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>substring（int i , int j）</font> 获取指定范围字符串，返回指定位置范围的字符串</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token punctuation">,</span> <span class="token keyword">int</span> j<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>trim（） </font> 去除多余空格，返回字符串副本，消除多余空格的</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>replace（char str1,char str2） </font> 字符串/字符替换，返回字符串副本，指定 字符 / 字符串 替换新的 字符 / 字符串</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token keyword">char</span> str1<span class="token punctuation">,</span><span class="token keyword">char</span> str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>startsWith（String p）</font> 匹配前缀字符串，判定字符串前缀是否匹配参数字符串</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>String p<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>endsWith（String p） </font> 匹配后缀字符串，判断字符串后缀是否匹配参数字符串</p>
+<pre class="line-numbers language-java"><code class="language-java"> str<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span>String p<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>equals（String str2） </font> 判断是否相同，判断字符串与参数字符串的字符和长度是否相同</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>String str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>equalsIgnoreCase（String str2） </font> 判断是否相同，比较两个字符串的对象</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">equalsIgnoreCase</span><span class="token punctuation">(</span>String str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>compareTo（String o）</font> 比较顺序，按字典顺序比较两个字符串，参数位置前正，后负，等于0</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>String <span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>toLowerCase（） </font> 转换小写，字符串全部转换为小写</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>toUpperCase（） </font> 转换大写，字符串全部转换为大写</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>split（String sign） </font> 分割字符串，指定分割符对字符串进行拆分</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>Stirng sign<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>sign为分割的字符串，也可以是正则表达式</p>
+</blockquote>
+<p><font color = #05ffdc>split（String sign , int i） </font> 分割字符串指定数量，指定分割符对字符串进行拆分，并限制拆分数</p>
+<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>String sign <span class="token punctuation">,</span> <span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>全部例子</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"I love Java  20.06.05   !!! , or not love Java"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str："</span><span class="token operator">+</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        String str2 <span class="token operator">=</span> <span class="token string">"Sanscan"</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str2："</span><span class="token operator">+</span>str2<span class="token operator">+</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        String str3 <span class="token operator">=</span> <span class="token string">"192.168.0.1"</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//length() 测长度</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.length() 测长度："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//inexOf(String s)找字符串位置</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.inexOf(String s)找Java字符串位置："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"Java"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//lastIndexOf(String s)找参数最后出现的位置</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.lastIndexOf(String s)找参数最后出现的位置："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">"Java"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//charAt(int i)查找索引下标</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.charAt(int i)查找索引下标："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//substring(int i) 查找索引下标开始到结尾</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.ubstring(int i) 查找索引下标开始到结尾："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//substring(int i , int j) 获取指定范围字符串</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.substring(int i , int j)获取指定范围字符串: "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//trim() 去除多余空格</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.trim() 去除多余空格："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//replace(char str1,char str2) 字符串/字符替换</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.replace(char str1,char str2) 字符串/字符替换(javas)："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"Java"</span><span class="token punctuation">,</span><span class="token string">"javas"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//startsWith(String p) 匹配字符</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.startsWith(String p) 匹配字符(java)："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//endsWith(String p) 匹配后缀字符串</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.endsWith(String p) 匹配后缀字符串(java): "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//equals(String str2) 判断是否相同</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str2.equals(String str2) 判断是否相同(Sanscan) :"</span><span class="token operator">+</span>str2<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">"Sanscan"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//equalsIgnoreCase(String str2) 判断是否相同</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str2.equalsIgnoreCase(String str2)判断是否相同(Sanscan)："</span><span class="token operator">+</span>str2<span class="token punctuation">.</span><span class="token function">equalsIgnoreCase</span><span class="token punctuation">(</span><span class="token string">"Sanscan"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//compareTo(String o) 比较顺序</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str2.compareTo(String o)  比较顺序(sans)："</span><span class="token operator">+</span>str2<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token string">"sans"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//toLowerCase() 转换小写</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.toLowerCase() 转换小写："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//toUpperCase() 转换大写</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.toUpperCase() 转换大写： "</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//split(String sign) 分割字符串</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.split(String sign) 分割字符串192.168.0.1："</span><span class="token operator">+</span>str3<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\."</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//split(String sign ,int i) 分割字符串指定数量</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str.split(String sign) 分割字符串192.168.0.1："</span><span class="token operator">+</span>str3<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\."</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><h2 id="面向对象概述"><a href="#面向对象概述" class="headerlink" title="面向对象概述"></a>面向对象概述</h2><h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>对象 就是通过java类所产生的实体<br>如：动物百科的记载中有兔子类（java封装的类），根据百科中所呈现出来且真实存在的 实体 被为对象，相当于得到了兔子的 对象</p>
+<h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><p>类 是封装 对象 的 行为 和 属性 的载体。反过来，具有 相同属性 和 行为 的一类实体被称为类<br>如：兔子类（所有物种的兔子）封装有兔子的 共同属性 和 行为</p>
+<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><p>封装是将类的某些信息隐藏在类的内部，不许外部直接访问<br>通过类提供的方法实现对 隐藏信息 的 访问 和 操作<br>如：QQ聊天的界面，聊天的内容位置是已经提供方法，可 访问 和 操作 的，可避免其他操作影响的不良后果</p>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>继承 是类与类之间同样具有关系，则为两类的关联<br>如：学生类 与 教师类 关联关系</p>
+<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><p>多态 是父类对象应用于子类的特征</p>
+<h2 id="类-1"><a href="#类-1" class="headerlink" title="类"></a>类</h2><h3 id="成员变量"><a href="#成员变量" class="headerlink" title="成员变量"></a>成员变量</h3><p>成员变量是java类中的属性</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">tuzi</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         String eat<span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//吃</span>
@@ -447,7 +527,7 @@
         String jump<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">//跳</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="成员方法"><a href="#成员方法" class="headerlink" title="成员方法"></a>成员方法</h2><p>方法是java中的行为</p>
+<h3 id="成员方法"><a href="#成员方法" class="headerlink" title="成员方法"></a>成员方法</h3><p>成员方法是java中的行为</p>
 <pre class="line-numbers language-java"><code class="language-java">权限修饰符 返回值类型 方法名<span class="token punctuation">(</span>参数类型 参数名<span class="token punctuation">[</span><span class="token punctuation">,</span>···<span class="token punctuation">)</span><span class="token punctuation">{</span>
     ····        <span class="token comment" spellcheck="true">//方法体</span>
     <span class="token keyword">return</span> 返回的值<span class="token punctuation">;</span>
@@ -461,9 +541,9 @@
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
-<p>如果方法为void（空），则无返回（retrun）</p>
+<p>如果方法返回类型为void（空），则无返回（retrun）</p>
 </blockquote>
-<h2 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h2><p>权限修饰符控制 类 、类的成员变量 、成员方法 的访问</p>
+<h3 id="权限修饰符"><a href="#权限修饰符" class="headerlink" title="权限修饰符"></a>权限修饰符</h3><p>权限修饰符控制 类 、类的成员变量 、成员方法 的访问</p>
 <table>
 <thead>
 <tr>
@@ -503,7 +583,42 @@
         ····    <span class="token comment" spellcheck="true">//方法体</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>成员方法内定义的变量，则该变量是局部变量</p>
+<pre class="line-numbers language-Java"><code class="language-Java">public class jububianliang {
+    public static void main(String[] args) {
+        int i = 2,j = 4;
+        System.out.private(max(i,j));    
+    }
+    //成员方法。max变量限于该方法的范围
+    public int max(int a , int b ){
+        //局部变量max
+        int max = 0;
+        if(a > b){
+            max = a;
+            return max;
+        }else{
+            max = b;
+            return max;}
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>方法内的局部变量，外部是无法调用方法内的局部变量，因外部并没有声明变量</p>
+</blockquote>
+<h3 id="this关键子"><a href="#this关键子" class="headerlink" title="this关键子"></a>this关键子</h3><p>this关键字用于引用对象的成员变量和方法 ，将方法的参数值赋予类本身的成员变量</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">thsiches</span> <span class="token punctuation">{</span>
+    String  str <span class="token operator">=</span> <span class="token string">"abc"</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">no1</span><span class="token punctuation">(</span>String str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//打印 str形参</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"no1："</span><span class="token operator">+</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//打印 thsiches类 中的str成员变量</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"no2："</span><span class="token operator">+</span><span class="token keyword">this</span><span class="token punctuation">.</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        String str2 <span class="token operator">=</span> <span class="token string">"123"</span><span class="token punctuation">;</span>
+        <span class="token keyword">new</span> <span class="token class-name">thsiches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">no1</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="类的构造方法"><a href="#类的构造方法" class="headerlink" title="类的构造方法"></a>类的构造方法</h2><h2 id="静态变量、常量和方法"><a href="#静态变量、常量和方法" class="headerlink" title="静态变量、常量和方法"></a>静态变量、常量和方法</h2>
             </div>
             <hr/>
 
@@ -1416,7 +1531,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">47.7k</span>&nbsp;字战绩
+                class="white-color">49.1k</span>&nbsp;字战绩
             
             
             
