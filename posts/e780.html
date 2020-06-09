@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-08
+                    2020-06-09
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4k
+                    4.7k
                 </div>
                 
 
@@ -705,23 +705,23 @@ str4.delete（int i , int j） 删除字符串：SanscanJava
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>成员方法内定义的变量，则该变量是局部变量</p>
-<pre class="line-numbers language-Java"><code class="language-Java">public class jububianliang {
-    public static void main(String[] args) {
-        int i = 2,j = 4;
-        System.out.private(max(i,j));    
-    }
-    //成员方法。max变量限于该方法的范围
-    public int max(int a , int b ){
-        //局部变量max
-        int max = 0;
-        if(a > b){
-            max = a;
-            return max;
-        }else{
-            max = b;
-            return max;}
-    }
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">jububianliang</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>j <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token keyword">private</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//成员方法。max变量限于该方法的范围</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token keyword">int</span> a <span class="token punctuation">,</span> <span class="token keyword">int</span> b <span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//局部变量max</span>
+        <span class="token keyword">int</span> max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a <span class="token operator">></span> b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            max <span class="token operator">=</span> a<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            max <span class="token operator">=</span> b<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> max<span class="token punctuation">;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>方法内的局部变量，外部是无法调用方法内的局部变量，因外部并没有声明变量</p>
 </blockquote>
@@ -905,7 +905,7 @@ no11(in) :  4<span aria-hidden="true" class="line-numbers-rows"><span></span><sp
 <h2 id="对象-1"><a href="#对象-1" class="headerlink" title="对象"></a>对象</h2><h3 id="对象创建"><a href="#对象创建" class="headerlink" title="对象创建"></a>对象创建</h3><pre class="line-numbers language-java"><code class="language-java">Text text <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 Text text <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <blockquote>
-<p>Text：类名<br>text：创建Text类对象<br>new：创建对象操作符<br>“ a ”：构造方法的参数</p>
+<p>Text：类名<br>text：创建Text类引用对象<br>new：创建对象操作符<br>“ a ”：构造方法的参数</p>
 </blockquote>
 <h3 id="对象属性与行为"><a href="#对象属性与行为" class="headerlink" title="对象属性与行为"></a>对象属性与行为</h3><p>使用new操作符创建对象后，可以使用 <code>对象.类成员</code> 获取对象的 属性 或 行为 </p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">no1</span> <span class="token punctuation">{</span>
@@ -949,7 +949,110 @@ max = b33<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <blockquote>
 <p>Text：类<br>t：引用<br>new Book（）：对象</p>
 </blockquote>
-<h1 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h1><h2 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h2><h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><h2 id="Byte"><a href="#Byte" class="headerlink" title="Byte"></a>Byte</h2><h2 id="Character"><a href="#Character" class="headerlink" title="Character"></a>Character</h2><h2 id="Double"><a href="#Double" class="headerlink" title="Double"></a>Double</h2><h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2>
+<h1 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h1><h2 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h2><p>Integer类用于封装 int类型数据</p>
+<h3 id="Integer构造方法"><a href="#Integer构造方法" class="headerlink" title="Integer构造方法"></a>Integer构造方法</h3><ol>
+<li><font color = #05ffdc>Integer</font> （int number）</li>
+<li><font color = #05ffdc>Integer</font> （String str）</li>
+</ol>
+<p>以上有两种方式获取 Integer对象 </p>
+<h3 id="Integer常量"><a href="#Integer常量" class="headerlink" title="Integer常量"></a>Integer常量</h3><p><font color = #05ffdc>MAX_VALUE </font> 返回int型的最大值</p>
+<p><font color = #05ffdc>MIN_VALUE  </font> 返回int型的最小值</p>
+<p><font color = #05ffdc>SIZE </font> 用二进制补码形式表示 int位数</p>
+<p><font color = #05ffdc>TYPE </font> 基本类型int</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"int最大值（max）："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"int最小值（min）："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"max："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>SIZE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"max："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>TYPE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">int最大值（max）：2147483647
+int最小值（min）：-2147483648
+max：32
+max：int<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Integer方法"><a href="#Integer方法" class="headerlink" title="Integer方法"></a>Integer方法</h3><p><font color = #05ffdc>byteValue（） </font> 以 byte类型 返回</p>
+<p><font color = #05ffdc>compareTo（Integer i） </font> 比较是否相同，两值相同则返回 0，对象小于 参数i 返回负值，否则为正值</p>
+<p><font color = #05ffdc>intValue（） </font> 以 int类型 返回</p>
+<p><font color = #05ffdc>shortValue（） </font> 以 short类型 返回</p>
+<p><font color = #05ffdc>toString（） </font> 返回 Integer值 的 String对象，返回String</p>
+<p><font color = #05ffdc>valueOf（String str） </font> 返回保存参数的 Integer对象</p>
+<p><font color = #05ffdc>parseInt（String str） </font> 返回参数中的数值</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">no1</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Integer n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Integer</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"byteValue（） 以 byte类型 返回(12)："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">byteValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"compareTo（Integer i）比较是否相同(12 v 10)："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"intValue（）以 int类型 返回："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">intValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"shortValue（）以 short类型 返回："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">shortValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        String str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"toString（）返回 Integer值 的 String对象："</span><span class="token operator">+</span>str<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"valueOf（String str） 返回保存参数的 Integer对象((String)123) : "</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"parseInt（String str） 返回参数中的数值((String)123)："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">byteValue（） 以 byte类型 返回(12)：12
+compareTo（Integer i）比较是否相同(12 v 10)：1
+intValue（）以 int类型 返回：12
+shortValue（）以 short类型 返回：12
+toString（）返回 Integer值 的 String对象：123
+valueOf（String str） 返回保存参数的 Integer对象((String)123) : 123
+parseInt（String str） 返回参数中的数值((String)123)：123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><p>Boolean类用于封装boolean类型数据</p>
+<h3 id="Boolean构造方法"><a href="#Boolean构造方法" class="headerlink" title="Boolean构造方法"></a>Boolean构造方法</h3><ol>
+<li>Boolean（boolean value）</li>
+<li>Boolean（String str）</li>
+</ol>
+<p>以上有两种方式获取 Boolean对象 </p>
+<h3 id="Boolean常量"><a href="#Boolean常量" class="headerlink" title="Boolean常量"></a>Boolean常量</h3><p><font color = #05ffdc>TRUE </font> 对应基于true的 Boolean对象</p>
+<p><font color = #05ffdc>FALSE</font> 对应基于false的 Boolean对象</p>
+<p><font color = #05ffdc>TYPE </font> 基本类型Boolean</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Boolean.TRUE："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span>TRUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Boolean.FALSE："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span>FALSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Boolean.TYPE："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span>TYPE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-text"><code class="language-text">Boolean.TRUE：true
+Boolean.FALSE：false
+Boolean.TYPE：boolean<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="Boolean方法"><a href="#Boolean方法" class="headerlink" title="Boolean方法"></a>Boolean方法</h3><p><font color = #05ffdc> </font> <font color = #05ffdc>BooleanValue（） </font> 将值对应返回 Boolean值 </p>
+<p><font color = #05ffdc>equsla（Object obj） </font> 对象相同返回true，否则false</p>
+<p><font color = #05ffdc>parseBoolean（String s） </font> 将字符串解析为 Boolean值</p>
+<p><font color = #05ffdc>toString() </font> 返回boolean值的String对象，返回String</p>
+<p><font color = #05ffdc>valueOf（String s） </font> 返回参数Boolean值</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Boolean b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//默认false</span>
+    Boolean b2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token string">"yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BooleanValue(b1) : "</span><span class="token operator">+</span>b1<span class="token punctuation">.</span><span class="token function">booleanValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BooleanValue(b2) : "</span><span class="token operator">+</span>b2<span class="token punctuation">.</span><span class="token function">booleanValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"b1.equsla(b2)："</span><span class="token operator">+</span>b1<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"valueOf（b1）："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>b1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"valueOf（b2）："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//String.valueOf(b1)：把b1引用的对象字符串化</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"parseBoolean（b1）："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span><span class="token function">parseBoolean</span><span class="token punctuation">(</span>String<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>b1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//String.valueOf(b1)：把b2引用的对象字符串化</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"parseBoolean（b2）："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span><span class="token function">parseBoolean</span><span class="token punctuation">(</span>String<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">BooleanValue(b1) : true
+BooleanValue(b2) : false
+b1.equsla(b2)：false
+valueOf（String s）：true
+valueOf（String s）：false
+parseBoolean（String s）：true
+parseBoolean（String s）：false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Character"><a href="#Character" class="headerlink" title="Character"></a>Character</h2><h2 id="Double"><a href="#Double" class="headerlink" title="Double"></a>Double</h2><h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2>
             </div>
             <hr/>
 
@@ -1862,7 +1965,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">51.4k</span>&nbsp;字战绩
+                class="white-color">52.1k</span>&nbsp;字战绩
             
             
             
