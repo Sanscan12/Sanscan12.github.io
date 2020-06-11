@@ -1301,7 +1301,7 @@ thead {
 
 .chip-container .tag-title {
     margin-bottom: 10px;
-    color: #3C4858;
+    /*color: #3C4858;*/
     font-size: 1.75rem;
     font-weight: 400;
 }

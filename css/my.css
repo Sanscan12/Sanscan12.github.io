@@ -161,3 +161,9 @@ div:hover input {
     width: 12px;
     height: 12px;
 }
+.frind-ship h1{
+    font-size: 1.6rem;
+}
+.friends-container .tag-title {
+    color: #fff !important;
+}
