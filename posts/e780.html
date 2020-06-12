@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-10
+                    2020-06-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.5k
+                    8.9k
                 </div>
                 
 
@@ -1280,7 +1280,277 @@ longValue（） 以long形式返回double值：11<span aria-hidden="true" class=
 以short形式返回数值：23000
 以long形式返回数值：23000
 以double形式返回数值：23000.23<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="数字处理类"><a href="#数字处理类" class="headerlink" title="数字处理类"></a>数字处理类</h1><h2 id="数字格式化"><a href="#数字格式化" class="headerlink" title="数字格式化"></a>数字格式化</h2><h2 id="数字运算"><a href="#数字运算" class="headerlink" title="数字运算"></a>数字运算</h2><h3 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h3><h3 id="常用数学运算方法"><a href="#常用数学运算方法" class="headerlink" title="常用数学运算方法"></a>常用数学运算方法</h3><h2 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h2><h3 id="Math-random（）方法"><a href="#Math-random（）方法" class="headerlink" title="Math.random（）方法"></a>Math.random（）方法</h3><h3 id="Random类"><a href="#Random类" class="headerlink" title="Random类"></a>Random类</h3>
+<h1 id="数字处理类"><a href="#数字处理类" class="headerlink" title="数字处理类"></a>数字处理类</h1><h2 id="数字格式化"><a href="#数字格式化" class="headerlink" title="数字格式化"></a>数字格式化</h2><p>数字格式化是用模板控制内容数字类型，用到DecimalFormat类进行格式化</p>
+<p>DecimalFormat类有特殊字符 构成的格式化模板，是数字会按照特殊字符规则进行匹配</p>
+<p>DecimalFormat类中特殊字符的说明</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>一个数字，不存在则显示0</td>
+</tr>
+<tr>
+<td>#</td>
+<td>一个数字，存在则显示，否则不显示</td>
+</tr>
+<tr>
+<td>.</td>
+<td>小数分隔符或货币小数分隔符</td>
+</tr>
+<tr>
+<td>-</td>
+<td>符号</td>
+</tr>
+<tr>
+<td>,</td>
+<td>分组分隔符</td>
+</tr>
+<tr>
+<td>E</td>
+<td>分隔科学计数法中的尾数和指数</td>
+</tr>
+<tr>
+<td>%</td>
+<td>存在数字的前缀或后缀，乘100显示百分数</td>
+</tr>
+<tr>
+<td>\u2030</td>
+<td>存在数字的前缀或后缀，乘1000显示千分数</td>
+</tr>
+<tr>
+<td>\u00A4</td>
+<td>存在数字的前缀或后缀，显示货币记号</td>
+</tr>
+<tr>
+<td>‘</td>
+<td>视为普通单引号处理</td>
+</tr>
+</tbody></table>
+<p><strong>DecimalFormat类方法</strong></p>
+<p><font color = #05ffdc>applyPattern（String patten） </font> 设置数字格式化模板</p>
+<p><font color = #05ffdc>format（value） </font> 转换模板样式</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>text<span class="token punctuation">.</span>DecimalFormat<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//有DecimalFormat包的调用</span>
+
+<span class="token keyword">static</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Sformat</span><span class="token punctuation">(</span>String patten<span class="token punctuation">,</span> <span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//pattem：模板，value：数值</span>
+        <span class="token comment" spellcheck="true">//实例化对象</span>
+        DecimalFormat n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DecimalFormat</span><span class="token punctuation">(</span>patten<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//进行格式化的方法 format(double value)</span>
+        String out <span class="token operator">=</span> n<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"模板："</span><span class="token operator">+</span>patten<span class="token operator">+</span><span class="token string">"，数值 "</span><span class="token operator">+</span>value<span class="token operator">+</span><span class="token string">"\n结果："</span><span class="token operator">+</span>out<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">static</span> <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Sformat2</span><span class="token punctuation">(</span>String patten<span class="token punctuation">,</span> <span class="token keyword">double</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//pattem：模板，value：数值</span>
+        <span class="token comment" spellcheck="true">//实例化对象</span>
+        DecimalFormat n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DecimalFormat</span><span class="token punctuation">(</span>patten<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置格式化模板</span>
+        n<span class="token punctuation">.</span><span class="token function">applyPattern</span><span class="token punctuation">(</span>patten<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"模板："</span><span class="token operator">+</span>patten<span class="token operator">+</span><span class="token string">"，数值 "</span><span class="token operator">+</span>value<span class="token operator">+</span><span class="token string">"\n结果："</span><span class="token operator">+</span>n<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//静态调用方法，无需实例化</span>
+        <span class="token function">Sformat</span><span class="token punctuation">(</span><span class="token string">"###,###,###"</span><span class="token punctuation">,</span><span class="token number">12345.6789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">Sformat</span><span class="token punctuation">(</span><span class="token string">"00000000.###kg"</span><span class="token punctuation">,</span><span class="token number">12345.6789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">Sformat</span><span class="token punctuation">(</span><span class="token string">"000000.000"</span><span class="token punctuation">,</span><span class="token number">123.45</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">Sformat2</span><span class="token punctuation">(</span><span class="token string">"#.###%"</span><span class="token punctuation">,</span><span class="token number">0.789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">Sformat2</span><span class="token punctuation">(</span><span class="token string">"###.##"</span><span class="token punctuation">,</span><span class="token number">123456.789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">Sformat2</span><span class="token punctuation">(</span><span class="token string">"0.00\u2030"</span><span class="token punctuation">,</span><span class="token number">0.789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">模板：###,###,###，数值 12345.6789
+结果：12,346
+
+模板：00000000.###kg，数值 12345.6789
+结果：00012345.679kg
+
+模板：000000.000，数值 123.45
+结果：000123.450
+
+------------
+模板：#.###%，数值 0.789
+结果：78.9%
+
+模板：###.##，数值 123456.789
+结果：123456.79
+
+模板：0.00‰，数值 0.789
+结果：789.00‰<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="数字运算"><a href="#数字运算" class="headerlink" title="数字运算"></a>数字运算</h2><p><strong>Math类</strong></p>
+<p>Math类提供了数学函数方法</p>
+<blockquote>
+<ul>
+<li>不用调用包</li>
+<li>都是静态方法</li>
+</ul>
+</blockquote>
+<p><strong>常用数学运算方法</strong></p>
+<h3 id="三角函数方法"><a href="#三角函数方法" class="headerlink" title="三角函数方法"></a>三角函数方法</h3><p><font color = #05ffdc>Math.sin（double a） </font> 返回三角正弦</p>
+<p><font color = #05ffdc>Math.cos（double a） </font> 返回三角余弦</p>
+<p><font color = #05ffdc>Math.tan（double a） </font> 返回三角正切</p>
+<p><font color = #05ffdc>Math.asin（double a） </font> 返回一个反正弦</p>
+<p><font color = #05ffdc>Math.acos（double a） </font> 返回一个反余弦</p>
+<p><font color = #05ffdc>Math.atan（double a） </font> 返回一个反正切</p>
+<p><font color = #05ffdc>Math.toRadians（double a） </font> 角度转换为弧度</p>
+<p><font color = #05ffdc>Math.toDegrees（double a） </font> 弧度转换为角度</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"PI："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span>PI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.sin（double a） 返回三角正弦(90)："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">sin</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span>PI<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.cos（double a） 返回三角余弦："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">cos</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.tan（double a） 返回三角正切："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">tan</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span>PI<span class="token operator">/</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//取2点平方根与2商的反正弦</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.asin（double a） 返回一个反正弦："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">asin</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//取2点平方根与2商的反余弦</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.acos（double a） 返回一个反余弦："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">acos</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.atan（double a） 返回一个反正切："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">atan</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.toRadians（double a） 角度转换为弧度："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">toRadians</span><span class="token punctuation">(</span><span class="token number">120.0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.toDegrees（double a） 弧度转换为角度："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">toDegrees</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span>PI<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">PI：3.141592653589793
+Math.sin（double a） 返回三角正弦(90)：1.0
+Math.cos（double a） 返回三角余弦：1.0
+Math.tan（double a） 返回三角正切：1.7320508075688767
+Math.asin（double a） 返回一个反正弦：0.7853981633974484
+Math.acos（double a） 返回一个反余弦：0.7853981633974483
+Math.atan（double a） 返回一个反正切：0.7853981633974483
+Math.toRadians（double a） 角度转换为弧度：2.0943951023931953
+Math.toDegrees（double a） 弧度转换为角度：90.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="指数函数方法"><a href="#指数函数方法" class="headerlink" title="指数函数方法"></a>指数函数方法</h3><p><font color = #05ffdc>Math.exp（double a） </font> 获取e的a次方</p>
+<p><font color = #05ffdc>Math.log（double a） </font> 取自然对数，即取lna的值</p>
+<p><font color = #05ffdc>Math.log10（double a） </font> 取底数为10的对数</p>
+<p><font color = #05ffdc>Math.sqrt（double a） </font> 取a的平方根，a不能为负数</p>
+<p><font color = #05ffdc>Math.cbrt（double a） </font> 取a的立方根</p>
+<p><font color = #05ffdc>Math.pow（double a,double b） </font> 取a的b次方</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.exp（double a）  获取e的a次方："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">exp</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.log（double a）  取自然对数，即取lna的值："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.log10（double a）取底数为10的对数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">log10</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.sqrt（double a）  取a的平方根，a不能为负数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.cbrt（double a）  取a的立方根："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">cbrt</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.pow（double a）  取a的b次方："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">Math.exp（double a）  获取e的a次方：7.38905609893065
+Math.log（double a）  取自然对数，即取lna的值：0.6931471805599453
+Math.log10（double a）取底数为10的对数：0.3010299956639812
+Math.sqrt（double a）  取a的平方根，a不能为负数：1.4142135623730951
+Math.cbrt（double a）  取a的立方根：1.2599210498948732
+Math.pow（double a）  取a的b次方：8.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="取整函数方法"><a href="#取整函数方法" class="headerlink" title="取整函数方法"></a>取整函数方法</h3><p><font color = #05ffdc> </font> <font color = #05ffdc>Math.ceil（double a） </font> 返回大于等于参数的最小整数</p>
+<p> <font color = #05ffdc>Math.floor（double a） </font> 返回小于等于参数的最大整数</p>
+<p> <font color = #05ffdc>Math.rint（double a） </font> 返回与参数接近的整数，如果两整数一样，则取偶数</p>
+<p> <font color = #05ffdc>Math.round（float a） </font> 返回参数加 0.5 后与参数接近的整数</p>
+<p> <font color = #05ffdc>Math.round（double a） </font> 返回参数加 0.5 后与参数接近的整数并转换为长整型(double)</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.ceil（double a） 返回大于等于参数的最小整数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span><span class="token number">5.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.floor（double a）返回小于等于参数的最大整数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">2.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.rint（double a） 返回与参数接近的整数，如果两整数一样，则取偶数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">rint</span><span class="token punctuation">(</span><span class="token number">2.7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.round（float a） 返回参数加 0.5 后与参数接近的整数："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">3.4f</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.round（double a） 返回参数加 0.5 后与参数接近的整数并转换为长整型(double)："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">2.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">Math.ceil（double a） 返回大于等于参数的最小整数：6.0
+Math.floor（double a）返回小于等于参数的最大整数：2.0
+Math.rint（double a） 返回与参数接近的整数，如果两整数一样，则取偶数：3.0
+Math.round（float a） 返回参数加 0.5 后与参数接近的整数：3
+Math.round（double a） 返回参数加 0.5 后与参数接近的整数并转换为长整型(double)：3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="最大、最小、绝对值函数方法"><a href="#最大、最小、绝对值函数方法" class="headerlink" title="最大、最小、绝对值函数方法"></a>最大、最小、绝对值函数方法</h3><p><font color = #05ffdc>Math.max（double a ，double b） </font> 取a ，b 较大值，参数整型</p>
+<p><font color = #05ffdc>Math.min（int a ，int b） </font> 取a ，b 较小值，参数整型</p>
+<p><font color = #05ffdc>Math.min（long a ，long b） </font>  取a ，b 较小值，参数长整型</p>
+<p><font color = #05ffdc>Math.min（float a ，float b） </font>  取a ，b 较小值，参数浮点型</p>
+<p><font color = #05ffdc>Math.min（doubl a ，double b） </font>  取a ，b 较小值，参数双精度型</p>
+<p><font color = #05ffdc>Math.abs（int a） </font> 返回整型参数的绝对值</p>
+<p><font color = #05ffdc>Math.abs（long a） </font> 返回长整型参数的绝对值</p>
+<p><font color = #05ffdc>Math.abs（float a） </font> 返回浮点型参数的绝对值</p>
+<p><font color = #05ffdc>Math.abs（double a） </font> 返回双精度型参数的绝对值</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.max（double a ，double b） 取a ，b 较大值，参数整型："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token number">4.3</span><span class="token punctuation">,</span><span class="token number">4.2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.min（int a ，int b） 取a ，b 较小值，参数整型："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Math.abs（double a） 返回双精度型参数的绝对值："</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果 </p>
+<pre class="line-numbers language-text"><code class="language-text">Math.max（double a ，double b） 取a ，b 较大值，参数整型：4.3
+Math.min（int a ，int b） 取a ，b 较小值，参数整型：3
+Math.abs（double a） 返回双精度型参数的绝对值：5.3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h2><h3 id="Math-random（）方法"><a href="#Math-random（）方法" class="headerlink" title="Math.random（）方法"></a>Math.random（）方法</h3><p>Math类中的random（）方法，用于产生随机数字，该方法默认生成 0 ~ 1 之间的double型随机数</p>
+<p>以下方法可以从0 控制的范围<br>$$<br>Math.random()*m<br>$$</p>
+<p>$$<br>0*m &lt;= double值 * m &lt; 1 * m<br>$$</p>
+<p>$$<br>0 &lt;= double值 &lt; m<br>$$</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"1 - 100 的随机数："</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"50 - 100 的随机数："</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//'a'+Math.random()*('z'-'a'+1) ：后面加1原因因为要包含字母‘z’</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"a - z 的随机字符："</span><span class="token operator">+</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token string">'z'</span><span class="token operator">-</span><span class="token string">'a'</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">1 - 100 的随机数：84
+50 - 100 的随机数：64
+a - z 的随机字符：s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="Random类"><a href="#Random类" class="headerlink" title="Random类"></a>Random类</h3><p>Java提供有Java.util.Random类，可以通过Random对象创建随机数生成器</p>
+<pre class="line-numbers language-java"><code class="language-java">Random r <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span>seedValue<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>seedValue：系统时间作为随机数生成的种子</p>
+<p><strong>Random方法</strong></p>
+<p><font color = #05ffdc>nextInt（） </font> 返回随机整数</p>
+<p><font color = #05ffdc>nextInt（int n） </font> 返回大于等于0且小于n的随机数</p>
+<p><font color = #05ffdc>nextLong（） </font> 返回随机数长整型</p>
+<p><font color = #05ffdc>nextBoolean（）</font> 返回随机数布尔值</p>
+<p><font color = #05ffdc>nextFloat（） </font> 返回随机数浮点型</p>
+<p><font color = #05ffdc>nextDouble（） </font> 返回随机数双精度型</p>
+<p><font color = #05ffdc>nextGaussian（） </font> 返回概率密度为高斯分布的双精度值</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Random d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextInt（） 返回随机整数："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextInt（int n） 返回大于等于0且小于n的随机数(10)："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextLong（） 返回随机数长整型："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextLong</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextBoolean（）返回随机数布尔值："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextBoolean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextFloat（） 返回随机数浮点型："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextFloat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextDouble（） 返回随机数双精度型："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"nextGaussian（） 返回概率密度为高斯分布的双精度值："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">nextDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">nextInt（） 返回随机整数：1697026804
+nextInt（int n） 返回大于等于0且小于n的随机数(10)：3
+nextLong（） 返回随机数长整型：-2264169696298848856
+nextBoolean（）返回随机数布尔值：false
+nextFloat（） 返回随机数浮点型：0.7777471
+nextDouble（） 返回随机数双精度型：0.10485108224186857
+nextGaussian（） 返回概率密度为高斯分布的双精度值：0.22713289568100314<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="大数字运算"><a href="#大数字运算" class="headerlink" title="大数字运算"></a>大数字运算</h2><h3 id="BigInteger"><a href="#BigInteger" class="headerlink" title="BigInteger"></a>BigInteger</h3><h3 id="BigDecimal"><a href="#BigDecimal" class="headerlink" title="BigDecimal"></a>BigDecimal</h3>
             </div>
             <hr/>
 
@@ -2193,7 +2463,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">53.9k</span>&nbsp;字战绩
+                class="white-color">56.2k</span>&nbsp;字战绩
             
             
             
