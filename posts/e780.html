@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-12
+                    2020-06-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8.9k
+                    10.4k
                 </div>
                 
 
@@ -434,53 +434,34 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><p><font color = #05ffdc>length（） </font> 测长度 ，返回字符串长度</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p><strong>字符串方法</strong></p>
+<p><font color = #05ffdc>length（） </font> 测长度 ，返回字符串长度</p>
 <p><font color = #05ffdc>inexOf(String s） </font> 找参数的位置，返回参数字符串在字符串首个字符索引位置</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>lastIndexOf（String s）</font> 找参数最后出现的位置，返回指定参数的字符串最后一个出现的索引位置</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>String s<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>charAt（int i） </font> 查找索引下标，返回指定索引处的字符</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>substring（int i） </font> 查找索引下标开始到结尾，返回指定位置开始到结尾的字符串</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>substring（int i , int j）</font> 获取指定范围字符串，返回指定位置范围的字符串</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token punctuation">,</span> <span class="token keyword">int</span> j<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>trim（） </font> 去除多余空格，返回字符串副本，消除多余空格的</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>replace（char str1,char str2） </font> 字符串/字符替换，返回字符串副本，指定 字符 / 字符串 替换新的 字符 / 字符串</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token keyword">char</span> str1<span class="token punctuation">,</span><span class="token keyword">char</span> str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>startsWith（String p）</font> 匹配前缀字符串，判定字符串前缀是否匹配参数字符串</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>String p<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>endsWith（String p） </font> 匹配后缀字符串，判断字符串后缀是否匹配参数字符串</p>
-<pre class="line-numbers language-java"><code class="language-java"> str<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span>String p<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>equals（String str2） </font> 判断是否相同，判断字符串与参数字符串的字符和长度是否相同</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>String str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>equalsIgnoreCase（String str2） </font> 判断是否相同，比较两个字符串的对象</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">equalsIgnoreCase</span><span class="token punctuation">(</span>String str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>compareTo（String o）</font> 比较顺序，按字典顺序比较两个字符串，参数位置前正，后负，等于0</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span>String <span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>toLowerCase（） </font> 转换小写，字符串全部转换为小写</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>toUpperCase（） </font> 转换大写，字符串全部转换为大写</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>split（String sign） </font> 分割字符串，指定分割符对字符串进行拆分</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>Stirng sign<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>sign为分割的字符串，也可以是正则表达式</p>
 </blockquote>
 <p><font color = #05ffdc>split（String sign , int i） </font> 分割字符串指定数量，指定分割符对字符串进行拆分，并限制拆分数</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>String sign <span class="token punctuation">,</span> <span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>以下方法用于频繁操作时引用的，限于StringBuilder对象的使用（16字节）</p>
 <p><font color = #05ffdc>append（content） </font> 添加数据，字符串后面追加内容</p>
 <blockquote>
 <p>content可以是任何数据类型或其他对象</p>
 </blockquote>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>insert（int i , String str2） </font> 插入数据，参数索引的后一位插入字符串数据</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>inti <span class="token punctuation">,</span> String str2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><font color = #05ffdc>delete（int i , int j） </font> 删除字符串</p>
-<pre class="line-numbers language-java"><code class="language-java">str<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token punctuation">,</span> <span class="token keyword">int</span> j<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         String str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"I love Java  20.06.05   !!! , or not love Java"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str："</span><span class="token operator">+</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -558,12 +539,10 @@ str4.append（content）添加数据(Java)：SanscanJava
 str4.insert（int i , String str2） 插入数据(Java)：SaJavanscanJava
 str4.delete（int i , int j） 删除字符串：SanscanJava
 代码运行了：5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="时间记录"><a href="#时间记录" class="headerlink" title="时间记录"></a>时间记录</h2><p>记录开始运行到运行以下代码的时间段</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">long</span> i <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><p><font color = #05ffdc>fill（Object[] a , int value） </font> 填充数组，参数 数组 填充 int 值，无返回</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a <span class="token punctuation">,</span> <span class="token keyword">int</span> value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color = #05ffdc>fill（Object[] a , int i  , int j , int value） </font> 限定范围填充数组，限定范围 i 为开始 j 为结尾，无返回</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a <span class="token punctuation">,</span><span class="token keyword">int</span> i <span class="token punctuation">,</span> <span class="token keyword">int</span> j <span class="token punctuation">,</span> <span class="token keyword">int</span> value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p><strong>数组方法</strong></p>
+<p>调用到Arrays类</p>
+<p><font color = #05ffdc>Arrays.fill（Object[] a , int value） </font> 填充数组，参数 数组 填充 int 值，无返回</p>
+<p><font color = #05ffdc>Arrays.fill（Object[] a , int i  , int j , int value） </font> 限定范围填充数组，限定范围 i 为开始 j 为结尾，无返回</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//调用到的包 要用Arrays类调用</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
 
@@ -584,8 +563,7 @@ str4.delete（int i , int j） 删除字符串：SanscanJava
 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
  no2:
 2 2 8 8 8 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p><font color = #05ffdc>sort（Object[] a） </font> 数组排序，a为数组，无返回</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>Array.ssort（Object[] a） </font> 数组排序，a为数组，无返回</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//调用到的包 要用Arrays类调用</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
 
@@ -597,10 +575,8 @@ str4.delete（int i , int j） 删除字符串：SanscanJava
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果</p>
 <pre class="line-numbers language-text"><code class="language-text">23 25 54 99 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color = #05ffdc>copyOf（Object[] a,int i）</font> 复制数组，复制参数数组索引0开始的个数，返回数组</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">copyOf</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color = #05ffdc>copyOfRange（Object[] a,int i）</font> 复制数组，复制参数数组索引0开始的个数，返回数组</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">copyOf</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">,</span><span class="token keyword">int</span> j<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>Arrays.copyOf（Object[] a,int i）</font> 复制数组，复制参数数组索引0开始的个数，返回数组</p>
+<p><font color = #05ffdc>Arrays.copyOfRange（Object[] a,int i）</font> 复制数组，复制参数数组索引0开始的个数，返回数组</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//调用到的包 要用Arrays类调用</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
 
@@ -618,10 +594,8 @@ str4.delete（int i , int j） 删除字符串：SanscanJava
 <p>运行结果</p>
 <pre class="line-numbers language-text"><code class="language-text">99 23 54 
 54 25 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><font color = #05ffdc>binarySearch（Object[] a , Object key） </font> 数组查询，查询参数数组中的 key值 ，返回查找值的索引位置</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>Object<span class="token punctuation">[</span><span class="token punctuation">]</span> a <span class="token punctuation">,</span> Object value<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color = #05ffdc>binarySearch（Object[] a , int i , int j , Object key） </font> 数组查询，查询参数数组中的 key值 , 限定范围 i 为开始 j 为结尾，返回查找值的索引位置</p>
-<pre class="line-numbers language-java"><code class="language-java">Arrays<span class="token punctuation">.</span><span class="token function">binarySearch</span><span class="token punctuation">(</span>Object<span class="token punctuation">[</span><span class="token punctuation">]</span> a <span class="token punctuation">,</span> <span class="token keyword">int</span> i <span class="token punctuation">,</span> <span class="token keyword">int</span> j <span class="token punctuation">,</span> Object key<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><font color = #05ffdc>Arrays.binarySearch（Object[] a , Object key） </font> 数组查询，查询参数数组中的 key值 ，返回查找值的索引位置</p>
+<p><font color = #05ffdc>Arrays.binarySearch（Object[] a , int i , int j , Object key） </font> 数组查询，查询参数数组中的 key值 , 限定范围 i 为开始 j 为结尾，返回查找值的索引位置</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//调用到的包 要用Arrays类调用</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>
 
@@ -949,15 +923,27 @@ max = b33<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 <blockquote>
 <p>Text：类<br>t：引用<br>new Book（）：对象</p>
 </blockquote>
-<h1 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h1><h2 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h2><h3 id="Integer构造方法"><a href="#Integer构造方法" class="headerlink" title="Integer构造方法"></a>Integer构造方法</h3><ol>
-<li><font color = #05ffdc>Integer</font> （int number）</li>
-<li><font color = #05ffdc>Integer</font> （String str）</li>
+<h2 id="扫描器"><a href="#扫描器" class="headerlink" title="扫描器"></a>扫描器</h2><p>扫描器用来获取用户输入的内容</p>
+<p>使用方式</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//实例化</span>
+Sanner sc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sanner</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span>im<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//获取变量调用的方法</span>
+<span class="token keyword">double</span> d <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextDouble</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> i <span class="token operator">=</span> sc<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+···<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="时间记录"><a href="#时间记录" class="headerlink" title="时间记录"></a>时间记录</h2><p>记录开始运行到运行以下代码的时间段</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">long</span> i <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h1><h2 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h2><p><strong>Integer构造方法</strong></p>
+<ol>
+<li>new Integer（int number）</li>
+<li>new Integer（String str）</li>
 </ol>
 <p>以上有两种方式获取 Integer对象 </p>
-<h3 id="Integer常量"><a href="#Integer常量" class="headerlink" title="Integer常量"></a>Integer常量</h3><p><font color = #05ffdc>MAX_VALUE </font> 返回int型的最大值</p>
-<p><font color = #05ffdc>MIN_VALUE  </font> 返回int型的最小值</p>
-<p><font color = #05ffdc>SIZE </font> 用二进制补码形式表示 int位数</p>
-<p><font color = #05ffdc>TYPE </font> 基本类型int</p>
+<p><strong>Integer常量</strong></p>
+<p><font color = #05ffdc>Integer.MAX_VALUE </font> 返回int型的最大值</p>
+<p><font color = #05ffdc>Integer.MIN_VALUE  </font> 返回int型的最小值</p>
+<p><font color = #05ffdc>Integer.SIZE </font> 用二进制补码形式表示 int位数</p>
+<p><font color = #05ffdc>Integer.TYPE </font> 基本类型int</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"int最大值（max）："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
     System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"int最小值（min）："</span><span class="token operator">+</span>Integer<span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -969,13 +955,14 @@ max = b33<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 int最小值（min）：-2147483648
 max：32
 max：int<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Integer方法"><a href="#Integer方法" class="headerlink" title="Integer方法"></a>Integer方法</h3><p><font color = #05ffdc>byteValue（） </font> 以 byte类型 返回</p>
-<p><font color = #05ffdc>compareTo（Integer i） </font> 比较是否相同，两值相同则返回 0，对象小于 参数i 返回负值，否则为正值</p>
-<p><font color = #05ffdc>intValue（） </font> 以 int类型 返回</p>
-<p><font color = #05ffdc>shortValue（） </font> 以 short类型 返回</p>
-<p><font color = #05ffdc>toString（） </font> 返回 Integer值 的 String对象，返回String</p>
-<p><font color = #05ffdc>valueOf（String str） </font> 返回保存参数的 Integer对象</p>
-<p><font color = #05ffdc>parseInt（String str） </font> 返回参数中的数值</p>
+<p><strong>Integer方法</strong></p>
+<p><font color = #05ffdc>Integer.byteValue（） </font> 以 byte类型 返回</p>
+<p><font color = #05ffdc>Integer.compareTo（Integer i） </font> 比较是否相同，两值相同则返回 0，对象小于 参数i 返回负值，否则为正值</p>
+<p><font color = #05ffdc>Integer.intValue（） </font> 以 int类型 返回</p>
+<p><font color = #05ffdc>Integer.shortValue（） </font> 以 short类型 返回</p>
+<p><font color = #05ffdc>Integer.toString（） </font> 返回 Integer值 的 String对象，返回String</p>
+<p><font color = #05ffdc>Integer.valueOf（String str） </font> 返回保存参数的 Integer对象</p>
+<p><font color = #05ffdc>Integer.parseInt（String str） </font> 返回参数中的数值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">no1</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Integer n <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Integer</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1004,14 +991,16 @@ shortValue（）以 short类型 返回：12
 toString（）返回 Integer值 的 String对象：123
 valueOf（String str） 返回保存参数的 Integer对象((String)123) : 123
 parseInt（String str） 返回参数中的数值((String)123)：123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><h3 id="Boolean构造方法"><a href="#Boolean构造方法" class="headerlink" title="Boolean构造方法"></a>Boolean构造方法</h3><ol>
-<li>Boolean（boolean value）</li>
-<li>Boolean（String str）</li>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><p><strong>Boolean构造方法</strong></p>
+<ol>
+<li>new Boolean（boolean value）</li>
+<li>new Boolean（String str）</li>
 </ol>
 <p>以上有两种方式获取 Boolean对象 </p>
-<h3 id="Boolean常量"><a href="#Boolean常量" class="headerlink" title="Boolean常量"></a>Boolean常量</h3><p><font color = #05ffdc>TRUE </font> 对应基于true的 Boolean对象</p>
-<p><font color = #05ffdc>FALSE</font> 对应基于false的 Boolean对象</p>
-<p><font color = #05ffdc>TYPE </font> 基本类型Boolean</p>
+<p><strong>Boolean常量</strong></p>
+<p><font color = #05ffdc>Boolean.TRUE </font> 对应基于true的 Boolean对象</p>
+<p><font color = #05ffdc>Boolean.FALSE</font> 对应基于false的 Boolean对象</p>
+<p><font color = #05ffdc>Boolean.TYPE </font> 基本类型Boolean</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Boolean.TRUE："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span>TRUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
     System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Boolean.FALSE："</span><span class="token operator">+</span>Boolean<span class="token punctuation">.</span>FALSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1020,11 +1009,12 @@ parseInt（String str） 返回参数中的数值((String)123)：123<span aria-h
 <pre class="line-numbers language-text"><code class="language-text">Boolean.TRUE：true
 Boolean.FALSE：false
 Boolean.TYPE：boolean<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="Boolean方法"><a href="#Boolean方法" class="headerlink" title="Boolean方法"></a>Boolean方法</h3><p><font color = #05ffdc>BooleanValue（） </font> 将Boolean对象的值对应返回 Boolean值 </p>
-<p><font color = #05ffdc>equsla（Object obj） </font> 对象相同返回true，否则false</p>
-<p><font color = #05ffdc>parseBoolean（String s） </font> 参数字符串解析为 Boolean值</p>
-<p><font color = #05ffdc>toString() </font> 返回boolean值的String对象，返回String</p>
-<p><font color = #05ffdc>valueOf（String s） </font> 返回参数Boolean值</p>
+<p><strong>Boolean方法</strong></p>
+<p><font color = #05ffdc>Boolean.BooleanValue（） </font> 将Boolean对象的值对应返回 Boolean值 </p>
+<p><font color = #05ffdc>Boolean.equsla（Object obj） </font> 对象相同返回true，否则false</p>
+<p><font color = #05ffdc>Boolean.parseBoolean（String s） </font> 参数字符串解析为 Boolean值</p>
+<p><font color = #05ffdc>Boolean.toString() </font> 返回boolean值的String对象，返回String</p>
+<p><font color = #05ffdc>Boolean.valueOf（String s） </font> 返回参数Boolean值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     Boolean b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">//默认false</span>
@@ -1050,15 +1040,17 @@ valueOf（String s）：true
 valueOf（String s）：false
 parseBoolean（String s）：true
 parseBoolean（String s）：false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Byte"><a href="#Byte" class="headerlink" title="Byte"></a>Byte</h2><h3 id="Byte构造方法"><a href="#Byte构造方法" class="headerlink" title="Byte构造方法"></a>Byte构造方法</h3><ol>
-<li>Byte（byte value）</li>
-<li>Byte（String str）</li>
+<h2 id="Byte"><a href="#Byte" class="headerlink" title="Byte"></a>Byte</h2><p><strong>Byte构造方法</strong></p>
+<ol>
+<li>new Byte（byte value）</li>
+<li>new Byte（String str）</li>
 </ol>
 <p>以上有两种方式获取 Byte对象 </p>
-<h3 id="Byte常量"><a href="#Byte常量" class="headerlink" title="Byte常量"></a>Byte常量</h3><p><font color = #05ffdc>MAX_VALUE </font> 返回byte型的最大值</p>
-<p><font color = #05ffdc>MIN_VALUE  </font> 返回byte型的最小值</p>
-<p><font color = #05ffdc>SIZE </font> 用二进制补码形式表示 byte位数</p>
-<p><font color = #05ffdc>TYPE </font> 基本类型byte</p>
+<p><strong>Byte常量</strong></p>
+<p><font color = #05ffdc>Byte.MAX_VALUE </font> 返回byte型的最大值</p>
+<p><font color = #05ffdc>Byte.MIN_VALUE  </font> 返回byte型的最小值</p>
+<p><font color = #05ffdc>Byte.SIZE </font> 用二进制补码形式表示 byte位数</p>
+<p><font color = #05ffdc>Byte.TYPE </font> 基本类型byte</p>
 <pre class="line-numbers language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Byte.MAX："</span><span class="token operator">+</span>Byte<span class="token punctuation">.</span>MAX_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Byte.MIN："</span><span class="token operator">+</span>Byte<span class="token punctuation">.</span>MIN_VALUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1070,12 +1062,13 @@ parseBoolean（String s）：false<span aria-hidden="true" class="line-numbers-r
 Byte.MIN：-128
 Byte.SIZE：8
 Byte.TYPE：byte<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Byte方法"><a href="#Byte方法" class="headerlink" title="Byte方法"></a>Byte方法</h3><p><font color = #05ffdc>parseByte（String str） </font> 参数String以byte值返回</p>
-<p><font color = #05ffdc>valueOf（String str） </font> 参数String以byte对象返回</p>
-<p><font color = #05ffdc>equals（Object obj） </font> 两个Byte对象判断是否相同</p>
-<p><font color = #05ffdc>byteValue（） </font> 返回此对象的byte值</p>
-<p><font color = #05ffdc>intValue（） </font>  返回此对象的int值</p>
-<p><font color = #05ffdc>doubleValue（） </font>  返回此对象的double值</p>
+<p><strong>Byte方法</strong></p>
+<p><font color = #05ffdc>Byte.parseByte（String str） </font> 参数String以byte值返回</p>
+<p><font color = #05ffdc>Byte.valueOf（String str） </font> 参数String以byte对象返回</p>
+<p><font color = #05ffdc>Byte.equals（Object obj） </font> 两个Byte对象判断是否相同</p>
+<p><font color = #05ffdc>Byte.byteValue（） </font> 返回此对象的byte值</p>
+<p><font color = #05ffdc>Byte.intValue（） </font>  返回此对象的int值</p>
+<p><font color = #05ffdc>Byte.doubleValue（） </font>  返回此对象的double值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 <span class="token comment" spellcheck="true">//        Byte be = new Byte(12);  过时了</span>
 <span class="token comment" spellcheck="true">//        实例化对象的例子需要调用valueOf方法</span>
@@ -1103,19 +1096,21 @@ equals（Object obj）两个Byte对象判断是否相同：true
 byteValue（） 返回此对象的byte值：12
 intValue（）返回此对象的int值：12
 doubleValue（） 返回此对象的double值：12.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Character"><a href="#Character" class="headerlink" title="Character"></a>Character</h2><h3 id="Character构造方法"><a href="#Character构造方法" class="headerlink" title="Character构造方法"></a>Character构造方法</h3><pre class="line-numbers language-java"><code class="language-java">Character（<span class="token keyword">char</span> value）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>以上有两种方式获取 Character对象 </p>
-<h3 id="Character常量"><a href="#Character常量" class="headerlink" title="Character常量"></a>Character常量</h3><p><font color = #05ffdc>CONNECTOR_PUNCTUATION </font> 返回byte型值，表示Unicode的常规类别 Pc</p>
-<p><font color = #05ffdc>UNASSIGNED </font> 返回byte型值，表示Unicode的常规类别 Cn</p>
-<p><font color = #05ffdc>TITLECASE_LETTER </font> 返回byte型值，表示Unicode的常规类别 Lt</p>
-<h3 id="Character方法"><a href="#Character方法" class="headerlink" title="Character方法"></a>Character方法</h3><p><font color = #05ffdc>compareTo（Charcter char）</font> 比较两个对象是否相同，相同则0</p>
-<p><font color = #05ffdc>equals（Object obj） </font> 比较两对象的值，返回boolean值</p>
-<p><font color = #05ffdc>toUpperCase（char ch） </font> 参数字母转化为大写doubleValue（） </font> 以double形式返回Double对象</p>
-<p><font color = #05ffdc>toLowerCase（char ch） </font> 参数字母转化为小写</p>
-<p><font color = #05ffdc>toString（） </font> 返回指定的char值的String对象</p>
-<p><font color = #05ffdc>charValue（） </font> 返回Character对象的值</p>
-<p><font color = #05ffdc>isUpperCase（char ch） </font> 判断参数字符是否是大写</p>
-<p><font color = #05ffdc>isLowerCase（char ch） </font> 判断参数字符是否是小写</p>
+<h2 id="Character"><a href="#Character" class="headerlink" title="Character"></a>Character</h2><p><strong>Character构造方法</strong></p>
+<pre class="line-numbers language-java"><code class="language-java">Character（<span class="token keyword">char</span> value）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>Character常量</strong></p>
+<p><font color = #05ffdc>Character.CONNECTOR_PUNCTUATION </font> 返回byte型值，表示Unicode的常规类别 Pc</p>
+<p><font color = #05ffdc>Character.UNASSIGNED </font> 返回byte型值，表示Unicode的常规类别 Cn</p>
+<p><font color = #05ffdc>Character.TITLECASE_LETTER </font> 返回byte型值，表示Unicode的常规类别 Lt</p>
+<p><strong>Character方法</strong></p>
+<p><font color = #05ffdc>Character.compareTo（Charcter char）</font> 比较两个对象是否相同，相同则0</p>
+<p><font color = #05ffdc>Character.equals（Object obj） </font> 比较两对象的值，返回boolean值</p>
+<p><font color = #05ffdc>Character.toUpperCase（char ch） </font> 参数字母转化为大写doubleValue（） </p>
+<p><font color = #05ffdc>Character.toLowerCase（char ch） </font> 参数字母转化为小写</p>
+<p><font color = #05ffdc>Character.toString（） </font> 返回指定的char值的String对象</p>
+<p><font color = #05ffdc>Character.charValue（） </font> 返回Character对象的值</p>
+<p><font color = #05ffdc>Character.isUpperCase（char ch） </font> 判断参数字符是否是大写</p>
+<p><font color = #05ffdc>Character.isLowerCase（char ch） </font> 判断参数字符是否是小写</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Character ch <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Character</span><span class="token punctuation">(</span><span class="token string">'S'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Character ch2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Character</span><span class="token punctuation">(</span><span class="token string">'s'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1150,17 +1145,19 @@ isUpperCase（char ch） 判断参数字符是否是大写(S)：true
 isUpperCase（char ch） 判断参数字符是否是大写(s)：false
 isLowerCase（char ch） 判断参数字符是否是小写(S)：false
 isLowerCase（char ch） 判断参数字符是否是小写(s)：true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Double"><a href="#Double" class="headerlink" title="Double"></a>Double</h2><h3 id="Double构造方法"><a href="#Double构造方法" class="headerlink" title="Double构造方法"></a>Double构造方法</h3><ol>
-<li>Double（double value）</li>
-<li>Double（String str）</li>
+<h2 id="Double"><a href="#Double" class="headerlink" title="Double"></a>Double</h2><p><strong>Double构造方法</strong></p>
+<ol>
+<li>new Double（double value）</li>
+<li>new Double（String str）</li>
 </ol>
 <p>以上有两种方式获取 Double对象 </p>
-<h3 id="Double常量"><a href="#Double常量" class="headerlink" title="Double常量"></a>Double常量</h3><p><font color = #05ffdc>MAX_EXPONENT</font> 返回int值，double最大指数</p>
-<p><font color = #05ffdc>MIN_EXPONENT </font> 返回int值，double最小指数</p>
-<p><font color = #05ffdc>TYPE </font> 基本类型double</p>
-<p><font color = #05ffdc>SIZE </font> 用二进制补码形式表示 double位数</p>
-<p><font color = #05ffdc>NEGATIVE_INFINITY </font> 返回double值，保存double类型的负穷大值</p>
-<p><font color = #05ffdc>POSITIVE_INFINITY </font> 返回double值，返回double类型的正无穷大值</p>
+<p><strong>Double常量</strong></p>
+<p><font color = #05ffdc>Double.MAX_EXPONENT</font> 返回int值，double最大指数</p>
+<p><font color = #05ffdc>Double.MIN_EXPONENT </font> 返回int值，double最小指数</p>
+<p><font color = #05ffdc>Double.TYPE </font> 基本类型double</p>
+<p><font color = #05ffdc>Double.SIZE </font> 用二进制补码形式表示 double位数</p>
+<p><font color = #05ffdc>Double.NEGATIVE_INFINITY </font> 返回double值，保存double类型的负穷大值</p>
+<p><font color = #05ffdc>Double.POSITIVE_INFINITY </font> 返回double值，返回double类型的正无穷大值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Double.MAX："</span><span class="token operator">+</span>Double<span class="token punctuation">.</span>MAX_EXPONENT<span class="token punctuation">)</span><span class="token punctuation">;</span>
      System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Double.NIN："</span><span class="token operator">+</span>Double<span class="token punctuation">.</span>MIN_EXPONENT<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1172,15 +1169,17 @@ isLowerCase（char ch） 判断参数字符是否是小写(s)：true<span aria-h
 Double.NIN：-1022
 Double.SIZE：64
 Double.TYPE：double<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="Double方法"><a href="#Double方法" class="headerlink" title="Double方法"></a>Double方法</h3><p><font color = #05ffdc>byteValue（） </font> 以byte形式返回Double对象值</p>
-<p><font color = #05ffdc>compareTo（Double d） </font> 两Double对象进行数值比较，相同则0</p>
-<p><font color = #05ffdc>equals（Object obj） </font> 比较两对象是否相同，返回boolean</p>
-<p><font color = #05ffdc>intValue（） </font> 以int形式返回double值</p>
-<p><font color = #05ffdc>isNaN（） </font> 非数字值，则返回true，否则false</p>
-<p><font color = #05ffdc>toString（） </font> 返回Double对象的字符串形式</p>
-<p><font color = #05ffdc>valueOf（String str） </font> 返回保存参数的double值的对象</p>
-<p><font color = #05ffdc>doubleValue（） </font> 以double形式返回Double对象</p>
-<p><font color = #05ffdc>longValue（） </font> 以long形式返回double值</p>
+<p><strong>Double方法</strong></p>
+<p><font color = #05ffdc>Double.byteValue（） </font> 以byte形式返回Double对象值</p>
+<p><font color = #05ffdc>Double.compareTo（Double d） </font> 两Double对象进行数值比较，相同则0</p>
+<p><font color = #05ffdc>Double.equals（Object obj） </font> 比较两对象是否相同，返回boolean</p>
+<p><font color = #05ffdc>Double.intValue（） </font> 以int形式返回double值</p>
+<p><font color = #05ffdc>Double.isNaN（） </font> 非数字值，则返回true，否则false</p>
+<p><font color = #05ffdc>String.toString（） </font> 返回Double对象的字符串形式</p>
+<p><font color = #05ffdc>Double.valueOf（String str） </font> 返回保存参数的double值的对象</p>
+<p><font color = #05ffdc>Double.doubleValue（） </font> 以double形式返回Double对象</p>
+<p><font color = #05ffdc>Double.longValue（） </font> 以long形式返回double值</p>
+<p><font color = #05ffdc>Double.parseDouble（String str） </font>返回参数中的数值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Double d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Double</span><span class="token punctuation">(</span><span class="token number">11.22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Double d2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Double</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1205,7 +1204,9 @@ Double.TYPE：double<span aria-hidden="true" class="line-numbers-rows"><span></s
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"doubleValue（）以double形式返回Double对象："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">doubleValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"longValue（） 以long形式返回double值："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">longValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"parseDouble（String str）返回参数中的数值："</span><span class="token operator">+</span>d<span class="token punctuation">.</span><span class="token function">parseDouble</span><span class="token punctuation">(</span><span class="token string">"33.2"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果</p>
 <pre class="line-numbers language-text"><code class="language-text">byteValue（） 以byte形式返回Double对象值：11
 compareTo（Double d） 两Double对象进行数值比较，相同则0(d2)：-1
@@ -1217,9 +1218,11 @@ isNaN（）非数字值，则返回true，否则false(d2)：false
 toString（）返回Double对象的字符串形式：11.22
 valueOf（String str）返回保存参数的double值的对象：22.33
 doubleValue（）以double形式返回Double对象：11.22
-longValue（） 以long形式返回double值：11<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+longValue（） 以long形式返回double值：11
+parseDouble（String str）返回参数中的数值：33.2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><p>Number数值类是byte、Integer、long、float、Double、··· 的父类，Number的方法子类都可以用！！</p>
-<h3 id="Number方法"><a href="#Number方法" class="headerlink" title="Number方法"></a>Number方法</h3><table>
+<p><strong>Number方法</strong></p>
+<table>
 <thead>
 <tr>
 <th>方法</th>
@@ -1332,8 +1335,8 @@ longValue（） 以long形式返回double值：11<span aria-hidden="true" class=
 </tr>
 </tbody></table>
 <p><strong>DecimalFormat类方法</strong></p>
-<p><font color = #05ffdc>applyPattern（String patten） </font> 设置数字格式化模板</p>
-<p><font color = #05ffdc>format（value） </font> 转换模板样式</p>
+<p><font color = #05ffdc>DecimalFormat.applyPattern（String patten） </font> 设置数字格式化模板</p>
+<p><font color = #05ffdc>DecimalFormat.format（value） </font> 转换模板样式</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> java<span class="token punctuation">.</span>text<span class="token punctuation">.</span>DecimalFormat<span class="token punctuation">;</span>
 <span class="token comment" spellcheck="true">//有DecimalFormat包的调用</span>
 
@@ -1518,13 +1521,13 @@ a - z 的随机字符：s<span aria-hidden="true" class="line-numbers-rows"><spa
 <pre class="line-numbers language-java"><code class="language-java">Random r <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span>seedValue<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>seedValue：系统时间作为随机数生成的种子</p>
 <p><strong>Random方法</strong></p>
-<p><font color = #05ffdc>nextInt（） </font> 返回随机整数</p>
-<p><font color = #05ffdc>nextInt（int n） </font> 返回大于等于0且小于n的随机数</p>
-<p><font color = #05ffdc>nextLong（） </font> 返回随机数长整型</p>
-<p><font color = #05ffdc>nextBoolean（）</font> 返回随机数布尔值</p>
-<p><font color = #05ffdc>nextFloat（） </font> 返回随机数浮点型</p>
-<p><font color = #05ffdc>nextDouble（） </font> 返回随机数双精度型</p>
-<p><font color = #05ffdc>nextGaussian（） </font> 返回概率密度为高斯分布的双精度值</p>
+<p><font color = #05ffdc>Random.nextInt（） </font> 返回随机整数</p>
+<p><font color = #05ffdc>Random.nextInt（int n） </font> 返回大于等于0且小于n的随机数</p>
+<p><font color = #05ffdc>Random.nextLong（） </font> 返回随机数长整型</p>
+<p><font color = #05ffdc>Random.nextBoolean（）</font> 返回随机数布尔值</p>
+<p><font color = #05ffdc>Random.nextFloat（） </font> 返回随机数浮点型</p>
+<p><font color = #05ffdc>Random.nextDouble（） </font> 返回随机数双精度型</p>
+<p><font color = #05ffdc>Random.nextGaussian（） </font> 返回概率密度为高斯分布的双精度值</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     Random d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -1550,7 +1553,213 @@ nextBoolean（）返回随机数布尔值：false
 nextFloat（） 返回随机数浮点型：0.7777471
 nextDouble（） 返回随机数双精度型：0.10485108224186857
 nextGaussian（） 返回概率密度为高斯分布的双精度值：0.22713289568100314<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="大数字运算"><a href="#大数字运算" class="headerlink" title="大数字运算"></a>大数字运算</h2><h3 id="BigInteger"><a href="#BigInteger" class="headerlink" title="BigInteger"></a>BigInteger</h3><h3 id="BigDecimal"><a href="#BigDecimal" class="headerlink" title="BigDecimal"></a>BigDecimal</h3>
+<h2 id="大数字运算"><a href="#大数字运算" class="headerlink" title="大数字运算"></a>大数字运算</h2><h3 id="BigInteger"><a href="#BigInteger" class="headerlink" title="BigInteger"></a>BigInteger</h3><p>java.math.BigInteger类 可以准确地表示任何大小的整型而不会丢失数据</p>
+<ol>
+<li>new BigInteger（String val）;    （val：是十进制字符串）</li>
+<li>BigInteger.valueOf(Long);</li>
+</ol>
+<p>以上有两种方式获取 BigInteger对象 </p>
+<p><strong>BigInteger方法</strong></p>
+<p><font color = #05ffdc>BigInteger.add（BigInteger val） </font> 加法运算</p>
+<p><font color = #05ffdc>BigInteger.subtract（BigInteger val） </font> 减法运算</p>
+<p><font color = #05ffdc>BigInteger.mulitply（BigInteger val）</font> 乘法运算</p>
+<p><font color = #05ffdc>BigInteger.divide（BigInteger val）</font> 除法运算</p>
+<p><font color = #05ffdc>BigInteger.remainder（BigInteger val）</font> 取余操作</p>
+<p><font color = #05ffdc>BigInteger.divideAndRemainder（BigInteger val）</font> 用数组返回余数的商，结果：第一个为商，第二个为余数</p>
+<p><font color = #05ffdc>BigInteger.pow（int n）</font> 取参数 n次方 的操作</p>
+<p><font color = #05ffdc>BigInteger.negate（）</font> 取相反数</p>
+<p><font color = #05ffdc>BigInteger.shiftLeft（int n）</font> 将数字左移n位，负数则右移</p>
+<p><font color = #05ffdc>BigInteger.shiftRight（int n）</font> 将数字右移n位，负数则左移</p>
+<p><font color = #05ffdc>BigInteger.and（BigInteger val）</font> 与 操作</p>
+<p><font color = #05ffdc>BigInteger.or（BigInteger val）</font> 或 操作</p>
+<p><font color = #05ffdc>BigInteger.compareTo（BigInteger val）</font> 数字比较</p>
+<p><font color = #05ffdc>BigInteger.equals（Object x）</font> 判断内容是否相同</p>
+<p><font color = #05ffdc>BigInteger.min（BigInteger val）</font> 返回较小值</p>
+<p><font color = #05ffdc>BigInteger.max（BigInteger val）</font> 返回较大值</p>
+<p><font color = #05ffdc>BigInteger.gcd（BigInteger val） </font> 返回最大公约数</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    BigInteger b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"999"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    BigInteger b2 <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">99999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.add（BigInteger val） 加法运算："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.subtract（BigInteger val） 减法运算："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">subtract</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"1"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.mulitply（BigInteger val）乘法运算："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">multiply</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.divide（BigInteger val）除法运算："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.remainder（BigInteger val）取余操作："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">remainder</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"5"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"BigInteger.divideAndRemainder（BigInteger val）用数组返回余数的商，结果：第一个为商，第二个为余数："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    BigInteger<span class="token punctuation">[</span><span class="token punctuation">]</span> big <span class="token operator">=</span> b<span class="token punctuation">.</span><span class="token function">divideAndRemainder</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"5"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>BigInteger tmp <span class="token operator">:</span> big<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>tmp<span class="token operator">+</span><span class="token string">"\t"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.pow（int n）取参数 n次方 的操作："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.negate（）取相反数："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">negate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.shiftLeft（int n）将数字左移n位，负数则右移2："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">shiftLeft</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.shiftLeft（int n）将数字左移n位，负数则右移-2："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">shiftLeft</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.shiftRight（int n）将数字右移n位，负数则左移2："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">shiftRight</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.shiftRight（int n）将数字右移n位，负数则左移-2："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">shiftRight</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"BigInteger.and（BigInteger val）与 操作："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>b<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"999"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"no"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"BigInteger.or（BigInteger val）或 操作："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>b2<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"99999"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"yes"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"no"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.compareTo（BigInteger val）数字比较999："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"999"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.compareTo（BigInteger val）数字比较99："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">compareTo</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"99"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.equals（Object x）判断内容是否相同："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.min（BigInteger val）返回较小值："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.max（BigInteger val）返回较大值："</span><span class="token operator">+</span>b<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//new BigInteger("a").gcd(new BigInteger("b"));    a 与 b 的最大公约数！！！</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigInteger.gcd（BigInteger val）返回最大公约数："</span><span class="token operator">+</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"23123213"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">gcd</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span><span class="token string">"2443512"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">BigInteger.add（BigInteger val） 加法运算：1000
+BigInteger.subtract（BigInteger val） 减法运算：998
+BigInteger.mulitply（BigInteger val）乘法运算：1998
+BigInteger.divide（BigInteger val）除法运算：333
+BigInteger.remainder（BigInteger val）取余操作：4
+BigInteger.divideAndRemainder（BigInteger val）用数组返回余数的商，结果：第一个为商，第二个为余数：199    4
+BigInteger.pow（int n）取参数 n次方 的操作：998001
+BigInteger.negate（）取相反数：-999
+BigInteger.shiftLeft（int n）将数字左移n位，负数则右移2：3996
+BigInteger.shiftLeft（int n）将数字左移n位，负数则右移-2：249
+BigInteger.shiftRight（int n）将数字右移n位，负数则左移2：249
+BigInteger.shiftRight（int n）将数字右移n位，负数则左移-2：3996
+BigInteger.and（BigInteger val）与 操作：yes
+BigInteger.or（BigInteger val）或 操作：no
+BigInteger.compareTo（BigInteger val）数字比较999：0
+BigInteger.compareTo（BigInteger val）数字比较99：1
+BigInteger.equals（Object x）判断内容是否相同：false
+BigInteger.min（BigInteger val）返回较小值：999
+BigInteger.max（BigInteger val）返回较大值：99999
+BigInteger.gcd（BigInteger val）返回最大公约数：17<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="BigDecimal"><a href="#BigDecimal" class="headerlink" title="BigDecimal"></a>BigDecimal</h3><p>java.math.BigDecimal类 可以高精度浮动运算，支持任何精度的定点数</p>
+<p><strong>BigDecimal构造方法</strong></p>
+<ol>
+<li>new BigDecimal（String val）</li>
+<li>new BigDecima（double val）</li>
+<li>BigDecima.valueOf（double val）</li>
+</ol>
+<p>以上有三种方式获取 BigDecimal对象 </p>
+<p><strong>BigDecimal方法</strong></p>
+<p><font color = #05ffdc>BigDecimal.add（BigDecimal val） </font> 加法运算</p>
+<p><font color = #05ffdc>BigDecimal.subtract（BigDecimal val） </font> 减法运算</p>
+<p><font color = #05ffdc>BigDecimal.multiply（BigDecimal val） </font> 乘法运算</p>
+<p><font color = #05ffdc>BigDecimal.divide（BigDecimal val） </font> 除法运算</p>
+<p><font color = #05ffdc>BigDecimal.divide（BigDecimal val , int n , int j） </font> 除法运算</p>
+<blockquote>
+<p>val：除数<br>i：小数位数<br>j：近似值处理模式</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>处理模式</th>
+<th>说明</th>
+<th>定义值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BigDecimal.ROUND_UP</td>
+<td>商最后一位大0，进位，正负一样</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_DOWN</td>
+<td>商最后一位直接省略</td>
+<td>1</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_CEILING</td>
+<td>商正数0处理，负数则1处理</td>
+<td>2</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_FLOOR</td>
+<td>商正数1处理，负数则0处理</td>
+<td>3</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_HALF_UP</td>
+<td>商最后一位，四舍五入，大于等于5进位，小于5省略</td>
+<td>4</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_HALF_DOWN</td>
+<td>商最后一位，四舍五入，大于5进位，小于等于5省略</td>
+<td>5</td>
+</tr>
+<tr>
+<td>BigDecimal.ROUND_HALF_EVEN</td>
+<td>商的倒数第二位，奇数4处理，偶数5处理</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        BigDecimal b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"30.12"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        BigDecimal b2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token number">40.12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        BigDecimal b3 <span class="token operator">=</span> BigDecimal<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">50.12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigDecimal.add（BigDecimal val） 加法运算："</span><span class="token operator">+</span>b1<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigDecimal.subtract（BigDecimal val） 减法运算："</span><span class="token operator">+</span>b1<span class="token punctuation">.</span><span class="token function">subtract</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigDecimal.multiply（BigDecimal val） 乘法运算："</span><span class="token operator">+</span>b1<span class="token punctuation">.</span><span class="token function">multiply</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        BigDecimal d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigDecimal.divide（BigDecimal val） 除法运算："</span><span class="token operator">+</span>b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"BigDecimal.divide（BigDecimal val , int n , int j） 除法运算："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 0 ：ROUND_UP</span>
+        <span class="token comment" spellcheck="true">// 1 ：ROUND_DOWN</span>
+        <span class="token comment" spellcheck="true">// 2 ：ROUND_CEILING</span>
+        <span class="token comment" spellcheck="true">// 3 ：ROUND_FLOOR</span>
+        <span class="token comment" spellcheck="true">// 4 ：ROUND_HALF_UP</span>
+        <span class="token comment" spellcheck="true">// 5 ：ROUND_HALF_DOWN</span>
+        <span class="token comment" spellcheck="true">// 6 ：ROUND_HALF_EVEN</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（0）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（1）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（2）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（3）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（4）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（5）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"（6）50.12/3 = "</span> <span class="token operator">+</span> b3<span class="token punctuation">.</span><span class="token function">divide</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">"3"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">BigDecimal.add（BigDecimal val） 加法运算：70.23999999999999744204615126363933086395263671875
+BigDecimal.subtract（BigDecimal val） 减法运算：-9.99999999999999744204615126363933086395263671875
+BigDecimal.multiply（BigDecimal val） 乘法运算：1208.4143999999999229544300760608166456222534179687500
+BigDecimal.divide（BigDecimal val） 除法运算：10.024
+BigDecimal.divide（BigDecimal val , int n , int j） 除法运算：
+50.12/3 = 16.70666666666666666667
+（0）50.12/3 = 16.706666666666666667
+（1）50.12/3 = 16.706666666666666666
+（2）50.12/3 = 16.706666666666666667
+（3）50.12/3 = 16.706666666666666666
+（4）50.12/3 = 16.706666666666666667
+（5）50.12/3 = 16.706666666666666667
+（6）50.12/3 = 16.706666666666666667<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="接口、继承、端口"><a href="#接口、继承、端口" class="headerlink" title="接口、继承、端口"></a>接口、继承、端口</h1>
             </div>
             <hr/>
 
@@ -2463,7 +2672,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">56.2k</span>&nbsp;字战绩
+                class="white-color">57.8k</span>&nbsp;字战绩
             
             
             
