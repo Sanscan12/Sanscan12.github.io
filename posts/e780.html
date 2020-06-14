@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-13
+                    2020-06-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    10.4k
+                    11.5k
                 </div>
                 
 
@@ -1759,7 +1759,198 @@ BigDecimal.divide（BigDecimal val , int n , int j） 除法运算：
 （4）50.12/3 = 16.706666666666666667
 （5）50.12/3 = 16.706666666666666667
 （6）50.12/3 = 16.706666666666666667<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="接口、继承、端口"><a href="#接口、继承、端口" class="headerlink" title="接口、继承、端口"></a>接口、继承、端口</h1>
+<h1 id="接口、继承、多态"><a href="#接口、继承、多态" class="headerlink" title="接口、继承、多态"></a>接口、继承、多态</h1><h2 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h2><p>子类可以继承父类原有的属性和方法，也可以增加父类没有的属性和方法，还可以重写父类中的某些方法</p>
+<blockquote>
+<p>知识点：</p>
+<ul>
+<li>父类继承</li>
+<li>父类方法重写以及修饰权限的访问</li>
+<li>super关键字</li>
+<li>多父类的继承</li>
+</ul>
+</blockquote>
+<p><strong>super关键字</strong></p>
+<p>super关键字可以调用父类的属性和方法。<br><code>super();</code>语句调用父类构造方法<br><code>super.方法名;</code> 语句调用父类的方法<br><code>super.属性;</code> 语句调用父类的属性（变量）</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化</span>
+        Computer com <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Notebook not <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Notebook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Tablet pan <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tablet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---------继承的使用----------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//父类自身方法、属性</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>com<span class="token punctuation">.</span>Display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        com<span class="token punctuation">.</span><span class="token function">openUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//子类继承方法、属性</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>not<span class="token punctuation">.</span>Display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        not<span class="token punctuation">.</span><span class="token function">openUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//子类继承方法、属性</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>pan<span class="token punctuation">.</span>Display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pan<span class="token punctuation">.</span><span class="token function">openUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//子类自身的方法、属性</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>pan<span class="token punctuation">.</span>Battery<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        pan<span class="token punctuation">.</span><span class="token function">Network</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//无法调用</span>
+<span class="token comment" spellcheck="true">//    com.myComputer();</span>
+<span class="token comment" spellcheck="true">//    pan.myComputer();</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---------方法重写----------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        not<span class="token punctuation">.</span><span class="token function">Function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//以重写的方法</span>
+        pan<span class="token punctuation">.</span><span class="token function">Function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---------super关键字的使用----------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>com<span class="token punctuation">.</span><span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>not<span class="token punctuation">.</span><span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>pan<span class="token punctuation">.</span><span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        not<span class="token punctuation">.</span><span class="token function">Super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---------构造方法调用----------"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Computer no1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token string">"联想电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Notebook no2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Notebook</span><span class="token punctuation">(</span><span class="token string">"雷蛇笔记本电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Tablet no3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tablet</span><span class="token punctuation">(</span><span class="token string">"苹果平板电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//电脑类</span>
+<span class="token keyword">class</span> <span class="token class-name">Computer</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//最顶端的类</span>
+    String name <span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//电脑类的构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Computer</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//调用时输出电脑name</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//存在有参数的构造方法，编译器不会自动创建无参数构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Computer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//手动创建无参构造方法</span>
+
+    String Display <span class="token operator">=</span> <span class="token string">"液晶显示屏"</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">openUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"打开电脑，请稍等····"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//限于本类访问的方法 （其他类无法访问、继承的方法）</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">myComputer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我的电脑"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> String <span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">"欢迎使用"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//笔记本电脑类</span>
+<span class="token keyword">class</span> <span class="token class-name">Notebook</span> <span class="token keyword">extends</span> <span class="token class-name">Computer</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//继承电脑类（父类）</span>
+    String name <span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//笔记本电脑类构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Notebook</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//调用电脑类（父类）的构造方法</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//存在有参数的构造方法，编译器不会自动创建无参数构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Notebook</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//手动创建无参构造方法</span>
+
+    <span class="token comment" spellcheck="true">//使用super关键字调用电脑类（父类）方法</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"调用了电脑类属性(Display)："</span><span class="token operator">+</span><span class="token keyword">super</span><span class="token punctuation">.</span>Display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"调用了电脑类方法(Display)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">openUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"可折叠电脑！！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token comment" spellcheck="true">//重写电脑类（父类）的Welcome()方法</span>
+    <span class="token keyword">public</span> String  <span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//继承电脑类（父类）数据并添加返回</span>
+        <span class="token keyword">return</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"笔记本电脑"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//平板电脑类</span>
+<span class="token keyword">class</span> <span class="token class-name">Tablet</span> <span class="token keyword">extends</span> <span class="token class-name">Notebook</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//继承笔记本电脑类</span>
+    String name <span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//平板笔记本电脑类（父类）构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Tablet</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//调用笔记本电脑类（父类）的构造方法</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//存在有参数的构造方法，编译器不会自动创建无参数构造方法</span>
+    <span class="token keyword">public</span> <span class="token function">Tablet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//手动创建无参构造方法</span>
+
+    String Battery <span class="token operator">=</span> <span class="token string">"5000毫安"</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Network</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"打开数据"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token comment" spellcheck="true">//重写笔记本电脑类（父类）的Function()方法</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">Function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"不可折叠电脑！！"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token comment" spellcheck="true">//重写电脑类（最顶父类）的Welcome()方法</span>
+    <span class="token keyword">public</span> String  <span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//继承笔记本电脑类（父类）数据并添加返回</span>
+        <span class="token keyword">return</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">Welcome</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"平板电脑"</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//错误示范。（继承笔记本电脑类已修改的数据）</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">---------继承的使用----------
+液晶显示屏
+打开电脑，请稍等····
+
+液晶显示屏
+打开电脑，请稍等····
+
+液晶显示屏
+打开电脑，请稍等····
+
+5000毫安
+打开数据
+---------方法重写----------
+可折叠电脑！！
+不可折叠电脑！！
+---------super关键字的使用----------
+欢迎使用
+欢迎使用笔记本电脑
+欢迎使用笔记本电脑平板电脑
+
+调用了电脑类属性(Display)：液晶显示屏
+调用了电脑类方法(Display)
+打开电脑，请稍等····
+---------构造方法调用----------
+联想电脑
+雷蛇笔记本电脑
+苹果平板电脑<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>*<em>注意 : *</em></p>
+<ul>
+<li>Java语言中，一个类只可以有一个父类（可以层叠继承）</li>
+<li>子类不仅会覆盖父类的方法，还会覆盖父类的属性</li>
+<li>父类无参构造方法可自动调用，有参构造方法只能使用 super关键字 调用父类构造方法</li>
+<li>用 private 写的方法，其他类无法调用和重写</li>
+</ul>
+</blockquote>
+
             </div>
             <hr/>
 
@@ -2672,7 +2863,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">57.8k</span>&nbsp;字战绩
+                class="white-color">58.9k</span>&nbsp;字战绩
             
             
             
