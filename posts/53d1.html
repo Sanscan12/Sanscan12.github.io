@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-06
+                    2020-06-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.3k
+                    5.7k
                 </div>
                 
 
@@ -434,8 +434,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p>便捷查找方式：按<code>Ctrl+F</code>可查找<br>搜索方法查找方法：数据名+操作方式</p>
+                <p>便捷查找方式：按<code>Ctrl+F</code>可查找<br>搜索方法查找方法：数据名+操作方式</p>
 <blockquote>
 <p>例子： 字段删除、表修改</p>
 </blockquote>
@@ -655,12 +654,15 @@
 <pre class="line-numbers language-mysql"><code class="language-mysql">ENUM('值1','值2'···'值n')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="多选项"><a href="#多选项" class="headerlink" title="多选项"></a>多选项</h2><pre class="line-numbers language-mysql"><code class="language-mysql">SET('值1','值2'···'值n')<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="表操作"><a href="#表操作" class="headerlink" title="表操作"></a>表操作</h1><h2 id="表创建"><a href="#表创建" class="headerlink" title="表创建"></a>表创建</h2><pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
-   字段名1 数据类型 [完整性约束条件],
-   字段名2 数据类型 [完整性约束条件],
+   字段名1 数据类型 [完整性约束条件] [COMMENT '内容'],
+   字段名2 数据类型 [完整性约束条件] [COMMENT '内容'],
    ·······
-   字段名n 数据类型 [完整性约束条件],
+   字段名n 数据类型 [完整性约束条件] [COMMENT '内容'],
    [完整性约束条件](字段1,字段2,·····,字段n)
 )[编码集设置];<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE 表名(
+    ···
+);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>编码集设置:<br>CHARACTER SET 字符集名 [校对规则]<br>校对规则:<br>COLLATE 校对名</p>
 </blockquote>
@@ -672,7 +674,8 @@
 <p>查看表的详细结构：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SHOW CREATE TABLE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="表修改"><a href="#表修改" class="headerlink" title="表修改"></a>表修改</h2><h3 id="字段增加"><a href="#字段增加" class="headerlink" title="字段增加"></a>字段增加</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 ADD 字段名 数据类型;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="字段-修改-与-顺序"><a href="#字段-修改-与-顺序" class="headerlink" title="字段 修改 与 顺序"></a>字段 修改 与 顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名1 数据类型 [更改字段循序 | 完整性约束条件];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="字段-修改-与-顺序"><a href="#字段-修改-与-顺序" class="headerlink" title="字段 修改 与 顺序"></a>字段 修改 与 顺序</h3><pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY 字段名 数据类型 [更改字段循序 | 完整性约束条件] [COMMENT '内容'];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 MODIFY ···;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>更改字段循序:<br>FIRST | （AFTER 字段名2）</p>
 </blockquote>
@@ -796,6 +799,7 @@ INDEX 索引名 (字段名[(长度)] [ASC | DESC])<span aria-hidden="true" class
 <pre class="line-numbers language-mysql"><code class="language-mysql">TRUNCATE 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h1><p><strong>SELECT的语法结构：</strong></p>
 <pre class="line-numbers language-MYSQL"><code class="language-MYSQL">SELECT [DISTINCT] (* | {字段名1 [别名][,字段名2[别名]····,字段名n[别名]]} ) FROM 表名 [可选参数];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <blockquote>
 <p>可选参数:<br>    [WHERE 条件表达式];<br>高级查询的语句:<br>    [GROUP BY 字段名 [HAVING 条件表达式2]] ;<br>    [ORDER BY 字段名 [ASC | DESC]] ;<br>    [LIMIT [OFFSET] (int)记录数];</p>
 </blockquote>
@@ -1085,7 +1089,7 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <td>使用pwd作为密码解密字符串str</td>
 </tr>
 </tbody></table>
-<h1 id="多表操作"><a href="#多表操作" class="headerlink" title="多表操作"></a>多表操作</h1><h2 id="外键添加"><a href="#外键添加" class="headerlink" title="外键添加"></a>外键添加</h2><p>外键是指<strong>引用另一个表中的一个字段或多个字段</strong>。建立、加强两个表数据之间的链接。</p>
+<h1 id="多表操作"><a href="#多表操作" class="headerlink" title="多表操作"></a>多表操作</h1><h2 id="外键添加"><a href="#外键添加" class="headerlink" title="外键添加"></a>外键添加</h2><p>外键是指<strong>引用另一个表中的一个字段或多个字段</strong>。建立、加强两个表数据之间的链接</p>
 <ol>
 <li>主表是被外键引用的字段，应具有主键约束或唯一性约束</li>
 <li>被引用是<strong>主表</strong>，引用外键的表是<strong>从表</strong>，两表是主从关系</li>
@@ -1096,10 +1100,10 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
    字段名1 数据类型 [完整性约束条件],
    字段名2 数据类型 [完整性约束条件],
    ·······
-   FOREIGN KEY (外键字段名) REFERENCES 外表表名(主键或唯一字段名)
+   FOREIGN KEY (外键字段名) REFERENCES 外表表名(主键 / 唯一 字段名)
 );<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>创建表后定义外键的语法结构：</strong></p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">ALTER  TABLE 表名 ADD CONSTRAINT 外键名 FOREIGN KEY (外键字段名) REFERENCES 外表表名(主键或唯一字段名);
+<pre class="line-numbers language-mysql"><code class="language-mysql">ALTER  TABLE 表名 ADD CONSTRAINT 外键名 FOREIGN KEY (外键字段名) REFERENCES 外表表名(主键 / 唯一 字段名);
 [ON DELETE { CASCADE | SET NULL | NO ACTION | RESTRICT }]
 [NO UPDATE { CASCADE | SET NULL | NO ACTION | RESTRICT }]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <table>
@@ -1126,7 +1130,13 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <td>拒绝主表删除或修改外键关联字段。(在不定义ON DELETE和ON UPDATE子句时，这是默认设置，也是最安全的设置)</td>
 </tr>
 </tbody></table>
-<p>注意事项：<br><font color=red>    1.建立外键的表必须是InnoDB型不能是临时表。因为MySQL中只有InnoDB型的表才支持外键。</font><br><font color=red>    2.定义外键名时，不能加引号。如: constraint ‘FK_ ID’ 或constraint” FK_ID “都是错误的。</font></p>
+<blockquote>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>建立外键的表必须是InnoDB型不能是临时表。因为MySQL中只有InnoDB型的表才支持外键</li>
+<li>定义外键名时，不能加引号。如: constraint ‘FK_ ID’ 或constraint” FK_ID “都是错误的</li>
+</ul>
+</blockquote>
 <h2 id="外键删除"><a href="#外键删除" class="headerlink" title="外键删除"></a>外键删除</h2><p>根据逻辑的需求，需要解除两个表之间的关联关系时，就需要删除外键约束。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">ALTER TABLE 表名 DROP FOREIGN KEY 外键名;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="关联表数据添加"><a href="#关联表数据添加" class="headerlink" title="关联表数据添加"></a>关联表数据添加</h2><h3 id="多对一"><a href="#多对一" class="headerlink" title="多对一"></a>多对一</h3><p>在多对一的表关系中，应将外键建在多的一方。</p>
@@ -1134,35 +1144,99 @@ LIMIT [(int)OFFSET，](int)记录数;<span aria-hidden="true" class="line-number
 <h3 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h3><p>一对一的对应关系中，<strong>需要分清主从关系</strong>，通常在从表中建立外键。</p>
 <p><font color=red>在从表添加数据时，外键字段的值与外表引用字段的值相同且存在的前提下添加数据，否则受约束！</font> </p>
 <h2 id="关联表数据删除"><a href="#关联表数据删除" class="headerlink" title="关联表数据删除"></a>关联表数据删除</h2><p><strong><font color=red>删除也如此，先删除从表有关联的数据，在删除主表数据</font></strong> </p>
-<h2 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h2><p>交叉连接又称“笛卡尔积”，返回结果的是<strong>被连接的两个表中所有数据行的乘积</strong>。语法格式：</p>
+<h2 id="交叉连接"><a href="#交叉连接" class="headerlink" title="交叉连接"></a>交叉连接</h2><p>交叉连接又称 笛卡尔积 ，返回结果的是<strong>被连接的两个表中所有数据行的乘积</strong>。语法格式：</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1 CROSS JOIN 表2 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>or:</p>
+<p>or：（简写）</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表1,表2 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="内连接-INNER-JOIN"><a href="#内连接-INNER-JOIN" class="headerlink" title="内连接 (INNER JOIN)"></a>内连接 (INNER JOIN)</h2><p>内连接(INNER JOIN)又称 简单连接 或 自然连接 ，内连接使用 比较运算符 对两个表中的数据进行比较，列出与连接条件匹配的数据行，组合成新的记录。语法格式：(INNER有无误差)</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 [INNER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>or：（简写）</p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1,表2 WHERE 表1.关系字段 = 表2.关系字段;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="外连接-OUTER-JOIN"><a href="#外连接-OUTER-JOIN" class="headerlink" title="外连接 (OUTER JOIN)"></a>外连接 (OUTER JOIN)</h2><p>(OUTER有无误差)</p>
-<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 { LEFT|RIGHT} [OUTER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 { LEFT | RIGHT } [OUTER] JOIN 表2 ON 表1.关系字段 = 表2.关系字段 [WHERE 条件表达式];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="左连接-LEFT-JOIN"><a href="#左连接-LEFT-JOIN" class="headerlink" title="左连接 (LEFT JOIN)"></a>左连接 (LEFT JOIN)</h3><p>指定左表的所有记录,和所有满足连接条件的记录。如果左表的某条记录在右表中不存在,则在右表中显示为空值。</p>
 <h3 id="右连接-RIGHT-JOIN"><a href="#右连接-RIGHT-JOIN" class="headerlink" title="右连接 (RIGHT JOIN)"></a>右连接 (RIGHT JOIN)</h3><p>右连接与左连接正好相反，返回右表中所有指定的记录和所有满足连接条件的记录。如果右表的某条记录在左表中没有匹配，则左表将返回空值。</p>
 <h2 id="复合条件连接-UNION"><a href="#复合条件连接-UNION" class="headerlink" title="复合条件连接 (UNION)"></a>复合条件连接 (UNION)</h2><p>复合条件连接又称<strong>全外连接</strong>，就是在连接查询的过程中，通过添加过滤条件来限制查询结果，使查询结果更加精确。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表1 LEFT JOIN 表2 ON 表1.关系字段 = 表2.关系字段 
 union
 SELECT {* | 查询字段} FROM 表1 RIGHT JOIN 表2 ON 表1.关系字段 = 表2.关系字段;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>练习代码：</strong></p>
+<pre class="line-numbers language-mysql"><code class="language-mysql">CREATE TABLE `bumen` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '部门编号',
+  `name` varchar(30) DEFAULT NULL COMMENT '部门名',
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `ygong_copy1` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '编号',
+  `mane` varchar(20) DEFAULT NULL COMMENT '姓名',
+  `bm` int(11) DEFAULT NULL COMMENT '部门编号',
+  PRIMARY KEY (`id`),
+  KEY `bm` (`bm`),
+  CONSTRAINT `ygong_copy1_ibfk_1` FOREIGN KEY (`bm`) REFERENCES `bumen` (`id`)
+);
+
+INSERT INTO `bumen` VALUES (1, '编辑部');
+INSERT INTO `bumen` VALUES (2, '外联部');
+INSERT INTO `bumen` VALUES (3, '传媒部');
+INSERT INTO `bumen` VALUES (4, '艺术部');
+
+INSERT INTO `ygong_copy1` VALUES (1, '李大钊', 2);
+INSERT INTO `ygong_copy1` VALUES (2, '安迪生', 4);
+INSERT INTO `ygong_copy1` VALUES (3, '火车王', 1);
+INSERT INTO `ygong_copy1` VALUES (4, '小明', 3);
+INSERT INTO `ygong_copy1` VALUES (5, '牛顿', 4);
+
+//交叉连接
+SELECT * FROM ygong_copy1 CROSS JOIN bumen;
+SELECT * FROM ygong_copy1,bumen;
+
+//内连接 (INNER JOIN)
+SELECT * FROM ygong_copy1 JOIN bumen ON ygong_copy1.id = bumen.id;
+SELECT * FROM ygong_copy1 INNER JOIN bumen ON ygong_copy1.id = bumen.id;
+SELECT * FROM ygong_copy1 , bumen WHERE ygong_copy1.id = bumen.id;
+
+//外连接 (OUTER JOIN) 左连接 (LEFT JOIN)
+SELECT * FROM ygong_copy1 LEFT JOIN bumen ON ygong_copy1.id = bumen.id;
+SELECT * FROM ygong_copy1 LEFT OUTER JOIN bumen ON ygong_copy1.id = bumen.id;
+//调换表
+SELECT * FROM bumen LEFT JOIN ygong_copy1 ON ygong_copy1.id = bumen.id;
+SELECT * FROM bumen LEFT OUTER JOIN ygong_copy1 ON ygong_copy1.id = bumen.id;
+
+//外连接 (OUTER JOIN) 右连接 (RIGHT JOIN)
+SELECT * FROM ygong_copy1 RIGHT JOIN bumen ON ygong_copy1.id = bumen.id;
+SELECT * FROM ygong_copy1 RIGHT OUTER JOIN bumen ON ygong_copy1.id = bumen.id;
+//调换表
+SELECT * FROM bumen RIGHT JOIN ygong_copy1 ON ygong_copy1.id = bumen.id;
+SELECT * FROM bumen RIGHT OUTER JOIN ygong_copy1 ON ygong_copy1.id = bumen.id;
+
+//复合条件连接 (UNION)
+SELECT * FROM ygong_copy1 LEFT JOIN bumen ON ygong_copy1.id = bumen.id
+union
+SELECT * FROM ygong_copy1 RIGHT JOIN bumen ON ygong_copy1.id = bumen.id;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p><strong>子查询是指一个查询语句嵌套在另一个查询语句内部的查询</strong>。在执行查询语句时，首先会执行子查询中的语句，然后将返回的结果作为外层查询的过滤条件。<br><font color=red><strong>NOT：反向查询！！！</strong></font></p>
 <h3 id="IN"><a href="#IN" class="headerlink" title="IN"></a>IN</h3><p>IN关键字进行子查询时，内层查询语句仅仅返回一个数据字段，这个数据字段中的值将供外层查询语句进行比较操作。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表名1 WHERE 字段 [NOT] IN(SELECT 字段 FROM 表名2 WHERE 条件表达式);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color=red>查询前提：in后面子查询返回结果要和in前的字段匹配</font></p>
+<blockquote>
+<p>查询前提：in后面子查询返回结果要和in前的字段匹配</p>
+</blockquote>
 <h3 id="EXISTS"><a href="#EXISTS" class="headerlink" title="EXISTS"></a>EXISTS</h3><p>EXISTS关键字后面的参数可以是任意一个子查询， 这个子查询的作用相当于<strong>测试</strong>，它不产生任何数据，只返回 TRUE 或 FALSE ,返回值 TRUE 时外层查询才会执行。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT {* | 查询字段} FROM 表名1 WHERE [NOT] EXISTS (SELECT 字段 FROM 表名2 WHERE 条件表达式);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h3 id="ANY"><a href="#ANY" class="headerlink" title="ANY"></a>ANY</h3><p>ANY关键字表示满足任意一个条件 ,它允许创建一个表达式对子查询的返回值列表进行比较，只要满足内层子查询中的任意一个比较条件,就返回一个结果作为外层查询条件。</p>
 <pre class="line-numbers language-MYSQL"><code class="language-MYSQL">SELECT * FROM 表名 WHERE [NOT] 字段 {比较运算符} ANY(SELECT 字段 FROM 表名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color=red>查询前提：any后面子查询返回结果要和any前的字段匹配</font></p>
+<blockquote>
+<p>查询前提：any后面子查询返回结果要和any前的字段匹配</p>
+</blockquote>
 <h3 id="ALL"><a href="#ALL" class="headerlink" title="ALL"></a>ALL</h3><p>ALL关键字与ANY有点类似，只不过带ALL关键字的子查询返回的结果需同时满足<strong>所有内层查询条件</strong>。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表名 WHERE [NOT] 字段 {比较运算符} ALL(SELECT 字段 FROM 表名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color=red>查询前提：all后面子查询返回结果要和all前的字段匹配</font></p>
+<blockquote>
+<p>查询前提：all后面子查询返回结果要和all前的字段匹配</p>
+</blockquote>
 <h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>ANY 和 ALL 都用到比较运算符，但还可以使用其他运算符</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">SELECT * FROM 表名 WHERE [NOT] 字段 {比较运算符} (SELECT 字段 FROM 表名)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><font color=red>查询前提：子查询返回结果要和字段匹配</font></p>
+<blockquote>
+<p> 查询前提：子查询返回结果要和字段匹配</p>
+</blockquote>
 <h1 id="事务与存储过程"><a href="#事务与存储过程" class="headerlink" title="事务与存储过程"></a>事务与存储过程</h1><p>事务指逻辑上的一组操作，组成这组操作的各个单元，要不全部成功，要不全部不成功，<strong>同一个事务的操作具备同步优点</strong>。</p>
 <pre class="line-numbers language-mysql"><code class="language-mysql">START TRANSACTION;
 ···
@@ -2123,7 +2197,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">60k</span>&nbsp;字战绩
+                class="white-color">61.4k</span>&nbsp;字战绩
             
             
             
