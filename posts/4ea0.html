@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-23
+                    2020-06-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    17.2k
+                    17.8k
                 </div>
                 
 
@@ -2965,6 +2965,23 @@ max(3,4)?4<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
 <p>运行结果</p>
 <pre class="line-numbers language-text"><code class="language-text">测试<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><p>异常机制提供了程序退出的安全通道。当出现错误后，程序执行的流程发生改变，程序的控制权转移到异常处理器</p>
+<p>Java类库的每个包中都定义有异常类，所有这些类都是 Throwable类 的子类，有两个子类分别是 Error类、Exception类</p>
+<p>Error类 是描述java运行系统中的内部错误以及资源耗尽的错误，属于较为致命的错误</p>
+<p>Exception类 是可以通过捕捉处理使程序继续运行，属于非致命的错误</p>
+<pre class="line-numbers language-mermaid"><code class="language-mermaid">graph TD
+
+A[Throwable] -->B(Error)
+B[Error] -->E(LinkageError)
+B[Error] -->F(IOError)
+B(Error) -->G(其他子类)
+
+A[Throwable] -->C(Exception)
+C(Exception) -->H(RuntimeException)
+C(Exception) -->I(其他子类)
+H(RuntimeException) -->J(ClassCastException)
+H(RuntimeException) -->K(ArraySizeException)
+H(RuntimeException) -->L(其他子类)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="常见异常"><a href="#常见异常" class="headerlink" title="常见异常"></a>常见异常</h2><table>
 <thead>
 <tr>
@@ -3177,7 +3194,87 @@ java.lang.ArithmeticException: / by zero
 开始2
 CustomException: 非动物：key@133314b
     at Demo.main(Demo.java:30)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="方法中抛出异常"><a href="#方法中抛出异常" class="headerlink" title="方法中抛出异常"></a>方法中抛出异常</h2><p>方法出现异常，又不想在当前方法处理，则可以用 throws、throw 关键字 在方法中抛出异常</p>
+<h3 id="throws-关键字抛出异常"><a href="#throws-关键字抛出异常" class="headerlink" title="throws 关键字抛出异常"></a>throws 关键字抛出异常</h3><p>throws将代码中可能产生的异常交给上一级处理，直到处理异常 try-catch 语句调用 ，否则调用的那个方法也要加抛出的关键字已经方法类</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> 方法名<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> 异常类型<span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>异常类型n<span class="token punctuation">{</span>  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>被调用时：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">try</span><span class="token punctuation">{</span>
+    方法名<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>异常类型 e<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//抛出中断异常</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">,</span>ArithmeticException<span class="token punctuation">{</span>
 
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+           System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+           Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+               i<span class="token operator">-=</span><span class="token number">5</span><span class="token punctuation">;</span>
+               <span class="token keyword">int</span> s <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">/</span>i<span class="token punctuation">;</span>
+           <span class="token punctuation">}</span>
+
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment" spellcheck="true">//获取方法中的异常</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//终止异常</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"show()方法抛出终止异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//算术异常</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">ArithmeticException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"show()方法抛出算术异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//异常</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"show()方法抛出异常"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">0
+1
+2
+3
+4
+5
+show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="throw-关键字抛出异常"><a href="#throw-关键字抛出异常" class="headerlink" title="throw 关键字抛出异常"></a>throw 关键字抛出异常</h3><p>手动制造异常。程序运行到throw语句时立即终止程序，不会执行后面的语句</p>
+<p>使用throw抛出异常的前提，必须要有try-catch语句包围捕捉异常</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo2</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">0</span> <span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">//强制中断</span>
+                <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">NullPointerException</span><span class="token punctuation">(</span><span class="token string">"b 为 0"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">int</span> s <span class="token operator">=</span> a <span class="token operator">/</span> b <span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">NullPointerException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<pre class="line-numbers language-text"><code class="language-text">java.lang.NullPointerException: b 为 0
+    at Demo2.main(Demo2.java:7)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="异常的使用原则"><a href="#异常的使用原则" class="headerlink" title="异常的使用原则"></a>异常的使用原则</h2><p>提高程序的安全性，控制流程状况以及异常修复！</p>
+<ul>
+<li>不要怱略捕捉到的异常</li>
+<li>不要过度使用异常</li>
+<li>不要使用过于庞大的 try-catch语句</li>
+<li>子类抛出的异常不能比父类高级（RuntimeException不受此约束）</li>
+<li>一个方法被覆盖时，覆盖它的方法必须抛出相同的异常或异常的子类</li>
+</ul>
+<h1 id="Swing-程序设计"><a href="#Swing-程序设计" class="headerlink" title="Swing 程序设计"></a>Swing 程序设计</h1><h2 id="Swing包"><a href="#Swing包" class="headerlink" title="Swing包"></a>Swing包</h2>
             </div>
             <hr/>
 
@@ -4090,7 +4187,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">65k</span>&nbsp;字战绩
+                class="white-color">65.6k</span>&nbsp;字战绩
             
             
             
