@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    19k
+                    19.7k
                 </div>
                 
 
@@ -435,33 +435,115 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p><strong>字符串方法</strong></p>
-<p><font color = #05ffdc>length（） </font> 测长度 ，返回字符串长度</p>
-<p><font color = #05ffdc>inexOf(String s） </font> 找参数的位置，返回参数字符串在字符串首个字符索引位置</p>
-<p><font color = #05ffdc>lastIndexOf（String s）</font> 找参数最后出现的位置，返回指定参数的字符串最后一个出现的索引位置</p>
-<p><font color = #05ffdc>charAt（int i） </font> 查找索引下标，返回指定索引处的字符</p>
-<p><font color = #05ffdc>substring（int i） </font> 查找索引下标开始到结尾，返回指定位置开始到结尾的字符串</p>
-<p><font color = #05ffdc>substring（int i , int j）</font> 获取指定范围字符串，返回指定位置范围的字符串</p>
-<p><font color = #05ffdc>trim（） </font> 去除多余空格，返回字符串副本，消除多余空格的</p>
-<p><font color = #05ffdc>replace（char str1,char str2） </font> 字符串/字符替换，返回字符串副本，指定 字符 / 字符串 替换新的 字符 / 字符串</p>
-<p><font color = #05ffdc>startsWith（String p）</font> 匹配前缀字符串，判定字符串前缀是否匹配参数字符串</p>
-<p><font color = #05ffdc>endsWith（String p） </font> 匹配后缀字符串，判断字符串后缀是否匹配参数字符串</p>
-<p><font color = #05ffdc>equals（String str2） </font> 判断是否相同，判断字符串与参数字符串的字符和长度是否相同</p>
-<p><font color = #05ffdc>equalsIgnoreCase（String str2） </font> 判断是否相同，比较两个字符串的对象</p>
-<p><font color = #05ffdc>compareTo（String o）</font> 比较顺序，按字典顺序比较两个字符串，参数位置前正，后负，等于0</p>
-<p><font color = #05ffdc>toLowerCase（） </font> 转换小写，字符串全部转换为小写</p>
-<p><font color = #05ffdc>toUpperCase（） </font> 转换大写，字符串全部转换为大写</p>
-<p><font color = #05ffdc>split（String sign） </font> 分割字符串，指定分割符对字符串进行拆分</p>
-<blockquote>
-<p>sign为分割的字符串，也可以是正则表达式</p>
-</blockquote>
-<p><font color = #05ffdc>split（String sign , int i） </font> 分割字符串指定数量，指定分割符对字符串进行拆分，并限制拆分数</p>
-<p>以下方法用于频繁操作时引用的，限于StringBuilder对象的使用（16字节）</p>
-<p><font color = #05ffdc>append（content） </font> 添加数据，字符串后面追加内容</p>
-<blockquote>
-<p>content可以是任何数据类型或其他对象</p>
-</blockquote>
-<p><font color = #05ffdc>insert（int i , String str2） </font> 插入数据，参数索引的后一位插入字符串数据</p>
-<p><font color = #05ffdc>delete（int i , int j） </font> 删除字符串</p>
+<table>
+<thead>
+<tr>
+<th>修饰符、类型</th>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td><font color = #05ffdc>length（） </font></td>
+<td>测长度 ，返回字符串长度</td>
+</tr>
+<tr>
+<td>int</td>
+<td><font color = #05ffdc>indxOf(String s） </font></td>
+<td>找参数的位置，返回参数字符串在字符串首个字符索引位置</td>
+</tr>
+<tr>
+<td>int</td>
+<td><font color = #05ffdc>lastIndexOf（String s）</font></td>
+<td>找参数最后出现的位置，返回指定参数的字符串最后一个出现的索引位置</td>
+</tr>
+<tr>
+<td>char</td>
+<td><font color = #05ffdc>charAt（int i） </font></td>
+<td>查找索引下标，返回指定索引处的字符</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>substring（int i） </font></td>
+<td>查找索引下标开始到结尾，返回指定位置开始到结尾的字符串</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>substring（int i , int j）</font></td>
+<td>获取指定范围字符串，返回指定位置范围的字符串</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>trim（） </font></td>
+<td>去除多余空格，返回字符串副本，消除多余空格的</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>replace（char str1,char str2） </font></td>
+<td>字符串/字符替换，返回字符串副本，指定 字符 / 字符串 替换新的 字符 / 字符串</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><font color = #05ffdc>startsWith（String p）</font></td>
+<td>匹配前缀字符串，判定字符串前缀是否匹配参数字符串</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><font color = #05ffdc>endsWith（String p） </font></td>
+<td>匹配后缀字符串，判断字符串后缀是否匹配参数字符串</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><font color = #05ffdc>equals（String str2） </font></td>
+<td>判断是否相同，判断字符串与参数字符串的字符和长度是否相同</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td><font color = #05ffdc>equalsIgnoreCase（String str2） </font></td>
+<td>判断是否相同，比较两个字符串的对象</td>
+</tr>
+<tr>
+<td>int</td>
+<td><font color = #05ffdc>compareTo（String o）</font></td>
+<td>比较顺序，按字典顺序比较两个字符串，参数位置前正，后负，等于0</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>toLowerCase（） </font></td>
+<td>转换小写，字符串全部转换为小写</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>toUpperCase（） </font></td>
+<td>转换大写，字符串全部转换为大写</td>
+</tr>
+<tr>
+<td>String[]</td>
+<td><font color = #05ffdc>split（String sign） </font></td>
+<td>分割字符串，指定分割符对字符串进行拆分<br />sign为分割的字符串，也可以是正则表达式</td>
+</tr>
+<tr>
+<td>String[]</td>
+<td><font color = #05ffdc>split（String sign , int i） </font></td>
+<td>分割字符串指定数量，指定分割符对字符串进行拆分，并限制拆分数</td>
+</tr>
+<tr>
+<td>Appendable</td>
+<td><font color = #05ffdc>append（content） </font></td>
+<td>添加数据，字符串后面追加内容，频繁操作时引用，限于StringBuilder对象的使用（16字节）<br />content可以是任何数据类型或其他对象</td>
+</tr>
+<tr>
+<td></td>
+<td><font color = #05ffdc>insert（int i , String str2） </font></td>
+<td>插入数据，参数索引的后一位插入字符串数据</td>
+</tr>
+<tr>
+<td></td>
+<td><font color = #05ffdc>delete（int i , int j） </font></td>
+<td>删除字符串</td>
+</tr>
+</tbody></table>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         String str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"I love Java  20.06.05   !!! , or not love Java"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"str："</span><span class="token operator">+</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -938,7 +1020,7 @@ Sanner sc <span class="token operator">=</span> <span class="token keyword">new<
 <li>new Integer（int number）</li>
 <li>new Integer（String str）</li>
 </ol>
-<p>以上有两种方式获取 Integer对象 </p>
+<p>以上有两种方式获取 Integer对象</p>
 <p><strong>Integer常量</strong></p>
 <p><font color = #05ffdc>Integer.MAX_VALUE </font> 返回int型的最大值</p>
 <p><font color = #05ffdc>Integer.MIN_VALUE  </font> 返回int型的最小值</p>
@@ -3334,6 +3416,49 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <td>单纯的容器，无属性</td>
 </tr>
 </tbody></table>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>通用抽象窗口工具包（AWT）容器对象是可以包含其他AWT组件的组件</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>Container（） </font> 创建新的容器</p>
+<p><strong>常用方法</strong></p>
+<table>
+<thead>
+<tr>
+<th>修饰符、类型</th>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Container</td>
+<td><font color = #05ffdc>add（Component comp)</font></td>
+<td>将指定的组件附加到此容器的后面</td>
+</tr>
+<tr>
+<td>Container</td>
+<td><font color = #05ffdc>add（Component comp, int index）</font></td>
+<td>在给定的位置将指定的组件添加到此容器</td>
+</tr>
+<tr>
+<td>void</td>
+<td><font color = #05ffdc>addContainerListener（ContainerListener l） </font></td>
+<td>添加指定的容器侦听器以从此容器接收容器事</td>
+</tr>
+<tr>
+<td>int</td>
+<td><font color = #05ffdc>getComponentCount（） </font></td>
+<td>获取此面板中的组件数量</td>
+</tr>
+<tr>
+<td>component[]</td>
+<td><font color = #05ffdc>getComponents（） </font></td>
+<td>获取此容器中的所有组件</td>
+</tr>
+<tr>
+<td>void</td>
+<td><font color = #05ffdc>validate（） </font></td>
+<td>验证此容器及其所有子组件（刷新组件）</td>
+</tr>
+</tbody></table>
 <h2 id="窗体"><a href="#窗体" class="headerlink" title="窗体"></a>窗体</h2><p><strong>窗体常用方法</strong></p>
 <p><font color = #05ffdc>setTitle（String title） </font> 窗体标题为title字符串</p>
 <p><font color = #05ffdc>setDefaultCloseOperation（int a） </font> 窗体关闭规则</p>
@@ -3525,7 +3650,84 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <td>3</td>
 </tr>
 </tbody></table>
-<h2 id="组件与图标"><a href="#组件与图标" class="headerlink" title="组件与图标"></a>组件与图标</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<h2 id="组件与图标"><a href="#组件与图标" class="headerlink" title="组件与图标"></a>组件与图标</h2><h3 id="JLable标签"><a href="#JLable标签" class="headerlink" title="JLable标签"></a>JLable标签</h3><p>JLable标签，是JComponent类，可以显示只读文本、图像，但不能产生任何类型的事件，只是简单的显示文本和图像，还可以设置标签上文本的对齐方式</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>JLable（） </font> 创建不带图标、无文本的对象</p>
+<p><font color = #05ffdc>JLable（String text） </font> 创建文本的对象</p>
+<p><font color = #05ffdc>JLable（Icon icon） </font> 创建带图标的对象</p>
+<p><font color = #05ffdc>JLable（Icon icon , int aligment）  </font> 创建带图标的对象，并设置水平对齐方式</p>
+<p><font color = #05ffdc>JLable（String text , int aligment） </font> 创建文本的对象，并设置水平对齐方式</p>
+<p><font color = #05ffdc>JLable（String text , Icon icon , int aligment） </font>  创建带图标、文本的对象，并设置水平对齐方式</p>
+<p><strong>常用方法</strong></p>
+<p><font color = #05ffdc>setText（String text） </font> 定义组件内容（更改）</p>
+<p><font color = #05ffdc>getText（） </font>  返回标签显示的文本字符串</p>
+<p><font color = #05ffdc>setIcon（Icon icon） </font> 添加图片文件</p>
+<p><font color = #05ffdc>setSize（int With ，int Height）</font> 标签大小设置</p>
+<p>￼构造方法的实践例子：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URL<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">620</span><span class="token punctuation">,</span><span class="token number">800</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//布局设置，使用流布局</span>
+        c<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FlowLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        JLabel no1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JLabel no2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"标签内容"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//获取图片的方法（方法1）</span>
+        <span class="token comment" spellcheck="true">//获取当前类所在的路径</span>
+        URL url <span class="token operator">=</span> Demo<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">.</span><span class="token function">getResource</span><span class="token punctuation">(</span><span class="token string">"1.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取相应路径下的文件（图片）</span>
+        Icon icon <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImageIcon</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JLabel no3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span>icon<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//获取图片的（方法2）</span>
+        Icon icon2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ImageIcon</span><span class="token punctuation">(</span><span class="token string">"src/1.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JLabel no4 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"显示图片"</span><span class="token punctuation">,</span>icon2<span class="token punctuation">,</span> SwingConstants<span class="token punctuation">.</span>LEFT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//更改标签内容</span>
+        no2<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"更改标签内容"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取标签内容</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>no2<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//在窗体显示图片路径</span>
+        JLabel jl <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"获取图片路径："</span><span class="token operator">+</span>url<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//自选打开</span>
+<span class="token comment" spellcheck="true">//        c.add(no1);</span>
+<span class="token comment" spellcheck="true">//        c.add(no2);</span>
+<span class="token comment" spellcheck="true">//        c.add(no3);</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>no4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//显示在后面或者刷新组件</span>
+        <span class="token comment" spellcheck="true">//容器组件重新验证</span>
+        c<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java05.png" style="zoom:67%;" /><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
             </div>
             <hr/>
 
@@ -4438,7 +4640,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">66.8k</span>&nbsp;字战绩
+                class="white-color">67.5k</span>&nbsp;字战绩
             
             
             
