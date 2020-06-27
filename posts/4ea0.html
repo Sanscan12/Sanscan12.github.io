@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-26
+                    2020-06-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    19.7k
+                    20.3k
                 </div>
                 
 
@@ -3050,7 +3050,7 @@ max(3,4)?4<span aria-hidden="true" class="line-numbers-rows"><span></span><span>
 <p>Java类库的每个包中都定义有异常类，所有这些类都是 Throwable类 的子类，有两个子类分别是 Error类、Exception类</p>
 <p>Error类 是描述java运行系统中的内部错误以及资源耗尽的错误，属于较为致命的错误</p>
 <p>Exception类 是可以通过捕捉处理使程序继续运行，属于非致命的错误</p>
-<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java04.png" style="zoom:67%;" />
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java04.png" style="zoom:80%;" />
 
 <h2 id="常见异常"><a href="#常见异常" class="headerlink" title="常见异常"></a>常见异常</h2><table>
 <thead>
@@ -3353,7 +3353,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 </ul>
 </blockquote>
 <h2 id="Swing包"><a href="#Swing包" class="headerlink" title="Swing包"></a>Swing包</h2><p>使用Swing组件前，先了解层次结构和继承关系</p>
-<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java03.png" style="zoom:67%;" />
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java03.png" style="zoom:80%;" />
 
 <p><strong>常用的Swing组件</strong></p>
 <table>
@@ -3469,7 +3469,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <p><font color = #05ffdc>setResizable（boolean b）</font> 窗体是否可以调整大小，默认可以调整大小</p>
 <p><font color = #05ffdc>setContentPane（容器） </font> 重新加载容器</p>
 <p><font color = #05ffdc>getContentPane（）</font> 获取窗体容器</p>
-<h3 id="JFrame窗体"><a href="#JFrame窗体" class="headerlink" title="JFrame窗体"></a>JFrame窗体</h3><p>该窗体拥有计算机基本组件，最大化，最小化，关闭等组件</p>
+<h3 id="JFrame窗体"><a href="#JFrame窗体" class="headerlink" title="JFrame窗体"></a>JFrame窗体</h3><p>JFrame窗体拥有计算机基本组件，最大化，最小化，关闭等组件，java.swing.JFrame类</p>
 <p><strong>构造方法</strong></p>
 <p><font color = #05ffdc>JFrame（）</font> 创建无标题的窗体</p>
 <p><font color = #05ffdc>JFrame（Starting title）</font> 创建标题为title的窗体</p>
@@ -3545,7 +3545,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <p>运行结果</p>
 <img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java01.png" style="zoom: 67%;" />
 
-<h3 id="JDialog窗体"><a href="#JDialog窗体" class="headerlink" title="JDialog窗体"></a>JDialog窗体</h3><p>JDialog窗体是Swing组件中的对话框，是从一个窗体中弹出另一个窗体，它继承了AWT组件中的 java.awt.Dialog类</p>
+<h3 id="JDialog窗体"><a href="#JDialog窗体" class="headerlink" title="JDialog窗体"></a>JDialog窗体</h3><p>JDialog窗体是Swing的对话框，java.swing.JDialog类，是从一个窗体中弹出另一个窗体，它继承了AWT组件中的 java.awt.Dialog类</p>
 <p>在一个类继承窗体类时，可以在构造方法中使用 super关键字 可调用回窗体类的参数填充</p>
 <p><strong>构造方法</strong></p>
 <p><font color = #05ffdc>JDialog（） </font> 创建无标题对话框</p>
@@ -3650,7 +3650,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <td>3</td>
 </tr>
 </tbody></table>
-<h2 id="组件与图标"><a href="#组件与图标" class="headerlink" title="组件与图标"></a>组件与图标</h2><h3 id="JLable标签"><a href="#JLable标签" class="headerlink" title="JLable标签"></a>JLable标签</h3><p>JLable标签，是JComponent类，可以显示只读文本、图像，但不能产生任何类型的事件，只是简单的显示文本和图像，还可以设置标签上文本的对齐方式</p>
+<h2 id="组件与图标"><a href="#组件与图标" class="headerlink" title="组件与图标"></a>组件与图标</h2><h3 id="JLable标签"><a href="#JLable标签" class="headerlink" title="JLable标签"></a>JLable标签</h3><p>JLable标签，javax.swing.JLable类，可以显示只读文本、图像，但不能产生任何类型的事件，只是简单的显示文本和图像，还可以设置标签上文本的对齐方式</p>
 <p><strong>构造方法</strong></p>
 <p><font color = #05ffdc>JLable（） </font> 创建不带图标、无文本的对象</p>
 <p><font color = #05ffdc>JLable（String text） </font> 创建文本的对象</p>
@@ -3659,11 +3659,36 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <p><font color = #05ffdc>JLable（String text , int aligment） </font> 创建文本的对象，并设置水平对齐方式</p>
 <p><font color = #05ffdc>JLable（String text , Icon icon , int aligment） </font>  创建带图标、文本的对象，并设置水平对齐方式</p>
 <p><strong>常用方法</strong></p>
-<p><font color = #05ffdc>setText（String text） </font> 定义组件内容（更改）</p>
-<p><font color = #05ffdc>getText（） </font>  返回标签显示的文本字符串</p>
-<p><font color = #05ffdc>setIcon（Icon icon） </font> 添加图片文件</p>
-<p><font color = #05ffdc>setSize（int With ，int Height）</font> 标签大小设置</p>
-<p>￼构造方法的实践例子：</p>
+<table>
+<thead>
+<tr>
+<th>修饰符、类型</th>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>void</td>
+<td><font color = #05ffdc>setText（String text） </font></td>
+<td>定义组件内容（更改）</td>
+</tr>
+<tr>
+<td>String</td>
+<td><font color = #05ffdc>getText（） </font></td>
+<td>返回标签显示的文本字符串</td>
+</tr>
+<tr>
+<td>void</td>
+<td><font color = #05ffdc>setIcon（Icon icon） </font></td>
+<td>添加图片文件</td>
+</tr>
+<tr>
+<td>void</td>
+<td><font color = #05ffdc>setSize（int With ，int Height）</font></td>
+<td>标签大小设置</td>
+</tr>
+</tbody></table>
+<p>￼构造方法的实践例子：（图片文件在src路径里）</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URL<span class="token punctuation">;</span>
@@ -3727,7 +3752,155 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果</p>
-<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java05.png" style="zoom:67%;" /><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java05.png" style="zoom:67%;" />
+
+<blockquote>
+<p><strong>注意：</strong></p>
+<p>java.lang.Class类中的 getResource（）方法 可以获取资源文件的URL路径</p>
+</blockquote>
+<h3 id="图标使用"><a href="#图标使用" class="headerlink" title="图标使用"></a>图标使用</h3><p><strong>创建图标</strong></p>
+<p>创建图标使用到 java.awt.Graphics类 提供的功能来实现</p>
+<p>在Swing中是通过Icon接口来实现创建图标，使用Icon接口必须实现以下3个方法：</p>
+<table>
+<thead>
+<tr>
+<th>修饰符、类型</th>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td><font color = #05ffdc>getIconHeight（） </font></td>
+<td>获取图标高</td>
+</tr>
+<tr>
+<td>int</td>
+<td><font color = #05ffdc>getIconWidth（） </font></td>
+<td>获取图标宽</td>
+</tr>
+<tr>
+<td>void</td>
+<td><font color = #05ffdc>paintIcon(Component c, Graphics g, int x, int y)  </font></td>
+<td>指定坐标位置画图</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//绘图图标类</span>
+<span class="token comment" spellcheck="true">//引入Icon接口</span>
+<span class="token keyword">class</span> <span class="token class-name">DrawIcon</span> <span class="token keyword">implements</span> <span class="token class-name">Icon</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// 声明图标的宽</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> W<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// 声明图标的高</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> H<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//获取数据</span>
+    <span class="token keyword">public</span> <span class="token function">DrawIcon</span><span class="token punctuation">(</span><span class="token keyword">int</span> W <span class="token punctuation">,</span> <span class="token keyword">int</span> H<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>W <span class="token operator">=</span> W <span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>H <span class="token operator">=</span> H <span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// 实现paintIcon()方法</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">paintIcon</span><span class="token punctuation">(</span>Component c<span class="token punctuation">,</span> Graphics g<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// 绘制一个圆形</span>
+        g<span class="token punctuation">.</span><span class="token function">fillOval</span><span class="token punctuation">(</span>x <span class="token punctuation">,</span> y <span class="token punctuation">,</span> W <span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getIconWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>W<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getIconHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>H<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        DrawIcon icon <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DrawIcon</span><span class="token punctuation">(</span><span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 创建一个标签，并设置标签上的文字在标签正中间</span>
+        JLabel j <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"测试"</span><span class="token punctuation">,</span> icon<span class="token punctuation">,</span> SwingConstants<span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Parentform jf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jf<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java06.png" style="zoom:67%;" />
+
+<h2 id="常用布局管理器"><a href="#常用布局管理器" class="headerlink" title="常用布局管理器"></a>常用布局管理器</h2><p>管理组件在容器中的位置和大小</p>
+<h3 id="绝对布局"><a href="#绝对布局" class="headerlink" title="绝对布局"></a>绝对布局</h3><p>绝对布局是指定组件在容器中的固定大小和位置</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//取消默认布局 ， 更改为绝对布局</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//创建按钮组件</span>
+        JButton b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮1"</span><span class="token punctuation">)</span> <span class="token punctuation">,</span> b2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//给按钮组件添加坐标、大小</span>
+        b1<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        b2<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">112</span><span class="token punctuation">,</span><span class="token number">64</span><span class="token punctuation">,</span><span class="token number">92</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//添加按钮组件</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Parentform jf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java07.png" style="zoom:67%;" />
+
+<blockquote>
+<p><strong>注意：</strong></p>
+<p>绝对布局的窗口组件大小都是固定的，不随窗体大小更改而变化</p>
+<p>组件坐标是以窗体左上角为基点的</p>
+</blockquote>
+<h3 id="流布局"><a href="#流布局" class="headerlink" title="流布局"></a>流布局</h3><h3 id="边界布局"><a href="#边界布局" class="headerlink" title="边界布局"></a>边界布局</h3><h3 id="网格布局"><a href="#网格布局" class="headerlink" title="网格布局"></a>网格布局</h3><h3 id="网格组布局"><a href="#网格组布局" class="headerlink" title="网格组布局"></a>网格组布局</h3><h2 id="常用面板"><a href="#常用面板" class="headerlink" title="常用面板"></a>常用面板</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
             </div>
             <hr/>
 
@@ -4640,7 +4813,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">67.5k</span>&nbsp;字战绩
+                class="white-color">68.1k</span>&nbsp;字战绩
             
             
             
