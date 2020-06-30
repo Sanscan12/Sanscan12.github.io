@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-06-27
+                    2020-06-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    20.3k
+                    23.7k
                 </div>
                 
 
@@ -3650,7 +3650,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <td>3</td>
 </tr>
 </tbody></table>
-<h2 id="组件与图标"><a href="#组件与图标" class="headerlink" title="组件与图标"></a>组件与图标</h2><h3 id="JLable标签"><a href="#JLable标签" class="headerlink" title="JLable标签"></a>JLable标签</h3><p>JLable标签，javax.swing.JLable类，可以显示只读文本、图像，但不能产生任何类型的事件，只是简单的显示文本和图像，还可以设置标签上文本的对齐方式</p>
+<h2 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h2><h3 id="JLable标签"><a href="#JLable标签" class="headerlink" title="JLable标签"></a>JLable标签</h3><p>JLable标签，javax.swing.JLable类，可以显示只读文本、图像，但不能产生任何类型的事件，只是简单的显示文本和图像，还可以设置标签上文本的对齐方式</p>
 <p><strong>构造方法</strong></p>
 <p><font color = #05ffdc>JLable（） </font> 创建不带图标、无文本的对象</p>
 <p><font color = #05ffdc>JLable（String text） </font> 创建文本的对象</p>
@@ -3781,7 +3781,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 </tr>
 <tr>
 <td>void</td>
-<td><font color = #05ffdc>paintIcon(Component c, Graphics g, int x, int y)  </font></td>
+<td><font color = #05ffdc>paintIcon（Component c, Graphics g, int x, int y）</font></td>
 <td>指定坐标位置画图</td>
 </tr>
 </tbody></table>
@@ -3900,7 +3900,883 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <p>绝对布局的窗口组件大小都是固定的，不随窗体大小更改而变化</p>
 <p>组件坐标是以窗体左上角为基点的</p>
 </blockquote>
-<h3 id="流布局"><a href="#流布局" class="headerlink" title="流布局"></a>流布局</h3><h3 id="边界布局"><a href="#边界布局" class="headerlink" title="边界布局"></a>边界布局</h3><h3 id="网格布局"><a href="#网格布局" class="headerlink" title="网格布局"></a>网格布局</h3><h3 id="网格组布局"><a href="#网格组布局" class="headerlink" title="网格组布局"></a>网格组布局</h3><h2 id="常用面板"><a href="#常用面板" class="headerlink" title="常用面板"></a>常用面板</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<h3 id="流布局"><a href="#流布局" class="headerlink" title="流布局"></a>流布局</h3><p>流布局管理器 java.awt.FlowLayout类</p>
+<p>流布局管理器 ，像流水一样从左到右摆放组件，直到占完所有空间，组件是默认居中排列</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>FlowLayout（） </font> 设置流布局</p>
+<p><font color = #05ffdc>FlowLayout（int alignment） </font> 设置流布局，且设置排列方式</p>
+<p><font color = #05ffdc>FlowLayout（int alignment , int horizGap , int vertGap）  </font>设置流布局，且设置排列方式和组件之间的间距</p>
+<table>
+<thead>
+<tr>
+<th>alignment参数的摆放设置</th>
+<th>说明</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FlowLayout.LEFT</td>
+<td>左对齐排列</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FlowLayout.CENTER</td>
+<td>居中排列</td>
+<td>1</td>
+</tr>
+<tr>
+<td>FlowLayout.RIGHT</td>
+<td>右对齐排列</td>
+<td>2</td>
+</tr>
+</tbody></table>
+<p><strong>horizGap ：</strong> 组件与组件之间的水平间距（像素）</p>
+<p><strong>vertGap ：</strong> 组件与组件之间的垂直间距（像素）</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//流布局</span>
+        <span class="token comment" spellcheck="true">//参数测试，自行选择</span>
+<span class="token comment" spellcheck="true">//        setLayout(new FlowLayout());</span>
+<span class="token comment" spellcheck="true">//        setLayout(new FlowLayout(0));//左对齐</span>
+<span class="token comment" spellcheck="true">//        setLayout(new FlowLayout(1));//居中对齐（默认）</span>
+<span class="token comment" spellcheck="true">//        setLayout(new FlowLayout(2));//右对齐</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FlowLayout</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//居中对齐（默认）</span>
+
+        <span class="token comment" spellcheck="true">//创建添加按钮组件</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮"</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java08.png" style="zoom:67%;" />
+
+<h3 id="边界布局"><a href="#边界布局" class="headerlink" title="边界布局"></a>边界布局</h3><p>边界布局管理器 java.awt.GridLayout类</p>
+<p>边界布局把容器的的布局分为五个位置：上下左右中5个区域 。设置该布局管理器是可无视，因默认是边界布局</p>
+<p>在容器add（）方法添加组件时可设置区域</p>
+<table>
+<thead>
+<tr>
+<th>成员变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BorderLayout.NORTH</td>
+<td>顶端</td>
+</tr>
+<tr>
+<td>BorderLayout.SOUTH</td>
+<td>底端</td>
+</tr>
+<tr>
+<td>BorderLayout.EAST</td>
+<td>右端</td>
+</tr>
+<tr>
+<td>BorderLayout.WEST</td>
+<td>左端</td>
+</tr>
+<tr>
+<td>BorderLayout.CENTER</td>
+<td>中间</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//设置边界布局</span>
+        c<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">BorderLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//可被注释，因本身就是边界布局</span>
+
+        <span class="token comment" spellcheck="true">//边界布局</span>
+        JButton
+                b1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"中"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                b2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"东"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                b3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"南"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                b4 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"西"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                b5 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"北"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b1 <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b2 <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>EAST<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b3 <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>SOUTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b4 <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>WEST<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b5 <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>NORTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"覆盖中"</span><span class="token punctuation">)</span> <span class="token punctuation">,</span> BorderLayout<span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java09.png" style="zoom:67%;" />
+
+<h3 id="网格布局"><a href="#网格布局" class="headerlink" title="网格布局"></a>网格布局</h3><p>网格布局管理器 java.awt.GridLayout类</p>
+<p>网格布局管理器是将容器划分为网格，组件是按照 行 和 列 进行布局</p>
+<p>每个组件大小一样，排序默认从左到右，从上到下的顺序排列，窗体大小的改变，组件也会跟随改变</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>GridLayout（int rows , int columns）</font> 设置网格布局，行和列进行布局</p>
+<p><font color = #05ffdc>GridLayout（int rows , int columns , int horizGap , int veritGap） </font> 设置网格布局，行和列、组件间隙</p>
+<blockquote>
+<p><strong>rows</strong>： 行个数<br><strong>columns</strong>：列个数<br><strong>horizGap</strong>：组件水平间距<br><strong>veritGap</strong>：组件垂直间距</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//设置</span>
+<span class="token comment" spellcheck="true">//        c.setLayout(new GridLayout(3,4));//3行4列（布局满无间隙）</span>
+        <span class="token comment" spellcheck="true">//3行4列，组件间隙为12px（行数，列数，水平，垂直）</span>
+        c<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">GridLayout</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">20</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮"</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java10.png" style="zoom:67%;" />
+
+<h3 id="网格组布局"><a href="#网格组布局" class="headerlink" title="网格组布局"></a>网格组布局</h3><p>网格组布局管理器 java.awt.GridBagLayout类</p>
+<p>实现了动态矩形网格，由无限个矩形单元格组成，每行每列的高宽以行列最大像素的组件为准，每个组件都与GridBagConstraints类关联（用来约束）</p>
+<p>以下是使用流程：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java11.png" style="zoom:67%;" />
+
+<p>import java.awt.GridBagConstraints类 为使用 GridBagLayou类布局 的约束</p>
+<p>GridBagConstraints约束 </p>
+<table>
+<thead>
+<tr>
+<th>GridBagConstraints属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><font color = #05ffdc>gridx </font></td>
+<td>组件坐标X（网格）</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>gridy </font></td>
+<td>组件坐标Y（网格）</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>gridwidth </font></td>
+<td>组件占用行数</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>gridheight </font></td>
+<td>组件占用列数</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>anchor </font></td>
+<td>组件在的方位</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>fill </font></td>
+<td>组件填充方式</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>insets </font></td>
+<td>组件与单元格边缘的最小距离</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>ipadx </font></td>
+<td>组件的首先大小 X</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>ipady </font></td>
+<td>组件的首先大小 Y</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>weightx </font></td>
+<td>单元格最大宽</td>
+</tr>
+<tr>
+<td><font color = #05ffdc>weighty </font></td>
+<td>单元格最大高</td>
+</tr>
+</tbody></table>
+<p>以下代码是自选GridBagConstraints属性约束测试</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">//添加彩色面板</span>
+    JPanel p1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JPanel p2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JPanel p3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JPanel p4 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    JPanel p5 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPanel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    Container c<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">800</span><span class="token punctuation">,</span><span class="token number">550</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//颜色面板</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>p1<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>CYAN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>p2<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>GREEN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>p3<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>CYAN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>p4<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>GREEN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>p5<span class="token punctuation">.</span><span class="token function">setBackground</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>CYAN<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//坐标矩阵</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            GridBagConstraints g2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            g2<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            g2<span class="token punctuation">.</span>gridy <span class="token operator">=</span> i<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//空格用来填充</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"   "</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"    "</span><span class="token punctuation">)</span><span class="token punctuation">,</span>g<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"   "</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"    "</span><span class="token punctuation">)</span><span class="token punctuation">,</span>g2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//组件约束类</span>
+<span class="token keyword">class</span> <span class="token class-name">Components</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">//颜色面板调用约束方法</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment" spellcheck="true">//weightx ，weighty属性（专属颜色面板）</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl5</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl6</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl7</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl8</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">JPl9</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//组件约束方法</span>
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（1）</span>
+    <span class="token comment" spellcheck="true">//gridx和gridy属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（2）</span>
+    <span class="token comment" spellcheck="true">//gridwidth和gridheight属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC5</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC6</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（3）</span>
+    <span class="token comment" spellcheck="true">//fill属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC7</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//默认无填充NONE</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>NONE<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//(0)</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC8</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//水平填充HORIZONTAL</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>HORIZONTAL<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//(2)</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC9</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//垂直填充VERTICAL</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>VERTICAL<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//(3)</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC10</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//填充BOTH</span>
+        g<span class="token punctuation">.</span>fill <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>BOTH<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//(1)</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（4）</span>
+    <span class="token comment" spellcheck="true">//anchor属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC11</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//左上</span>
+        g<span class="token punctuation">.</span>anchor <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>NORTHWEST<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC12</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//右下</span>
+        g<span class="token punctuation">.</span>anchor <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>SOUTHEAST<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC13</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//右</span>
+        g<span class="token punctuation">.</span>anchor <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>EAST<span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC14</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridwidth <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridheight <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//下</span>
+        g<span class="token punctuation">.</span>anchor <span class="token operator">=</span> GridBagConstraints<span class="token punctuation">.</span>SOUTH<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//(1)</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（5）</span>
+    <span class="token comment" spellcheck="true">//insets属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC15</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置边距距离</span>
+        g<span class="token punctuation">.</span>insets <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Insets</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC16</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置边距距离</span>
+        g<span class="token punctuation">.</span>insets <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Insets</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（6）</span>
+    <span class="token comment" spellcheck="true">//ipadx , ipady 属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC17</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件大小</span>
+        g<span class="token punctuation">.</span>ipadx <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>ipady <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC18</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件大小</span>
+        g<span class="token punctuation">.</span>ipadx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>ipady <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token comment" spellcheck="true">//GridBagConstraints约束测试（6）</span>
+    <span class="token comment" spellcheck="true">//weightx , weighty 属性</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC19</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置单元格最大宽高</span>
+        g<span class="token punctuation">.</span>weightx <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>weighty <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC20</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置单元格最大宽高</span>
+        g<span class="token punctuation">.</span>weightx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>weighty <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC21</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置单元格最大宽高</span>
+        g<span class="token punctuation">.</span>weightx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>weighty <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC22</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置单元格最大宽高</span>
+        g<span class="token punctuation">.</span>weightx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>weighty <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> GridBagConstraints <span class="token function">GBC23</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化约束条件</span>
+        GridBagConstraints g <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GridBagConstraints</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置组件坐标位置</span>
+        g<span class="token punctuation">.</span>gridx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>gridy <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置单元格最大宽高</span>
+        g<span class="token punctuation">.</span>weightx <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        g<span class="token punctuation">.</span>weighty <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> g<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//实例化JFrame窗体类</span>
+        Parentform jf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//实例化组件约束类</span>
+        Components zj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Components</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//创建jf窗体容器</span>
+        Container c <span class="token operator">=</span> jf<span class="token punctuation">.</span><span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//设置容器布局为网格组布局</span>
+        c<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">GridBagLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//坐标矩阵</span>
+        jf<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//自选约束测试</span>
+
+        <span class="token comment" spellcheck="true">//约束测试（1）</span>
+        <span class="token comment" spellcheck="true">//添加组件 和 组件约束</span>
+        <span class="token comment" spellcheck="true">//gridx和gridy属性</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮1"</span><span class="token punctuation">)</span> <span class="token punctuation">,</span> zj<span class="token punctuation">.</span><span class="token function">GBC1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮2"</span><span class="token punctuation">)</span> <span class="token punctuation">,</span> zj<span class="token punctuation">.</span><span class="token function">GBC2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"按钮3"</span><span class="token punctuation">)</span> <span class="token punctuation">,</span> zj<span class="token punctuation">.</span><span class="token function">GBC3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（2）</span>
+        <span class="token comment" spellcheck="true">//gridwidth和gridheight属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮1") , zj.GBC4());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮2") , zj.GBC5());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮3") , zj.GBC6());</span>
+<span class="token comment" spellcheck="true">//        //添加颜色面板</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p1,zj.JPl1());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p2,zj.JPl2());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p3,zj.JPl3());</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（3）</span>
+        <span class="token comment" spellcheck="true">//fill属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮1") , zj.GBC7());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮2") , zj.GBC8());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮3") , zj.GBC9());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮3") , zj.GBC10());</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（4）</span>
+        <span class="token comment" spellcheck="true">//anchor属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮1") , zj.GBC11());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮2") , zj.GBC12());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮3") , zj.GBC13());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮3") , zj.GBC14());</span>
+<span class="token comment" spellcheck="true">//        //添加颜色面板</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p1,zj.JPl1());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p2,zj.JPl2());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p3,zj.JPl3());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p4,zj.JPl4());</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（5）</span>
+        <span class="token comment" spellcheck="true">//inset属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮1") , zj.GBC15());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮2") , zj.GBC16());</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（6）</span>
+        <span class="token comment" spellcheck="true">//ipadx , ipady 属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮1") , zj.GBC17());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("按钮2") , zj.GBC18());</span>
+<span class="token comment" spellcheck="true">//        //添加颜色面板</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p1,zj.JPl1());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p2,zj.JPl2());</span>
+
+
+        <span class="token comment" spellcheck="true">//约束测试（7）</span>
+        <span class="token comment" spellcheck="true">//weightx , weighty 属性</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("x,y:10") , zj.GBC19());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("x :５") , zj.GBC20());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("x : 2") , zj.GBC21());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("y : 5") , zj.GBC22());</span>
+<span class="token comment" spellcheck="true">//        c.add(new JButton("y : 2") , zj.GBC23());</span>
+<span class="token comment" spellcheck="true">//        //添加颜色面板</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p1,zj.JPl5());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p2,zj.JPl6());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p3,zj.JPl7());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p4,zj.JPl8());</span>
+<span class="token comment" spellcheck="true">//        c.add(jf.p5,zj.JPl9());</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        jf<span class="token punctuation">.</span><span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="GridBagConstraints属性"><a href="#GridBagConstraints属性" class="headerlink" title="GridBagConstraints属性"></a>GridBagConstraints属性</h4><p><strong>gridx , gridy属性</strong></p>
+<p>该属性用来设置组件起始点所在单元格的索引位置，gridx设置X轴的索引值，gridy设置Y轴的索引值</p>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java12.png" style="zoom:67%;" />
+
+<p><strong>gridwidth , gridheight属性</strong></p>
+<p>该属性用来设置组件占用网格组的行数和行数</p>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java13.png" style="zoom:67%;" />
+
+<p><strong>fill属性</strong></p>
+<p>该属性用来设置组件填充方式，填充单元格最大的范围</p>
+<table>
+<thead>
+<tr>
+<th>fill属性的静态常量</th>
+<th>说明</th>
+<th>定义数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NONE</td>
+<td>不填充（默认）</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HORIZONTAL</td>
+<td>水平填充</td>
+<td>2</td>
+</tr>
+<tr>
+<td>VERTICAL</td>
+<td>垂直填充</td>
+<td>3</td>
+</tr>
+<tr>
+<td>BOTH</td>
+<td>填满</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java14.png" style="zoom:67%;" />
+
+<p><strong>anchor属性</strong></p>
+<p>该属性用来设置组件在单元格的显示区域</p>
+<table>
+<thead>
+<tr>
+<th>anchor属性的静态常量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NORTHWEST</td>
+<td>左上</td>
+</tr>
+<tr>
+<td>NORTH</td>
+<td>上</td>
+</tr>
+<tr>
+<td>NORTHEAST</td>
+<td>右上</td>
+</tr>
+<tr>
+<td>WEST</td>
+<td>左</td>
+</tr>
+<tr>
+<td>CENTER</td>
+<td>中</td>
+</tr>
+<tr>
+<td>EAST</td>
+<td>右</td>
+</tr>
+<tr>
+<td>SOUTHWEST</td>
+<td>左下</td>
+</tr>
+<tr>
+<td>SOUTH</td>
+<td>下</td>
+</tr>
+<tr>
+<td>SOUTHEAST</td>
+<td>右下</td>
+</tr>
+</tbody></table>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java15.png" style="zoom:67%;" />
+
+<p><strong>inset属性</strong></p>
+<p>该属性用来设置组件四周与单元格边缘之间的最小距离</p>
+<p>Insets类 仅限于一个构造方法Insets（int top , int left , int bottom , int right），上左下右来设置边缘距离，默认为没有距离</p>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java16.png" style="zoom:67%;" />
+
+<p><strong>ipadx , ipady 属性</strong></p>
+<p>该属性用来修改组件的大小，ipadx修改组件宽度，ipady修改组件的高度，正数为加大，负数为缩小</p>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java17.png" style="zoom:67%;" />
+
+<p><strong>weightx , weighty 属性</strong></p>
+<p>该属性用来设置网格组的每一行和每一列对额外空间的分布方式，分配是以百分比形式分配！！</p>
+<p>该属性的运行结果：</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java18.png" style="zoom:67%;" />
+
+<h2 id="常用面板"><a href="#常用面板" class="headerlink" title="常用面板"></a>常用面板</h2><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
             </div>
             <hr/>
 
@@ -4813,7 +5689,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">68.1k</span>&nbsp;字战绩
+                class="white-color">71.5k</span>&nbsp;字战绩
             
             
             
