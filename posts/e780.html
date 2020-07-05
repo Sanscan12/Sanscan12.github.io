@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-07-02
+                    2020-07-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    25.8k
+                    28k
                 </div>
                 
 
@@ -3437,9 +3437,6 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <blockquote>
 <p><strong>title：</strong>窗体标题</p>
 </blockquote>
-<p><strong>常用方法</strong></p>
-<p><font color = #05ffdc> </font> <font color = #05ffdc>JFrame.getX（） </font> 获取X坐标</p>
-<p> <font color = #05ffdc>JFrame.getY（） </font> 获取Y坐标</p>
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 
@@ -5167,7 +5164,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <p>运行结果</p>
 <img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java23.png" style="zoom:67%;" />
 
-<h3 id="列表组件"><a href="#列表组件" class="headerlink" title="列表组件"></a>列表组件</h3><h4 id="下拉列表框"><a href="#下拉列表框" class="headerlink" title="下拉列表框"></a>下拉列表框</h4><p><strong>JComboBox下拉表框</strong></p>
+<h3 id="列表组件"><a href="#列表组件" class="headerlink" title="列表组件"></a>列表组件</h3><h4 id="JComboBox下拉列表框"><a href="#JComboBox下拉列表框" class="headerlink" title="JComboBox下拉列表框"></a>JComboBox下拉列表框</h4><p><strong>JComboBox下拉表框</strong></p>
 <blockquote>
 <p><strong>Class JComboBox<E></strong></p>
 <p>java.lang.Object<br>java.awt.Component<br>java.awt.Container<br>javax.swing.JComponent<br>javax.swing.JComboBox<E> </p>
@@ -5221,13 +5218,13 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
 <span class="token comment" spellcheck="true">//        comboBox.addItem("No.2");</span>
 <span class="token comment" spellcheck="true">//        comboBox.addItem("No.3");</span>
 
-<span class="token comment" spellcheck="true">//        //初始化对象（2）</span>
+<span class="token comment" spellcheck="true">//        //初始化对象（2）数组载入</span>
 <span class="token comment" spellcheck="true">//        String[] str = new String[]{"No.1","No.2","No.3"};</span>
 <span class="token comment" spellcheck="true">//        JComboBox&lt;String> comboBox = new JComboBox&lt;>(str);</span>
 
-        <span class="token comment" spellcheck="true">//初始化对象（3）</span>
+        <span class="token comment" spellcheck="true">//初始化对象（3）调用接口</span>
         <span class="token comment" spellcheck="true">//向上转型为ComboBoxModel接口</span>
-        MyComboBox com <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyComboBox</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ComboBoxModel com <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyComboBox</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         JComboBox comboBox <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JComboBox</span><span class="token punctuation">(</span>com<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         comboBox<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -5259,6 +5256,7 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
+<span class="token comment" spellcheck="true">//用于提供接口获取信息</span>
 <span class="token comment" spellcheck="true">//模型类 继承 AbstractListModel类 ，实现ComboBoxModel接口</span>
 <span class="token keyword">class</span> <span class="token class-name">MyComboBox</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractListModel</span> <span class="token operator">&lt;</span>String<span class="token operator">></span> <span class="token keyword">implements</span> <span class="token class-name">ComboBoxModel</span><span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">{</span>
 
@@ -5294,11 +5292,507 @@ show()方法抛出算术异常<span aria-hidden="true" class="line-numbers-rows"
         <span class="token punctuation">}</span>
 
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>运行结果</p>
-<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java23.png" style="zoom:67%;" />
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java24.png" style="zoom:67%;" />
 
-<h4 id="列表框"><a href="#列表框" class="headerlink" title="列表框"></a>列表框</h4><h3 id="文本组件"><a href="#文本组件" class="headerlink" title="文本组件"></a>文本组件</h3><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<h4 id="JList列表框"><a href="#JList列表框" class="headerlink" title="JList列表框"></a>JList列表框</h4><blockquote>
+<p><strong>Class JList<E></strong></p>
+<p>java.lang.Object<br>java.awt.Component<br>java.awt.Container<br>javax.swing.JComponent<br>javax.swing.JList<E> </p>
+</blockquote>
+<p>列表框无需按钮激活，直接将内容展示出来，大小属性的列表框会限制内容展示，可用滚动面板弥补内容缺失的展示，可多选</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>JLsit（） </font> </p>
+<p><font color = #05ffdc>JLsit（Object[] listData） </font> </p>
+<p><font color = #05ffdc>JLsit（Vector listData） </font> </p>
+<p><font color = #05ffdc>JLsit（ListModel dataModel） </font> </p>
+<blockquote>
+<p><strong>listData：</strong>数组<br><strong>dataModel：</strong>模型</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionEvent<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionListener<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Vector<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">140</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//new FlowLayout()</span>
+
+<span class="token comment" spellcheck="true">//        //初始化对象（1）</span>
+<span class="token comment" spellcheck="true">//        Vector&lt;String> con = new Vector&lt;String>();</span>
+<span class="token comment" spellcheck="true">//        JList&lt;String> jl = new JList&lt;>(con);</span>
+<span class="token comment" spellcheck="true">//        //像下拉列表添加数据</span>
+<span class="token comment" spellcheck="true">//        con.add("No.1");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.2");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.3");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.4");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.5");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.6");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.7");</span>
+<span class="token comment" spellcheck="true">//        con.add("No.8");</span>
+<span class="token comment" spellcheck="true">//        JScrollPane js = new JScrollPane(jl);</span>
+
+
+<span class="token comment" spellcheck="true">//        //初始化对象（2）</span>
+<span class="token comment" spellcheck="true">//        String[] str = new String[]{"No.1","No.2","No.3","No.4","No.5","No.6","No.7","No.8"};</span>
+<span class="token comment" spellcheck="true">//        JList&lt;String> jl = new JList&lt;>(str);</span>
+<span class="token comment" spellcheck="true">//        JScrollPane js = new JScrollPane(jl);</span>
+
+        <span class="token comment" spellcheck="true">//初始化对象（3）</span>
+        <span class="token comment" spellcheck="true">//向上转型为ListModel 接口</span>
+        ListModel LM <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyListModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JList<span class="token operator">&lt;</span>String<span class="token operator">></span> jl <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JList</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span>LM<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JScrollPane js <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JScrollPane</span><span class="token punctuation">(</span>jl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JButton btn <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"打印"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        btn<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>List<span class="token operator">&lt;</span>String<span class="token operator">></span> values <span class="token operator">=</span> jl<span class="token punctuation">.</span><span class="token function">getSelectedValuesList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">for</span> <span class="token punctuation">(</span>String tmp <span class="token operator">:</span> values<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"选中的索引"</span><span class="token operator">+</span> jl<span class="token punctuation">.</span><span class="token function">getAnchorSelectionIndex</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span><span class="token string">"的值为："</span><span class="token operator">+</span>tmp<span class="token operator">+</span><span class="token string">"\t"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"中项目有："</span><span class="token operator">+</span>LM<span class="token punctuation">.</span><span class="token function">getSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"---END---"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        js<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        btn<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">120</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>js<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>btn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//用于提供接口获取信息</span>
+<span class="token keyword">class</span> <span class="token class-name">MyListModel</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractListModel</span> <span class="token operator">&lt;</span>String<span class="token operator">></span><span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> String<span class="token punctuation">[</span><span class="token punctuation">]</span> str <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">{</span><span class="token string">"No.1"</span><span class="token punctuation">,</span><span class="token string">"No.2"</span><span class="token punctuation">,</span><span class="token string">"No.3"</span><span class="token punctuation">,</span><span class="token string">"No.4"</span><span class="token punctuation">,</span><span class="token string">"No.5"</span><span class="token punctuation">,</span><span class="token string">"No.6"</span><span class="token punctuation">,</span><span class="token string">"No.7"</span><span class="token punctuation">,</span><span class="token string">"No.8"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>str<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> String <span class="token function">getElementAt</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> str<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java25.png" style="zoom:67%;" />
+
+<h3 id="文本组件"><a href="#文本组件" class="headerlink" title="文本组件"></a>文本组件</h3><h4 id="JTextField文本框"><a href="#JTextField文本框" class="headerlink" title="JTextField文本框"></a>JTextField文本框</h4><blockquote>
+<p><strong>Class JTextField</strong></p>
+<p>java.lang.Object<br>java.awt.Component<br>java.awt.Container<br>javax.swing.JComponent<br>javax.swing.text.JTextComponent<br>javax.swing.JTextField </p>
+</blockquote>
+<p>用来显示或编辑一个单行文本</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>JTextField（） </font> </p>
+<p><font color = #05ffdc>JTextField（String text） </font> </p>
+<p><font color = #05ffdc>JTextField（int fieldwidth） </font> </p>
+<p><font color = #05ffdc>JTextField（String text , int fieldwidth） </font> </p>
+<p><font color = #05ffdc>JTextField（Document docModel , String text , int fieldWidth） </font> </p>
+<blockquote>
+<p><strong>text：</strong>默认内容<br><strong>fieldwidth：</strong>字体数的行长<br><strong>docModel：</strong>文本组件的模型</p>
+</blockquote>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionEvent<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionListener<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">140</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FlowLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（1）</span>
+<span class="token comment" spellcheck="true">//        JTextField jt = new JTextField();</span>
+<span class="token comment" spellcheck="true">//        jt.setColumns(20);</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（2）</span>
+<span class="token comment" spellcheck="true">//        JTextField jt = new JTextField("测试");</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（3）</span>
+<span class="token comment" spellcheck="true">//        JTextField jt = new JTextField(20);</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（4）</span>
+<span class="token comment" spellcheck="true">//        JTextField jt = new JTextField("测试" , 20);</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（5）</span>
+        JTextField jt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextField</span><span class="token punctuation">(</span><span class="token string">"测试"</span> <span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JButton btn <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"确认"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        btn<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">//获取内容</span>
+                System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"内容为："</span><span class="token operator">+</span>jt<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                jt<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//覆盖内容（清空效果）</span>
+                jt<span class="token punctuation">.</span><span class="token function">requestFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//获取焦点</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>btn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java26.png" style="zoom:67%;" />
+
+<h4 id="JPasswordField密码框"><a href="#JPasswordField密码框" class="headerlink" title="JPasswordField密码框"></a>JPasswordField密码框</h4><blockquote>
+<p><strong>Class JPasswordField</strong></p>
+<p>java.lang.Object<br>java.awt.Component<br>java.awt.Container<br>javax.swing.JComponent<br>javax.swing.text.JTextComponent<br>javax.swing.JTextField<br>javax.swing.JPasswordField </p>
+</blockquote>
+<p>密码框与文本框定义和用法基本相同，有用户输入的字符串有字符加密功能</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>JPasswordField（） </font> </p>
+<p><font color = #05ffdc>JPasswordField（String text） </font> </p>
+<p><font color = #05ffdc>JPasswordField（int fieldwidth） </font> </p>
+<p><font color = #05ffdc>JPasswordField（String text , int fieldwidth） </font> </p>
+<p><font color = #05ffdc>JPasswordField（Document docModel , String text , int fieldWidth） </font> </p>
+<blockquote>
+<p><strong>text：</strong>默认内容<br><strong>fieldwidth：</strong>字体数的行长<br><strong>docModel：</strong>文本组件的模型</p>
+</blockquote>
+<p>用法与上面JTextFidle文本框例子一样</p>
+<p>JPasswordField提供了一个<font color = #05ffdc>setEchoChar（） </font> 方法，可输入框中的加密回显字符</p>
+<h4 id="JTextArea文本域"><a href="#JTextArea文本域" class="headerlink" title="JTextArea文本域"></a>JTextArea文本域</h4><blockquote>
+<p><strong>Class JTextArea</strong></p>
+<p>java.lang.Object<br>java.awt.Component<br>java.awt.Container<br>javax.swing.JComponent<br>javax.swing.text.JTextComponent<br>javax.swing.JTextArea </p>
+</blockquote>
+<p>能支持多行字符的输入</p>
+<p><strong>构造方法</strong></p>
+<p><font color = #05ffdc>JTextArea（） </font> </p>
+<p><font color = #05ffdc>JTextArea（String text） </font> </p>
+<p><font color = #05ffdc>JTextArea（int rows , int columns） </font> </p>
+<p><font color = #05ffdc>JTextArea（Document doc） </font> </p>
+<p><font color = #05ffdc>JTextArea（Document doc , String text , int rows , int columns） </font> </p>
+<blockquote>
+<p><strong>text：</strong>默认定义的内容<br><strong>rows：</strong> 行数<br><strong>columns：</strong>列数<br><strong>doc：</strong>文本组件模型</p>
+</blockquote>
+<p><strong>提供方法</strong></p>
+<p><font color = #05ffdc>setLineWrap（boolean Newline） </font> 字符到达边缘自动换行</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">140</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FlowLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（1）</span>
+<span class="token comment" spellcheck="true">//        JTextArea area = new JTextArea();</span>
+<span class="token comment" spellcheck="true">//        area.setRows(5);</span>
+<span class="token comment" spellcheck="true">//        area.setColumns(20);</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（2）</span>
+<span class="token comment" spellcheck="true">//        JTextArea area = new JTextArea("测试");</span>
+<span class="token comment" spellcheck="true">//        area.setRows(5);</span>
+<span class="token comment" spellcheck="true">//        area.setColumns(20);</span>
+
+        <span class="token comment" spellcheck="true">//创建文本框对象（3）</span>
+        JTextArea area <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextArea</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//到达边缘自动换行</span>
+        area<span class="token punctuation">.</span><span class="token function">setLineWrap</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token comment" spellcheck="true">//定义默认内容</span>
+        area<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"测试"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//内容里后面追加内容</span>
+        area<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//索引位置追加内容</span>
+        area<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token string">"测试2"</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JScrollPane js <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JScrollPane</span><span class="token punctuation">(</span>area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>js<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java27.png" style="zoom:67%;" />
+
+<h3 id="事件监听器"><a href="#事件监听器" class="headerlink" title="事件监听器"></a>事件监听器</h3><p>事件监听器，实质上是一个 实现特定类型监听器接口 的类对象，事件源 在用户做出相应动作 来产生事件对象</p>
+<p><strong>方法</strong></p>
+<p><font color = #05ffdc>addActionListener（ActionListener Act） </font> 添加事件监听器</p>
+<p><font color = #05ffdc>removeActionListener（ActionListener Act） </font> 删除事件监听器</p>
+<h4 id="ActionEvent动作事件"><a href="#ActionEvent动作事件" class="headerlink" title="ActionEvent动作事件"></a>ActionEvent动作事件</h4><blockquote>
+<p><strong>Class ActionEvent</strong></p>
+<p>java.lang.Object<br>java.util.EventObject<br>java.awt.AWTEvent<br>java.awt.event.ActionEvent </p>
+</blockquote>
+<p>组件定义的动作发生的语义事件。 当发生组件特定操作（例如被按下）时，此事件由组件生成的</p>
+<p>使用例子：（也可以外部类继承ActionListener类 调用响应事件）</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">//ActionListener()  事件响应类(匿名类)</span>
+事件源组件<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token comment" spellcheck="true">//事件反应方法（重写）</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//响应代码</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>个人登录练习：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionEvent<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>ActionListener<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//JFrame父窗体类</span>
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">220</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JLabel bq <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"组件选择状态"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        bq<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">70</span> <span class="token punctuation">,</span> <span class="token number">150</span><span class="token punctuation">,</span><span class="token number">120</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        jb.setBounds(70,110,140,40);</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>bq<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JLabel jl <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"账号："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jl<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JTextField jt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextField</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//以下是三个属性是必要的，连写的缘故</span>
+        jt<span class="token punctuation">.</span><span class="token function">setFont</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Font</span><span class="token punctuation">(</span><span class="token string">"微软雅黑"</span><span class="token punctuation">,</span>Font<span class="token punctuation">.</span>PLAIN<span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//添加动作事件监听器</span>
+        <span class="token comment" spellcheck="true">//addActionListener 添加监听的方法</span>
+        <span class="token comment" spellcheck="true">//ActionListener()  事件响应类</span>
+        jt<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment" spellcheck="true">//匿名内部类</span>
+            <span class="token comment" spellcheck="true">//ActionEvent：动作事件类 ，可获取组件触发···</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                bq<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"账号文本框选中以回车"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        JLabel jl2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"密码："</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jl2<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jl2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JPasswordField jpf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JPasswordField</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jpf<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jpf<span class="token punctuation">.</span><span class="token function">setFont</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Font</span><span class="token punctuation">(</span><span class="token string">"微软雅黑"</span><span class="token punctuation">,</span>Font<span class="token punctuation">.</span>PLAIN<span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jpf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//触发按钮立即实例jbAdl类 ，因jbAdl类继承了ActionListener类</span>
+        jbAdl jba <span class="token operator">=</span>  <span class="token keyword">new</span> <span class="token class-name">jbAdl</span><span class="token punctuation">(</span>bq<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//添加事件监听器</span>
+        jpf<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span>jba<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//删除事件监听器（自选控件）</span>
+        jpf<span class="token punctuation">.</span><span class="token function">removeActionListener</span><span class="token punctuation">(</span>jba<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JButton jb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JButton</span><span class="token punctuation">(</span><span class="token string">"登录"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jb<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">70</span><span class="token punctuation">,</span><span class="token number">110</span><span class="token punctuation">,</span><span class="token number">140</span><span class="token punctuation">,</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Parentform jftmp <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//匿名类形式触发动作事件</span>
+        jb<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                bq<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"点击了按钮"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>jpf<span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    <span class="token keyword">new</span> <span class="token class-name">Dialog</span><span class="token punctuation">(</span>jftmp<span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                    <span class="token keyword">new</span> <span class="token class-name">Dialog</span><span class="token punctuation">(</span>jftmp<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jb<span class="token punctuation">.</span><span class="token function">addActionListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ActionListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token annotation punctuation">@Override</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Dialog</span> <span class="token keyword">extends</span> <span class="token class-name">JDialog</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">Dialog</span><span class="token punctuation">(</span>Parentform p <span class="token punctuation">,</span> <span class="token keyword">boolean</span> Happening<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//参数顺序： 1.父窗体对象 ， 2.对话框标题 ，3.是否堵塞父窗体</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span><span class="token string">"消息"</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取对话框容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>Happening<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"登录成功"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">JLabel</span><span class="token punctuation">(</span><span class="token string">"密码错误"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">//对话框坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">360</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">120</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//思路2 外部事件相应</span>
+<span class="token keyword">class</span> <span class="token class-name">jbAdl</span> <span class="token keyword">implements</span> <span class="token class-name">ActionListener</span><span class="token punctuation">{</span>
+
+    JLabel c<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">jbAdl</span><span class="token punctuation">(</span>JLabel c <span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>c <span class="token operator">=</span> c<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">actionPerformed</span><span class="token punctuation">(</span>ActionEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        c<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span><span class="token string">"密码框选中以回车"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java28.png" style="zoom:67%;" />
+
+<h4 id="FocusEvent焦点事件监听器"><a href="#FocusEvent焦点事件监听器" class="headerlink" title="FocusEvent焦点事件监听器"></a>FocusEvent焦点事件监听器</h4><blockquote>
+<p><strong>Class FocusEvent</strong><br>java.lang.Object<br>java.util.EventObject<br>java.awt.AWTEvent<br>java.awt.event.ComponentEvent<br>java.awt.event.FocusEvent </p>
+</blockquote>
+<p>以光标视为焦点，失去或激活都会触发事件</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">import</span> javax<span class="token punctuation">.</span>swing<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>FocusEvent<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>awt<span class="token punctuation">.</span>event<span class="token punctuation">.</span>FocusListener<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Parentform</span> <span class="token keyword">extends</span> <span class="token class-name">JFrame</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token function">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//为父类添加标题</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token string">"JFrame父窗体的标题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体关闭规则</span>
+        <span class="token function">setDefaultCloseOperation</span><span class="token punctuation">(</span>WindowConstants<span class="token punctuation">.</span>EXIT_ON_CLOSE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//窗体坐标，大小</span>
+        <span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">230</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">,</span><span class="token number">220</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//获取窗体容器</span>
+        Container c <span class="token operator">=</span> <span class="token function">getContentPane</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setLayout</span><span class="token punctuation">(</span>null<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JTextField jt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextField</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JTextField jt2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextField</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        JTextField jt3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JTextField</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt2<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">60</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt3<span class="token punctuation">.</span><span class="token function">setBounds</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//直接调用类，因 fet类 继承FocusEvent类</span>
+        jt<span class="token punctuation">.</span><span class="token function">addFocusListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">fet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt2<span class="token punctuation">.</span><span class="token function">addFocusListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">fet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jt3<span class="token punctuation">.</span><span class="token function">addFocusListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">fet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jt2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>jt3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">//窗体显示</span>
+        <span class="token function">setVisible</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// 继承FocusEvent类</span>
+<span class="token keyword">class</span> <span class="token class-name">fet</span> <span class="token keyword">implements</span> <span class="token class-name">FocusListener</span> <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">//获取焦点时的相应</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">focusGained</span><span class="token punctuation">(</span>FocusEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//获取触发组件</span>
+        JTextField tmp <span class="token operator">=</span> <span class="token punctuation">(</span>JTextField<span class="token punctuation">)</span> e<span class="token punctuation">.</span><span class="token function">getSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//给获取焦点的文本框设置绿色边框</span>
+        tmp<span class="token punctuation">.</span><span class="token function">setBorder</span><span class="token punctuation">(</span>BorderFactory<span class="token punctuation">.</span><span class="token function">createLineBorder</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>green<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//失去焦点时的相应</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">focusLost</span><span class="token punctuation">(</span>FocusEvent e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">//获取触发组件</span>
+        JTextField tmp <span class="token operator">=</span> <span class="token punctuation">(</span>JTextField<span class="token punctuation">)</span> e<span class="token punctuation">.</span><span class="token function">getSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//给获取焦点的文本框设置绿色边框</span>
+        tmp<span class="token punctuation">.</span><span class="token function">setBorder</span><span class="token punctuation">(</span>BorderFactory<span class="token punctuation">.</span><span class="token function">createLineBorder</span><span class="token punctuation">(</span>Color<span class="token punctuation">.</span>red<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Demo</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">new</span> <span class="token class-name">Parentform</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>运行结果</p>
+<img src="https://sanscan12.gitee.io/blogimg/Content/Java/Java29.png" style="zoom:67%;" />
+
+<h1 id="集合类"><a href="#集合类" class="headerlink" title="集合类"></a>集合类</h1><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
             </div>
             <hr/>
 
@@ -6211,7 +6705,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;本站积累:&nbsp;<span
-                class="white-color">73.6k</span>&nbsp;字战绩
+                class="white-color">75.7k</span>&nbsp;字战绩
             
             
             
