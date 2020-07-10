@@ -6,7 +6,7 @@
   <link href="/Sanscan12.github.io/atom.xml" rel="self"/>
   
   <link href="https://sanscan12.github.io/"/>
-  <updated>2020-07-10T05:41:17.174Z</updated>
+  <updated>2020-07-10T05:48:32.659Z</updated>
   <id>https://sanscan12.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java 学习笔记</title>
-    <link href="https://sanscan12.github.io/posts/e780.html"/>
-    <id>https://sanscan12.github.io/posts/e780.html</id>
+    <title>C# 学习笔记</title>
+    <link href="https://sanscan12.github.io/posts/7cc9.html"/>
+    <id>https://sanscan12.github.io/posts/7cc9.html</id>
     <published>2020-07-09T16:00:00.000Z</published>
-    <updated>2020-07-10T05:41:17.174Z</updated>
+    <updated>2020-07-10T05:48:32.659Z</updated>
     
     <content type="html"><![CDATA[<h1 id="C-的开始"><a href="#C-的开始" class="headerlink" title="C#的开始"></a>C#的开始</h1><h2 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h2><p>命名空间是程序的内部的组织系统，向外公开的组织系统</p><blockquote><p>命名空间好比是不同储存的仓库，using关键字 就像把仓库的钥匙，命名空间的名称可以对应着仓库名称，特定的钥匙可以打开指定的仓库名称，从而在仓库中获取所需的物品</p></blockquote><p><strong>using系统命名空间</strong></p><p>引入系统空间来使用</p><pre class="line-numbers language-C#"><code class="language-C#">using [命名空间名称]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>namespace用户自定义命名空间</strong></p><p>自行创建的命名空间，可以控制空间内里的类和方法，可以引用 用户自定义命名空间 里的 类和方法 </p><pre class="line-numbers language-C#"><code class="language-C#">namespace [命名空间名];<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><p>一种数据结构，存储数据成员、方法成员和其它类等内容，便于调用</p><pre class="line-numbers language-C#"><code class="language-C#">[类修饰符] class [类名] [基类 或 接口]{    [类体，内容区块]}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="Main方法"><a href="#Main方法" class="headerlink" title="Main方法"></a>Main方法</h2><p>Main方法是程序的入口点，程序中必须有一个Main方法</p><pre class="line-numbers language-C#"><code class="language-C#">static void Main(string[] args){    [方法体，内容区块]}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><blockquote><p><strong>Main方法创建要求：</strong></p><ul><li>方法必须静态 static </li><li>方法名Main 首字母必须为大写</li><li>返回值是 void 或 int</li><li>命令行参数可选（在使用命令行参数的使用）</li></ul></blockquote><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>标识符用来标识 类名、变量名、方法名、数组名、文件名的有效字符序列</p><blockquote><p><strong>命名规则：</strong></p><ul><li>首字母必须为 字母 或 下划线 <code>_</code></li><li>其余部分可以有：字母、数字、下划线 <code>_</code></li></ul></blockquote><p><strong>程序命名规范</strong> （好习惯）</p><p>项目名：公司+产品名</p><p>命名空间名：公司名称 / 产品名称</p><p>接口名：名称前缀加 字母 <code>I</code>（大写I）</p><p>类名：功能以及操作的说明</p><p>方法名：动宾短语，行为的说明</p><p>成员变量：名称前缀加 字符 <code>_</code> （下划线）</p><h1 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h1><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">]]></content>
     
@@ -178,9 +178,9 @@
     
       <category term="分享" scheme="https://Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="搭色" scheme="https://Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/"/>
-    
       <category term="喜好" scheme="https://Sanscan12.github.io/tags/%E5%96%9C%E5%A5%BD/"/>
+    
+      <category term="搭色" scheme="https://Sanscan12.github.io/tags/%E6%90%AD%E8%89%B2/"/>
     
   </entry>
   
@@ -206,9 +206,9 @@
       <category term="hexo" scheme="https://Sanscan12.github.io/categories/hexo/"/>
     
     
-      <category term="分享" scheme="https://Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/"/>
-    
       <category term="css" scheme="https://Sanscan12.github.io/tags/css/"/>
+    
+      <category term="分享" scheme="https://Sanscan12.github.io/tags/%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
